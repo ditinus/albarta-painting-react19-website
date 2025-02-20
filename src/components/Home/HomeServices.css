@@ -1,0 +1,123 @@
+/* .service-menu-container {
+    height: 1075px;
+    margin-top: 100px;
+  }
+  
+  
+  .service-heading {
+    width: 800px;
+    height: 142px;
+    justify-content: space-between;
+    margin-left: 395px;
+    display: inline-block;
+  }
+  
+  .service-heading h2 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .service-heading h1 {
+    font-size: 36px;
+    color: #0D378D;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 720px;
+  }
+  
+  .service-btn {
+    width: 198px;
+    display: inline-block;
+    margin-left: 117px;
+    vertical-align: top;
+    margin-top: 50px;
+  }
+  
+  .explore-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 11px 8px 15px;
+    background-color: #0d378d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 2px solid #cadbff;
+  }
+  
+
+  .service-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 58px;
+    background-color: #111111;
+    height: 800px;
+    
+  }
+  
+  @media (min-width: 768px) {
+    .service-content {
+      flex-direction: row;
+    }
+  }
+  
+  .services-wrap {
+    width: 1180px;
+    gap: 100px;
+    margin: auto;
+  }
+  
+  .service-list {
+    display: inline-block;
+    width: 50%;
+  }
+  
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+    font-size: 24px;
+    color:  #FFFFFF80;
+  }
+  
+  .service-item.active {
+    color: #fff;
+  }
+  
+  .service-details {
+    margin-left: 60px;
+    display: inline-block;
+    width: 480px;
+  }
+  
+  @media (min-width: 768px) {
+    .service-details {
+      margin-top: 0;
+    }
+  }
+  
+  .service-image {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .service-description {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #FFFFFF;
+  }
+  
+  .service-text {
+    color: #FFFFFF;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 100px;
+  }
+   */
