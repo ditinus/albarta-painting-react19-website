@@ -1,6 +1,6 @@
 
 import { Image } from 'react-bootstrap';
-import tranparentImage from '../../assets/Vector 2.png';
+import tranparentImage from '../../../../public/assets/Vector 2.png';
 import './transparentsection.css'; // Make sure to import your CSS file if needed
 
 const TransparentSection = () => {

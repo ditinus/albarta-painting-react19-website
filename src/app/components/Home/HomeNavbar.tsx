@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container, Row, Col, Image, NavDropdown } from 'react-bootstrap';
 import './homeNavbar.css'
-import logoIcon from '../../assets/alberta-colour-painting-logo 1 (1).png';
-import phoneIcon from '../../assets/header-phone-icon.svg'
+import logoIcon from '../../../../public/assets/alberta-colour-painting-logo 1 (1).png';
+import phoneIcon from '../../../../public/assets/header-phone-icon.svg'
 import { Link } from 'react-router-dom'; // React Router for navigation
 
 const HomeNavbar = () => {
