@@ -27,7 +27,7 @@ export default function Home() {
       <HomeWhyChooseSection />
       {/* <HomeServices/> */}
       {/* <OurGallery /> */}
-      <ReviewsCarousel />
+      {/* <ReviewsCarousel /> */}
       <HomeOfferCarasoul/>
       <main className="container py-5">
       <BlogGrid posts={blogPosts} />
