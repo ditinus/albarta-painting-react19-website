@@ -1,0 +1,165 @@
+
+.service-menu-container {
+  margin-top: 65px;
+  width: 100%;
+  background-color: #111111;
+}
+
+.service-heading {
+ margin-left: 320px;
+}
+
+.service-heading h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
+}
+
+.service-heading h1 {
+  font-size: 36px;
+  color: #0D378D;
+  font-weight: 400;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.service-btn {
+  display: inline-flex;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.explore-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: #0d378d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  border: 2px solid #cadbff;
+  margin-left: auto;
+  height: 10%;
+}
+
+.service-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.services-wrap {
+  display: flex;
+  align-items: flex-start;
+}
+
+.service-list {
+  flex: 1;
+  margin-right: 30px;
+  min-height: 600px;
+  margin-top: 70px;
+}
+
+.service-details {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #555;
+  cursor: pointer;
+  font-size: 20px;
+  color: #FFFFFF80;
+}
+
+.service-item.active {
+  color: #fff;
+}
+
+.service-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+
+.service-image {
+  width: 64%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.service-description {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.service-text {
+  color: #FFFFFF;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  width: 60%;
+}
+
+.about-btn {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .service-heading h1 {
+    font-size: 28px;
+  }
+
+  .service-heading h2 {
+    font-size: 20px;
+  }
+
+  .service-btn {
+    margin-top: 20px;
+  }
+
+  .service-item {
+    font-size: 18px;
+  }
+
+  .service-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-details {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .services-wrap {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .explore-btn {
+    font-size: 14px;
+  }
+
+  .service-item {
+    font-size: 16px;
+  }
+}

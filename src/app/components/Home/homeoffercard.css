@@ -1,0 +1,85 @@
+.offer-card {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Allow card to take full width of its parent */
+  max-width: 50%; /* Fixed maximum width */
+  margin: 0 auto; /* Center the card horizontally */
+}
+
+.offer-img-container {
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.offer-img {
+  width: 100%; /* Ensure the image stretches fully */
+  height: 100%; /* Ensure the image takes the full height of the container */
+  object-fit: cover; /* Ensure the image covers the entire container while maintaining aspect ratio */
+}
+
+
+.offer-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+.offer-ribbon {
+  position: absolute;
+    top: 40px;
+    background-color: #0D378D;
+    color: white;
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.offer-bottom-overlay {
+  position: absolute;
+  bottom: 86px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color:  #0D378D3D;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.offer-bottom-overlay-description{
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  /* padding: 10px; */
+  color: white;
+  /* text-align: center; */
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 25px;
+}
+
+.offer-bottom-overlay p {
+  margin: 5px 0;
+}
+
+.offer-bottom-overlay strong {
+  font-weight: bold;
+  font-size: 16px;
+}
