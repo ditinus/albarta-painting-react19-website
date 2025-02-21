@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center; 
     height: 80vh;
-    background: url('../../assets/expert-calgary-painter.png') no-repeat center center/cover;
+    background: url('../../../../public/assets/expert-calgary-painter.png') no-repeat center center/cover;
     background-size: cover;
 }
 

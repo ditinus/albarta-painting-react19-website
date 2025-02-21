@@ -1,6 +1,6 @@
 // import { Image } from 'react-bootstrap';
-// import about from '../../assets/decorGallery.png';
-// import arrow from '../../assets/HoeAboutArrow.png';
+// import about from '../../../../public/assets/decorGallery.png';
+// import arrow from '../../../../public/assets/HoeAboutArrow.png';
 // import './HomeAboutUs.css'
 
 // const AboutSection = () => {
@@ -40,9 +40,10 @@
 
 
 
-import { Row, Col,Card, Image } from 'react-bootstrap';
-import about from '../../assets/decorGallery.png';
-import arrow from '../../assets/HoeAboutArrow.png';
+import { Row, Col,Card, } from 'react-bootstrap';
+import about from '../../../../public/assets/decorGallery.png';
+import arrow from '../../../../public/assets/HoeAboutArrow.png';
+import Image from 'next/image'
 import './HomeAboutUs.css';
 
 const AboutSection = () => {
@@ -53,7 +54,7 @@ const AboutSection = () => {
           {/* About Image Section */}
           <Col xs={12} md={6} className="about-image">
             <div className="experience-tag">10 Years of Experience</div>
-            <Image src={about} alt="Luxury Living Room" fluid />
+            <Image src={about} alt="Luxury Living Room"  />
           </Col>
 
           {/* About Content Section */}
