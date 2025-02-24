@@ -13,6 +13,12 @@ import { blogPosts } from "../app/lib/data"
 import OurGallery from "./components/OurGallery";
 import ReviewsCarousel from "./components/ReviewsCarousel";
 import HomeOfferCarasoul from "./components/Home/HomeOfferCarasoul";
+import OurService from "./components/OurService";
+import ContactForm from "@/app/components/ContactUs/ContactForm";
+import Footer from "./Layout/Footer";
+import TransparentSection from "./components/Home/TransparentSection";
+import HomeServices from "./components/Home/HomeServices";
+import HomeOurGallery from "./components/Home/HomeOurGallery";
 
 export default function Home() {
   return (
@@ -25,15 +31,18 @@ export default function Home() {
       {/* <TransparentSection/> */}
       <HomeAboutUs />
       <HomeWhyChooseSection />
-      {/* <HomeServices/> */}
-      {/* <OurGallery /> */}
-      {/* <ReviewsCarousel /> */}
+      <HomeServices/>
+      <OurGallery />
+      <HomeOurGallery/>
+      <ReviewsCarousel />
       <HomeOfferCarasoul/>
       <main className="container py-5">
       <BlogGrid posts={blogPosts} />
-     
+      <OurService/>
+      <ContactForm />
+      
     </main>
-
+    <Footer/>
     </div>
   );
 }

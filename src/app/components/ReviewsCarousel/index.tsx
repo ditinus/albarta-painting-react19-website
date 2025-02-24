@@ -39,7 +39,7 @@ const reviews = [
 
 const ReviewsCarousel = () => {
   return (
-    <div className="reviews-carousel-container  ">
+    <div className="reviews-carousel-container  pt-0">
       <div style={{ marginBottom: "20px" }} className="mb-50">
         <Swiper
           spaceBetween={30}
@@ -93,7 +93,7 @@ const ReviewsCarousel = () => {
                     position: "absolute",
                     zIndex: 9999,
                     bottom: "14px",
-                    right: 0,
+                    right: "-15px",
                   }}
                   src={Reviews3}
                   alt="Review Image"

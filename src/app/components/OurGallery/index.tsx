@@ -1,87 +1,110 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
+import Image from "next/image";
+import gallery1 from "../../../../public/assets/gallery1.png";
+import gallery2 from "../../../../public/assets/gallery2.png";
+import gallery3 from "../../../../public/assets/gallery3.png";
+import gallery4 from "../../../../public/assets/gallery4.png";
+import gallery5 from "../../../../public/assets/gallery5.png";
+import { GLightbox } from "glightbox";
 
-import "./style.css"
+import "./style.css";
 
 const Carousel = () => {
   useEffect(() => {
-    const carousel = document.querySelector('.carousel-inner');
-    const items = document.querySelectorAll('.carousel-item');
-    let currentPosition = 0;
-    const itemWidth = 315; // 300px width + 15px gap
-
-    const nextButton = document.querySelector('.carousel-control-next');
-    const prevButton = document.querySelector('.carousel-control-prev');
-
-    nextButton.addEventListener('click', function () {
-      if (currentPosition > -(itemWidth * (items.length - 3))) {
-        currentPosition -= itemWidth;
-        carousel.style.transform = `translateX(${currentPosition}px)`;
-      }
+ 
+    const lightbox = new GLightbox({
+      touchNavigation: true,
+      loop: true,
+      width: "90vw",
+      height: "90vh",
     });
 
-    prevButton.addEventListener('click', function () {
-      if (currentPosition < 0) {
-        currentPosition += itemWidth;
-        carousel.style.transform = `translateX(${currentPosition}px)`;
-      }
-    });
-  }, []); // The empty array ensures this runs only on client-side after initial render
+    return () => {
+      lightbox.destroy(); 
+    };
+  }, []);
+
+
+  console.log(gallery1.src , "gallery1");
+  
 
   return (
-    <div className="container">
-      <div className="carousel-container position-relative">
-        <div className="carousel-inner">
-          <div className="carousel-item">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-klpJ5UXtEcGgfSB2chjddjjQMCkkfb.png"
-              alt="Blue exterior wall"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-klpJ5UXtEcGgfSB2chjddjjQMCkkfb.png"
-              alt="White interior cabinet"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-klpJ5UXtEcGgfSB2chjddjjQMCkkfb.png"
-              alt="Green bedroom"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-klpJ5UXtEcGgfSB2chjddjjQMCkkfb.png"
-              alt="Living room"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-klpJ5UXtEcGgfSB2chjddjjQMCkkfb.png"
-              alt="White storage unit"
-            />
+    <>
+      <section className="section-gallery section-space position-relative margin-bottom-space" id="gallery">
+        <div className="container">
+          <div className="row g-3">
+            <div className="col-6 col-lg-4">
+              <div className="gallery-box img-100">
+                <a href={gallery1.src} className="glightbox gallery-sq-media" data-glightbox="image1">
+                  <Image src={gallery1} className="img-fluid" alt="gallery" />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-lg-4">
+              <div className="gallery-box img-100">
+                <a href={gallery2.blurDataURL} className="glightbox gallery-sq-media" data-glightbox="image2">
+                  <Image src={gallery2} className="img-fluid" alt="gallery" />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-lg-4">
+              <div className="gallery-box img-100">
+                <a href={gallery3} className="glightbox gallery-sq-media" data-glightbox="image3">
+                  <Image src={gallery3} className="img-fluid" alt="gallery" />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-lg-3">
+              <div className="gallery-box img-100">
+                <a href={gallery5} className="glightbox gallery-sq-media" data-glightbox="image4">
+                  <Image src={gallery5} className="img-fluid" alt="gallery" />
+                </a>
+              </div>
+            </div>
+            <div className="col-12 col-lg-6">
+              <div className="gallery-box img-50 mb-3">
+                <a href={gallery3} className="glightbox gallery-sq-media" data-glightbox="image5">
+                  <Image src={gallery3} className="img-fluid" alt="gallery" />
+                </a>
+              </div>
+              <div className="gallery-box img-50">
+                <a href={gallery4} className="glightbox gallery-sq-media" data-glightbox="image6">
+                  <Image src={gallery4} className="img-fluid" alt="gallery" />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-lg-3">
+              <div className="gallery-box img-100">
+                <a href={gallery5} className="glightbox gallery-sq-media" data-glightbox="image7">
+                  <Image src={gallery5} className="img-fluid" alt="gallery" />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-lg-4">
+              <div className="gallery-box img-100">
+                <a href={gallery1} className="glightbox gallery-sq-media" data-glightbox="image8">
+                  <Image src={gallery1} className="img-fluid" alt="gallery" />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-lg-4">
+              <div className="gallery-box img-100">
+                <a href={gallery2} className="glightbox gallery-sq-media" data-glightbox="image9">
+                  <Image src={gallery2} className="img-fluid" alt="gallery" />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-lg-4">
+              <div className="gallery-box img-100">
+                <a href={gallery1} className="glightbox gallery-sq-media" data-glightbox="image10">
+                  <Image src={gallery1} className="img-fluid" alt="gallery" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="carousel-controls">
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-slide="prev"
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true" />
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-slide="next"
-          >
-            <span className="carousel-control-next-icon" aria-hidden="true" />
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

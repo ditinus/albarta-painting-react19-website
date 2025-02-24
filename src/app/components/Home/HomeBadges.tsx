@@ -6,7 +6,8 @@ import CleverCanadian from '../../../../public/assets/CleverCanadian 1.png';
 import HomeStars from '../../../../public/assets/homestar.png';
 import best2023 from '../../../../public/assets/best-of-the-best-homestars-award-winner-2023-black-version 1 (1).png';
 import best2024 from '../../../../public/assets/best-of-the-best-homestars-award-winner-2024-black-version 1.png';
-import Image from 'next/image'
+import Image from 'next/image';
+
 const HomeBadges = () => {
   return (
     <div className="badge-container">

@@ -1,5 +1,4 @@
-'use client'
-import { Navbar, Nav, Container, Row, Col,  NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row, Col, NavDropdown } from 'react-bootstrap';
 import './homeNavbar.css'
 import logoIcon from '../../../../public/assets/alberta-colour-painting-logo 1 (1).png';
 import phoneIcon from '../../../../public/assets/header-phone-icon.svg'

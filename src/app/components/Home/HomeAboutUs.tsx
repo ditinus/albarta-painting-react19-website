@@ -40,11 +40,11 @@
 
 
 
-import { Row, Col,Card, } from 'react-bootstrap';
+import { Row, Col,Card } from 'react-bootstrap';
 import about from '../../../../public/assets/decorGallery.png';
 import arrow from '../../../../public/assets/HoeAboutArrow.png';
-import Image from 'next/image'
 import './HomeAboutUs.css';
+import Image from 'next/image';
 
 const AboutSection = () => {
   return (
@@ -54,7 +54,7 @@ const AboutSection = () => {
           {/* About Image Section */}
           <Col xs={12} md={6} className="about-image">
             <div className="experience-tag">10 Years of Experience</div>
-            <Image src={about} alt="Luxury Living Room"  />
+            <Image src={about} alt="Luxury Living Room" />
           </Col>
 
           {/* About Content Section */}
@@ -90,7 +90,7 @@ const AboutSection = () => {
                   living spaces with elegance and style.
                 </Card.Text>
                 <div>
-                  <a href="#" className="about-btn">
+                  <a href="#" className="about-btns">
                     <span>Learn More</span>
                     <Image className="arrow" src={arrow} alt="arrow" />
                   </a>

@@ -17,7 +17,7 @@ const HomeBanner = () => {
 
                         {/* Button Section */}
                         <Col xs={12} md={4} className="banner-btn d-flex align-items-center justify-content-center">
-                            <a href="#" className="about-btn">
+                            <a   className="about-btn">
                                 <span>Schedule a Consultation</span>
                                 <Image className="arrow" src={arrow} alt="arrow" />
                             </a>
