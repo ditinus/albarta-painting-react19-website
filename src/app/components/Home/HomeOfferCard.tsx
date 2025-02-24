@@ -1,5 +1,5 @@
 import './homeoffercard.css';
-import { Image } from 'react-bootstrap';
+import Image from 'next/image';
 
 // Define an interface for the offer object
 interface Offer {

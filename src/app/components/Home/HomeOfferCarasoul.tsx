@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import HomeOfferCard from "./HomeOfferCard";
 import prev from '../../../../public/assets/prev.svg';
 import next from '../../../../public/assets/next.svg';
@@ -7,7 +7,7 @@ import offer2 from '../../../../public/assets/hero.png';
 import offer3 from '../../../../public/assets/decorGallery.png';
 import offer4 from '../../../../public/assets/decorRoom.png';
 import arrow from '../../../../public/assets/arrow.svg';
-import { Container, Row, Col,  } from 'react-bootstrap';
+
 import './homeoffercarasoul.css';
 import Image from "next/image";
 
@@ -93,7 +93,7 @@ const HomeOfferCarasoul = () => {
             </p>
           </div>
           <div style={{display:"flex"}}>
-            <a href="#" className="about-btn">
+            <a href="#" className="carasoul-btns">
               <span>Explore Discounts</span>
               <Image className="arrow" src={arrow} alt="arrow" />
             </a>

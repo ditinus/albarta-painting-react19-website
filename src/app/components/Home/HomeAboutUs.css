@@ -48,7 +48,7 @@
     font-size: 16px;
   }
   
-  .about-btn {
+  .about-btns {
     display: inline-flex;
     align-items: center;
     margin-top: 20px;
@@ -59,6 +59,7 @@
     border-radius: 30px;
     font-size: 16px;
     border: 2px solid #CADBFF;
+    width: 40%;
   }
   
   .arrow {

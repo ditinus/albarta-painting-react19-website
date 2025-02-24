@@ -55,7 +55,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container py-5">
+    <div className="container">
       <div className="row">
         <div className="contact-form-info col-md-6 mb-4">
           <h2>HAVE A PROJECT IN MIND OR NEED A QUOTE?</h2>

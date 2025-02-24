@@ -4,9 +4,7 @@ import QualityMaterials from '../../../../public/assets/QualityMaterial.png';
 import ExperiencedTeam from '../../../../public/assets/Experienced Team.png';
 import CustomerSatisfaction from '../../../../public/assets/Customer Satifaction.png';
 import './HomeWhyChooseSection.css';
-
-
-import Image from 'next/image'
+import Image from 'next/image';
 
 const HomeWhyChooseSection = () => {
   return (
