@@ -6,12 +6,14 @@ import HomeNavbar from './components/Home/HomeNavbar'
 import { Routes, Route } from 'react-router-dom'
 import HomeHero from './components/Home/HomeHero'
 import HomeBadges from './components/Home/HomeBadges'
-import TransparentSection from './components/Home/TransparentSection'
+// import TransparentSection from './components/Home/TransparentSection'
 import HomeAboutUs from './components/Home/HomeAboutUs'
 import HomeWhyChooseSection from './components/Home/HomeWhyChooseSection'
 import HomeServices from './components/Home/HomeServices'
 import HomeBanner from './components/Home/HomeBanner'
 import HomeOfferCarasoul from './components/Home/HomeOfferCarasoul'
+import HomeOurGallery from './components/Home/HomeOurGallery'
+import HomeCalgaryPainting from './components/Home/HomeCalgaryPainting'
 
 
 
@@ -34,6 +36,8 @@ function App() {
         <HomeServices/>
         <HomeBanner/>
         <HomeOfferCarasoul/>
+        <HomeOurGallery/>
+        <HomeCalgaryPainting/>
       </div>
     </>
   )

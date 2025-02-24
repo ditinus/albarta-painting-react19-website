@@ -110,12 +110,19 @@
   width: 60%;
 }
 
-.about-btn {
+.service-btns {
   display: flex;
   align-items: center;
   color: #fff;
   text-decoration: none;
-  margin: 0;
+  align-items: center;
+  padding: 8px 11px 8px 15px;
+  background-color: #0D378D;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  border: 2px solid #CADBFF;
 }
 
 .arrow {

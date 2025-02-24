@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import HomeOfferCard from "./HomeOfferCard";
 import prev from '../../assets/prev.svg';
 import next from '../../assets/next.svg';
@@ -7,7 +7,7 @@ import offer2 from '../../assets/hero.png';
 import offer3 from '../../assets/decorGallery.png';
 import offer4 from '../../assets/decorRoom.png';
 import arrow from '../../assets/arrow.svg';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import './homeoffercarasoul.css';
 
 const offers = [
@@ -92,7 +92,7 @@ const HomeOfferCarasoul = () => {
             </p>
           </div>
           <div style={{display:"flex"}}>
-            <a href="#" className="about-btn">
+            <a href="#" className="carasoul-btns">
               <span>Explore Discounts</span>
               <Image className="arrow" src={arrow} alt="arrow" />
             </a>

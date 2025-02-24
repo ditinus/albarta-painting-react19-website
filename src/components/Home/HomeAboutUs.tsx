@@ -89,7 +89,7 @@ const AboutSection = () => {
                   living spaces with elegance and style.
                 </Card.Text>
                 <div>
-                  <a href="#" className="about-btn">
+                  <a href="#" className="about-btns">
                     <span>Learn More</span>
                     <Image className="arrow" src={arrow} alt="arrow" />
                   </a>

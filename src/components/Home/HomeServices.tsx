@@ -206,7 +206,7 @@ const HomeServices = () => {
             />
             <h3 className="service-description">{services[activeIndex].content}</h3>
             <p className="service-text">{services[activeIndex].text}</p>
-            <a href="#" className="about-btn">
+            <a href="#" className="service-btns">
               <span>Learn More</span>
               <Image className="arrow" src={arrow} alt="arrow" />
             </a>
