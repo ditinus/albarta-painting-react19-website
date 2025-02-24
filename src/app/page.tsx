@@ -14,6 +14,8 @@ import OurGallery from "./components/OurGallery";
 import ReviewsCarousel from "./components/ReviewsCarousel";
 import HomeOfferCarasoul from "./components/Home/HomeOfferCarasoul";
 
+import ContactForm from "@/app/components/ContactUs/ContactForm";
+
 export default function Home() {
   return (
     <div>
@@ -23,15 +25,17 @@ export default function Home() {
       <HomeHero />
       <HomeBadges />
       {/* <TransparentSection/> */}
-      <HomeAboutUs />
-      <HomeWhyChooseSection />
+      {/* <HomeAboutUs /> */}
+      {/* <HomeWhyChooseSection /> */}
       {/* <HomeServices/> */}
       {/* <OurGallery /> */}
       {/* <ReviewsCarousel /> */}
       <HomeOfferCarasoul/>
       <main className="container py-5">
       <BlogGrid posts={blogPosts} />
-     
+
+      <ContactForm />
+      
     </main>
 
     </div>
