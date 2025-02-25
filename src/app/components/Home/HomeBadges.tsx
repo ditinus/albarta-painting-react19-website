@@ -55,7 +55,7 @@ const HomeBadges: React.FC = () => {
     <div className="badgeContainer">
       <Row className="justify-content-center">
         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image src={google} alt="Google 4.9 Rating" layout="responsive" />
+          <Image style={{ }} src={google} alt="Google 4.9 Rating" layout="responsive" />
         </Col>
         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
           <Image src={bbb} alt="BBB Accredited" layout="responsive" />

@@ -46,15 +46,15 @@ const Footer = () => {
         <hr className=" mx-5" />
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 mb-4 mb-lg-0">
+            <div className="col-lg-5 mb-4 mb-lg-0">
               <Image src={logo} alt="logo" />
               <p className=" mt-3">
-                The digital transformation has changed everything. We help
-                companies navigate through the new era and embrace innovation.
+                The digital transformation has changed everything. <br/> We help
+                companies navigate through the  <br/> new era and embrace innovation.
               </p>
             </div>
             {/* Quick Links Column */}
-            <div className="col-lg-4 mb-4 mb-lg-0  align-self-end">
+            <div className="col-lg-2 mb-4 mb-lg-0  align-self-end">
               <h5 className=" mb-4">Quick Links</h5>
               <ul className="list-unstyled">
                 <li className="mb-2">
@@ -73,14 +73,14 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className=" text-decoration-none text-white ">
+                  <a href="#" className=" text-decoration-none text-white   ">
                     Contact
                   </a>
                 </li>
               </ul>
             </div>
             {/* Contact Information Column */}
-            <div className="col-lg-4">
+            <div className="col-lg-5">
               <h5 className=" mb-4">Contact </h5>
               
               <ul className="list-unstyled ">
