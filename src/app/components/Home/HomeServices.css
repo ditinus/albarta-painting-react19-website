@@ -360,6 +360,17 @@
 }
 
 @media (max-width: 576px) {
+
+  .service-heading h2 {
+    font-size: 20px;
+    
+  }
+
+  .service-heading h1 {
+    font-size: 26px;
+    
+  }
+
   .explore-btn {
     font-size: 14px;
     width: 40%;
