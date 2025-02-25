@@ -43,8 +43,8 @@
     text-decoration: none;
     background-color: #0D378D;
     color: white;
-    padding: 5px 15px;
-    border-radius: 5px;
+    padding: 10px 38px;
+    border-radius: 20px;
   }
 
   @media (max-width: 991px) {

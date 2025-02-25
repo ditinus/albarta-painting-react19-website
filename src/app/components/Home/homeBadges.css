@@ -1,23 +1,43 @@
 
-.badge-container {
-  display: flex;
+.badgeContainer {
+  /* display: flex; */
   align-items: center;
   gap: 30px;
   background: white;
   border-radius: 15px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin: auto;
-  width: 47%;
   padding: 15px;
   position: relative;
-  margin-top: -50px; 
-  z-index: 10; 
+  margin-top: -50px;
+  z-index: 10;
 }
 
+/* For screens 800px and above (large screen size adjustment) */
+@media (min-width: 800px) {
+  .badgeContainer {
+    width: 50%; /* Adjust width on large screens */
+  }
+}
 
+/* Adjust width for medium screens (e.g., tablets) */
+@media (max-width: 992px) {
+  .badgeContainer {
+    width: 70%; /* Adjust width on medium screens */
+  }
+}
 
+/* Adjust width for small screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .badgeContainer {
+    width: 37%; /* Adjust width on small screens */
+  }
+}
+
+/* Adjust width for very small screens (e.g., mobile in portrait mode) */
 @media (max-width: 576px) {
-  .badge-container {
+  .badgeContainer {
+    width: 45%; /* Adjust width on very small screens */
     padding: 10px;
   }
 }

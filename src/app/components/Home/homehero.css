@@ -40,30 +40,41 @@
     border-radius: 5px;
 }
 
+
 .buttons {
     margin-top: 3em;
-}
-
-.btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .btn {
     text-decoration: none;
     color: white;
     border-radius: 30px;
-    display: inline-block;
+    display: inline-flex;  /* Use inline-flex to align text and arrow side by side */
+    align-items: center;  /* Vertically center items */
     margin: 10px;
     font-weight: 500;
     font-size: 1.1rem;
-}
-
-.primary {
+  }
+  
+  .primary {
     padding: 10px 20px;
     background: #0D378D;
     border: 2px solid #CADBFF;
-}
-
-.secondary {
+  }
+  
+  .secondary {
     border: 2px solid #CADBFF;
     padding: 10px 30px;
-}
+  }
+  
+  .card-btn-arrow {
+    margin-left: 10px; /* Space between text and arrow */
+    width: 20px; /* Adjust size of the arrow */
+    height: 20px; /* Adjust size of the arrow */
+  }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 992px) {

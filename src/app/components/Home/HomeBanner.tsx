@@ -21,6 +21,7 @@ const HomeBanner = () => {
                                 <span>Schedule a Consultation</span>
                                 <Image className="arrow" src={arrow} alt="arrow" />
                             </a>
+                            
                         </Col>
                     </Row>
                 </Container>
