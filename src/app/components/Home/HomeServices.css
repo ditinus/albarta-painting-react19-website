@@ -302,9 +302,7 @@
   border: 2px solid #CADBFF;
 }
 
-.arrow {
-  margin-left: 10px;
-}
+
 
 @media (max-width: 767px) {
   .service-heading h1 {

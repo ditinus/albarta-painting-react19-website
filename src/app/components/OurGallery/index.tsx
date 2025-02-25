@@ -8,6 +8,7 @@ import gallery5 from "../../../../public/assets/gallery5.png";
 import { GLightbox } from "glightbox";
 
 import "./style.css";
+import Link from "next/link";
 
 const Carousel = () => {
   useEffect(() => {
@@ -35,70 +36,70 @@ const Carousel = () => {
           <div className="row g-3">
             <div className="col-6 col-lg-4">
               <div className="gallery-box img-100">
-                <a href={gallery1.src} className="glightbox gallery-sq-media" data-glightbox="image1">
+                <Link href={gallery1} className="glightbox gallery-sq-media" data-glightbox="image1">
                   <Image src={gallery1} className="img-fluid" alt="gallery" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-6 col-lg-4">
               <div className="gallery-box img-100">
-                <a href={gallery2.blurDataURL} className="glightbox gallery-sq-media" data-glightbox="image2">
+                <Link href={gallery2.blurDataURL} className="glightbox gallery-sq-media" data-glightbox="image2">
                   <Image src={gallery2} className="img-fluid" alt="gallery" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-6 col-lg-4">
               <div className="gallery-box img-100">
-                <a href={gallery3} className="glightbox gallery-sq-media" data-glightbox="image3">
+                <Link href={gallery3} className="glightbox gallery-sq-media" data-glightbox="image3">
                   <Image src={gallery3} className="img-fluid" alt="gallery" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-6 col-lg-3">
               <div className="gallery-box img-100">
-                <a href={gallery5} className="glightbox gallery-sq-media" data-glightbox="image4">
+                <Link href={gallery5} className="glightbox gallery-sq-media" data-glightbox="image4">
                   <Image src={gallery5} className="img-fluid" alt="gallery" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-12 col-lg-6">
               <div className="gallery-box img-50 mb-3">
-                <a href={gallery3} className="glightbox gallery-sq-media" data-glightbox="image5">
+                <Link href={gallery3} className="glightbox gallery-sq-media" data-glightbox="image5">
                   <Image src={gallery3} className="img-fluid" alt="gallery" />
-                </a>
+                </Link>
               </div>
               <div className="gallery-box img-50">
-                <a href={gallery4} className="glightbox gallery-sq-media" data-glightbox="image6">
+                <Link href={gallery4} className="glightbox gallery-sq-media" data-glightbox="image6">
                   <Image src={gallery4} className="img-fluid" alt="gallery" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-6 col-lg-3">
               <div className="gallery-box img-100">
-                <a href={gallery5} className="glightbox gallery-sq-media" data-glightbox="image7">
+                <Link href={gallery5} className="glightbox gallery-sq-media" data-glightbox="image7">
                   <Image src={gallery5} className="img-fluid" alt="gallery" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-6 col-lg-4">
               <div className="gallery-box img-100">
-                <a href={gallery1} className="glightbox gallery-sq-media" data-glightbox="image8">
+                <Link href={gallery1} className="glightbox gallery-sq-media" data-glightbox="image8">
                   <Image src={gallery1} className="img-fluid" alt="gallery" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-6 col-lg-4">
               <div className="gallery-box img-100">
-                <a href={gallery2} className="glightbox gallery-sq-media" data-glightbox="image9">
+                <Link href={gallery2} className="glightbox gallery-sq-media" data-glightbox="image9">
                   <Image src={gallery2} className="img-fluid" alt="gallery" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-6 col-lg-4">
               <div className="gallery-box img-100">
-                <a href={gallery1} className="glightbox gallery-sq-media" data-glightbox="image10">
+                <Link href={gallery1} className="glightbox gallery-sq-media" data-glightbox="image10">
                   <Image src={gallery1} className="img-fluid" alt="gallery" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

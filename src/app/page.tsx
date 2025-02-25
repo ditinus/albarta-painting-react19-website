@@ -9,12 +9,12 @@ import HomeNavbar from "./components/Home/HomeNavbar";
 
 import HomeAboutUs from "./components/Home/HomeAboutUs";
 import BlogGrid from "./components/Blog/BlogGrid";
-import { blogPosts } from "../app/lib/data"
+import { blogPosts } from "./lib/data"
 import OurGallery from "./components/OurGallery";
 import ReviewsCarousel from "./components/ReviewsCarousel";
 import HomeOfferCarasoul from "./components/Home/HomeOfferCarasoul";
 import OurService from "./components/OurService";
-import ContactForm from "@/app/components/ContactUs/ContactForm";
+import ContactForm from "@/app/components/ContactForm";
 import Footer from "./Layout/Footer";
 import TransparentSection from "./components/Home/TransparentSection";
 import HomeServices from "./components/Home/HomeServices";
@@ -39,10 +39,14 @@ export default function Home() {
       <HomeOfferCarasoul/>
       <HomeOurGallery/>
       <HomeCalgaryPainting/>
+      <div className="my-5 ">
+      {/* <ContactForm /> */}
+      </div>
       <ReviewsCarousel />
+  
       <main className="container py-5">
       <BlogGrid posts={blogPosts} />
-      <OurService/>
+      {/* <OurService/> */}
       <ContactForm />
       
     </main>

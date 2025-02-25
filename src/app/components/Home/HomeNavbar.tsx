@@ -19,10 +19,10 @@ const HomeNavbar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto" style={{ backgroundColor: "#0D378D1F", borderRadius: "30px", height: "60px", paddingTop: "9px" }}>
-                <Nav.Link as={Link} href="/#" className='mx-5'>Home</Nav.Link>
-                <Nav.Link as={Link} href="/#" className='mx-5'>About</Nav.Link>
+                <Nav.Link as={Link} href="/home" className='mx-5'>Home</Nav.Link>
+                <Nav.Link as={Link} href="/aboutus" className='mx-5'>About</Nav.Link>
                 <Nav.Link as={Link} href="/#" className='mx-5'>Services</Nav.Link>
-                <Nav.Link as={Link} href="/#" className='mx-5'>Gallery</Nav.Link>
+                <Nav.Link as={Link} href="/gallery" className='mx-5'>Gallery</Nav.Link>
                 <Nav.Link as={Link} href="/#" className='mx-5'>Blog</Nav.Link>
                 <Nav.Link as={Link} href="/#" className='mx-5'>Contact</Nav.Link>
               </Nav>
