@@ -48,7 +48,7 @@ export default function BlogCard({ post }: BlogCardProps) {
         </p>
       </div>
       <div className=" border-0 ">
-        <Link href={`/blog/${post.slug}`} className="btn   p-0">
+        <Link href={`/blog/${post.slug}`} className="blog-btn   p-0">
           Read More
         </Link>
       </div>

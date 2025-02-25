@@ -1,3 +1,5 @@
+
+
 // import { useState } from "react";
 // import openArr from "../../../../public/assets/OpenArrow.png";
 // import closeArr from "../../../../public/assets/CloseArrow.png";
@@ -8,8 +10,9 @@
 // import popcorn from "../../../../public/assets/popcorn.png";
 // import drywall from "../../../../public/assets/drywall.png";
 // import ceiling from "../../../../public/assets/ceiling.png";
-// import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+// import { Container, Row, Col } from 'react-bootstrap';
 // import './HomeServices.css';
+// import Image from "next/image";
 
 // const services = [
 //   {   
@@ -59,7 +62,7 @@
 //         <div className="service-heading">
 //           <h2>Our Services</h2>
 //           <div className="service-btn">
-//           <h1>BRINGING COLOUR TO EVERY CORNER OF YOUR HOME AND BUSINESS</h1>
+//             <h1>BRINGING COLOUR TO EVERY CORNER OF YOUR HOME AND BUSINESS</h1>
 //             <button className="explore-btn">Explore Our Services</button>
 //           </div>
 //         </div>
@@ -67,7 +70,7 @@
 
 //       <Container className="service-content">
 //         <Row className="services-wrap">
-//           {/* Increase the width of the first column */}
+//           {/* Service List Column */}
 //           <Col xs={12} md={8} className="service-list">
 //             {services.map((service, index) => (
 //               <div
@@ -85,12 +88,17 @@
 //             ))}
 //           </Col>
 
-//           {/* Keep the second column the same size */}
+//           {/* Service Details Column */}
 //           <Col xs={12} md={4} className="service-details">
-//             <Image src={services[activeIndex].image} alt="Service" className="service-image" />
+//             <Image 
+//               src={services[activeIndex].image} 
+//               alt="Service" 
+//               className="service-image" 
+               
+//             />
 //             <h3 className="service-description">{services[activeIndex].content}</h3>
 //             <p className="service-text">{services[activeIndex].text}</p>
-//             <a href="#" className="about-btn">
+//             <a href="#" className="service-btns">
 //               <span>Learn More</span>
 //               <Image className="arrow" src={arrow} alt="arrow" />
 //             </a>
@@ -104,11 +112,6 @@
 // export default HomeServices;
 
 
-
-
-
-
-
 import { useState } from "react";
 import openArr from "../../../../public/assets/OpenArrow.png";
 import closeArr from "../../../../public/assets/CloseArrow.png";
@@ -119,7 +122,7 @@ import commercial from "../../../../public/assets/commercial.png";
 import popcorn from "../../../../public/assets/popcorn.png";
 import drywall from "../../../../public/assets/drywall.png";
 import ceiling from "../../../../public/assets/ceiling.png";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import './HomeServices.css';
 import Image from "next/image";
 
@@ -168,14 +171,15 @@ const HomeServices = () => {
   return (
     <section className="service-menu-container">
       <div className="services-header" style={{backgroundColor:"white"}}>
-        <div className="service-heading">
+        <div className="service-heading text-center">
           <h2>Our Services</h2>
           <div className="service-btn">
             <h1>BRINGING COLOUR TO EVERY CORNER OF YOUR HOME AND BUSINESS</h1>
-            <button className="explore-btn">Explore Our Services</button>
+            <Button className="explore-btn">Explore Our Services</Button>
           </div>
         </div>
       </div>
+
 
       <Container className="service-content">
         <Row className="services-wrap">
@@ -203,7 +207,9 @@ const HomeServices = () => {
               src={services[activeIndex].image} 
               alt="Service" 
               className="service-image" 
-               
+              layout="responsive"
+              width={100} 
+              height={100} 
             />
             <h3 className="service-description">{services[activeIndex].content}</h3>
             <p className="service-text">{services[activeIndex].text}</p>
@@ -219,5 +225,3 @@ const HomeServices = () => {
 };
 
 export default HomeServices;
-
-

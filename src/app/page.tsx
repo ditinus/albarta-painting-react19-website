@@ -19,6 +19,8 @@ import Footer from "./Layout/Footer";
 import TransparentSection from "./components/Home/TransparentSection";
 import HomeServices from "./components/Home/HomeServices";
 import HomeOurGallery from "./components/Home/HomeOurGallery";
+import HomeCalgaryPainting from "./components/Home/HomeCalgaryPainting";
+import HomeBanner from "./components/Home/HomeBanner";
 
 export default function Home() {
   return (
@@ -33,9 +35,11 @@ export default function Home() {
       <HomeWhyChooseSection />
       <HomeServices/>
       <OurGallery />
-      <HomeOurGallery/>
-      <ReviewsCarousel />
+      <HomeBanner/>
       <HomeOfferCarasoul/>
+      <HomeOurGallery/>
+      <HomeCalgaryPainting/>
+      <ReviewsCarousel />
       <main className="container py-5">
       <BlogGrid posts={blogPosts} />
       <OurService/>

@@ -64,7 +64,8 @@ const HomeCalgaryPainting = () => {
 
                     {/* Image Section */}
                     <Col xs={12} md={6} lg={6} xl={6} className="image-section">
-                        <img src={CalgaryPaintingImage} alt="Painting" className="responsive-image" />
+                    <Image className="arrow" src={CalgaryPaintingImage} alt="arrow" />
+                    {/* <img src={CalgaryPaintingImage} alt="Painting" className="responsive-image" /> */}
                     </Col>
                 </Row>
             </Container>
