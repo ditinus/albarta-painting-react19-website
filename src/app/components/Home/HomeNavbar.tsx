@@ -24,7 +24,7 @@ const HomeNavbar = () => {
                 <Nav.Link as={Link} href="/about-us" className='mx-5'>About</Nav.Link>
                 <Nav.Link as={Link} href="/service" className='mx-5'>Services</Nav.Link>
                 <Nav.Link as={Link} href="/gallery" className='mx-5'>Gallery</Nav.Link>
-                <Nav.Link as={Link} href="/#" className='mx-5'>Blog</Nav.Link>
+                <Nav.Link as={Link} href="/blog" className='mx-5'>Blog</Nav.Link>
                 <Nav.Link as={Link} href="/#" className='mx-5'>Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>

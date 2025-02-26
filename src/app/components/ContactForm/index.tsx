@@ -8,10 +8,10 @@ export default function ContactForm() {
   }
 
   return (
-    <Container className="py-5">
+    <Container className=" py-sm-5 py-5">
       <Row className="align-items-center">
         <Col md={6}>
-          <h1 className="Title mb-3" style={{ fontSize: "2.5rem", fontWeight: 500 }}>
+          <h1 className="Title mb-3" >
             HAVE A PROJECT IN<br />  MIND OR NEED A <br /> QUOTE?
           </h1>
           <p className="lead " style={{fontWeight: 500 }}>
@@ -19,10 +19,10 @@ export default function ContactForm() {
           </p>
         </Col>
         <Col md={6}>
-          <div className="bg-white p-4 rounded shadow-lg ">
+          <div className="bg-white p-4 rounded " style={{ boxShadow: "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;"}}>
             <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-3 ">
-                <Form.Control type="text" placeholder="Name" className="py-2" />
+              <Form.Group className="mb-3 textarea ">
+                <Form.Control type="text" placeholder="Name" className="py-2 " />
               </Form.Group>
 
               <Form.Group className="mb-3">
@@ -38,10 +38,10 @@ export default function ContactForm() {
               </Form.Group>
 
               <Button
-                variant="primary"
+             style={{backgroundColor:"#0D378D" , fontWeight:500}}
                 type="submit"
-                className="w-100 py-2"
-                style={{ backgroundColor: "#0D47A1", borderColor: "#0D47A1" }}
+                className="w-100 py-2 "
+              
               >
                 Get a Quote
               </Button>

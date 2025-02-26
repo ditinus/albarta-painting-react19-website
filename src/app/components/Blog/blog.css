@@ -1,6 +1,6 @@
 .cardBg {
   background-color: #e2e7f1;
-  padding: 15;
+
   border: none;
 }
 
@@ -20,6 +20,4 @@
   color: #0d378d;
 }
 
-.card-body {
-  padding: 0;
-}
+

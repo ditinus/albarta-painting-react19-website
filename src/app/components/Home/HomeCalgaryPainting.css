@@ -13,6 +13,11 @@
     padding: 0;
 }
 
+.p6{
+
+    padding: 40px
+}
+
 .text-section {
     display: flex;
     flex-direction: column;
