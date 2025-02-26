@@ -1,3 +1,4 @@
+
 // import React, { useState } from 'react';
 // import './HomeOurGallery.css'; // Add your CSS styles here
 // import offer1 from '../../../../public/assets/banner.png';
@@ -56,8 +57,9 @@ import offer5 from "../../../../public/assets/Gallery-First.png";
 import Image from "next/image";
 import TestimonialHeader from "../TestimonialHeader/page";
 
+
 const HomeOurGallery: React.FC = () => {
-  // Define the offers array with your 5 images
+
   const offers = [
     { id: 1, imageSrc: offer1 },
     { id: 2, imageSrc: offer2 },
@@ -66,14 +68,24 @@ const HomeOurGallery: React.FC = () => {
     { id: 5, imageSrc: offer5 },
   ];
 
+
+ 
+  const [enlargedIndex, setEnlargedIndex] = useState<number>(2);
+
+
+  const handleImageClick = (index: number): void => {
+    setEnlargedIndex(index);  
+
   const [enlargedIndex, setEnlargedIndex] = useState<number>(2);
 
   const handleImageClick = (index: number): void => {
     setEnlargedIndex(index); 
+
   };
 
   return (
     <div className="gallery-carousel">
+
       <TestimonialHeader
         title="Our Happy Clients"
         subtitle="See how we’ve helped people achieve their goals."
@@ -84,6 +96,7 @@ const HomeOurGallery: React.FC = () => {
 
         buttonStyle={{ fontSize: "1rem" }}
       />
+
       <div className="gallery-images">
         {offers.map((offer, index) => (
           <div
