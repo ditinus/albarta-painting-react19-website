@@ -1,7 +1,7 @@
+
 import './homeoffercard.css';
 import Image from 'next/image';
 
-// Define an interface for the offer object
 interface Offer {
   image: string;
   title: string;
@@ -10,7 +10,6 @@ interface Offer {
   description: string;
 }
 
-// Define the props interface for the HomeOfferCard component
 interface HomeOfferCardProps {
   offer: Offer;
   isActive: boolean;
@@ -18,23 +17,22 @@ interface HomeOfferCardProps {
 
 const HomeOfferCard: React.FC<HomeOfferCardProps> = ({ offer, isActive }) => {
   return (
-    <div className={`offer-card ${isActive ? "active" : ""}`}>
-      {/* Image with overlay */}
-      <div className="offer-img-container">
-        <Image className="offer-img" src={offer.image} alt={offer.title} />
+    <div className={`offer-card ${isActive ? "active" : ""} col-8 col-md-5`}>
+      <div className="offer-img-container position-relative">
+        <Image className="offer-img w-100 h-100 object-cover" src={offer.image} alt={offer.title} />
         
-        {/* Title Overlay on Image */}
-        <div className="offer-ribbon">
+        <div className="offer-ribbon position-absolute top-40px bg-primary text-white p-2">
           <h2>{offer.title}</h2>
- 
         </div>
-        
-        {/* Bottom section containing date and description */}
-        <div className="offer-bottom-overlay">
+
+        <div className="offer-bottom-overlay position-absolute bottom-86px left-0 w-100 p-2 bg-primary bg-opacity-50 text-white text-center">
           <p><strong>Offer starts: {offer.startDate}</strong></p>
           <p><strong>Offer ends: {offer.endDate}</strong></p>
         </div>
-        <p className="offer-bottom-overlay-description">{offer.description}</p>
+
+        <p className="offer-bottom-overlay-description position-absolute bottom-0 left-0 w-100 p-2 text-white fs-6">
+          {offer.description}
+        </p>
       </div>
     </div>
   );

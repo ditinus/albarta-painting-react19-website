@@ -15,7 +15,7 @@ const HomeHero = () => {
           <div className="btn-with-arrow">
             <a href="#" className="btn1 primary">
               Get a Free Quote
-              <Image className="card-btn-arrow" src={arrow} alt="arrow" />
+              <Image className="card-btn-arrows" src={arrow} alt="arrow" />
             </a>
           </div>
           <a href="#" className="btn1 secondary">

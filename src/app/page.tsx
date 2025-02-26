@@ -34,15 +34,15 @@ export default function Home() {
       <HomeAboutUs />
       <HomeWhyChooseSection />
       <HomeServices/>
-      <OurGallery />
       <HomeBanner/>
       <HomeOfferCarasoul/>
       <HomeOurGallery/>
       <HomeCalgaryPainting/>
+      <ReviewsCarousel />
+      <OurGallery />
       <div className="my-5 ">
       {/* <ContactForm /> */}
       </div>
-      <ReviewsCarousel />
   
       <main className="container py-5">
       <BlogGrid posts={blogPosts} />
