@@ -1,0 +1,285 @@
+/* .about-us {
+  background-color: #ffffff;
+  margin-top: 70px;
+}
+
+
+.about-image {
+  position: relative;
+  margin-bottom: -40px;
+}
+
+
+
+.experience-tag {
+  position: absolute;
+  top: 2em;
+  background-color: #0D378D;
+  color: white;
+  padding: 10px 15px;
+  font-size: 22px;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 27%;
+  margin-left: 3em;
+  margin-top: 3em;
+}
+
+.about-content h2 {
+  font-weight: bold;
+  color: #000000;
+}
+
+.about-content h3 {
+  color: #0a2472;
+  font-size: 32px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: #0d378d !important;
+  margin-top: 21px;
+}
+
+.about-content p {
+  color: #333;
+  font-size: 16px;
+}
+
+.about-btns {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 8px 11px 8px 15px;
+  background-color: #0D378D;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  border: 2px solid #CADBFF;
+  width: 40%;
+}
+
+
+.card-btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-left: 2em;
+}
+
+
+.about-card {
+  background: #f9f9f9;
+  border: none;
+  padding: 20px;
+}
+
+.about-card h2 {
+  font-size: 2rem;
+}
+
+.about-card h3 {
+  color: #0a2472;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 21px;
+  color: #0d378d !important;
+}
+
+.about-card p {
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-btn .arrow {
+  margin-left: 8px;
+}
+
+@media (max-width: 767px) {
+  .about-image {
+    text-align: center;
+  }
+
+  .about-content {
+    padding: 10px;
+  }
+
+  .about-card {
+    padding: 15px;
+  }
+
+  .about-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
+  }
+} */
+
+.about-us {
+  background-color: #ffffff;
+  margin-top: 70px;
+}
+
+.about-image {
+  position: relative;
+  margin-bottom: -40px;
+}
+
+.experience-tag {
+  position: absolute;
+  top: 2em;
+  background-color: #0D378D;
+  color: white;
+  padding: 10px 15px;
+  font-size: 22px;
+}
+
+.about-content {
+  max-width: 100%;
+  margin-top: 3em;
+}
+
+.about-content h2 {
+  font-weight: bold;
+  color: #000000;
+}
+
+.about-content h3 {
+  color: #0a2472;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 21px;
+  color: #0d378d !important;
+}
+
+.about-content p {
+  color: #333;
+  font-size: 16px;
+}
+
+.about-btns {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 8px 11px 8px 15px;
+  background-color: #0D378D;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  border: 2px solid #CADBFF;
+  width: auto;
+}
+
+.card-btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-left: 1em;
+}
+
+.about-card {
+  background: #f9f9f9;
+  border: none;
+  padding: 20px;
+}
+
+.about-card h2 {
+  font-size: 2rem;
+}
+
+.about-card h3 {
+  color: #0a2472;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 21px;
+  color: #0d378d !important;
+}
+
+.about-card p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.about-btn .arrow {
+  margin-left: 8px;
+}
+
+@media (max-width: 767px) {
+  .about-image {
+    text-align: center;
+    /* margin-bottom: 20px; */
+  }
+
+  .about-content {
+    padding: 10px;
+  }
+
+  .about-card {
+    padding: 15px;
+  }
+
+  .about-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
+  }
+
+  .about-btns {
+    width: auto;
+    margin-top: 15px;
+  }
+
+  .experience-tag {
+    font-size: 18px;
+  }
+}
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .about-content {
+    margin-left: 2em;
+  }
+
+  .about-image {
+    margin-bottom: 0;
+  }
+
+  .about-card {
+    padding: 15px;
+  }
+} */

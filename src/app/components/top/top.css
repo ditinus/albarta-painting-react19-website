@@ -1,0 +1,33 @@
+.top-row{
+        white-space: nowrap;
+        animation: scrollText 30s linear infinite;  
+}
+
+.top-container {
+  background-color: #0d378d;
+  width: 100%;
+  height: 36px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .scrolling-text {
+    white-space: nowrap; /* Prevent the text from wrapping to the next line */
+    animation: scrollText 30s linear infinite; /* Create the animation */
+  }
+
+  .text-item {
+    padding-right: 50px; 
+    white-space: nowrap;
+  }
+
+    @keyframes scrollText {
+      0% {
+        transform: translateX(100%); /* Start from right */
+      }
+      100% {
+        transform: translateX(-100%); /* End at the left */
+      }
+    }
