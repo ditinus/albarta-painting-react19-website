@@ -1,12 +1,15 @@
+import { StaticImageData } from "next/image"; 
+
 export interface BlogPost {
-    id: string
-    title: string
-    slug: string
-    date: string
-    image: string
-    excerpt: string
-    content: string
-  }
+  id: string;
+  title: string;
+
+  slug: string;
+  date: string;
+  image: string | StaticImageData; 
+  excerpt: string;
+  content: string;
+}
   
 export interface FormData {
   name: string;

@@ -19,9 +19,14 @@ import ContactForm from "../components/ContactForm";
 import BlogGrid from "../components/Blog/BlogGrid";
 import { blogPosts } from "../lib/data";
 import Footer from "../Layout/Footer";
+import Head from "next/head";
+import type { Metadata } from 'next'
 const page = () => {
+
+  
   return (
     <div>
+     
       {" "}
       <Top />
       <HomeNavbar />

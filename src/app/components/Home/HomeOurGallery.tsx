@@ -81,7 +81,7 @@ const HomeOurGallery: React.FC = () => {
         buttonUrl="/testimonials"
         bgColor="#0D378D"
         textColor="#0D378D"
-        primaryTextColor="#0D378D"
+
         buttonStyle={{ fontSize: "1rem" }}
       />
       <div className="gallery-images">
