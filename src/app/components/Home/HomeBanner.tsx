@@ -1,3 +1,5 @@
+
+"use client";
 import arrow from '../../../../public/assets/arrow.svg';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Homebanner.css'

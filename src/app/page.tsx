@@ -21,6 +21,7 @@ import HomeServices from "./components/Home/HomeServices";
 import HomeOurGallery from "./components/Home/HomeOurGallery";
 import HomeCalgaryPainting from "./components/Home/HomeCalgaryPainting";
 import HomeBanner from "./components/Home/HomeBanner";
+import { Container } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -34,8 +35,10 @@ export default function Home() {
       <HomeAboutUs />
       <HomeWhyChooseSection />
       <HomeServices/>
-      <OurGallery />
+      {/* <OurGallery /> */}
+      <Container>
       <HomeBanner/>
+      </Container>
       <HomeOfferCarasoul/>
       <HomeOurGallery/>
       <HomeCalgaryPainting/>
@@ -44,12 +47,12 @@ export default function Home() {
       </div>
       <ReviewsCarousel />
   
-      <main className="container py-5">
-      <BlogGrid posts={blogPosts} />
-      {/* <OurService/> */}
       <ContactForm />
+      <BlogGrid posts={blogPosts} />
+
+ 
       
-    </main>
+   
     <Footer/>
     </div>
   );

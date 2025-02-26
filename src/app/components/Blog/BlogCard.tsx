@@ -1,12 +1,11 @@
-import Image from "next/image"
-import Link from "next/link"
-import type { BlogPost } from "../../lib/types"
-import { formatDate } from "../../lib/utils"
-import './blog.css'
-
+import Image from "next/image";
+import Link from "next/link";
+import type { BlogPost } from "../../lib/types";
+import { formatDate } from "../../lib/utils";
+import "./blog.css";
 
 interface BlogCardProps {
-  post: BlogPost
+  post: BlogPost;
 }
 
 export default function BlogCard({ post }: BlogCardProps) {
@@ -47,12 +46,29 @@ export default function BlogCard({ post }: BlogCardProps) {
           {post.excerpt}
         </p>
       </div>
-      <div className=" border-0 ">
-        <Link href={`/blog/${post.slug}`} className="blog-btn   p-0">
-          Read More
+      <div className=" border-0 mt-3 ">
+        <Link
+          href={`/blog/${post.slug}`}
+          className="blog-btn  text-decoration-none p-0"
+        >
+          Read More{" "}
+          <svg
+            width="9"
+            height="15"
+            viewBox="0 0 9 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.625 13.4336L7.625 7.43359L1.625 1.43359"
+              stroke="#0D378D"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </Link>
       </div>
     </div>
-  )
+  );
 }
-
