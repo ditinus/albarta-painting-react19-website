@@ -1,6 +1,6 @@
 import type React from "react"
 import { Form, Button, Container, Row, Col } from "react-bootstrap"
-
+import "./style.css"
 export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -11,17 +11,17 @@ export default function ContactForm() {
     <Container className="py-5">
       <Row className="align-items-center">
         <Col md={6}>
-          <h1 className="text-primary mb-3" style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-            HAVE A PROJECT IN MIND OR NEED A QUOTE?
+          <h1 className="Title mb-3" style={{ fontSize: "2.5rem", fontWeight: 500 }}>
+            HAVE A PROJECT IN<br />  MIND OR NEED A <br /> QUOTE?
           </h1>
-          <p className="lead">
-            Get in touch with our expert painters in Calgary. We'd be happy to help bring your vision to life!
+          <p className="lead " style={{fontWeight: 500 }}>
+            Get in touch with our expert painters in Calgary. We'd be <br /> happy to help bring your vision to life!
           </p>
         </Col>
         <Col md={6}>
-          <div className="bg-white p-4 rounded shadow-sm">
+          <div className="bg-white p-4 rounded shadow-lg ">
             <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-3">
+              <Form.Group className="mb-3 ">
                 <Form.Control type="text" placeholder="Name" className="py-2" />
               </Form.Group>
 

@@ -13,11 +13,11 @@
     background: #E2E7F1;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction:column ;
     justify-content: center;
-    height: 300px;
+ 
     text-align: left;
   }
   
