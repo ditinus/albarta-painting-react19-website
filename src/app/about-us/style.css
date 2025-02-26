@@ -1,0 +1,49 @@
+.d-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 33px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .d-title {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .d-title {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .d-title {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .d-title {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}

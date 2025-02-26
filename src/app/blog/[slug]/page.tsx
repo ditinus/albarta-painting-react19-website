@@ -1,13 +1,20 @@
-import Image from "next/image"
-import { notFound } from "next/navigation"
-import { blogPosts } from "../../lib/data"
-import { formatDate } from "../../lib/utils"
+// Inside your page file for [slug]
+import { notFound } from "next/navigation";
+import { blogPosts } from "../../lib/data";
+import { formatDate } from "../../lib/utils";
+import Image from "next/image";
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = blogPosts.find((post) => post.slug === params.slug)
+// interface BlogPostProps {
+//   params: {
+//     slug: string;
+//   };
+// }
+
+export default async  function BlogPost({ params }: any) {
+  const post = blogPosts.find((post) => post.slug === params.slug);
 
   if (!post) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -36,6 +43,5 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         </div>
       </article>
     </main>
-  )
+  );
 }
-

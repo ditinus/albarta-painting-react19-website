@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import "./style.css";
 import ServiceIamge from "../../../../public/assets/service-image.png";
 import Image from "next/image";
@@ -29,10 +29,23 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!",
     buttonText: "Learn More",
   },
+  {
+    title: "Exterior Painting Calgary",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!",
+    buttonText: "Learn More",
+  },
+  {
+    title: "Exterior Painting Calgary",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!",
+    buttonText: "Learn More",
+  },
 ];
 
 const Index = () => {
   return (
+    <Container >
     <section id="gallery">
       <div className="mt-5">
         <div className="row">
@@ -52,7 +65,7 @@ const Index = () => {
                   <p className="card-text">{service?.description}</p>
                   <Button
                     size="sm"
-                    variant="outline-light text-white border-white py-1 pl-2 d-flex align-items-center justify-content-between gap-4"
+                    variant="outline-light btn-primary  text-white border-white py-1 pl-2 d-flex align-items-center justify-content-between gap-4"
                     className="button-footer"
                     style={{ paddingLeft: "1.5rem" }}
                   >
@@ -84,6 +97,9 @@ const Index = () => {
         </div>
       </div>
     </section>
+
+    
+    </Container>
   );
 };
 

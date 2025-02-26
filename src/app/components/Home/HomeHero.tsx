@@ -1,3 +1,4 @@
+"use client"
 import "./homehero.css";
 import Image from "next/image";
 import arrow from "../../../../public/assets/HoeAboutArrow.png";

@@ -1,6 +1,7 @@
 .banner-wrap {
     position: relative;
-    width: 70%;
+ padding-top: 40px;
+ padding-bottom: 40px;
     /* height: 308px; */
     background: url('../../../../public/assets/banner.png') no-repeat center center/cover;
     margin: 70px auto;
