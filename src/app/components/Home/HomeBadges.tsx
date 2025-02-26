@@ -38,7 +38,7 @@
 // export default HomeBadges;
 
 
-
+"use client"
 import { Row, Col } from 'react-bootstrap';
 // import styles from './HomeBadges.module.css';
 import './homeBadges.css'
@@ -55,22 +55,22 @@ const HomeBadges: React.FC = () => {
     <div className="badgeContainer">
       <Row className="justify-content-center">
         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image style={{ }} src={google} alt="Google 4.9 Rating" layout="responsive" />
+          <Image className='object-fit-contain' src={google} alt="Google 4.9 Rating" layout="responsive" />
         </Col>
         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image src={bbb} alt="BBB Accredited" layout="responsive" />
+          <Image  className='object-fit-contain' src={bbb} alt="BBB Accredited" layout="responsive" />
         </Col>
         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image src={CleverCanadian} alt="Clever Canadian" layout="responsive" />
+          <Image  width={30} className='object-fit-contain' src={CleverCanadian} alt="Clever Canadian" layout="responsive" />
         </Col>
         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image src={HomeStars} alt="HomeStars Verified" layout="responsive" />
+          <Image className='object-fit-contain' src={HomeStars} alt="HomeStars Verified" layout="responsive" />
         </Col>
         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image src={best2023} alt="Best of Best 2023" layout="responsive" />
+          <Image width={30} className='object-fit-contain' src={best2023} alt="Best of Best 2023" layout="responsive" />
         </Col>
         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image src={best2024} alt="Best of Best 2024" layout="responsive" />
+          <Image  width={30} className='object-fit-contain' src={best2024} alt="Best of Best 2024" layout="responsive" />
         </Col>
       </Row>
     </div>
