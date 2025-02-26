@@ -76,7 +76,7 @@ const HomeOurGallery: React.FC = () => {
 
   return (
     <div className="gallery-carousel">
-          <div >
+          {/* <div >
         <div className="our-gallery-heading">
           <h2>Our Gallery</h2>
           <div className="our-gallery-btn">
@@ -84,7 +84,7 @@ const HomeOurGallery: React.FC = () => {
             <button className="view-btn">View All</button>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="gallery-images">
         {offers.map((offer, index) => (
           <div
