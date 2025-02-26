@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import HomeOfferCard from "./HomeOfferCard";
 import prev from '../../../../public/assets/prev.svg';
@@ -58,46 +59,43 @@ const HomeOfferCarasoul = () => {
   };
 
   return (
-    <div className="special-offer-wrap">
-      <div className="special-offer-top">
+    <div className="container special-offer-wrap">
+      <div className="special-offer-top text-center col-lg-10">
         <h3>Special Offer</h3>
         <h1>Top Calgary House Painting Offers and Discounts</h1>
       </div>
-      <div className="offers-wrap">
-        <div className="carousel">
-          {/* Render only two images at a time */}
-          <div className="carousel-images">
+      
+      <div className="offers-wrap position-relative d-flex flex-column flex-lg-row">
+        <div className="carousel col-10 col-lg-12">
+          <div className="carousel-images d-flex overflow-hidden">
             {offers.slice(currentIndex, currentIndex + 2).map((offer) => (
               <HomeOfferCard key={offer.id} offer={offer} isActive={true} />
             ))}
           </div>
         </div>
-        {/* Navigation arrows */}
-        <div className="carousel-arrows">
-          <button className="prev-arrow" onClick={prevSlide}>
+        
+        <div className="carousel-arrows position-absolute top-50 w-100 transform-translate-y-50 d-flex justify-content-between">
+          <button className="prev-arrow btn" onClick={prevSlide}>
             <Image src={prev} alt="Previous" />
           </button>
-          <button className="next-arrow" onClick={nextSlide}>
+          <button className="next-arrow btn" onClick={nextSlide}>
             <Image src={next} alt="Next" />
           </button>
         </div>
-        <div className="details-wrap">
-          <div className="details">
+
+        <div className="details-wrap col-12 col-lg-4 mt-4 mt-lg-0 d-flex flex-column align-items-lg-start ">
+          <div className="details text-white">
             <h2>
               For a limited time, Alberta Colour Painting is offering exclusive discounts to help you refresh your space at an unbeatable price!
             </h2>
             <p>
-              Discover a variety of discounts and special deals at Alberta Colour Painting, tailored to help you save on your Calgary house painting projects
-              throughout the year. Explore ongoing promotions for both standard and specialty wall painting services, and ensure you get the best value by
-              visiting our offers page.
+              Discover a variety of discounts and special deals at Alberta Colour Painting, tailored to help you save on your Calgary house painting projects throughout the year. Explore ongoing promotions for both standard and specialty wall painting services, and ensure you get the best value by visiting our offers page.
             </p>
           </div>
-          <div style={{display:"flex"}}>
-            <a href="#" className="carasoul-btns">
-              <span>Explore Discounts</span>
-              <Image className="arrow" src={arrow} alt="arrow" />
-            </a>
-          </div>
+          <a href="#" className="carasoul-btns btn d-flex align-items-center">
+            <span>Explore Discounts</span>
+            <Image className="arrow " src={arrow} alt="arrow" />
+          </a>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import Image from "next/image";
 
 const HomeCalgaryPainting = () => {
+<<<<<<< HEAD
   return (
     // <div className="home-container">
     //     <Container fluid style={{ padding: 0 }}>
@@ -133,12 +134,49 @@ const HomeCalgaryPainting = () => {
                 </svg>
               </button>
             </div>
+=======
+    return (
+  <div className="hero-section">
+  <div className="container-fluid p-0">
+    <div className="row g-0">
+      {/* Left Content Section */}
+      <div className="col-lg-6 d-flex flex-column justify-content-center text-white " style={{padding:"40px !important"}}>
+        <h1 className="display-5 fw-bold mb-4 ">WE ARE YOUR CALGARY PAINTING COMPANY</h1>
+        <p className="mb-5">
+          Alberta Colour Painting is your trusted partner in Calgary, offering detailed estimates and 
+          unparalleled painting services. As a leading Calgary painting company, we pride ourselves on 
+          our professional and skilled Calgary painters.
+        </p>
+        <h2 className="h4 mb-5">OUR TOUCH OF PAINT MAKES A DIFFERENCE!</h2>
+        {/* Features Grid */}
+        <div className="row g-4 mb-5">
+          <div className="col-6 col-md-3 text-center">
+            <svg className="feature-icon mb-2" viewBox="0 0 24 24">
+              <path d="M19,4H5C3.89,4,3,4.89,3,6v14c0,1.11,0.89,2,2,2h14c1.11,0,2-0.89,2-2V6C21,4.89,20.11,4,19,4z M19,20H5V6h14V20z M7,8h10v2H7V8z M7,12h7v2H7V12z M7,16h4v2H7V16z" />
+            </svg>
+            <div className="small">Free Detailed Estimate</div>
+>>>>>>> 8397e2143f280a71ff733e2cdcc5f6e3b7ad13cd
           </div>
           {/* Right Image Section */}
           <div className="col-lg-6">
             <Image className="arrow" src={CalgaryPaintingImage} alt="arrow" />
           </div>
         </div>
+<<<<<<< HEAD
+=======
+        <div>
+          <button className="cta-button btn text-white">
+            Book Your Estimate Today
+            <svg className="ms-2" width={20} height={20} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      {/* Right Image Section */}
+      <div className="col-lg-6">
+      <Image className="arrows" src={CalgaryPaintingImage} alt="arrow" />
+>>>>>>> 8397e2143f280a71ff733e2cdcc5f6e3b7ad13cd
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
 
+
+
 // import { Row, Col,Card } from 'react-bootstrap';
 // import about from '../../../../public/assets/decorGallery.png';
 // import arrow from '../../../../public/assets/HoeAboutArrow.png';
@@ -49,6 +51,7 @@
 // export default AboutSection;
 
 "use client"
+
 import { Row, Col, Card } from 'react-bootstrap';
 import about from '../../../../public/assets/decorGallery.png';
 import arrow from '../../../../public/assets/HoeAboutArrow.png';

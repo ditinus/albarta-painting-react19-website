@@ -35,17 +35,20 @@ export default function Home() {
       <HomeAboutUs />
       <HomeWhyChooseSection />
       <HomeServices/>
+
       {/* <OurGallery /> */}
       <Container>
+
       <HomeBanner/>
       </Container>
       <HomeOfferCarasoul/>
       <HomeOurGallery/>
       <HomeCalgaryPainting/>
+      <ReviewsCarousel />
+      <OurGallery />
       <div className="my-5 ">
       {/* <ContactForm /> */}
       </div>
-      <ReviewsCarousel />
   
       <ContactForm />
       <BlogGrid posts={blogPosts} />
