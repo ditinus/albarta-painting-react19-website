@@ -167,7 +167,7 @@
   .service-title-btn {
     height: 10%;
     width: 50%;
-    margin-left: 2em;
-    margin-left: -16em;
+    /* margin-left: 2em; */
+    /* margin-left: -16em; */
   }
 }
