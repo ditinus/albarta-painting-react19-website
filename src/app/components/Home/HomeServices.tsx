@@ -216,7 +216,7 @@ const HomeServices = () => {
           className="img-fluid mb-3"
         />
         <h3 className="text-white">{services[activeIndex].content}</h3>
-        <p className="text-white">{services[activeIndex].text}</p>
+        <p className="text-white mb-4">{services[activeIndex].text}</p>
         <a href="#" className="d-inline-flex align-items-center service-btns">
           <span>Learn More</span>
           <Image className="ms-2 arrow" src={arrow} alt="arrow" width={20} />
