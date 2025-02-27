@@ -153,14 +153,15 @@ const HomeOurGallery: React.FC = () => {
   return (
     <div className="gallery-carousel">
       <TestimonialHeader
-        title="Our Happy Clients"
-        subtitle="See how we’ve helped people achieve their goals."
+        title="Our Gallery"
+        subtitle="See the Magic of Transformation with Our Painting Work"
         buttonText="View All"
         buttonUrl="/testimonials"
         bgColor="#0D378D"
         textColor="#0D378D"
         buttonStyle={{ fontSize: "1rem" }}
       />
+
        <div className="container-fluid mt-5">
   <div className="gallery-slide-start">
     <div className="gallery-slide">
