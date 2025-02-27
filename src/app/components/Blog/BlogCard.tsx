@@ -22,8 +22,8 @@ export default function BlogCard({ post }: BlogCardProps) {
           priority
         />
       </div>
-      <Card.Body className="mt-4">
-        <small className="text-muted">{formatDate(post.date)}</small>
+      <Card.Body className="cardBg">
+        <small className="text-muted cardB ">{formatDate(post.date)}</small>
         <Card.Title
           className="mt-4 mb-3"
           style={{
@@ -47,12 +47,12 @@ export default function BlogCard({ post }: BlogCardProps) {
           {post.excerpt}
         </Card.Text>
       </Card.Body>
-      <Card.Footer className="border-0 mt-3 bg-transparent">
+      <Card.Footer className="border-0  bg-transparent">
         <Link
           href={`/blog/${post.slug}`}
-          className="blog-btn text-decoration-none"
+          className=" text-decoration-none"
         >
-          <Button variant="link" className="p-0 text-dark">
+          <Button variant="link"  className="p-0 blog-btn  text-decoration-none">
             Read More{" "}
             <svg
               width="9"

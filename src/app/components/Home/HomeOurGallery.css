@@ -31,6 +31,30 @@
     font-weight: bold;
 }
 
+
+
+/* Gallery-css-start */
+.gallery-slide-start{
+    display: flex;
+    gap: 20px;
+}
+
+.gallery-slide{
+    flex: 1;
+    transition: 1s;
+}
+
+.gallery-slide img{
+    height: 610px;
+    object-fit: cover;
+}
+
+.gallery-slide:hover{
+    flex: 4;
+}
+
+
+
 .view-btn{
     display: inline-flex;
     align-items: center;

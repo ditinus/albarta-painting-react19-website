@@ -11,7 +11,7 @@ export default function BlogGrid({ posts }: BlogGridProps) {
     <Container className="my-5">
       <div className="text-center my-5">
         <h5>Our Blog</h5>
-        <h2>Expert Advice, Trends & DIY Tips</h2>
+        <h2 className="ReadMore">Expert Advice, Trends & DIY Tips</h2>
       </div>
       <Row xs={1} md={2} lg={3} className="g-4">
         {posts.map((post) => (
