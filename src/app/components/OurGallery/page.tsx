@@ -1,3 +1,5 @@
+
+"use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
 import gallery1 from "../../../../public/assets/gallery1.png";
@@ -6,18 +8,19 @@ import gallery3 from "../../../../public/assets/gallery3.png";
 import gallery4 from "../../../../public/assets/gallery4.png";
 import gallery5 from "../../../../public/assets/gallery5.png";
 import { GLightbox } from "glightbox";
-
 import "./style.css";
 import Link from "next/link";
 
-const Carousel = () => {
-  useEffect(() => {
- 
+const OurGallery = () => {
+
+useEffect(() => {
+
     const lightbox = new GLightbox({
       touchNavigation: true,
       loop: true,
       width: "90vw",
       height: "90vh",
+
     });
 
     return () => {
@@ -25,8 +28,6 @@ const Carousel = () => {
     };
   }, []);
 
-
-  console.log(gallery1.src , "gallery1");
   
 
   return (
@@ -109,4 +110,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default OurGallery;

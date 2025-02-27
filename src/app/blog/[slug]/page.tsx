@@ -4,13 +4,13 @@ import { blogPosts } from "../../lib/data";
 import { formatDate } from "../../lib/utils";
 import Image from "next/image";
 
-// interface BlogPostProps {
-//   params: {
-//     slug: string;
-//   };
-// }
+interface BlogPostProps {
+  params: {
+    slug: string;
+  };
+}
 
-export default async  function BlogPost({ params }: any) {
+export default async  function BlogPost({ params }: BlogPostProps) {
   const post = blogPosts.find((post) => post.slug === params.slug);
 
   if (!post) {

@@ -15,10 +15,15 @@ h5.let{
     font-size: 44px
 }
 
-h2.Get{
+h2.Get {
     font-size: 72px;
     margin-bottom: 0px;
-  
 }
 
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+    h2.Get {
+        font-size: 40px; /* Adjust font size for mobile */
+    }
+}
 

@@ -1,17 +1,20 @@
 .cardBg {
   background-color: #e2e7f1;
-  padding: 15;
+
   border: none;
 }
 
 .blog-btn {
   color: #0d378d;
-  margin-top: 20px !important;
+
   margin: 0;
   font-size: 18px;
   font-weight: 700;
 }
+.ReadMore {
 
+  color: #0d378d;
+}
 
 
 .card-title {
@@ -20,6 +23,14 @@
   color: #0d378d;
 }
 
-.card-body {
-  padding: 0;
+.cardB {
+  background-color: #cee4e1;
+  padding: 5px ;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 24px;
+  color: #0d378d !important;
+ font-weight: 700;
 }
+
+

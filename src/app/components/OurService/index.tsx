@@ -67,7 +67,7 @@ const Index = () => {
                     size="sm"
                     variant="outline-light btn-primary  text-white border-white py-1 pl-2 d-flex align-items-center justify-content-between gap-4"
                     className="button-footer"
-                    style={{ paddingLeft: "1.5rem" }}
+                    style={{ paddingLeft: "1.5rem !important" }}
                   >
                     {service?.buttonText}
                     <svg
@@ -98,7 +98,7 @@ const Index = () => {
       </div>
     </section>
 
-    
+
     </Container>
   );
 };

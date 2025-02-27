@@ -13,7 +13,7 @@ const Footer = () => {
               <h5 className="text-uppercase let">Let's</h5>
               <h2 className="Get ">GET IN TOUCH</h2>
             </div>
-            <div className="col-lg-4  align-self-end">
+            <div className="col-lg-4  align-self-end mt-5">
               <Button
                 variant="outline-light text-white  border-white  d-flex align-items-center gap-4"
                 className="button-footer"
@@ -54,7 +54,7 @@ const Footer = () => {
               </p>
             </div>
             {/* Quick Links Column */}
-            <div className="col-lg-2 mb-4 mb-lg-0  align-self-end">
+            <div className="col-lg-2 mb-4 mb-lg-0">
               <h5 className=" mb-4">Quick Links</h5>
               <ul className="list-unstyled">
                 <li className="mb-2">
