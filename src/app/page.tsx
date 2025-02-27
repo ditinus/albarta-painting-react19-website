@@ -45,7 +45,7 @@ export default function Home() {
       <HomeOurGallery/>
       <HomeCalgaryPainting/>
       <ReviewsCarousel />
-      <OurGallery />
+      {/* <OurGallery /> */}
       <div className="my-5 ">
       {/* <ContactForm /> */}
       </div>
