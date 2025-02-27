@@ -126,6 +126,7 @@ import ceiling from "../../../../public/assets/ceiling.png";
 import Image from 'next/image';
 import { Container, Row, Col, Button } from 'react-bootstrap'; 
 import './HomeServices.css'; 
+import TestimonialHeader from "../TestimonialHeader/page";
 
 const services = [
   {   
@@ -172,24 +173,16 @@ const HomeServices = () => {
   return (
     <>
       {/* Heading Section */}
-      <section className="service-header bg-white">
-  <Container>
-    <div className="mb-4">
-      <h2 className="text-black">Our Services</h2>
-    </div>
-    <div className="d-flex flex-column flex-md-row align-items-center">
-      <h1 className="mb-4 col-12 col-md-7" style={{ color: "#0D378D" }}>
-        BRINGING COLOUR TO EVERY CORNER OF YOUR HOME AND BUSINESS
-      </h1>
-      <Button 
-        variant="primary" 
-        className="service-title-btn rounded-pill mt-3 mt-md-0 ml-md-0" // mt-3 adds top margin on smaller screens
-      >
-        Explore Our Services
-      </Button>
-    </div>
-  </Container>
-</section>
+<TestimonialHeader
+              title="Our Services"
+              subtitle="Bringing Colour to Every Corner of Your Home and Business"
+              buttonText="Explore Our Services"
+              buttonUrl="/testimonials"
+              bgColor="#0D378D"
+              textColor="#0D378D"
+              buttonStyle={{ fontSize: "1rem" }}
+              
+            />
 
 <section className="service-menu-container" style={{ backgroundColor: "#111111" }}>
   <Container>
