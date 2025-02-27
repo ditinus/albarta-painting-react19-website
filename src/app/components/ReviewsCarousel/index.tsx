@@ -41,10 +41,15 @@ const reviews = [
 ];
 
 const ReviewsCarousel = () => {
+
+
+  
   return (
 
-    <div className="reviews-carousel-container  pt-0">
-            <TestimonialHeader
+    
+           
+    <div className="reviews-carousel-container   pt-0">
+    <TestimonialHeader
               title="Our Happy Clients"
               subtitle="See how we’ve helped people achieve their goals."
               buttonText="View All"
@@ -54,8 +59,6 @@ const ReviewsCarousel = () => {
               buttonStyle={{ fontSize: "1rem" }}
               
             />
-    <div className="reviews-carousel-container   pt-0">
-
       <div style={{ marginBottom: "20px" }} className="mb-50">
         <Swiper
           spaceBetween={30}
