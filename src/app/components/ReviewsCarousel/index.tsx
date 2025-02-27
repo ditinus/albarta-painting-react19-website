@@ -6,6 +6,9 @@ import Reviews2 from "../../../../public/assets/Reviews2.png";
 import Reviews3 from "../../../../public/assets/Reviews3.png";
 import "./style.css";
 import Image from "next/image";
+import TestimonialHeader from "../TestimonialHeader/page";
+
+
 const reviews = [
   {
     name: "John Doe",
@@ -39,7 +42,20 @@ const reviews = [
 
 const ReviewsCarousel = () => {
   return (
+
+    <div className="reviews-carousel-container  pt-0">
+            <TestimonialHeader
+              title="Our Happy Clients"
+              subtitle="See how we’ve helped people achieve their goals."
+              buttonText="View All"
+              buttonUrl="/testimonials"
+              bgColor="#0D378D"
+              textColor="#0D378D"
+              buttonStyle={{ fontSize: "1rem" }}
+              
+            />
     <div className="reviews-carousel-container   pt-0">
+
       <div style={{ marginBottom: "20px" }} className="mb-50">
         <Swiper
           spaceBetween={30}

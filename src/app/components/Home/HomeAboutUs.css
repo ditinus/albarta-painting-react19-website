@@ -1,12 +1,11 @@
 
 .about-us {
   background-color: #ffffff;
-  /* margin-top: 70px; */
 }
 
 .about-image {
   position: relative;
-  /* margin-bottom: -40px; */
+  top: 40px;
 }
 
 .experience-tag {
@@ -20,7 +19,6 @@
 
 .about-content {
   max-width: 100%;
-  /* margin-top: 3em; */
 }
 
 .about-content h2 {
@@ -34,6 +32,15 @@
   font-weight: 600;
   margin-top: 21px;
   color: #0d378d !important;
+}
+
+.title-width{
+  width: 60%;
+  
+}
+
+.card-text{
+  width: 60%;
 }
 
 .about-content p {
@@ -71,6 +78,7 @@
   padding: 20px;
 }
 
+
 .about-card h2 {
   font-size: 2rem;
 }
@@ -98,47 +106,11 @@
   margin-left: 8px;
 }
 
-@media (max-width: 767px) {
-  .about-image {
-    text-align: center;
-    /* margin-bottom: 20px; */
-  }
-
-  .about-content {
-    padding: 10px;
-  }
-
-  .about-card {
-    padding: 15px;
-  }
-
-  .about-card h2 {
-    font-size: 1.5rem;
-  }
-
-  .about-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .about-card p {
-    font-size: 0.9rem;
-  }
-
-  .about-btns {
-    width: auto;
-    margin-top: 15px;
-  }
-
-  .experience-tag {
-    font-size: 18px;
-  }
-}
-
 
 @media (max-width: 768px) and (max-width: 1024px)  {
   .about-image {
     text-align: center;
-    /* margin-bottom: 20px; */
+ 
   }
   
 
@@ -146,20 +118,17 @@
     padding: 10px;
   }
 
-  .about-card {
-    /* padding: 15px; */
-  }
 
   .about-card h2 {
     font-size: 1.5rem;
   }
 
   .about-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .about-card p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .about-btns {
@@ -170,4 +139,71 @@
   .experience-tag {
     font-size: 12px;
   }
+
+  .title-width{
+    width: 70%;  
+  }
+  
+  .card-text{
+    width: 100%;
+  }
 }
+
+
+@media (max-width: 360px) and (max-width: 780px)  {
+  .title-width{
+    width: 80%;
+    
+  }
+  
+  .card-text{
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 800px) and (max-width: 1280px) {
+  .title-width {
+    width: 100%;
+  }
+
+  .card-text {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 810px) and (max-width: 1280px) {
+  .title-width {
+    width: 100%;
+  }
+
+  .card-text {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .title-width {
+    width: 70%;
+  }
+
+  .card-text {
+    width: 100%;
+    font-size: 10px;
+    font-weight: 100;
+  }
+
+   .about-card h2 {
+    font-size: 0.9rem;
+  }
+
+  .about-card h3 {
+    font-size: 0.9rem;
+  }
+}
+
+
+
