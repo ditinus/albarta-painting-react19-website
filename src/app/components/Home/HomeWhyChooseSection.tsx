@@ -1,4 +1,3 @@
-import { Row, Col } from 'react-bootstrap';
 import QualityWorkmanship from '../../../../public/assets/OualityWorkManship.png';
 import QualityMaterials from '../../../../public/assets/QualityMaterial.png';
 import ExperiencedTeam from '../../../../public/assets/Experienced Team.png';
@@ -8,46 +7,46 @@ import Image from 'next/image';
 
 const HomeWhyChooseSection = () => {
   return (
-    <section className="why-choose-us">
-      <h2>WHY CHOOSE US?</h2>
+    <section className=" why-choose-us" style={{backgroundColor: '#E2E7F1',}}>
+      <h2 className='text-center'>WHY CHOOSE US?</h2>
       <div className="features">
-        <Row>
+        <div className="row">
           {/* Quality Workmanship Feature */}
-          <Col xs={12} sm={6} md={3} className="feature">
+          <div className="col-12 col-sm-6 col-md-3 feature">
             <div className="icon">
-              <Image src={QualityWorkmanship} alt="Quality Workmanship"  />
+              <Image src={QualityWorkmanship} alt="Quality Workmanship" />
             </div>
-            <h3>Quality Workmanship</h3>
+            <h3 style={{color:"#0D378D"}}>Quality Workmanship</h3>
             <p>We use only premium materials and top-notch techniques.</p>
-          </Col>
+          </div>
 
           {/* Quality Materials Feature */}
-          <Col xs={12} sm={6} md={3} className="feature">
+          <div className="col-12 col-sm-6 col-md-3 feature">
             <div className="icon">
-              <Image src={QualityMaterials} alt="Quality Materials"  />
+              <Image src={QualityMaterials} alt="Quality Materials" />
             </div>
-            <h3>Quality Materials</h3>
+            <h3 style={{color:"#0D378D"}}>Quality Materials</h3>
             <p>We work with trusted, high-quality materials that stand the test of time.</p>
-          </Col>
+          </div>
 
           {/* Experienced Team Feature */}
-          <Col xs={12} sm={6} md={3} className="feature">
+          <div className="col-12 col-sm-6 col-md-3 feature">
             <div className="icon">
-              <Image src={ExperiencedTeam} alt="Experienced Team"  />
+              <Image src={ExperiencedTeam} alt="Experienced Team" />
             </div>
-            <h3>Experienced Team</h3>
+            <h3 style={{color:"#0D378D"}}>Experienced Team</h3>
             <p>Our experts have over a decade of experience.</p>
-          </Col>
+          </div>
 
           {/* Customer Satisfaction Feature */}
-          <Col xs={12} sm={6} md={3} className="feature">
+          <div className="col-12 col-sm-6 col-md-3 feature">
             <div className="icon">
-              <Image src={CustomerSatisfaction} alt="Customer Satisfaction"  />
+              <Image src={CustomerSatisfaction} alt="Customer Satisfaction" />
             </div>
-            <h3>Customer Satisfaction</h3>
+            <h3 style={{color:"#0D378D"}}>Customer Satisfaction</h3>
             <p>Your satisfaction is our priority, and we ensure the job is done right the first time.</p>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
     </section>
   );

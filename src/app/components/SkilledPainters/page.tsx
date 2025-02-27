@@ -1,15 +1,19 @@
 "use client"
 
-import { Container, Row, Col, Image } from "react-bootstrap"
-
 const SkilledPainters = () => {
   return (
-    <Container className="py-5">
-      <Row className="align-items-center">
-        <Col md={7} className="position-relative">
+    <div className="container py-5">
+      <div className="row align-items-center">
+        <div className="col-md-7 position-relative">
           <div
             className="position-absolute top-0 start-0 translate-middle-y"
-            style={{ width: "200px", height: "200px", borderRadius: "50%", border: "1px solid #e0e0e0", zIndex: -1 }}
+            style={{
+              width: "200px",
+              height: "200px",
+              borderRadius: "50%",
+              border: "1px solid #e0e0e0",
+              zIndex: -1
+            }}
           ></div>
           <h4 className="text-dark mb-2">Our Skilled Painters</h4>
           <h2 className="text-primary fw-bold mb-4" style={{ fontSize: "2rem" }}>
@@ -24,25 +28,22 @@ const SkilledPainters = () => {
             Our commitment to excellence means that every home we paint is treated with care and precision, leaving
             behind a space you'll love.
           </p>
-          <Image
+          <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-C0vVEnNspg4oKsODSAo0IRahafgkxr.png"
             alt="Skilled painter working"
-            fluid
-            rounded
+            className="img-fluid rounded"
           />
-        </Col>
-        <Col md={5}>
-          <Image
+        </div>
+        <div className="col-md-5">
+          <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-C0vVEnNspg4oKsODSAo0IRahafgkxr.png"
             alt="Skilled painter working"
-            fluid
-            rounded
+            className="img-fluid rounded"
           />
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   )
 }
 
 export default SkilledPainters
-

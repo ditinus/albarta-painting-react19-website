@@ -14,51 +14,50 @@ import OurGallery from "./components/OurGallery/page";
 import ReviewsCarousel from "./components/ReviewsCarousel";
 import HomeOfferCarasoul from "./components/Home/HomeOfferCarasoul";
 import OurService from "./components/OurService";
-import ContactForm from "@/app/components/ContactForm";
+
 import Footer from "./Layout/Footer";
 import TransparentSection from "./components/Home/TransparentSection";
 import HomeServices from "./components/Home/HomeServices";
 // import HomeOurGallery from "./components/Home/HomeOurGallery";
 import HomeCalgaryPainting from "./components/Home/HomeCalgaryPainting";
 import HomeBanner from "./components/Home/HomeBanner";
-import { Container } from "react-bootstrap";
+
 import HomeOurGallery from "./components/Home/HomeOurGallery";
+import Layout from "./Layout/index";
+import ContactForm from "./components/ContactUs/ContactForm";
+import { useEffect } from "react";
 
 export default function Home() {
+
+
   return (
     <div>
-      <Top />
-      <HomeNavbar />
 
+
+    <Layout>
+     
       <HomeHero />
       <HomeBadges />
-      {/* <TransparentSection/> */}
       <HomeAboutUs />
       <HomeWhyChooseSection />
       <HomeServices/>
 
-      {/* <OurGallery /> */}
-      <Container>
+      <div className="container">
 
       <HomeBanner/>
-      </Container>
-      <HomeOfferCarasoul/>
-      {/* <HomeOurGallery/> */}
+      </div>
+      {/* <HomeOfferCarasoul/> */}
+
       <HomeOurGallery/>
       <HomeCalgaryPainting/>
       <ReviewsCarousel />
-      {/* <OurGallery /> */}
-      <div className="my-5 ">
-      {/* <ContactForm /> */}
-      </div>
-  
+
       <ContactForm />
       <BlogGrid posts={blogPosts} />
+    </Layout>
 
- 
-      
-   
-    <Footer/>
+
+
     </div>
   );
 }

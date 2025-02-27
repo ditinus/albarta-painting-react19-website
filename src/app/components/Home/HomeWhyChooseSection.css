@@ -1,66 +1,55 @@
-/* Why Us Section */
 .why-choose-us {
-    background-color: #E2E7F1;
-    text-align: center;
-    padding: 60px 20px;
-  }
+  padding: 5rem 15rem;
+  background-color: #f8f9fa;
+}
+
+
+.why-choose-us h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d378d;
+}
+
+
+.features {
+  margin-top: 30px;
+}
+
+.feature {
+  text-align: center;
+  padding: 20px;
+}
+
+
+.feature .icon {
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+
+.feature p {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.5;
+}
   
-  .why-choose-us h2 {
-    font-size: 36px;
-    color: #0D378D;
-    margin-bottom: 30px;
-    font-weight: 400;
-  }
-  
-  .features {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
-  }
-  
-  .feature {
-    text-align: left;
-    width: 280px;
-    margin-bottom: 20px; /* Add margin between features for better spacing */
-  }
-  
-  .feature .icon {
-    width: 62px;
-    height: 60px;
-    margin-bottom: 15px;
-  }
-  
-  .feature h3 {
-    font-size: 24px;
-    color: #0D378D;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .feature p {
-    font-size: 16px;
-    color: #000000;
-    font-weight: 400;
-    line-height: 1.6;
-    width: 202px;
-    height: 72px;
-  }
-  
-  /* Responsive Adjustments */
+
   @media (max-width: 991px) {
     .why-choose-us h2 {
       font-size: 30px;
     }
   
     .feature {
-      width: 45%; /* Make features take up 45% on medium screens */
+      width: 45%;
     }
   
     .feature p {
-      width: 100%; /* Ensure text fits correctly */
+      width: 100%;
     }
   }
   
@@ -74,12 +63,12 @@
     }
   
     .feature {
-      width: 100%; /* Features take full width on smaller screens */
-      text-align: center;
+      width: 100%;
+      text-align: left;
     }
   
     .feature p {
-      width: 100%; /* Ensure text occupies the full width */
+      width: 100%; 
       margin: 0 auto;
     }
   }
@@ -90,7 +79,7 @@
     }
   
     .features {
-      gap: 10px; /* Adjust gap between features on smaller screens */
+      gap: 10px; 
     }
   }
   

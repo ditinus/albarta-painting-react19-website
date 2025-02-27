@@ -8,7 +8,7 @@ import HomeAboutUs from "../components/Home/HomeAboutUs";
 import HomeWhyChooseSection from "../components/Home/HomeWhyChooseSection";
 import SkilledPainters from "../../../public/assets/Skilled-Painters.png"
 import Commitment from "../../../public/assets/Commitment.png"
-import { Container, Row, Col } from "react-bootstrap"
+
 import FriendlyApproach from "../../../public/assets/Friendly-Approach.png"
 import Image from "next/image";
 import "./style.css"
@@ -21,13 +21,10 @@ import { blogPosts } from "../lib/data";
 import Footer from "../Layout/Footer";
 import Head from "next/head";
 import type { Metadata } from 'next'
-const page = () => {
 
-  
+const page = () => {
   return (
     <div>
-     
-      {" "}
       <Top />
       <HomeNavbar />
       <HomeHero />
@@ -35,95 +32,85 @@ const page = () => {
       <HomeAboutUs />
       <HomeWhyChooseSection />
 
-      <Container className="py-5">
-      <Row className="align-items-center">
-        <Col md={7} className="position-relative">
-       
-          <h4 className="text-dark mb-2">Our Skilled Painters</h4>
-          <h2 className=" mb-4 mt-3 title text-uppercase " style={{ color:"#0D378D" }}>
-            TRAINED & SKILLED HOUSE  <br/>PAINTERS
-          </h2>
-          <ul className="list-unstyled mb-4">
-            <li className="mb-2 " >• We protect your furniture and surrounding areas before painting.</li>
-            <li className="mb-2">• Our painters respect your home as if it were their own.</li>
-            <li className="mb-2">• We believe in skill and attention to detail, ensuring your satisfaction.</li>
-          </ul>
-          <p className=" d-title ">
-            Our commitment to excellence means that every home we <br/> paint is treated with care and precision, leaving
-            behind a <br/>space you'll love.
-          </p>
-        </Col>
-        <Col md={5}>
-          <Image
-            src={SkilledPainters}
-            alt="Skilled painter working"
-          />
-        </Col>
-      </Row>
-    </Container>
-    <Container> 
-    <HomeBanner/>
-    </Container>
 
-       <Container className="py-5">
-      <Row className="align-items-center">
-      <Col md={7}>
-          <Image
-            src={Commitment}
-            alt="Skilled painter working"
-          />
-        </Col>
-        <Col md={5} className="position-relative">
-       
-          <h4 className="text-dark mb-2">Our Skilled Painters</h4>
-          <h2 className=" mb-4 mt-3 title text-uppercase" style={{ color:"#0D378D" }}>
-    Premium Materials &  <br/>Exceptional Workmanship
-          </h2>
-          <ul className="list-unstyled mb-4">
-            <li className="mb-2 " >• We protect your furniture and surrounding areas before painting.</li>
-            <li className="mb-2">• Our painters respect your home as if it were their own.</li>
-            <li className="mb-2">• We believe in skill and attention to detail, ensuring your satisfaction.</li>
-          </ul>
-          <p className=" d-title ">
-          Our reputation is built on trust, professionalism, and <br /> superior quality—ensuring every project exceeds , <br/> expectations.
-          </p>
-        </Col>
-   
-      </Row>
-    </Container>
+      <div className="container py-5">
+        <div className="row align-items-center">
+          <div className="col-md-7 position-relative">
+            <h4 className="text-dark mb-2">Our Skilled Painters</h4>
+            <h2 className="mb-4 mt-3 title text-uppercase" style={{ color: "#0D378D" }}>
+              TRAINED & SKILLED HOUSE <br /> PAINTERS
+            </h2>
+            <ul className="list-unstyled mb-4">
+              <li className="mb-2">• We protect your furniture and surrounding areas before painting.</li>
+              <li className="mb-2">• Our painters respect your home as if it were their own.</li>
+              <li className="mb-2">• We believe in skill and attention to detail, ensuring your satisfaction.</li>
+            </ul>
+            <p className="d-title">
+              Our commitment to excellence means that every home we <br /> paint is treated with care and precision, leaving
+              behind a <br /> space you'll love.
+            </p>
+          </div>
+          <div className="col-md-5">
+            <Image src={SkilledPainters} alt="Skilled painter working" />
+          </div>
+        </div>
+      </div>
 
-    <Container className="py-5">
-      <Row className="align-items-center">
-        <Col md={7} className="position-relative">
-       
-          <h4 className="text-dark mb-2">Eco-Friendly Approach</h4>
-          <h2 className="  mb-4 mt-3 title text-uppercase" style={{ color:"#0D378D" }}>
-          Sustainable Painting for a  <br/>Healthier Future
-          </h2>
-          <ul className="list-unstyled mb-4">
-            <li className="mb-2 " >• We protect your furniture and surrounding areas before painting.</li>
-            <li className="mb-2">• Our painters respect your home as if it were their own.</li>
-            <li className="mb-2">• We believe in skill and attention to detail, ensuring your satisfaction.</li>
-          </ul>
-          <p className=" d-title ">
-            Our commitment to excellence means that every home we <br/> paint is treated with care and precision, leaving
-            behind a <br/>space you'll love.
-          </p>
-        </Col>
-        <Col md={5}>
-          <Image
-            src={FriendlyApproach}
-            alt="Skilled painter working"
-          />
-        </Col>
-      </Row>
-    </Container>
-    <HomeOurGallery/>
-    <HomeCalgaryPainting/>
-          <ContactForm />
-           <BlogGrid posts={blogPosts} />
+      <div className="container">
+        <HomeBanner />
+      </div>
 
-           <Footer/>
+      <div className="container py-5">
+        <div className="row align-items-center">
+          <div className="col-md-7">
+            <Image src={Commitment} alt="Skilled painter working" />
+          </div>
+          <div className="col-md-5 position-relative">
+            <h4 className="text-dark mb-2">Our Skilled Painters</h4>
+            <h2 className="mb-4 mt-3 title text-uppercase" style={{ color: "#0D378D" }}>
+              Premium Materials & <br /> Exceptional Workmanship
+            </h2>
+            <ul className="list-unstyled mb-4">
+              <li className="mb-2">• We protect your furniture and surrounding areas before painting.</li>
+              <li className="mb-2">• Our painters respect your home as if it were their own.</li>
+              <li className="mb-2">• We believe in skill and attention to detail, ensuring your satisfaction.</li>
+            </ul>
+            <p className="d-title">
+              Our reputation is built on trust, professionalism, and <br /> superior quality—ensuring every project exceeds ,
+              <br /> expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="container py-5">
+        <div className="row align-items-center">
+          <div className="col-md-7 position-relative">
+            <h4 className="text-dark mb-2">Eco-Friendly Approach</h4>
+            <h2 className="mb-4 mt-3 title text-uppercase" style={{ color: "#0D378D" }}>
+              Sustainable Painting for a <br /> Healthier Future
+            </h2>
+            <ul className="list-unstyled mb-4">
+              <li className="mb-2">• We protect your furniture and surrounding areas before painting.</li>
+              <li className="mb-2">• Our painters respect your home as if it were their own.</li>
+              <li className="mb-2">• We believe in skill and attention to detail, ensuring your satisfaction.</li>
+            </ul>
+            <p className="d-title">
+              Our commitment to excellence means that every home we <br /> paint is treated with care and precision, leaving
+              behind a <br /> space you'll love.
+            </p>
+          </div>
+          <div className="col-md-5">
+            <Image src={FriendlyApproach} alt="Skilled painter working" />
+          </div>
+        </div>
+      </div>
+
+      <HomeOurGallery />
+      <HomeCalgaryPainting />
+      <ContactForm />
+      <BlogGrid posts={blogPosts} />
+      <Footer />
     </div>
   );
 };

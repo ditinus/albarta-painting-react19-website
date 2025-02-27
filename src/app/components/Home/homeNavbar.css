@@ -1,4 +1,31 @@
 /* home.css */
+
+
+
+
+
+
+
+.hader{
+  max-height: 100px;
+  background: #e2e7f1;
+  gap: 41px;
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 10px;
+}
+
+
+.bt {
+
+  background-color: #0D378D;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  }
+
+
 .navbar-container {
     background-color: #fff;
     padding: 10px 20px;
@@ -66,6 +93,18 @@
     }
   }
   
+  @media ( mx-width: 1160){
+    .hader{
+      max-height: 100px;
+      background: #e2e7f1;
+      gap: 41px;
+      border-radius: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      
+    }
+
+  }
   
   /* Media Queries for Responsiveness */
   @media (max-width: 951px) {
@@ -81,7 +120,15 @@
     .navbar-container {
       padding: 10px 5px;
     }
+    .hader{
+      max-height: unset;
+      background: #fff;
+      gap: 10px;
+    }
   }
+
+
+
   
   @media (max-width: 768px) {
     .navbar-container {
@@ -129,5 +176,10 @@
     .navbar .nav-link {
       font-size: 13px;
     }
+
+
+    
+
+
   }
   

@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { BlogPost } from "../../lib/types";
 import { formatDate } from "../../lib/utils";
-import { Card, Button } from "react-bootstrap";
 import "./blog.css";
 
 interface BlogCardProps {
@@ -12,7 +11,8 @@ interface BlogCardProps {
 
 export default function BlogCard({ post }: BlogCardProps) {
   return (
-    <Card className="cardBg h-100 shadow-sm border-0">
+   
+    <div className="card " style={{backgroundColor:'#E2E7F1 ' , border: "none"}}>
       <div style={{ position: "relative", height: "240px" }}>
         <Image
           src={post.image || "/placeholder.svg"}
@@ -22,56 +22,51 @@ export default function BlogCard({ post }: BlogCardProps) {
           priority
         />
       </div>
-      <Card.Body className="cardBg">
-        <small className="text-muted cardB ">{formatDate(post.date)}</small>
-        <Card.Title
-          className="mt-4 mb-3"
+      <div className="card-body">
+        <small className="text-muted cardB " style={{color: "#0D378D !important"}}>{formatDate(post.date)}</small>
+        <h5
+          className="card-title mt-4 mb-3"
           style={{
-            display: "-webkit-box",
-            WebkitLineClamp: 2,
-            WebkitBoxOrient: "vertical",
-            overflow: "hidden",
+            color: '#0D378D'
           }}
         >
           {post.title}
-        </Card.Title>
-        <Card.Text
-          style={{
-            display: "-webkit-box",
-            WebkitLineClamp: 3,
-            fontSize: "18px",
-            WebkitBoxOrient: "vertical",
-            overflow: "hidden",
-          }}
+        </h5>
+        <p
+          className="blogD "
         >
           {post.excerpt}
-        </Card.Text>
-      </Card.Body>
-      <Card.Footer className="border-0  bg-transparent">
-        <Link
-          href={`/blog/${post.slug}`}
-          className=" text-decoration-none"
-        >
-          <Button variant="link"  className="p-0 blog-btn  text-decoration-none">
-            Read More{" "}
-            <svg
-              width="9"
-              height="15"
-              viewBox="0 0 9 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.625 13.4336L7.625 7.43359L1.625 1.43359"
-                stroke="#0D378D"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </Button>
-        </Link>
-      </Card.Footer>
-    </Card>
+        </p>
+
+        <div className=" border-0  " >
+   
+   <Link href={`/blog/${post.slug}`} className=" text-decoration-none fw-bold" style={{color: '#0D378D'}}>
+
+
+     Read More{" "}
+
+     <svg
+       className="mr-2"
+       width="9"
+       height="15"
+       viewBox="0 0 9 15"
+       fill="none"
+       xmlns="http://www.w3.org/2000/svg"
+     >
+       <path
+         d="M1.625 13.4336L7.625 7.43359L1.625 1.43359"
+         stroke="#0D378D"
+         strokeWidth="2"
+         strokeLinecap="round"
+         strokeLinejoin="round"
+       />
+     </svg>
+   </Link>
+
+</div>
+      </div>
+    
+    </div>
+  
   );
 }
