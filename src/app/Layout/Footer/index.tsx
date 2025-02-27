@@ -54,7 +54,7 @@ const Footer = () => {
               </p>
             </div>
             {/* Quick Links Column */}
-            <div className="col-lg-2 mb-4 mb-lg-0  align-self-end">
+            <div className="col-lg-2 mb-4 mb-lg-0">
               <h5 className=" mb-4">Quick Links</h5>
               <ul className="list-unstyled">
                 <li className="mb-2">

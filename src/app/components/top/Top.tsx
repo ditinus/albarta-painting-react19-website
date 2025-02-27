@@ -22,7 +22,7 @@ const Top = () => {
                 >
                      <div className="scrolling-text">
                         
-                        {Array(10).fill(repeatedText).map((_, index) => (
+                        {Array(25).fill(repeatedText).map((_, index) => (
                             <span key={index} className="text-item">
                                 {repeatedText}
                             </span>
