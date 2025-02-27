@@ -39,7 +39,7 @@ const reviews = [
 
 const ReviewsCarousel = () => {
   return (
-    <div className="reviews-carousel-container  pt-0">
+    <div className="reviews-carousel-container   pt-0">
       <div style={{ marginBottom: "20px" }} className="mb-50">
         <Swiper
           spaceBetween={30}
@@ -66,7 +66,7 @@ const ReviewsCarousel = () => {
         >
           {reviews?.map((review, index) => (
             <SwiperSlide key={index} className="">
-              <div className=" review-card container ">
+              <div className=" review-card container    ">
                 <Image
                   style={{
                     position: "absolute",
