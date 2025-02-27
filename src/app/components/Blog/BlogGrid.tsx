@@ -1,6 +1,6 @@
-import { Container, Row, Col } from "react-bootstrap";
 import type { BlogPost } from "../../lib/types";
 import BlogCard from "./BlogCard";
+
 
 interface BlogGridProps {
   posts: BlogPost[];
@@ -8,18 +8,18 @@ interface BlogGridProps {
 
 export default function BlogGrid({ posts }: BlogGridProps) {
   return (
-    <Container className="my-5">
+    <div className="container">
       <div className="text-center my-5">
         <h5>Our Blog</h5>
-        <h2 className="ReadMore">Expert Advice, Trends & DIY Tips</h2>
+        <h2 className="ReadMore text-uppercase">Expert Advice, Trends & DIY Tips</h2>
       </div>
-      <Row xs={1} md={2} lg={3} className="g-4">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {posts.map((post) => (
-          <Col key={post.id}>
+          <div key={post.id} className="col ">
             <BlogCard post={post} />
-          </Col>
+          </div>
         ))}
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 }

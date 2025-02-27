@@ -7,7 +7,7 @@ import HomeBadges from "../components/Home/HomeBadges";
 import Carousel from "../components/OurGallery/page";
 import ContactForm from "../components/ContactForm";
 import Footer from "../Layout/Footer";
-import { Container } from "react-bootstrap";
+
 import HomeBanner from "../components/Home/HomeBanner";
 export default function page() {
     return (
@@ -17,11 +17,12 @@ export default function page() {
         <HomeHero />
         <HomeBadges />
         {/* <TransparentSection/> */}
-       
+       <div className=" mt-5">
          <Carousel />
-         <Container> 
+         </div>
+         <div className="container"> 
           <HomeBanner/>
-          </Container>
+          </div>
           <ContactForm />
           <Footer/>
       </div>

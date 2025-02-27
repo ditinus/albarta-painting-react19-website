@@ -39,9 +39,6 @@
   
 }
 
-.card-text{
-  width: 60%;
-}
 
 .about-content p {
   color: #333;
@@ -144,9 +141,7 @@
     width: 70%;  
   }
   
-  .card-text{
-    width: 100%;
-  }
+
 }
 
 
@@ -155,10 +150,7 @@
     width: 80%;
     
   }
-  
-  .card-text{
-    width: 100%;
-  }
+
 }
 
 
@@ -167,9 +159,6 @@
     width: 100%;
   }
 
-  .card-text {
-    width: 100%;
-  }
 }
 
 
@@ -178,9 +167,6 @@
     width: 100%;
   }
 
-  .card-text {
-    width: 100%;
-  }
 }
 
 
@@ -190,11 +176,6 @@
     width: 70%;
   }
 
-  .card-text {
-    width: 100%;
-    font-size: 10px;
-    font-weight: 100;
-  }
 
    .about-card h2 {
     font-size: 0.9rem;

@@ -1,6 +1,5 @@
-"use client"
+"use client";
 
-import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './top.css';
 
@@ -9,10 +8,10 @@ const Top = () => {
     const repeatedText = "Special Discount 20% >>>>>>>>> ";
 
     return (
-        <Container fluid className='top-container'>
-            <Row className="d-flex justify-content-center align-items-center top-row">
-                <Col
-                    className="text-center"
+        <div className="container-fluid top-container">
+            <div className="row d-flex justify-content-center align-items-center top-row">
+                <div
+                    className="col text-center"
                     style={{
                         color: "#ffffff",
                         fontWeight: 500,
@@ -20,17 +19,16 @@ const Top = () => {
                         fontFamily: "Poppins",
                     }}
                 >
-                     <div className="scrolling-text">
-                        
+                    <div className="scrolling-text">
                         {Array(25).fill(repeatedText).map((_, index) => (
                             <span key={index} className="text-item">
                                 {repeatedText}
                             </span>
                         ))}
                     </div>
-                </Col>
-            </Row>
-        </Container>
+                </div>
+            </div>
+        </div>
     );
 };
 

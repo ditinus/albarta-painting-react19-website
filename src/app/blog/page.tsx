@@ -1,5 +1,5 @@
 "use client";
-import { Container } from "react-bootstrap";
+
 import BlogGrid from "../components/Blog/BlogGrid";
 import { blogPosts } from "../lib/data";
 import Top from "../components/top/Top";
@@ -17,9 +17,9 @@ export default function Blog() {
       <HomeHero />
       <HomeBadges />
       <BlogGrid posts={blogPosts} />
-      <Container>
+      <div className="container">
         <HomeBanner />
-      </Container>
+      </div>
 
       <ContactForm />
     </>
