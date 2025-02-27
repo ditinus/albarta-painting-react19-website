@@ -153,31 +153,39 @@ const HomeOurGallery: React.FC = () => {
   return (
     <div className="gallery-carousel">
       <TestimonialHeader
-        title="Our Happy Clients"
-        subtitle="See how we’ve helped people achieve their goals."
+        title="Our Gallery"
+        subtitle="See the Magic of Transformation with Our Painting Work"
         buttonText="View All"
         buttonUrl="/testimonials"
         bgColor="#0D378D"
         textColor="#0D378D"
         buttonStyle={{ fontSize: "1rem" }}
       />
-      <div className="gallery-images">
-        {offers.map((offer, index) => (
-          <div
-            key={offer.id}
-            className={`carousel-image-container ${index === enlargedIndex ? "enlarged" : ""}`}
-            onClick={() => handleImageClick(index)}
-          >
-            <div className="offer-cards">
-              <Image
-                src={offer.imageSrc}
-                alt={`Offer ${offer.id}`}
-                className="offer-image"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
+
+       <div className="container-fluid mt-5">
+  <div className="gallery-slide-start">
+    <div className="gallery-slide">
+      <Image src={offer1} className="img-fluid"  alt={""}  />
+    </div>
+    <div className="gallery-slide">
+    <Image src={offer2} className="img-fluid"   alt={""} />
+    </div>
+    <div className="gallery-slide">
+    <Image src={offer3} className="img-fluid"  alt={""}  />
+    </div>
+    <div className="gallery-slide">
+    <Image src={offer4} className="img-fluid"  alt={""}  />
+    </div>
+    <div className="gallery-slide">
+    <Image src={offer5} className="img-fluid" alt={""}  />
+    </div>
+    <div className="gallery-slide">
+    <Image src={offer1} className="img-fluid"   alt={""} />
+    </div>
+  </div>
+
+</div>
+
     </div>
   );
 };

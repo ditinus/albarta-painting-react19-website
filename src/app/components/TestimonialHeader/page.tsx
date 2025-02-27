@@ -16,7 +16,7 @@ export default function TestimonialHeader({
     <Container className="py-5">
       <Row className="align-items-center">
         <Col xs={12} md={8}>
-          <div>
+          <div style={{textAlign:"left"}}>
             <h4 className={`${textColor} mb-2`}>{title}</h4>
             <h2
               className={` mb-0   text-uppercase  `}

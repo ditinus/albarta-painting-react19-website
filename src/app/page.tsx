@@ -18,10 +18,11 @@ import ContactForm from "@/app/components/ContactForm";
 import Footer from "./Layout/Footer";
 import TransparentSection from "./components/Home/TransparentSection";
 import HomeServices from "./components/Home/HomeServices";
-import HomeOurGallery from "./components/Home/HomeOurGallery";
+// import HomeOurGallery from "./components/Home/HomeOurGallery";
 import HomeCalgaryPainting from "./components/Home/HomeCalgaryPainting";
 import HomeBanner from "./components/Home/HomeBanner";
 import { Container } from "react-bootstrap";
+import HomeOurGallery from "./components/Home/HomeOurGallery";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
       <HomeBanner/>
       </Container>
       <HomeOfferCarasoul/>
+      {/* <HomeOurGallery/> */}
       <HomeOurGallery/>
       <HomeCalgaryPainting/>
       <ReviewsCarousel />
