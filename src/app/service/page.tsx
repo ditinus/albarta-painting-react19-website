@@ -27,6 +27,7 @@ const page = () => {
         primaryButtonArrowImage = {ButtonArrow}
         secondaryButtonText = "Book Now"
         secondaryButtonUrl = "#"
+        height= "60vh"
         />
       <HomeBadges />
       <OurService />
