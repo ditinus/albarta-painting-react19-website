@@ -70,10 +70,13 @@ const HomeNavbar = () => {
               strokeLinecap="round"
             />
           </svg>
+
         </button>
+
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul
             className="navbar-nav mx-auto my-2 my-lg-0 nav-color">
+
             <li className="nav-item">
               <Link className="nav-link mx-2" href="/">
                 Home
@@ -100,7 +103,7 @@ const HomeNavbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link mx-2" href="/contact-us">
+              <Link className="nav-link mx-2" href="/#">
                 Contact
               </Link>
             </li>
