@@ -11,13 +11,10 @@ import galleryHero from '../../../public/assets/galleryHero.png'
 import ButtonArrow from '../../../public/assets/HoeAboutArrow.png'; 
 import HomeBanner from "../components/Home/HomeBanner";
 import HeroSection from "../components/BannerReusable/HeroSection";
-
-
+import Layout from "../../app//Layout/index";
 export default function page() {
     return (
-      <div>
-        <Top />
-        <HomeNavbar />
+      <Layout>
         {/* <HomeHero /> */}
         <HeroSection
         title = "OUR GALLERY"
@@ -40,7 +37,8 @@ export default function page() {
           </div>
           <ContactForm />
           <Footer/>
-      </div>
+          </Layout>
+  
     );
   }
   

@@ -7,7 +7,7 @@ const HomeBanner = () => {
   return (
     <div className="banner-wrap">
       <div className="banner">
-        <div className="container banner-container">
+        <div className=" banner-container">
           <div className="row align-items-center">
             {/* Banner Text Section */}
             <div className="col-12 col-md-8 banner-text">

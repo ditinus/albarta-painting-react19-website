@@ -6,6 +6,9 @@
     /* height: 308px; */
     background: url('../../../../public/assets/banner.png') no-repeat center center/cover;
 
+   margin-left: 0.1rem;
+   margin-right:0.1rem;
+
   }
   
   .banner-wrap::before {
@@ -78,6 +81,7 @@
       font-size: 14px;
     }
   
+  
     .about-btn {
       font-size: 14px;
       padding: 8px 16px;
@@ -117,5 +121,13 @@
     .banner-btn {
       margin-top: 20px;
     }
+
+    .banner-wrap {
+
+    
+      margin-left: 0;
+      margin-right:0;
+   
+     }
   }
   

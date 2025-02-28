@@ -65,19 +65,19 @@ const page = () => {
             </p>
           </div>
           <div className="col-md-5">
-            <Image src={SkilledPainters} alt="Skilled painter working" />
+            <Image src={SkilledPainters} style={{width:"100%"}} alt="Skilled painter working" />
           </div>
         </div>
       </div>
 
-      <div className="container">
+
         <HomeBanner />
-      </div>
+   
 
       <div className="container py-5">
         <div className="row align-items-center">
           <div className="col-md-7">
-            <Image src={Commitment} alt="Skilled painter working" />
+            <Image src={Commitment} style={{width:"100%"}} alt="Skilled painter working" />
           </div>
           <div className="col-md-5 position-relative">
             <h4 className="text-dark mb-2">Our Skilled Painters</h4>
@@ -115,7 +115,7 @@ const page = () => {
             </p>
           </div>
           <div className="col-md-5">
-            <Image src={FriendlyApproach} alt="Skilled painter working" />
+            <Image src={FriendlyApproach} style={{width:"100%"}} alt="Skilled painter working" />
           </div>
         </div>
       </div>

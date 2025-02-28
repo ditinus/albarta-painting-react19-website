@@ -27,7 +27,6 @@ const HomeBadges: React.FC = () => {
         <div className="col text-center">
           <Image className='object-fit-contain log-img' src={best2023} alt="Best of Best 2023" width={120} height={150} />
         </div>
-        
         <div className="col text-center">
           <Image className='object-fit-contain log-img' src={best2024} alt="Best of Best 2024" width={120} height={150} />
         </div>
