@@ -12,7 +12,7 @@ import BlogGrid from "./components/Blog/BlogGrid";
 import { blogPosts } from "./lib/data"
 import OurGallery from "./components/OurGallery/page";
 import ReviewsCarousel from "./components/ReviewsCarousel";
-import HomeOfferCarasoul from "./components/Home/HomeOfferCarasoul";
+import SpecialOffer from "./components/SpecialOffer/page";
 import OurService from "./components/OurService";
 
 import Footer from "./Layout/Footer";
@@ -49,7 +49,7 @@ export default function Home() {
       <HomeBanner/>
       </div>
       {/* <HomeOfferCarasoul/> */}
-
+      <SpecialOffer />
       <HomeOurGallery/>
       <HomeCalgaryPainting/>
       <ReviewsCarousel />
