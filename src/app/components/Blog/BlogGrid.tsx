@@ -8,7 +8,7 @@ interface BlogGridProps {
 
 export default function BlogGrid({ posts }: BlogGridProps) {
   return (
-    <div className="container">
+    <div className="container my-5">
       <div className="text-center my-5">
         <h5>Our Blog</h5>
         <h2 className="ReadMore text-uppercase">Expert Advice, Trends & DIY Tips</h2>

@@ -9,11 +9,11 @@ import ContactForm from "../components/ContactForm";
 import Footer from "../Layout/Footer";
 
 import HomeBanner from "../components/Home/HomeBanner";
+import Layout from "../Layout/index";
 export default function page() {
     return (
       <div>
-        <Top />
-        <HomeNavbar />
+     <Layout >
         <HomeHero />
         <HomeBadges />
         {/* <TransparentSection/> */}
@@ -25,6 +25,7 @@ export default function page() {
           </div>
           <ContactForm />
           <Footer/>
+          </Layout>
       </div>
     );
   }

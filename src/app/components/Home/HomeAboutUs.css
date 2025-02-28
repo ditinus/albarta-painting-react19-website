@@ -34,10 +34,7 @@
   color: #0d378d !important;
 }
 
-.title-width{
-  width: 60%;
-  
-}
+
 
 
 .about-content p {
@@ -72,7 +69,8 @@
 .about-card {
   background: #f9f9f9;
   border: none;
-  padding: 20px;
+
+  padding-right: 10rem;
 }
 
 
@@ -137,44 +135,18 @@
     font-size: 12px;
   }
 
-  .title-width{
-    width: 70%;  
-  }
-  
 
 }
 
 
-@media (max-width: 360px) and (max-width: 780px)  {
-  .title-width{
-    width: 80%;
-    
-  }
-
-}
 
 
-@media (min-width: 800px) and (max-width: 1280px) {
-  .title-width {
-    width: 100%;
-  }
 
-}
-
-
-@media (min-width: 810px) and (max-width: 1280px) {
-  .title-width {
-    width: 100%;
-  }
-
-}
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .title-width {
-    width: 70%;
-  }
+
 
 
    .about-card h2 {

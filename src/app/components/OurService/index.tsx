@@ -57,14 +57,15 @@ const Index = () => {
                     className="card-img-top rounded-0"
                     alt="Service Image"
                   />
-                  <div className="card-body pt-3">
+                  <div className="card-body cdp pt-3">
                     <h5 className="card-title text-black">
                       Quality Calgary Interior Painting for Your Needs
                     </h5>
                     <p className="card-text">{service?.description}</p>
                     <a
                       href="#"
-                      className="btn btn-outline-light text-white border-white py-1 pl-2 d-flex align-items-center justify-content-between gap-4"
+                      style={{backgroundColor:"#0D378D"}}
+                      className="   text-decoration-none btn-primary2 text-white border-white py-1 pl-2 d-flex align-items-center justify-content-between gap-4 "
                     >
                       {service?.buttonText}
                       <svg
