@@ -7,13 +7,13 @@
 //   // eslint: {
 //   //   ignoreDuringBuilds: true,
 //   // },
-//   typescript: {
-//     ignoreBuildErrors: true,
-//   },
+
 // };
 
 // export default nextConfig;
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {  typescript: {
+    ignoreBuildErrors: true,
+  },};
 
 export default nextConfig;
