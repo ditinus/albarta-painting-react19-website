@@ -13,40 +13,15 @@ bottom: 5em;
   
 }
 
-<<<<<<< HEAD
-=======
-.badge-lg{
-  /* margin-left: 30em; */
-  
-}
-
->>>>>>> 0063c0786225120111859a2d7d2da1397cbbf0d7
 
 
 
-/* @media (min-width: 540px) and (max-width: 800px) {
-  .badgeContainer {
-    left: 5em;
-    position: relative;
-  }
-} */
 
-
-/* @media (max-width: 992px) {
-  .badgeContainer {
-    width: 70%; 
-  }
-} */
 
 
 @media (min-width: 768px) and (max-width: 1024px){
   .badgeContainer {
     position: relative;
-<<<<<<< HEAD
-
-=======
-    /* left: 8em;  */
->>>>>>> 0063c0786225120111859a2d7d2da1397cbbf0d7
     background-color: white;
     width: 80%;
   }
@@ -73,38 +48,6 @@ bottom: 5em;
   }
 }
 
-/* @media (min-width: 810px) and  (max-width: 1080px) {
-  .badgeContainer {
-    position: relative;
-    left: 5em;
-    width: 80%;
-  }
-} */
-
-/* @media (min-width: 800px) and  (max-width: 1280px) {
-  .badgeContainer {
-    position: relative;
-    left: 5em;
-    width: 80%;
-  }
-} */
-
-
-/* @media (min-width: 601px) and  (max-width: 962px) {
-  .badgeContainer {
-    position: relative;
-    left: 5em;
-    width: 70%;
-  }
-} */
-
-/* @media (min-width: 1440px) and  (max-width: 962px) {
-  .badgeContainer {
- 
-    position: relative;
-    
-  }
-} */
 
 
 @media (max-width: 1280px) and  (min-width: 800px) {
