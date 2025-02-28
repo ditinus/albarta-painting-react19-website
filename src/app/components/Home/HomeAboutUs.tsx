@@ -34,6 +34,7 @@ const AboutSection = () => {
                 <div>
                   <a href="#" className="about-btns">
                     <span>Learn More</span>
+                    
                     <Image className="card-btn-arrow" src={arrow} alt="arrow" />
                   </a>
                 </div>

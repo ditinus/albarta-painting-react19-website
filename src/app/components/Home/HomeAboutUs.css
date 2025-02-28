@@ -186,3 +186,88 @@ ma
 
 
 
+@media (min-width: 360px) and (max-width: 896px) {
+
+  .about-card h2 {
+   font-size: 1rem;
+ }
+
+ .about-card h3 {
+   font-size: 1.8rem;
+ }
+
+ .about-card {
+   padding-right: 0rem;
+ }
+}
+
+
+@media (min-width: 360px) and (max-width: 896px) {
+
+  .about-card h2 {
+   font-size: 1rem;
+ }
+
+ .about-card h3 {
+   font-size: 1.4rem;
+ }
+
+ .about-card {
+   padding-right: 0rem;
+ }
+}
+
+@media (min-width: 412px) and (max-width: 915px) {
+
+  .about-card h2 {
+   font-size: 1rem;
+ }
+
+ .about-card h3 {
+   font-size: 1.8rem;
+ }
+
+ .about-card {
+   padding-right: 0rem;
+ }
+}
+
+
+@media (max-width: 1280px) and (min-width: 1024px) {
+
+  .about-card h2 {
+   font-size: 1rem;
+ }
+
+ .about-card h3 {
+   font-size: 2.3rem;
+ }
+
+ .about-card p{
+  font-size: 0.8rem;
+ }
+
+ .about-card {
+   padding-right: 0rem;
+ }
+}
+
+
+@media (max-width: 1440px) and (min-width: 900px) {
+
+  .about-card h2 {
+   font-size: 1rem;
+ }
+
+ .about-card h3 {
+   font-size: 2.3rem;
+ }
+
+ .about-card p{
+  font-size: 0.9rem;
+ }
+
+ .about-card {
+   padding-right: 0rem;
+ }
+}
