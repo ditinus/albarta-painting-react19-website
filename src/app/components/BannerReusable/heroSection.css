@@ -1,4 +1,4 @@
-/* Hero */
+
 .hero {
     text-align: center;
     color: white;
@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    /* height: 80vh; */
+
     background: no-repeat center center/cover;
     background-size: cover;
 }
@@ -36,7 +36,7 @@
     margin-top: 3em;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between buttons */
+    gap: 20px;
 }
 
 .btn1 {
@@ -156,11 +156,11 @@
     h1 {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center align the text */
+        align-items: center; 
       }
     
       h1 .highlight {
-        display: block; /* Make the highlighted text block-level so it moves below the first word */
-        text-align: center; /* Optional: center align the highlighted text */
+        display: block; 
+        text-align: center; 
       }
 }
