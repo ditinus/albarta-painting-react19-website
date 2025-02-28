@@ -73,7 +73,7 @@ const HomeServices = () => {
 
       <section className="service-menu-container" style={{ backgroundColor: "#111111" }}>
         <div className="container">
-          <div className="row service-content">
+          <div className="row service-content align-items-center">
             {/* Service List Column */}
             <div className="col-12 col-md-7 service-list mb-4 mb-md-0">
               {services.map((service, index) => (
@@ -89,11 +89,11 @@ const HomeServices = () => {
             </div>
 
             {/* Service Details Column */}
-            <div className="col-12 col-md-5 service-details mt-5 mt-md-5">
+            <div className="col-12 col-md-5 service-details">
               <Image 
                 src={services[activeIndex].image} 
                 alt="Service" 
-                className="img-fluid mb-3"
+                className="img-fluid mb-3 custom-img"
               />
               <h3 className="text-white">{services[activeIndex].content}</h3>
               <p className="text-white mb-4">{services[activeIndex].text}</p>
