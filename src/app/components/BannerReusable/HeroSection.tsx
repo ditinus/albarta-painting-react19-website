@@ -1,4 +1,3 @@
-
 "use client";
 import Image from "next/image";
 import HroImage from '../../../../public/assets/expert-calgary-painter.png'; 
@@ -14,8 +13,8 @@ const HeroSection = ({
   primaryButtonArrowImage = ButtonArrow, 
   secondaryButtonText = "Book Now",
   secondaryButtonUrl = "#",
+  height = "80vh", // Default height
 }) => {
- 
   const titleParts = title.split(" ");
   const firstWord = titleParts[0];
   const remainingWords = titleParts.slice(1).join(" ");
@@ -23,10 +22,12 @@ const HeroSection = ({
   return (
     <section
       className="hero"
-      style={{ backgroundImage: `url(${backgroundImage.src})` }} 
+      style={{ 
+        backgroundImage: `url(${backgroundImage.src})`, 
+        height: height // Correctly applying height as a CSS property
+      }} 
     >
       <div className="hero-content">
-       
         <h1>
           {firstWord} <span className="highlight">{remainingWords}</span>
         </h1>
@@ -34,7 +35,6 @@ const HeroSection = ({
         <p>{subtitle}</p>
 
         <div className="buttons1">
-      
           <div className="btn-with-arrow">
             <a href={primaryButtonUrl} className="btn1 primary">
               {primaryButtonText}
@@ -59,4 +59,3 @@ const HeroSection = ({
 };
 
 export default HeroSection;
-

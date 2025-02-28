@@ -65,7 +65,7 @@ const HomeNavbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link mx-2" href="/#">
+              <Link className="nav-link mx-2" href="/contact-us">
                 Contact
               </Link>
             </li>
