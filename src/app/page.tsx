@@ -26,6 +26,7 @@ import HomeOurGallery from "./components/Home/HomeOurGallery";
 import Layout from "./Layout/index";
 import ContactForm from "./components/ContactUs/ContactForm";
 import { useEffect } from "react";
+import HeroSection from "./components/BannerReusable/HeroSection";
 
 export default function Home() {
 
@@ -36,7 +37,8 @@ export default function Home() {
 
     <Layout>
      
-      <HomeHero />
+      {/* <HomeHero /> */}
+      <HeroSection/>
       <HomeBadges />
       <HomeAboutUs />
       <HomeWhyChooseSection />

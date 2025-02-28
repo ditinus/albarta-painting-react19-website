@@ -16,7 +16,7 @@ export default function TestimonialHeader({
       <div className="row align-items-center">
         <div className="col-12 col-md-8">
           <div style={{ textAlign: "left" }}>
-            <h4  style={{color: "black" }} className="ty"> {title}</h4>
+            <h4  style={{color: "black",textAlign:"left" }} className="ty"> {title}</h4>
             <h2
               className="mb-0  titley  text-uppercase"
               style={{color: "#0D378D" }}

@@ -10,11 +10,24 @@ import ContactForm from '../components/ContactForm';
 import HomeBanner from '../components/Home/HomeBanner';
 import Footer from '../Layout/Footer';
 import Layout from '../Layout/index';
+import galleryHero from '../../../public/assets/galleryHero.png'
+import ButtonArrow from '../../../public/assets/HoeAboutArrow.png'; 
+import HeroSection from '../components/BannerReusable/HeroSection';
 
 const page = () => {
   return (
     <Layout>
-      <HomeHero />
+      {/* <HomeHero /> */}
+      <HeroSection
+        title = "Our Painting Services"
+        subtitle = "Transforming Homes & Businesses with Quality Painting"
+        backgroundImage = {galleryHero}
+        primaryButtonText = "Get a Free Quote"
+        primaryButtonUrl = "#"
+        primaryButtonArrowImage = {ButtonArrow}
+        secondaryButtonText = "Book Now"
+        secondaryButtonUrl = "#"
+        />
       <HomeBadges />
       <OurService />
       <div className="container">

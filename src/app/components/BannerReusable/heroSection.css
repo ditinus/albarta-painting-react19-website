@@ -1,0 +1,166 @@
+/* Hero */
+.hero {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 80vh;
+    background: no-repeat center center/cover;
+    background-size: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 15px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 2rem;
+}
+
+.highlight {
+    background: #0D378D;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+}
+
+.buttons1 {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+.btn1 {
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.primary {
+    padding: 10px 20px;
+    background: #0D378D;
+    border: 2px solid #CADBFF;
+}
+
+.secondary {
+    border: 2px solid #CADBFF;
+    padding: 10px 30px;
+}
+
+.card-btn-arrows {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Media Queries for Responsiveness */
+/* @media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.75rem;
+    }
+
+    .buttons1 {
+        margin-top: 2em;
+    }
+
+    .btn1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .buttons1 {
+        margin-top: 1.5em;
+    }
+
+    .btn1 {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 0.8rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+
+    .buttons1 {
+        margin-top: 1.5em;
+    }
+
+    .btn1 {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+} */
+
+
+@media (min-width: 360px) and (max-width: 800px) {
+    .hero h1 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .buttons1 {
+        margin-top: 1.5em;
+    }
+
+    .btn1 {
+        font-size: 0.7rem;
+        padding: 8px 16px;
+        
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align the text */
+      }
+    
+      h1 .highlight {
+        display: block; /* Make the highlighted text block-level so it moves below the first word */
+        text-align: center; /* Optional: center align the highlighted text */
+      }
+}
