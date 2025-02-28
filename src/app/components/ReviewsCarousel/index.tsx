@@ -59,7 +59,7 @@ const ReviewsCarousel = () => {
         </div>
   
       <div style={{ marginBottom: "2rem" }} className=" px-5">
-        <Swiper
+        <Swiper className="testimonial-slider"
           spaceBetween={100}
           slidesPerView={1}
           loop={true}
