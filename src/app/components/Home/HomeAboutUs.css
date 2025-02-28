@@ -41,7 +41,7 @@
   color: #333;
   font-size: 16px;
 }
-
+.about-card
 .about-btns {
   display: inline-flex;
   align-items: center;
@@ -156,6 +156,32 @@
   .about-card h3 {
     font-size: 0.9rem;
   }
+
+  .about-card {
+  
+  
+    padding-right: 0rem;
+  }
+}
+
+
+@media (max-width: 471px) {
+
+
+
+
+ .about-card h3 {
+   font-size: 1.5rem;
+   margin-top: 20px;
+ }
+
+ma
+
+ .about-card {
+ font-size: 0.9 !important;
+ 
+   padding-right: 0rem;
+ }
 }
 
 
