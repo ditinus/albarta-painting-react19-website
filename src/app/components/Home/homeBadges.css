@@ -13,6 +13,14 @@ bottom: 5em;
   
 }
 
+<<<<<<< HEAD
+=======
+.badge-lg{
+  /* margin-left: 30em; */
+  
+}
+
+>>>>>>> 0063c0786225120111859a2d7d2da1397cbbf0d7
 
 
 
@@ -34,7 +42,11 @@ bottom: 5em;
 @media (min-width: 768px) and (max-width: 1024px){
   .badgeContainer {
     position: relative;
+<<<<<<< HEAD
 
+=======
+    /* left: 8em;  */
+>>>>>>> 0063c0786225120111859a2d7d2da1397cbbf0d7
     background-color: white;
     width: 80%;
   }

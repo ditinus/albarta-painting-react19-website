@@ -7,14 +7,25 @@ import HomeBadges from "../components/Home/HomeBadges";
 import Carousel from "../components/OurGallery/page";
 import ContactForm from "../components/ContactForm";
 import Footer from "../Layout/Footer";
-
+import galleryHero from '../../../public/assets/galleryHero.png'
+import ButtonArrow from '../../../public/assets/HoeAboutArrow.png'; 
 import HomeBanner from "../components/Home/HomeBanner";
-import Layout from "../Layout/index";
+import HeroSection from "../components/BannerReusable/HeroSection";
+import Layout from "../../app//Layout/index";
 export default function page() {
     return (
-      <div>
-     <Layout >
-        <HomeHero />
+      <Layout>
+        {/* <HomeHero /> */}
+        <HeroSection
+        title = "OUR GALLERY"
+        subtitle = "Quality Craftsmanship | Beautiful Finishes | Happy Clients"
+        backgroundImage = {galleryHero}
+        primaryButtonText = "Get a Free Quote"
+        primaryButtonUrl = "#"
+        primaryButtonArrowImage = {ButtonArrow}
+        secondaryButtonText = "Book Now"
+        secondaryButtonUrl = "#"
+        />
         <HomeBadges />
         {/* <TransparentSection/> */}
        <div className=" mt-5">
@@ -26,7 +37,7 @@ export default function page() {
           <ContactForm />
           <Footer/>
           </Layout>
-      </div>
+  
     );
   }
   
