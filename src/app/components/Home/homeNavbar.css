@@ -1,10 +1,3 @@
-/* home.css */
-
-
-
-
-
-
 
 .hader{
   max-height: 100px;
@@ -14,6 +7,13 @@
   padding-left: 20px;
   padding-right: 20px;
   padding: 10px;
+}
+
+.nav-color{
+font-size: 600;
+background-color:  #0D378D1F;
+border-radius: 35px;
+padding: 10px;
 }
 
 
@@ -91,6 +91,12 @@
     .toggle-nav {
       margin-left: auto; /* Align toggle button to the right */
     }
+    .nav-color{
+      font-size: 600;
+      background-color: #fff;
+      border: none;
+      padding: 10px;
+      }
   }
   
   @media ( mx-width: 1160){
@@ -103,6 +109,13 @@
       padding-right: 20px;
       
     }
+
+    .nav-color{
+      font-size: 600;
+      background-color: #fff;
+      border: none;
+      padding: 10px;
+      }
 
   }
   
@@ -125,6 +138,13 @@
       background: #fff;
       gap: 10px;
     }
+
+    .nav-color{
+      font-size: 600;
+      background-color: #fff;
+      border: none;
+      padding: 10px;
+      }
   }
 
 
