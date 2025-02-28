@@ -55,4 +55,6 @@
 
   }
 
-  
+  .testimonial-slider .swiper-button-next, .testimonial-slider .swiper-button-prev{
+    display: none ;
+  }

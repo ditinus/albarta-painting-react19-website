@@ -2,9 +2,10 @@
 import Image from "next/image";
 import HroImage from '../../../../public/assets/expert-calgary-painter.png'; 
 import ButtonArrow from '../../../../public/assets/HoeAboutArrow.png'; 
-import './heroSection.css';
+import './hero.css';
+import HomeHero from "../Home/HomeHero";
 
-const HeroSection = ({
+const Hero = ({
   title = "EXPERT CALGARY PAINTERS",
   subtitle = "for Interior and Exterior House Painting Services",
   backgroundImage = HroImage, 
@@ -58,4 +59,4 @@ const HeroSection = ({
   );
 };
 
-export default HeroSection;
+export default Hero;

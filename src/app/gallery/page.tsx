@@ -10,7 +10,7 @@ import Footer from "../Layout/Footer";
 import galleryHero from '../../../public/assets/galleryHero.png'
 import ButtonArrow from '../../../public/assets/HoeAboutArrow.png'; 
 import HomeBanner from "../components/Home/HomeBanner";
-import HeroSection from "../components/BannerReusable/HeroSection";
+import HeroSection from "../components/BannerReusable/Hero";
 import Layout from "../../app//Layout/index";
 export default function page() {
     return (

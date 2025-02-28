@@ -55,7 +55,7 @@ const Index = () => {
           <div className="row align-items-center">
             {/* column */}
             <div className="col-lg-12 col-xxl-6">
-              <div className="swiper mySwiper">
+              <div className="swiper mySwiper offer_slider">
                 <div className="swiper-wrapper">
                   {/* slide */}
                   <div className="swiper-slide">
@@ -126,8 +126,8 @@ const Index = () => {
                   {/* Repeat similar slides here */}
                 </div>
                 {/* Navigation Buttons */}
-                <div className="swiper-button-prev"></div>
-                <div className="swiper-button-next"></div>
+                <div className="swiper-button-prev offer_slider_prev"></div>
+                <div className="swiper-button-next offer_slider_next"></div>
               </div>
             </div>
             {/* column */}
