@@ -26,7 +26,7 @@ export default function ContactForm() {
             className="bg-white p-4 rounded"
             style={{
               boxShadow:
-                "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;",
+                "5px 17px 56.7px 0px rgba(0, 0, 0, 0.11)",
             }}
           >
             <form onSubmit={handleSubmit}>
@@ -65,7 +65,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 className="w-100 py-2"
-                style={{ backgroundColor: "#0D378D", fontWeight: 500 }}
+                style={{ backgroundColor: "#0D378D", fontWeight: 500 , border: "none", color:"white",borderRadius:"5px" }}
               >
                 Get a Quote
               </button>

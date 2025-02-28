@@ -5,7 +5,7 @@
 
 
 .why-choose-us h2 {
-  font-size: 2.5rem;
+  font-size: 36;
   font-weight: 700;
   color: #0d378d;
 }
@@ -13,10 +13,11 @@
 
 .features {
   margin-top: 30px;
+  /* text-align: left; */
 }
 
 .feature {
-  text-align: center;
+  /* text-align: center; */
   padding: 20px;
 }
 
@@ -26,16 +27,17 @@
 }
 
 .feature h3 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 600;
   color: #333;
 }
 
 
 .feature p {
-  font-size: 1rem;
-  color: #6c757d;
+  font-size: 16px;
+  color: #000000;
   line-height: 1.5;
+  font-weight: 400;
 }
   
 
@@ -83,3 +85,44 @@
     }
   }
   
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    .why-choose-us {
+      padding: 50px 15px;
+    }
+  
+    .why-choose-us h2 {
+      font-size: 28px;
+    }
+  
+    .feature {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .feature p {
+      width: 100%; 
+      margin: 0 auto;
+    }
+  }
+
+
+  @media (min-width: 601px) and (max-width: 962px) {
+    .why-choose-us {
+      padding: 50px 15px;
+    }
+  
+    .why-choose-us h2 {
+      font-size: 28px;
+    }
+  
+    .feature {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .feature p {
+      width: 100%; 
+      margin: 0 auto;
+    }
+  }

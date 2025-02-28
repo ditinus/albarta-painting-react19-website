@@ -7,7 +7,13 @@ import Image from "next/image";
 
 const HomeNavbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav
+      className="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0"
+      style={{
+        zIndex: 1000,
+        position: "sticky", // Ensure the navbar has sticky positioning explicitly
+      }}
+    >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <Image
@@ -19,26 +25,55 @@ const HomeNavbar = () => {
           />
         </a>
         <button
-          className="navbar-toggler "
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style={{border:"none"}}
+          style={{ border: "none" }}
         >
-         <svg width="61" height="48" viewBox="0 0 61 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1" y="1" width="59" height="46" rx="23" fill="#0D378D"/>
-<rect x="1" y="1" width="59" height="46" rx="23" stroke="#CADBFF" stroke-width="2"/>
-<path d="M19.5 17H41.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
-<path d="M19.5 24H41.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
-<path d="M30.5 31L41.5 31" stroke="white" stroke-width="3" stroke-linecap="round"/>
-</svg>
+          <svg
+            width="61"
+            height="48"
+            viewBox="0 0 61 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="1" y="1" width="59" height="46" rx="23" fill="#0D378D" />
+            <rect
+              x="1"
+              y="1"
+              width="59"
+              height="46"
+              rx="23"
+              stroke="#CADBFF"
+              strokeWidth="2"
+            />
+            <path
+              d="M19.5 17H41.5"
+              stroke="white"
+              strokeWidth="3"
+              strokeLinecap="round"
+            />
+            <path
+              d="M19.5 24H41.5"
+              stroke="white"
+              strokeWidth="3"
+              strokeLinecap="round"
+            />
+            <path
+              d="M30.5 31L41.5 31"
+              stroke="white"
+              strokeWidth="3"
+              strokeLinecap="round"
+            />
+          </svg>
 
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav mx-auto my-2 my-lg-0" style={{ fontWeight: 600 }}>
+        <div className="collapse navbar-collapse" style={{color:"rgba(13, 55, 141, 0.12)"}} id="navbarNav">
+          <ul className="navbar-nav mx-auto my-2 my-lg-0"  style={{ fontWeight: 600 }}>
             <li className="nav-item">
               <Link className="nav-link mx-2" href="/">
                 Home
@@ -92,15 +127,18 @@ const HomeNavbar = () => {
           </div>
 
           <div className="d-flex justify-content-lg-center gap-3">
-            <a     style={{
-                color: "white ",
+            <a
+              style={{
+                color: "white",
                 borderRadius: "78px",
                 border: "2px solid #CADBFF",
                 background: "#0D378D",
                 paddingLeft: "20px",
                 paddingRight: "20px",
-                
-              }} href="#" className="btn ">
+              }}
+              href="#"
+              className="btn "
+            >
               Book Now
             </a>
           </div>

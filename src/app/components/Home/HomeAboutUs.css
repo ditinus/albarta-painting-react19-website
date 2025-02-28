@@ -34,10 +34,7 @@
   color: #0d378d !important;
 }
 
-.title-width{
-  width: 60%;
-  
-}
+
 
 
 .about-content p {
@@ -72,7 +69,8 @@
 .about-card {
   background: #f9f9f9;
   border: none;
-  padding: 20px;
+
+  padding-right: 10rem;
 }
 
 
@@ -137,44 +135,18 @@
     font-size: 12px;
   }
 
-  .title-width{
-    width: 70%;  
-  }
-  
 
 }
 
 
-@media (max-width: 360px) and (max-width: 780px)  {
-  .title-width{
-    width: 80%;
-    
-  }
-
-}
 
 
-@media (min-width: 800px) and (max-width: 1280px) {
-  .title-width {
-    width: 100%;
-  }
 
-}
-
-
-@media (min-width: 810px) and (max-width: 1280px) {
-  .title-width {
-    width: 100%;
-  }
-
-}
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .title-width {
-    width: 70%;
-  }
+
 
 
    .about-card h2 {
@@ -184,7 +156,118 @@
   .about-card h3 {
     font-size: 0.9rem;
   }
+
+  .about-card {
+  
+  
+    padding-right: 0rem;
+  }
+}
+
+
+@media (max-width: 471px) {
+
+
+
+
+ .about-card h3 {
+   font-size: 1.5rem;
+   margin-top: 20px;
+ }
+
+ma
+
+ .about-card {
+ font-size: 0.9 !important;
+ 
+   padding-right: 0rem;
+ }
 }
 
 
 
+@media (min-width: 360px) and (max-width: 896px) {
+
+  .about-card h2 {
+   font-size: 1rem;
+ }
+
+ .about-card h3 {
+   font-size: 1.8rem;
+ }
+
+ .about-card {
+   padding-right: 0rem;
+ }
+}
+
+
+@media (min-width: 360px) and (max-width: 896px) {
+
+  .about-card h2 {
+   font-size: 1rem;
+ }
+
+ .about-card h3 {
+   font-size: 1.4rem;
+ }
+
+ .about-card {
+   padding-right: 0rem;
+ }
+}
+
+@media (min-width: 412px) and (max-width: 915px) {
+
+  .about-card h2 {
+   font-size: 1rem;
+ }
+
+ .about-card h3 {
+   font-size: 1.8rem;
+ }
+
+ .about-card {
+   padding-right: 0rem;
+ }
+}
+
+
+@media (max-width: 1280px) and (min-width: 1024px) {
+
+  .about-card h2 {
+   font-size: 1rem;
+ }
+
+ .about-card h3 {
+   font-size: 2.3rem;
+ }
+
+ .about-card p{
+  font-size: 0.8rem;
+ }
+
+ .about-card {
+   padding-right: 0rem;
+ }
+}
+
+
+@media (max-width: 1440px) and (min-width: 900px) {
+
+  .about-card h2 {
+   font-size: 1rem;
+ }
+
+ .about-card h3 {
+   font-size: 2.3rem;
+ }
+
+ .about-card p{
+  font-size: 0.9rem;
+ }
+
+ .about-card {
+   padding-right: 0rem;
+ }
+}

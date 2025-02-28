@@ -9,10 +9,7 @@
     font-weight: 500;
   }
   
-  /* Container and Row Adjustment */
-  .container {
-    padding: 0 15px;
-  }
+
   
   .bg-white {
     background-color: white;
@@ -27,7 +24,9 @@
   }
   
   .shadow-lg {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 17px 56.7px 0px rgba(0, 0, 0, 0.11);
+ 
+    
   }
   
   .py-2 {
@@ -60,9 +59,7 @@
       font-size: 1.125rem;
     }
   
-    .container {
-      padding: 0 10px;
-    }
+
   
     .py-2 {
       padding-top: 1rem;

@@ -12,7 +12,7 @@ const HomeWhyChooseSection = () => {
       <div className="features">
         <div className="row">
           {/* Quality Workmanship Feature */}
-          <div className="col-12 col-sm-6 col-md-3 feature">
+          <div className="col-12 col-sm-6 col-md-3 feature ">
             <div className="icon">
               <Image src={QualityWorkmanship} alt="Quality Workmanship" />
             </div>

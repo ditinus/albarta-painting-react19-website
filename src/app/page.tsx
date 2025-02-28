@@ -12,7 +12,7 @@ import BlogGrid from "./components/Blog/BlogGrid";
 import { blogPosts } from "./lib/data"
 import OurGallery from "./components/OurGallery/page";
 import ReviewsCarousel from "./components/ReviewsCarousel";
-import HomeOfferCarasoul from "./components/Home/HomeOfferCarasoul";
+import SpecialOffer from "./components/SpecialOffer/page";
 import OurService from "./components/OurService";
 
 import Footer from "./Layout/Footer";
@@ -26,6 +26,7 @@ import HomeOurGallery from "./components/Home/HomeOurGallery";
 import Layout from "./Layout/index";
 import ContactForm from "./components/ContactUs/ContactForm";
 import { useEffect } from "react";
+import HeroSection from "./components/BannerReusable/HeroSection";
 
 export default function Home() {
 
@@ -36,7 +37,8 @@ export default function Home() {
 
     <Layout>
      
-      <HomeHero />
+      {/* <HomeHero /> */}
+      <HeroSection/>
       <HomeBadges />
       <HomeAboutUs />
       <HomeWhyChooseSection />
@@ -47,7 +49,7 @@ export default function Home() {
       <HomeBanner/>
       </div>
       {/* <HomeOfferCarasoul/> */}
-
+      <SpecialOffer />
       <HomeOurGallery/>
       <HomeCalgaryPainting/>
       <ReviewsCarousel />

@@ -21,13 +21,27 @@ import { blogPosts } from "../lib/data";
 import Footer from "../Layout/Footer";
 import Head from "next/head";
 import type { Metadata } from 'next'
+import galleryHero from '../../../public/assets/galleryHero.png'
+import ButtonArrow from '../../../public/assets/HoeAboutArrow.png'; 
+import HeroSection from "../components/BannerReusable/HeroSection";
 
 const page = () => {
   return (
     <div>
       <Top />
       <HomeNavbar />
-      <HomeHero />
+      {/* <HomeHero /> */}
+      <HeroSection
+        title = "About Alberta Colour Painting"
+        subtitle = "Your Trusted, Skilled, and Eco-Friendly Painting Experts"
+        backgroundImage = {galleryHero}
+        primaryButtonText = "Get a Free Quote"
+        primaryButtonUrl = "#"
+        primaryButtonArrowImage = {ButtonArrow}
+        secondaryButtonText = "Book Now"
+        secondaryButtonUrl = "#"
+        height= "60vh"
+        />
       <HomeBadges />
       <HomeAboutUs />
       <HomeWhyChooseSection />
@@ -51,19 +65,19 @@ const page = () => {
             </p>
           </div>
           <div className="col-md-5">
-            <Image src={SkilledPainters} alt="Skilled painter working" />
+            <Image src={SkilledPainters} style={{width:"100%"}} alt="Skilled painter working" />
           </div>
         </div>
       </div>
 
-      <div className="container">
+
         <HomeBanner />
-      </div>
+   
 
       <div className="container py-5">
         <div className="row align-items-center">
           <div className="col-md-7">
-            <Image src={Commitment} alt="Skilled painter working" />
+            <Image src={Commitment} style={{width:"100%"}} alt="Skilled painter working" />
           </div>
           <div className="col-md-5 position-relative">
             <h4 className="text-dark mb-2">Our Skilled Painters</h4>
@@ -101,7 +115,7 @@ const page = () => {
             </p>
           </div>
           <div className="col-md-5">
-            <Image src={FriendlyApproach} alt="Skilled painter working" />
+            <Image src={FriendlyApproach} style={{width:"100%"}} alt="Skilled painter working" />
           </div>
         </div>
       </div>
