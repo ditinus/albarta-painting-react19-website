@@ -1,5 +1,5 @@
 "use client"
-import HeroSection from "../components/BannerReusable/HeroSection"
+import HeroSection from "../components/BannerReusable/Hero"
 import ContactForm from "../components/ContactForm"
 import GoogleMap from "../components/Home/GoogleMap"
 import HomeCalgaryPainting from "../components/Home/HomeCalgaryPainting"

@@ -23,7 +23,7 @@ import Head from "next/head";
 import type { Metadata } from 'next'
 import galleryHero from '../../../public/assets/galleryHero.png'
 import ButtonArrow from '../../../public/assets/HoeAboutArrow.png'; 
-import HeroSection from "../components/BannerReusable/HeroSection";
+import HeroSection from "../components/BannerReusable/Hero";
 
 const page = () => {
   return (
