@@ -72,8 +72,11 @@ const HomeNavbar = () => {
           </svg>
 
         </button>
-        <div className="collapse navbar-collapse" style={{color:"rgba(13, 55, 141, 0.12)"}} id="navbarNav">
-          <ul className="navbar-nav mx-auto my-2 my-lg-0"  style={{ fontWeight: 600 }}>
+
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul
+            className="navbar-nav mx-auto my-2 my-lg-0 nav-color">
+
             <li className="nav-item">
               <Link className="nav-link mx-2" href="/">
                 Home
