@@ -1,13 +1,8 @@
-.reviews-carousel-container {
-    padding: 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-    width: 70%;
-    margin: auto;
-  }
+
+
   .review-content {
 
-    padding-left: 50px;
+    padding-left: 2rem;
   }
   .review-card {
     background: #E2E7F1;
@@ -48,5 +43,16 @@
 
   .swiper{
     padding-top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: visible;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+
   }
+
   

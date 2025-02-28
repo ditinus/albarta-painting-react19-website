@@ -25,50 +25,50 @@ const ContactFormFields: React.FC<ContactFormFieldsProps> = ({
 }) => {
   return (
     <>
-      <div className="mb-3">
+      <div className="mb-3 ">
         <input
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
           placeholder="Name"
-          className={`form-control ${errors.name ? "is-invalid" : ""}`}
+          className={`form-control ${errors.name ? "is-invalid" : ""} inputBg`}
         />
         {errors.name && <div className="invalid-feedback">{errors.name}</div>}
       </div>
 
-      <div className="mb-3">
+      <div className="mb-3 ">
         <input
           type="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
           placeholder="Email Address"
-          className={`form-control ${errors.email ? "is-invalid" : ""}`}
+          className={`form-control ${errors.email ? "is-invalid" : ""} inputBg`}
         />
         {errors.email && <div className="invalid-feedback">{errors.email}</div>}
       </div>
 
-      <div className="mb-3">
+      <div className="mb-3 ">
         <input
           type="text"
           name="phone"
           value={formData.phone}
           onChange={handleChange}
           placeholder="Phone Number"
-          className={`form-control ${errors.phone ? "is-invalid" : ""}`}
+          className={`form-control ${errors.phone ? "is-invalid" : ""} inputBg`}
         />
         {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
       </div>
 
-      <div className="mb-3">
+      <div className="mb-3 ">
         <textarea
           name="message"
           value={formData.message}
           onChange={handleChange}
           placeholder="Message"
           rows={4}
-          className={`form-control ${errors.message ? "is-invalid" : ""}`}
+          className={`form-control ${errors.message ? "is-invalid" : ""} inputBg`}
         />
         {errors.message && (
           <div className="error invalid-feedback">{errors.message}</div>

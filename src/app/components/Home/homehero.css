@@ -52,8 +52,8 @@
     text-decoration: none;
     color: white;
     border-radius: 30px;
-    display: inline-flex;  /* Use inline-flex to align text and arrow side by side */
-    align-items: center;  /* Vertically center items */
+    display: inline-flex; 
+    align-items: center;  
     margin: 10px;
     font-weight: 500;
     font-size: 1.1rem;

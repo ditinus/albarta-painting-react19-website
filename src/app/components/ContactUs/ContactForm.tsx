@@ -89,7 +89,7 @@ const ContactForm = () => {
               handleChange={handleChange}
               errors={errors}
             />
-            <button type="submit" className="btn btn-primary mt-3">
+            <button type="submit" className="form-buttom mt-3 py-2">
               Get a Quote
             </button>
           </form>

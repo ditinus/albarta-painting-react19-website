@@ -1,7 +1,5 @@
 "use client";
-
-import { Container, Row, Col, Button } from "react-bootstrap";
-
+import "./style.css"
 export default function TestimonialHeader({
   title = "What Our Clients Say",
   subtitle = "REAL REVIEWS FROM SATISFIED CUSTOMERS",
@@ -9,40 +7,40 @@ export default function TestimonialHeader({
   buttonUrl = "#",
   bgColor = "#0D47A1",
   textColor = "",
-
   buttonStyle = {},
 }) {
   return (
-    <Container className="py-5">
-      <Row className="align-items-center">
-        <Col xs={12} md={8}>
-          <div style={{textAlign:"left"}}>
-            <h4 className={`${textColor} mb-2`}>{title}</h4>
+    
+  <div className="container py-5">
+  
+      <div className="row align-items-center">
+        <div className="col-12 col-md-8">
+          <div style={{ textAlign: "left" }}>
+            <h4  style={{color: "black",textAlign:"left" }} className="ty"> {title}</h4>
             <h2
-              className={` mb-0   text-uppercase  `}
-              style={{ fontSize: "2rem", color: "#0D378D" }}
+              className="mb-0  titley  text-uppercase"
+              style={{color: "#0D378D" }}
             >
               {subtitle}
             </h2>
           </div>
-        </Col>
-        <Col xs={12} md={4} className="text-md-end mt-3 mt-md-0">
-          <Button
-            variant="primary"
-            size="lg"
-            className=" px-5 py-2"
+        </div>
+        <div className="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+          <a
+            href={buttonUrl}
+            className="btn btn-primary px-5 py-2"
             style={{
               backgroundColor: bgColor,
               borderColor: bgColor,
               ...buttonStyle,
               borderRadius: "50px",
             }}
-            href={buttonUrl}
           >
             {buttonText}
-          </Button>
-        </Col>
-      </Row>
-    </Container>
+          </a>
+        </div>
+      </div>
+    </div>
+  
   );
 }

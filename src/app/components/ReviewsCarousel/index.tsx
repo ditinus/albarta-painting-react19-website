@@ -8,7 +8,7 @@ import "./style.css";
 import Image from "next/image";
 import TestimonialHeader from "../TestimonialHeader/page";
 
-
+import Googlelogo from "../../../../public/assets/googleLogo.png";
 const reviews = [
   {
     name: "John Doe",
@@ -41,27 +41,26 @@ const reviews = [
 ];
 
 const ReviewsCarousel = () => {
-
-
-  
   return (
-
+    <div className="py-2">
     
-           
-    <div className="reviews-carousel-container   pt-0">
-    <TestimonialHeader
-              title="Our Happy Clients"
-              subtitle="See how we’ve helped people achieve their goals."
-              buttonText="View All"
-              buttonUrl="/testimonials"
-              bgColor="#0D378D"
-              textColor="#0D378D"
-              buttonStyle={{ fontSize: "1rem" }}
-              
-            />
-      <div style={{ marginBottom: "20px" }} className="mb-50">
+        <TestimonialHeader
+          title="Our Happy Clients"
+          subtitle="See how we’ve helped people achieve their goals."
+          buttonText="View All"
+          buttonUrl="/testimonials"
+          bgColor="#0D378D"
+          textColor="#0D378D"
+          buttonStyle={{ fontSize: "1rem" }}
+        />
+
+        <div className=" py-2 d-flex w-full flex-col justify-content-center">
+          <Image className="" src={Googlelogo} alt="" /> 
+        </div>
+  
+      <div style={{ marginBottom: "2rem" }} className=" px-5">
         <Swiper
-          spaceBetween={30}
+          spaceBetween={100}
           slidesPerView={1}
           loop={true}
           pagination={{
@@ -90,7 +89,8 @@ const ReviewsCarousel = () => {
                   style={{
                     position: "absolute",
                     zIndex: 9999,
-                    top: "-48px",
+                    top: "18px",
+                    left: "-30px",
                   }}
                   src={Reviews1}
                   alt="Review Image"
@@ -102,7 +102,6 @@ const ReviewsCarousel = () => {
                     zIndex: 9999,
                     height: "163px",
                     bottom: "11px",
-                
                   }}
                   src={Reviews2}
                   alt="Review Image"

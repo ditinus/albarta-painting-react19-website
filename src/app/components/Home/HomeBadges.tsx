@@ -1,81 +1,38 @@
-// import { Row, Col } from 'react-bootstrap';
-// import './homeBadges.css';
-// import google from '../../../../public/assets/Group 9.png';
-// import bbb from '../../../../public/assets/Group.png';
-// import CleverCanadian from '../../../../public/assets/CleverCanadian 1.png';
-// import HomeStars from '../../../../public/assets/homestar.png';
-// import best2023 from '../../../../public/assets/best-of-the-best-homestars-award-winner-2023-black-version 1 (1).png';
-// import best2024 from '../../../../public/assets/best-of-the-best-homestars-award-winner-2024-black-version 1.png';
-// import Image from 'next/image';
-
-// const HomeBadges = () => {
-//   return (
-//     <div className="badge-container">
-//       <Row className="justify-content-center">
-//         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-//           <Image src={google} alt="Google 4.9 Rating"  />
-//         </Col>
-//         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-//           <Image src={bbb} alt="BBB Accredited"  />
-//         </Col>
-//         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-//           <Image src={CleverCanadian} alt="Clever Canadian"  />
-//         </Col>
-//         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-//           <Image src={HomeStars} alt="HomeStars Verified"  />
-//         </Col>
-//         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-//           <Image src={best2023} alt="Best of Best 2023"  />
-//         </Col>
-//         <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-//           <Image src={best2024} alt="Best of Best 2024"  />
-//         </Col>
-//       </Row>
-//     </div>
-//   );
-// };
-
-// export default HomeBadges;
-
-
-"use client"
-import { Row, Col } from 'react-bootstrap';
-// import styles from './HomeBadges.module.css';
-import './homeBadges.css'
+"use client";
+import './homeBadges.css';
 import Image from 'next/image';
-import google from '../../../../public/assets/Group 9.png';
-import bbb from '../../../../public/assets/Group.png';
-import CleverCanadian from '../../../../public/assets/CleverCanadian 1.png';
-import HomeStars from '../../../../public/assets/homestar.png';
-import best2023 from '../../../../public/assets/best-of-the-best-homestars-award-winner-2023-black-version 1 (1).png';
-import best2024 from '../../../../public/assets/best-of-the-best-homestars-award-winner-2024-black-version 1.png';
+import google from '../../../../public/assets/logo-1.svg';
+import bbb from '../../../../public/assets/logo-2.svg';
+import CleverCanadian from '../../../../public/assets/logo-3.svg';
+import HomeStars from '../../../../public/assets/logo-4.svg';
+import best2023 from '../../../../public/assets/logo-5.svg';
+import best2024 from '../../../../public/assets/logo-6.svg';
 
 const HomeBadges: React.FC = () => {
   return (
     <div className="badgeContainer">
-      <Row className="justify-content-center">
-        <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image className='object-fit-contain' src={google} alt="Google 4.9 Rating" layout="responsive" />
-        </Col>
-        <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image  className='object-fit-contain' src={bbb} alt="BBB Accredited" layout="responsive" />
-        </Col>
-        <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image  width={30} className='object-fit-contain' src={CleverCanadian} alt="Clever Canadian" layout="responsive" />
-        </Col>
-        <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image className='object-fit-contain' src={HomeStars} alt="HomeStars Verified" layout="responsive" />
-        </Col>
-        <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image width={30} className='object-fit-contain' src={best2023} alt="Best of Best 2023" layout="responsive" />
-        </Col>
-        <Col xs={6} sm={4} md={3} lg={2} className="mb-3 d-flex justify-content-center">
-          <Image  width={30} className='object-fit-contain' src={best2024} alt="Best of Best 2024" layout="responsive" />
-        </Col>
-      </Row>
+      <div className="row d-flex flex-row align-items-center  justify-content-center row-cols-3   row-cols-sm-3 row-cols-md-3 row-cols-lg-6 badge-lg" >
+        <div className="col text-center">
+          <Image className='object-fit-contain log-img' src={google} alt="Google 4.9 Rating" width={120} height={150} />
+        </div>
+        <div className="col text-center">
+          <Image className='object-fit-contain log-img' src={bbb} alt="BBB Accredited" width={120} height={150} />
+        </div>
+        <div className="col text-center">
+          <Image className='object-fit-contain log-img' src={CleverCanadian} alt="Clever Canadian" width={120} height={150} />
+        </div>
+        <div className="col text-center">
+          <Image className='object-fit-contain log-img' src={HomeStars} alt="HomeStars Verified" width={120} height={150} />
+        </div>
+        <div className="col text-center">
+          <Image className='object-fit-contain log-img' src={best2023} alt="Best of Best 2023" width={120} height={150} />
+        </div>
+        <div className="col text-center">
+          <Image className='object-fit-contain log-img' src={best2024} alt="Best of Best 2024" width={120} height={150} />
+        </div>
+      </div>
     </div>
   );
 };
 
 export default HomeBadges;
-

@@ -1,8 +1,4 @@
 
-.service-menu-container {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 
 
 .service-header {
@@ -24,6 +20,7 @@
   margin-top: 1rem;
 }
 
+.service-list{}
 
 .explore-btn {
   padding: 10px 20px;
@@ -38,13 +35,14 @@
   background-color: #111111; 
   padding-top: 3rem;
   padding-bottom: 3rem;
+
 }
 
 .service-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 40px 0;
   border-bottom: 1px solid #555;
   cursor: pointer;
   font-size: 20px;
@@ -97,8 +95,9 @@
   }
 
   .service-details h3 {
-    font-size: 14px;
-  }
+    font-size: 19px;
+    font-weight: 400;
+}
 
   .service-text {
     font-size: 12px;
@@ -120,8 +119,9 @@
   }
 
   .service-details h3 {
-    font-size: 14px;
-  }
+    font-size: 19px;
+    font-weight: 400;
+}
 
   .service-text {
     font-size: 11px;
@@ -142,6 +142,10 @@
     width: 50%;
     margin-left: -11em;
   }
+  .service-details h3 {
+    font-size: 19px;
+    font-weight: 400;
+}
 }
 
 
@@ -151,6 +155,10 @@
     width: 60%;
     margin-left: -7em;
   }
+  .service-details h3 {
+    font-size: 19px;
+    font-weight: 400;
+}
 }
 
 
@@ -158,9 +166,31 @@
   .service-title-btn {
     height: 10%;
     width: 30%;
-    margin-left: 2em;
-    
+    margin-left: 2em; 
   }
+  .custom-img {
+    width: 400px;
+    height: 150px !important;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+    font-size: 22px;
+    color: #FFFFFF80;
+  }
+
+  .service-details h3 {
+    font-size: 19px;
+    font-weight: 400;
+}
+  
 }
 
 @media (min-width: 601px) and (max-width: 962px) {
@@ -170,4 +200,20 @@
     /* margin-left: 2em; */
     /* margin-left: -16em; */
   }
+
+  .service-details h3 {
+    font-size: 19px;
+    font-weight: 400;
+}
+}
+
+
+
+
+
+.custom-img {
+  width: 400px;
+  height: 250px !important;
+  object-fit: cover;
+  object-position: center;
 }

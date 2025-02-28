@@ -1,10 +1,14 @@
 .banner-wrap {
+  margin-top: 5rem;
     position: relative;
  padding-top: 40px;
  padding-bottom: 40px;
     /* height: 308px; */
     background: url('../../../../public/assets/banner.png') no-repeat center center/cover;
-    margin: 70px auto;
+
+   margin-left: 0.1rem;
+   margin-right:0.1rem;
+
   }
   
   .banner-wrap::before {
@@ -77,13 +81,53 @@
       font-size: 14px;
     }
   
+  
     .about-btn {
       font-size: 14px;
       padding: 8px 16px;
     }
-  
+    .banner-wrap {
+      position: relative;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   
+    }
     .banner-btn {
       margin-top: 20px;
     }
+  }
+  
+
+  @media (max-width: 767px) {
+    .banner h1 {
+      font-size: 28px;
+    }
+  
+    .banner p {
+      font-size: 14px;
+    }
+  
+    .about-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    .banner-wrap {
+      margin-top: 1rem;
+     
+
+        
+    
+      }
+    .banner-btn {
+      margin-top: 20px;
+    }
+
+    .banner-wrap {
+
+    
+      margin-left: 0;
+      margin-right:0;
+   
+     }
   }
   

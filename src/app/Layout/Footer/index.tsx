@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import "./style.css";
 import logo from "../../../../public/assets/alberta-logo.png";
 import Image from "next/image";
@@ -14,32 +13,31 @@ const Footer = () => {
               <h2 className="Get ">GET IN TOUCH</h2>
             </div>
             <div className="col-lg-4  align-self-end mt-5">
-              <Button
-                variant="outline-light text-white  border-white  d-flex align-items-center gap-4"
-                className="button-footer"
+            <button
+              className="btn btn-outline-light text-white border-white d-flex align-items-center gap-4 button-footer rounded-pill py-2 pl-5"
+            >
+              {" "}
+              Contact Us
+              <svg
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                {" "}
-                Contact Us
-                <svg
+                <rect
+                  y="0.40918"
                   width="31"
-                  height="31"
-                  viewBox="0 0 31 31"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    y="0.40918"
-                    width="31"
-                    height="30"
-                    rx="15"
-                    fill="white"
-                  />
-                  <path
-                    d="M22.5 9.40918C22.5 8.85689 22.0523 8.40918 21.5 8.40918L12.5 8.40918C11.9477 8.40918 11.5 8.85689 11.5 9.40918C11.5 9.96146 11.9477 10.4092 12.5 10.4092L20.5 10.4092L20.5 18.4092C20.5 18.9615 20.9477 19.4092 21.5 19.4092C22.0523 19.4092 22.5 18.9615 22.5 18.4092L22.5 9.40918ZM10.2071 22.1163L22.2071 10.1163L20.7929 8.70207L8.79289 20.7021L10.2071 22.1163Z"
-                    fill="#0D378D"
-                  />
-                </svg>
-              </Button>
+                  height="30"
+                  rx="15"
+                  fill="white"
+                />
+                <path
+                  d="M22.5 9.40918C22.5 8.85689 22.0523 8.40918 21.5 8.40918L12.5 8.40918C11.9477 8.40918 11.5 8.85689 11.5 9.40918C11.5 9.96146 11.9477 10.4092 12.5 10.4092L20.5 10.4092L20.5 18.4092C20.5 18.9615 20.9477 19.4092 21.5 19.4092C22.0523 19.4092 22.5 18.9615 22.5 18.4092L22.5 9.40918ZM10.2071 22.1163L22.2071 10.1163L20.7929 8.70207L8.79289 20.7021L10.2071 22.1163Z"
+                  fill="#0D378D"
+                />
+              </svg>
+            </button>
             </div>
           </div>
         </div>
