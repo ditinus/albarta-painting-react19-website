@@ -13,6 +13,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import paintingCompany from "@/public/paintingCompany.png";
+import Footer from "@/components/ui/footer";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
@@ -394,6 +395,7 @@ export default function Home() {
 
         {/* News/Blog Section */}
       </div>
+      <Footer />
     </main>
   );
 }
