@@ -20,17 +20,17 @@ export default function BlogCard({ post }: BlogCardProps) {
 
       <div className="">
         <div className="">
-          <p className="text-sm text-blue-600 font-semibold uppercase  mt-3 bg-[#CEE4E1] w-[30%] flex justify-center p-1.5  ">
+          <p className="text-sm text-[#0D378D] font-semibold uppercase  mt-3 bg-[#CEE4E1] w-[30%] flex justify-center p-1.5  ">
             {post.date}
           </p>
         </div>
-        <h2 className="text-xl font-bold text-gray-900 mt-2">{post.title}</h2>
+        <h2 className="text-xl font-bold text-[#0D378D] mt-2">{post.title}</h2>
 
         <p className="text-gray-600 mt-3 line-clamp-3">{post.excerpt}</p>
 
         <Link
           href={`/blog/${post.slug}`}
-          className=" flex  items-center gap-2.5 mt-4 text-blue-600 font-medium hover:underline"
+          className=" flex   items-center gap-2.5 mt-4 text-[#0D378D] font-bold hover:underline"
         >
           Read More{" "}
           <svg
@@ -44,9 +44,9 @@ export default function BlogCard({ post }: BlogCardProps) {
               <path
                 d="M1.625 13.3428L7.625 7.34277L1.625 1.34277"
                 stroke="#0D378D"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </g>
             <defs>

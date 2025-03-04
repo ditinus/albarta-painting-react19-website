@@ -7,16 +7,11 @@ import MobileMenu from "./mobile-menu";
 import Image from "next/image";
 import ScrollingBanner from "./scrolling-banner";
 
-
-
 export function Navbar() {
-
-
   return (
     <>
-      {" "}
       <ScrollingBanner />
-      <header className="bg-white py-4 px-4 md:px-8">
+      <header className="bg-white py-4 px-4 md:px-8 sticky top-0 z-[99999] shadow-lg">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/">

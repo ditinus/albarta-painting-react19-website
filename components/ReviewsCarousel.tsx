@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 // import React from "react";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
@@ -9,7 +8,6 @@
 // import Reviews3 from "@/public/Reviews3.png";
 // import Image from "next/image";
 // import './ReviewsCarousel.css'
-
 
 // import Googlelogo from "../../../../public/assets/googleLogo.png";
 
@@ -48,7 +46,7 @@
 // const ReviewsCarousel = () => {
 //   return (
 //     <div className="py-2">
-    
+
 //         {/* <TestimonialHeader
 //           title="Our Happy Clients"
 //           subtitle="See how we’ve helped people achieve their goals."
@@ -60,9 +58,9 @@
 //         /> */}
 
 //         {/* <div className=" py-2 d-flex w-full flex-col justify-content-center">
-//           <Image className="" src={Googlelogo} alt="" /> 
+//           <Image className="" src={Googlelogo} alt="" />
 //         </div> */}
-  
+
 //   <div  className=" ">
 //         <Swiper
 //           spaceBetween={100}
@@ -91,7 +89,7 @@
 //             <SwiperSlide key={index} className="flex flex-col justify-between">
 //               <div className=" bg-[#E2E7F1] shadow-md w-[200px] sm:w-[500px] h-[400px] shadow-lg"  style={{marginLeft:"5em"}}>
 //                 <Image
-                
+
 //                   style={{
 //                     position: "absolute",
 //                     zIndex: 9999,
@@ -140,9 +138,6 @@
 
 // export default ReviewsCarousel;
 
-
-
-
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -151,8 +146,9 @@ import Reviews1 from "@/public/Reviews1.png";
 import Reviews2 from "@/public/Reviews2.png";
 import Reviews3 from "@/public/Reviews3.png";
 import Image from "next/image";
-import './ReviewsCarousel.css';
-
+import "./ReviewsCarousel.css";
+import GoogleLogo from "@/public/google-logo.svg";
+import ServiceSection from "./service-section";
 
 const reviews = [
   {
@@ -187,7 +183,16 @@ const reviews = [
 
 const ReviewsCarousel = () => {
   return (
-    <div className=" ">
+    <div className=" mb-20  ">
+      <ServiceSection
+        title="Our Gallery"
+        description="See the Magic of Transformation <br /> with Our Painting Work"
+        buttonText="View All"
+      />
+
+      <div className="flex justify-center mb-20 ">
+        <Image src={GoogleLogo} className="w-64 " alt="google-logo" />
+      </div>
       <div className="relative  px-10 mx-auto">
         <Swiper
           spaceBetween={30}
@@ -215,13 +220,29 @@ const ReviewsCarousel = () => {
               <div className="bg-[#E2E7F1] shadow-lg   relative rounded-xl p-4 flex flex-col justify-center ">
                 {/* Adjusted the images to be inside the flex container without absolute positioning */}
                 <div className="">
-                  <Image src={Reviews1} alt="Review Image"  className="mx-auto  absolute top-4 left-[-20px] " />
-                  <Image src={Reviews2} alt="Review Image"  className="mx-auto absolute bottom-[20px] left-[28px] h-[230px]" />
-                  <Image src={Reviews3} alt="Review Image"  className="mx-auto absolute bottom-[20px] right-[-10px]" />
+                  <Image
+                    src={Reviews1}
+                    alt="Review Image"
+                    className="mx-auto  absolute top-4 left-[-20px] "
+                  />
+                  <Image
+                    src={Reviews2}
+                    alt="Review Image"
+                    className="mx-auto absolute bottom-[20px] left-[28px] h-[230px]"
+                  />
+                  <Image
+                    src={Reviews3}
+                    alt="Review Image"
+                    className="mx-auto absolute bottom-[20px] right-[-10px]"
+                  />
                 </div>
                 <div className="p-[25px]">
-                  <p className="review-text  sm:text-lg font-medium text-black mb-4  p-[40px]  pb-0 pr-[-10px]">{review.review}</p>
-                  <span className=" font-bold text-sm sm:text-lg text-[#202020] p-[40px]">{review.name}</span>
+                  <p className="review-text  sm:text-lg font-medium text-black mb-4  p-[40px]  pb-0 pr-[-10px]">
+                    {review.review}
+                  </p>
+                  <span className=" font-bold text-sm sm:text-lg text-[#202020] p-[40px]">
+                    {review.name}
+                  </span>
                 </div>
               </div>
             </SwiperSlide>

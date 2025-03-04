@@ -5,8 +5,16 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button"
 import { MoveRight } from "lucide-react"
 import ourServices from "@/public/our-services.png"
+import ServiceSection from "./service-section"
 export default function OurServices() {
   return (
+    <>
+     <ServiceSection
+        title="Our Services"
+        description="Bringing Colour to Every   Corner <br /> of Your Home and Business"
+        buttonText="Explore Our Services"
+      />
+
     <div className="w-full bg-black text-white ">
       <div className="container mx-auto py-8 px-4 lg:py-30 lg:px-8 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32">
@@ -114,6 +122,7 @@ export default function OurServices() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

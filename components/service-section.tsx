@@ -31,7 +31,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
           <div className="flex items-center mt-4 md:mt-0">
             <Button
               variant="default"
-              className="ml-4 bg-[#0D378D] px-10 rounded-3xl "
+              className="ml-4 bg-[#0D378D] px-10  cursor-pointer  py-5 rounded-3xl "
             >
               {buttonText}
             </Button>
