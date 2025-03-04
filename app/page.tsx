@@ -66,7 +66,7 @@ export default function Home() {
               Blog
             </Link>
             <Link
-              href="/contact"
+              href="/contact-us"
               className="text-gray-800 hover:text-blue-600 font-medium"
             >
               Contact
@@ -395,6 +395,7 @@ export default function Home() {
         </section>
 
         {/* News/Blog Section */}
+
       </div>
       <Footer />
     </main>
