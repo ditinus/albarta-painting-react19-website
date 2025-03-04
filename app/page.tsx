@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import paintingCompany from "@/public/paintingCompany.png";
 import Footer from "@/components/ui/footer";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
@@ -65,7 +66,7 @@ export default function Home() {
               Blog
             </Link>
             <Link
-              href="/contact"
+              href="/contact-us"
               className="text-gray-800 hover:text-blue-600 font-medium"
             >
               Contact
@@ -284,7 +285,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+<ReviewsCarousel/>
         {/* Testimonials Section */}
         {/* <section className="py-12 bg-gray-100">
         <div className="container mx-auto px-4">
@@ -394,6 +395,7 @@ export default function Home() {
         </section>
 
         {/* News/Blog Section */}
+
       </div>
       <Footer />
     </main>
