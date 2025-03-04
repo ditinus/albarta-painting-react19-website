@@ -15,16 +15,13 @@ import homeHero from "@/public/home-hero.png";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-              {/* Hero Section */}
-              <Hero
-
-      />
+      {/* Hero Section */}
+      <Hero />
 
       <PaintingCompany />
       <OurServices />
       <div className="flex flex-col min-h-screen">
-
-      <CalgaryPainting />
+        <CalgaryPainting />
         <OurGallery />
         {/* Google Reviews Section */}
         <section className="py-12 bg-white">
@@ -45,10 +42,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-   
-
-     
       </div>
       <Footer />
     </main>

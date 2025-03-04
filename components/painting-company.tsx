@@ -165,7 +165,7 @@ export default function PaintingCompany() {
         </div>
 
         {/* Background decorative element */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-1/2 bg-gray-100 rounded-l-full opacity-20 z-0"></div>
+     
       </div>
     </div>
   );

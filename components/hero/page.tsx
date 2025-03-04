@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import homeHero from "@/public/home-hero.png";
@@ -6,10 +8,11 @@ import Link from "next/link";
 import { Highlight } from "../ui/hero-highlight";
 import TrustBadges from "../trust-badges";
 import { Navbar } from "../navbar";
+
 const Hero = () => {
   return (
     <div>
-   <Navbar />
+      <Navbar />
       <section className="relative h-[500px] md:h-[600px]">
         <div className="absolute inset-0">
           <Image
@@ -38,7 +41,7 @@ const Hero = () => {
             className="text-4xl md:text-6xl font-bold text-white mb-4"
           >
             EXPERT{" "}
-            <Highlight className="text-white">CALGARY PAINTERS </Highlight>
+            <Highlight className="text-white">CALGARY PAINTERS</Highlight>
           </motion.h1>
 
           <p className="text-xl md:text-2xl text-white mb-8">
@@ -48,7 +51,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/quote"
-              className="bg-[#0D378D] text-white pl-5 pr-2   border-2 border-white rounded-full font-medium hover:bg-blue-700  flex items-center justify-center"
+              className="bg-[#0D378D] text-white pl-5 pr-2 border-2 border-white rounded-full font-medium hover:bg-blue-700 flex items-center justify-center"
             >
               Get a Free Quote{" "}
               <span className="ml-2 bg-white rounded-full p-2">

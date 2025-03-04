@@ -1,15 +1,11 @@
-
-
-
 "use client";
 import React, { useState } from "react";
 
-
 import offer1 from "@/public/banner.png";
 
-
 import Image from "next/image";
-import "./style.css"
+import "./style.css";
+import ServiceSection from "../service-section";
 
 const OurGallery: React.FC = () => {
   const offers = [
@@ -20,36 +16,36 @@ const OurGallery: React.FC = () => {
     { id: 5, imageSrc: offer1 },
   ];
 
-
-
   return (
     <div className="gallery-carousel">
-   
+      <ServiceSection
+        title="Our Services"
+        description="See the Magic of Transformation <br /> with Our Painting Work"
+        buttonText="View All"
+      />
 
-       <div className="container-fluid mt-5">
-  <div className="gallery-slide-start">
-    <div className="gallery-slide">
-      <Image src={offer1} className="img-fluid"  alt={""}  />
-    </div>
-    <div className="gallery-slide">
-    <Image src={offer1} className="img-fluid"   alt={""} />
-    </div>
-    <div className="gallery-slide">
-    <Image src={offer1} className="img-fluid"  alt={""}  />
-    </div>
-    <div className="gallery-slide">
-    <Image src={offer1} className="img-fluid"  alt={""}  />
-    </div>
-    <div className="gallery-slide">
-    <Image src={offer1} className="img-fluid" alt={""}  />
-    </div>
-    <div className="gallery-slide">
-    <Image src={offer1} className="img-fluid"   alt={""} />
-    </div>
-  </div>
-
-</div>
-
+      <div className="container-fluid mt-5">
+        <div className="gallery-slide-start">
+          <div className="gallery-slide">
+            <Image src={offer1} className="img-fluid" alt={""} />
+          </div>
+          <div className="gallery-slide">
+            <Image src={offer1} className="img-fluid" alt={""} />
+          </div>
+          <div className="gallery-slide">
+            <Image src={offer1} className="img-fluid" alt={""} />
+          </div>
+          <div className="gallery-slide">
+            <Image src={offer1} className="img-fluid" alt={""} />
+          </div>
+          <div className="gallery-slide">
+            <Image src={offer1} className="img-fluid" alt={""} />
+          </div>
+          <div className="gallery-slide">
+            <Image src={offer1} className="img-fluid" alt={""} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

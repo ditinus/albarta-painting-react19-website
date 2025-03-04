@@ -1,165 +1,110 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { ArrowRight } from "lucide-react";
-import PaintingServices from "@/public/painting-services.png";
-import Link from "next/link";
-const services = [
-  {
-    title: "Commercial Painting Calgary",
-    description:
-      "Expert Painting Service for commercial and residential spaces. Affordable Painting Services in Calgary focused on meeting the unique painting needs of your business.",
-    imageSrc: PaintingServices,
-    altText: "Commercial Painting",
-    buttonText: "Learn More",
-  },
-  {
-    title: "Popcorn Ceiling Removal Calgary",
-    description:
-      "Popcorn ceilings were popular in the 70s, but not anymore. We can transform your old, dated ceiling into one that fits the way you live your modern life.",
-    imageSrc: PaintingServices,
-    altText: "Popcorn Ceiling Removal",
-    buttonText: "Learn More",
-  },
-  {
-    title: "Drywall Mud & Tape Calgary",
-    description:
-      "Expert taping and mudding is a critical aspect of a well-looking and enduring paint property in Calgary. We provide just the finish your project needs.",
-    imageSrc: PaintingServices,
-    altText: "Drywall Mud & Tape",
-    buttonText: "Learn More",
-  },
-  {
-    title: "Ceiling Texturing Calgary",
-    description:
-      "Calgary's ceiling texturing is a popular way to add character and interest to a room. In Calgary, there are several options available, including knockdown, orange peel, and more.",
-    imageSrc: PaintingServices,
-    altText: "Ceiling Texturing",
-    buttonText: "Learn More",
-  },
-];
+import Image from "next/image"
+import { Check, Dot } from "lucide-react"
+import service1 from "@/public/service1.png"
+import service2 from "@/public/service2.png"
+import service3 from "@/public/service3.png"
 
-export default function HomeServices() {
+import OurServices from "@/components/our-services"
+import PaintingCompany from "@/components/painting-company"
+export default function page() {
   return (
-    <div className="container mx-auto max-w-7xl px-4 py-8">
-      {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
-        {services.map((service, index) => (
-          <Card
-            key={index}
-            className="overflow-hidden p-0 border-0 shadow-none space-y-3"
-          >
-            <CardTitle className="uppercase text-lg p-0 font-bold text-[#0D378D] mb-[-10]">
-              {service.title}
-            </CardTitle>
-            <div className="relative h-[300px] w-full">
-                
-              <Image
-                src={service.imageSrc}
-                alt={service.altText}
-                fill
-                className="object-cover"
-              />
-            </div>
-            <CardHeader className=" p-0">
-              <CardTitle className="uppercase text-lg font-bold text-black">
-                {service.title}
-              </CardTitle>
-              <CardDescription className=" text-black">
-                {service.description.split("\n")[0]}
-              </CardDescription>
-            </CardHeader>
-       
-            <CardFooter className="p-0 mt-[-20]">
-            
-
-              <Link
-              href="/quote"
-              className="bg-[#0D378D] text-white pl-5 pr-2 py-1.5   border-2 border-white rounded-full font-medium hover:bg-blue-700  flex items-center justify-center"
-            >
-              {service.buttonText} 
-              <span className="ml-2 bg-white rounded-full p-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="14"
-                  viewBox="0 0 15 14"
-                  fill="none"
-                >
-                  <path
-                    d="M14.5 0.999999C14.5 0.447714 14.0523 -8.61581e-07 13.5 -1.11446e-06L4.5 -3.13672e-07C3.94772 -6.50847e-07 3.5 0.447715 3.5 0.999999C3.5 1.55228 3.94772 2 4.5 2L12.5 2L12.5 10C12.5 10.5523 12.9477 11 13.5 11C14.0523 11 14.5 10.5523 14.5 10L14.5 0.999999ZM2.20711 13.7071L14.2071 1.70711L12.7929 0.292893L0.792893 12.2929L2.20711 13.7071Z"
-                    fill="#0D378D"
-                  />
-                </svg>
-              </span>
-            </Link>
-            
+    <>
     
-           
-            </CardFooter>
-          </Card>
-        ))}
-      </div>
+    <Hero />
 
-      {/* CTA Banner */}
-      <div className="relative w-full  h-[300px] mb-10 rounded-lg overflow-hidden">
-        <div className="absolute inset-0 bg-black/70">
+      <PaintingCompany />
+      <OurServices />
+    <div className="container mx-auto max-w-7xl px-4 py-12">
+      {/* Quality Section */}
+      <div className="grid md:grid-cols-2 gap-8 mb-16 items-center">
+        <div className="relative w-full  lg:w-[80%] aspect-square md:aspect-auto md:h-[600px] overflow-hidden">
           <Image
-            src={PaintingServices}
-            alt="Transform Your Space"
+            src={service1}
+            alt="Modern living room with wooden floors and fireplace"
             fill
-            className="object-cover mix-blend-overlay"
+            className="object-cover "
           />
         </div>
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-white p-6 text-center">
-          <h2 className="text-2xl font-bold uppercase mb-2">
-            Ready to transform your space?
-          </h2>
-          <p className="mb-4 max-w-xl">
-            Whether you're looking to refresh your home or update your business
-            space, our team is ready to help you create the perfect environment.
-          </p>
-          <Button className="bg-primary hover:bg-primary/90 text-white rounded-full">
-            Schedule a Consultation
-          </Button>
+
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <p className="text-sm font-medium text-black" >Commitment to Quality</p>
+            <h2 className="text-3xl font-bold text-blue-800">
+              PREMIUM MATERIALS &<br />
+              EXCEPTIONAL WORKMANSHIP
+            </h2>
+          </div>
+
+          <ul className="space-y-4 text-black">
+            <li className="flex items-start gap-2">
+            <Dot  className="h-5 w-5 mt-0.5 text-black flex-shrink-0" />
+              <span>We use the best paints and materials for long-lasting results.</span>
+            </li>
+            <li className="flex items-start gap-2">
+            <Dot  className="h-5 w-5 mt-0.5 text-black flex-shrink-0" />
+              <span>Our expert team ensures flawless finishes with attention to every detail.</span>
+            </li>
+            <li className="flex items-start gap-2">
+            <Dot  className="h-5 w-5 mt-0.5 text-black flex-shrink-0" />
+              <span>We receive numerous positive reviews from satisfied clients who trust our work.</span>
+            </li>
+          </ul>
+
+          <div className="pt-4">
+            <p className="text-sm text-black">
+              Our reputation is built on trust, professionalism, and superior quality—ensuring every project exceeds
+              expectations.
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Contact Form Section */}
-      <div className="grid md:grid-cols-2 gap-8">
-        <div className="flex flex-col justify-center">
-          <h2 className="text-2xl font-bold text-primary uppercase mb-2">
-            Have a project in mind or need a quote?
-          </h2>
-          <p className="text-muted-foreground mb-4">
-            Let us know what your project involves in Calgary, and we'll respond
-            to your inquiry as soon as we can.
-          </p>
+      {/* Eco-Friendly Section */}
+      <div className="grid md:grid-cols-2 gap-8 items-center relative">
+        <div className="space-y-6 order-2 md:order-1">
+          <div className="space-y-2">
+            <p className="text-sm font-medium text-black">Eco-Friendly Approach</p>
+            <h2 className="text-3xl font-bold text-blue-800">
+              SUSTAINABLE PAINTING FOR A<br />
+              HEALTHIER FUTURE
+            </h2>
+          </div>
+
+          <ul className="space-y-4 text-black list-disc">
+            <li className="flex items-start gap-2 list-disc">
+              <Dot  className="h-5 w-5 mt-0.5 text-black " />
+              <span>We use low to no VOC paints to reduce environmental impact.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <Dot  className="h-5 w-5 mt-0.5 text-black flex-shrink-0" />
+              <span>We collect and recycle leftover paints responsibly.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <Dot  className="h-5 w-5 mt-0.5 text-black flex-shrink-0" />
+              <span >We sort and recycle all project-related waste at our facility.</span>
+            </li>
+          </ul>
+
+          <div className="pt-4">
+            <p className="text-sm text-black">
+              By choosing Alberta Colour Painting, you're making an eco-friendly choice that benefits your home and the
+              planet.
+            </p>
+          </div>
         </div>
 
-        <div>
-          <form className="space-y-4">
-            <div className="grid grid-cols-1 gap-4">
-              <Input placeholder="Name" />
-              <Input placeholder="Email address" type="email" />
-              <Input placeholder="Phone number" type="tel" />
-              <Textarea placeholder="Message" rows={4} />
-              <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                Get a Quote
-              </Button>
-            </div>
-          </form>
+        <div className="relative w-full lg:w-[80%] aspect-square md:aspect-auto md:h-[600px]  overflow-hidden order-1 md:order-2">
+          <Image
+            src={service2}
+            alt="Team members discussing eco-friendly paint options"
+            fill
+            className=" "
+          />
         </div>
+
       </div>
     </div>
-  );
+    </>
+  )
 }
+
