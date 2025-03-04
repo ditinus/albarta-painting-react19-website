@@ -83,7 +83,7 @@ const ContactForm = () => {
         {/* Contact Info Section */}
         <div className=" w-full  md:w-full lg:w-[60%] lg:ml-[5em]">
           <h2 className="text-2xl text-[#0D378D] text-[30px] lg:[45px] font-bold tracking-normal ">HAVE A PROJECT IN MIND OR NEED A QUOTE?</h2>
-          <h3 className="text-lg mt-8 mb-6 text-[#000000] font-bold ">
+          <h3 className="text-lg mt-8 mb-6 text-[#000000] font-bold  ">
             Get in touch with our expert painters in Calgary. We’d be happy to help bring your vision to life!
           </h3>
           <p className="text-[16px] mb-6 font-bold text-[#000000] flex flex-row items-center">

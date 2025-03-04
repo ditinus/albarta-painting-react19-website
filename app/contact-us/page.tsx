@@ -94,7 +94,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* <section className="relative h-[500px] md:h-[600px]">
+      <section className="relative h-[500px] md:h-[600px]">
         <div className="absolute inset-0">
           <Image
             src={homeHero}
@@ -160,7 +160,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <TrustBadges />
     
