@@ -1,14 +1,6 @@
 .back-img {
     margin-top: 5rem;
-      /* position: relative; */
-   /* padding-top: 40px; */
-   /* padding-bottom: 40px; */
-      /* height: 308px; */
-      background: url('../public/banner.png') no-repeat center center/cover;
-      
-     /* margin-left: 0.1rem; */
-     /* margin-right:0.1rem; */
-  
+      background: url('../public/banner.png') no-repeat center center/cover;  
     }
     
     .back-img::before {
