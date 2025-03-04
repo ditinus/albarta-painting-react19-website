@@ -1,193 +1,112 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { Menu } from "lucide-react"
+import * as React from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import MobileMenu from "./mobile-menu";
+import Image from "next/image";
+import ScrollingBanner from "./scrolling-banner";
 
-import { Button } from "@/components/ui/button"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description: "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description: "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description: "Displays an indicator showing the completion progress of a task.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-]
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = React.useState(false)
+
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2">
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="h-7 w-7 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-bold">
-              A
-            </span>
-            <span className="font-bold">Acme Inc</span>
-          </Link>
-          <div className="hidden md:flex">
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                      <li className="row-span-3">
-                        <NavigationMenuLink asChild>
-                          <a
-                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                            href="/"
-                          >
-                            <div className="mb-2 mt-4 text-lg font-medium">Acme Inc</div>
-                            <p className="text-sm leading-tight text-muted-foreground">
-                              Beautifully designed components built with Radix UI and Tailwind CSS.
-                            </p>
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <a
-                            href="/docs"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">Documentation</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Learn how to integrate our products in your application
-                            </p>
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <a
-                            href="/docs/installation"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">Installation</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              How to install dependencies and structure your app.
-                            </p>
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                      {components.map((component) => (
-                        <li key={component.title}>
-                          <NavigationMenuLink asChild>
-                            <a
-                              href={component.href}
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                            >
-                              <div className="text-sm font-medium leading-none">{component.title}</div>
-                              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                {component.description}
-                              </p>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>Documentation</NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+    <>
+      {" "}
+      <ScrollingBanner />
+      <header className="bg-white py-4 px-4 md:px-8">
+        <div className="container mx-auto flex items-center justify-between">
+          <div className="flex items-center">
+            <Link href="/">
+              <Image
+                src="/logo.svg"
+                alt="Alberta Color Painting"
+                width={100}
+                height={40}
+                className="h-auto"
+              />
+            </Link>
           </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="hidden md:flex gap-2">
-            <Button variant="ghost" size="sm" asChild>
-              <Link href="/login">Login</Link>
-            </Button>
-            <Button size="sm" asChild>
-              <Link href="/signup">Sign up</Link>
-            </Button>
-          </div>
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="md:hidden">
-              <Button variant="outline" size="icon">
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Toggle menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <div className="flex flex-col gap-4 mt-8">
-                <Link href="/" className="text-lg font-semibold" onClick={() => setIsOpen(false)}>
-                  Home
-                </Link>
-                <Link href="/docs" className="text-lg font-semibold" onClick={() => setIsOpen(false)}>
-                  Documentation
-                </Link>
-                <Link href="/components" className="text-lg font-semibold" onClick={() => setIsOpen(false)}>
-                  Components
-                </Link>
-                <div className="flex flex-col gap-2 mt-4">
-                  <Button variant="outline" asChild>
-                    <Link href="/login" onClick={() => setIsOpen(false)}>
-                      Login
-                    </Link>
-                  </Button>
-                  <Button asChild>
-                    <Link href="/signup" onClick={() => setIsOpen(false)}>
-                      Sign up
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
-      </div>
-    </header>
-  )
-}
 
+          <nav className="hidden md:flex items-center space-x-8 bg-[#0D378D1F] rounded-4xl px-5.5 py-3.5">
+            <Link
+              href="/"
+              className="text-gray-800 hover:text-blue-600 font-medium"
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className="text-gray-800 hover:text-blue-600 font-medium"
+            >
+              About
+            </Link>
+            <Link
+              href="/services"
+              className="text-gray-800 hover:text-blue-600 font-medium"
+            >
+              Services
+            </Link>
+            <Link
+              href="/gallery"
+              className="text-gray-800 hover:text-blue-600 font-medium"
+            >
+              Gallery
+            </Link>
+            <Link
+              href="/blogs"
+              className="text-gray-800 hover:text-blue-600 font-medium"
+            >
+              Blog
+            </Link>
+            <Link
+              href="/contact"
+              className="text-gray-800 hover:text-blue-600 font-medium"
+            >
+              Contact
+            </Link>
+          </nav>
+
+          <div className="hidden md:flex items-center space-x-4">
+            <div className="flex items-center">
+              <div className="bg-blue-100 rounded-full p-2 mr-2 border-2 shadow-2xl">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="20"
+                  viewBox="0 0 19 20"
+                  fill="none"
+                >
+                  <path
+                    d="M10.7177 1.23076C10.7177 0.827174 11.0448 0.5 11.4484 0.5C13.4512 0.5 15.3718 1.29557 16.788 2.7117C18.2041 4.12783 18.9997 6.04851 18.9997 8.05122C18.9997 8.45481 18.6725 8.78198 18.2689 8.78198C17.8653 8.78198 17.5382 8.45481 17.5382 8.05122C17.5382 6.43613 16.8966 4.8872 15.7545 3.74516C14.6125 2.60312 13.0635 1.96153 11.4484 1.96153C11.0448 1.96153 10.7177 1.63435 10.7177 1.23076Z"
+                    fill="#0D378D"
+                  />
+                  <path
+                    d="M10.7177 5.12817C10.7177 4.72458 11.0448 4.3974 11.4484 4.3974C12.4175 4.3974 13.3469 4.78236 14.0321 5.46758C14.7173 6.15281 15.1023 7.08217 15.1023 8.05122C15.1023 8.45481 14.7751 8.78198 14.3715 8.78198C13.9679 8.78198 13.6407 8.45481 13.6407 8.05122C13.6407 7.46979 13.4098 6.91217 12.9986 6.50104C12.5875 6.0899 12.0299 5.85893 11.4484 5.85893C11.0448 5.85893 10.7177 5.53176 10.7177 5.12817Z"
+                    fill="#0D378D"
+                  />
+                  <path
+                    d="M6.58094 1.63635C6.02282 0.84722 5.25201 0.491652 4.43245 0.500149C3.65569 0.508201 2.89904 0.839809 2.26796 1.28219C1.62972 1.7296 1.06 2.33126 0.652774 2.97561C0.25307 3.60806 -0.0356122 4.35541 0.00355745 5.08495C0.192036 8.59535 2.16636 12.3467 4.94059 15.1226C7.7125 17.8963 11.4147 19.8236 15.1524 19.4548C15.8842 19.3826 16.5771 19.0102 17.1438 18.5343C17.7171 18.0529 18.2147 17.4219 18.5494 16.7417C18.8814 16.0671 19.0789 15.2898 18.9699 14.5326C18.8562 13.7427 18.4155 13.0378 17.6031 12.5704C17.43 12.4708 17.2748 12.3741 17.1047 12.268C16.9588 12.1771 16.8019 12.0793 16.6131 11.9669C16.2479 11.7494 15.8326 11.5219 15.3967 11.3637C14.9607 11.2054 14.463 11.1009 13.9439 11.1723C13.4078 11.246 12.9094 11.4992 12.4778 11.9534C12.1451 12.3036 11.6561 12.4137 10.9684 12.2145C10.2688 12.0118 9.48148 11.5087 8.79711 10.8294C8.1134 10.1508 7.59531 9.35862 7.37477 8.64202C7.15643 7.93258 7.2524 7.41099 7.59381 7.05167C8.05454 6.56676 8.30038 6.02636 8.35223 5.45565C8.40266 4.90068 8.26428 4.3784 8.06622 3.92206C7.77064 3.24104 7.2667 2.56383 6.87378 2.03582C6.76551 1.89032 6.66567 1.75615 6.58094 1.63635Z"
+                    fill="#0D378D"
+                  />
+                </svg>
+              </div>
+              <span className="text-gray-800 font-medium">587-466-6647</span>
+            </div>
+
+            <Link
+              href="/book"
+              className="bg-[#0D378D] text-white border-4 border-[#CADBFF] px-8 py-1 rounded-4xl font-medium hover:bg-[#0D378D] transition-colors"
+            >
+              <Button>Book Now</Button>
+            </Link>
+          </div>
+
+          <MobileMenu />
+        </div>
+      </header>
+    </>
+  );
+}
