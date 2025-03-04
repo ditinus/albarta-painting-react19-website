@@ -17,6 +17,7 @@ import Footer from "@/components/ui/footer";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 import ContactForm from "./ContactForm";
 import GoogleMap from "./GoogleMap";
+import DiscussSection from "./DiscussSection";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
@@ -166,6 +167,7 @@ export default function Home() {
     
       <ContactForm/>
       <GoogleMap/>
+      <DiscussSection/>
       <Footer />
     </main>
   );
