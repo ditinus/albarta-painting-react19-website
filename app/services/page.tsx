@@ -14,7 +14,7 @@ import Link from "next/link";
 import Hero from "@/components/hero";
 import PaintingCompany from "@/components/painting-company";
 
-import { ContactFormSection } from "@/components/ContactFormSection";
+import  ContactFormSection  from "../../components/ContactFormSection";
 import Footer from "@/components/ui/footer";
 const services = [
   {

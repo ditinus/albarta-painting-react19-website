@@ -3,7 +3,7 @@ import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 import { Button } from '../ui/button'
 
-export const ContactFormSection = () => {
+ const ContactFormSection = () => {
   return (
     <div className=' container mx-auto px-4 py-8 '>  <div className="grid md:grid-cols-2 gap-8 lg:my-20 my-10 ">
     <div className="flex flex-col justify-center w-full  lg:w-[70%] ">
@@ -32,3 +32,5 @@ export const ContactFormSection = () => {
   </div></div>
   )
 }
+
+export default ContactFormSection
