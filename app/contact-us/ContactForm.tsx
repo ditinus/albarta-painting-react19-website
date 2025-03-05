@@ -82,23 +82,23 @@ const ContactForm = () => {
        
         {/* Contact Info Section */}
         <div className=" w-full  md:w-full lg:w-[60%] lg:ml-[5em]">
-          <h2 className="text-2xl text-[#0D378D] text-[30px] lg:[45px] font-bold tracking-normal ">HAVE A PROJECT IN MIND OR NEED A QUOTE?</h2>
-          <h3 className="text-lg mt-8 mb-6 text-[#000000] font-bold  ">
+          <h2 className=" text-[#0D378D] text-[30px] lg-text-[45px]  tracking-normal " style={{fontWeight:"400",fontSize:"45px"}}>HAVE A PROJECT IN MIND OR NEED A QUOTE?</h2>
+          <h3 className="text-lg mt-8 mb-6 text-[#000000]   " style={{fontWeight:"500"}}>
             Get in touch with our expert painters in Calgary. We’d be happy to help bring your vision to life!
           </h3>
-          <p className="text-[16px] mb-6 font-bold text-[#000000] flex flex-row items-center">
+          <p className="text-[16px] mb-6  text-[#000000] flex flex-row items-center" style={{fontWeight:"500"}}>
             <span className="mr-2">
               <Image src={phone} alt="phone" />
             </span>
             +1 587-966-6547
           </p>
-          <p className="text-base mb-6 text-black font-bold flex flex-row items-center">
+          <p className="text-base mb-6 text-black  flex flex-row items-center" style={{fontWeight:"500"}}>
             <span className="mr-2">
               <Image src={email} alt="email" />
             </span>
             info@albertacolourpainting.com
           </p>
-          <p className="text-base mb-6 text-black font-bold flex flex-row items-center">
+          <p className="text-base mb-6 text-black  flex flex-row items-center" style={{fontWeight:"500"}}>
             <span className="mr-2">
               <Image src={location} alt="location" />
             </span>
