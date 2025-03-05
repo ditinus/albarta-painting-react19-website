@@ -16,6 +16,8 @@ import { ContactFormSection } from "@/components/ContactFormSection";
 import { getBlogPosts } from "@/lib/blog-data";
 import BlogGrid from "@/components/blog-grid";
 import HomeBanner from "@/components/HomeBanner/home-banner";
+import Link from "next/link";
+
 const posts = getBlogPosts();
 export default function Home() {
   return (
@@ -31,14 +33,15 @@ export default function Home() {
  
         <OurGallery />
         {/* Google Reviews Section */}
-        <ReviewsCarousel />
+        {/* <ReviewsCarousel /> */}
         <ContactFormSection />
         {/* <SpecialOffer /> */}
         <main className="container mx-auto px-4 py-8 lg:mt-20 mt-10">
           <BlogGrid posts={posts?.slice(0, 3)} />
 
           <div className="flex justify-center my-7">
-          <Button className="bg-[#0D378D] px-4 py-5 w-30 rounded-3xl cursor-pointer">View All</Button>
+           
+          <Button className="bg-[#0D378D] px-4 py-5 w-30 rounded-3xl cursor-pointer"> <Link href="/blogs">View All</Link></Button>
         </div>
 
         </main>

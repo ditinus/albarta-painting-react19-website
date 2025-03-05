@@ -274,7 +274,7 @@ export const CalgaryPainting = () => {
         </div>
 
             <div className="flex  mt-20">
-              <button className="flex items-center gap-2 border-2 border-white rounded-full px-6 py-3 text-sm md:text-base font-medium hover:bg-blue-800 transition-colors">
+              <button className="flex items-center gap-2 border-2 border-white rounded-full pl-3 pr-1.5 py-2  text-sm md:text-base font-medium hover:bg-blue-800 transition-colors">
                 Book Your Estimate Today
                 <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.5" width="31" height="30" rx="15" fill="white"/>
