@@ -14,6 +14,7 @@ import Footer from "@/components/ui/footer";
 import ContactForm from "./ContactForm";
 import GoogleMap from "./GoogleMap";
 import { Navbar } from "@/components/navbar";
+import DiscussSection from "./DiscussSection";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
@@ -94,6 +95,7 @@ export default function Home() {
     
       <ContactForm/>
       <GoogleMap/>
+      <DiscussSection/>
       <Footer />
     </main>
   );

@@ -15,6 +15,7 @@ import BlogGrid from "@/components/blog-grid";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
 import { Navbar } from "@/components/navbar";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 
 const posts = getBlogPosts();
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
 
         <OurGallery />
         {/* Google Reviews Section */}
-        {/* <ReviewsCarousel /> */}
+        <ReviewsCarousel />
         <ContactFormSection />
         {/* <SpecialOffer /> */}
         <main className="container mx-auto px-4 py-8 ">
