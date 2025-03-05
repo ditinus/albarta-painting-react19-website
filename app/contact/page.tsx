@@ -2,19 +2,15 @@
 import MobileMenu from "@/components/mobile-menu";
 import ScrollingBanner from "@/components/scrolling-banner";
 import TrustBadges from "@/components/trust-badges";
-import { Clock, Mail, MapPin, Phone, PhoneCall, Star } from "lucide-react";
+import {  PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import homeHero from "@/public/home-hero.png";
 import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import paintingCompany from "@/public/paintingCompany.png";
+import {Highlight } from "@/components/ui/hero-highlight";
+
 import Footer from "@/components/ui/footer";
-import ReviewsCarousel from "@/components/ReviewsCarousel";
+
 import ContactForm from "./ContactForm";
 import GoogleMap from "./GoogleMap";
 export default function Home() {
