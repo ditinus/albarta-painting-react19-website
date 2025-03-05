@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+
 
 import offer1 from "@/public/banner.png";
 
@@ -8,13 +8,13 @@ import "./style.css";
 import ServiceSection from "../service-section";
 
 const OurGallery: React.FC = () => {
-  const offers = [
-    { id: 1, imageSrc: offer1 },
-    { id: 2, imageSrc: offer1 },
-    { id: 3, imageSrc: offer1 },
-    { id: 4, imageSrc: offer1 },
-    { id: 5, imageSrc: offer1 },
-  ];
+  // const offers = [
+  //   { id: 1, imageSrc: offer1 },
+  //   { id: 2, imageSrc: offer1 },
+  //   { id: 3, imageSrc: offer1 },
+  //   { id: 4, imageSrc: offer1 },
+  //   { id: 5, imageSrc: offer1 },
+  // ];
 
   return (
     <div className="gallery-carousel my-10">

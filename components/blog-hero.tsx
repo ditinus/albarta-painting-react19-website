@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Highlight } from "../components/ui/hero-highlight";
+
 import TrustBadges from "../components/trust-badges";
 import { Navbar } from "../components/navbar";
 

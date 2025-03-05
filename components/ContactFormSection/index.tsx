@@ -5,14 +5,14 @@ import { Button } from '../ui/button'
 
 export const ContactFormSection = () => {
   return (
-    <div className=' container mx-auto'>  <div className="grid md:grid-cols-2 gap-8 lg:my-20 my-10 ">
+    <div className=' container mx-auto px-4 py-8 '>  <div className="grid md:grid-cols-2 gap-8 lg:my-20 my-10 ">
     <div className="flex flex-col justify-center w-full  lg:w-[70%] ">
       <h2 className="text-[26px] lg:text-[45px] font-bold text-[#0D378D] uppercase mb-2">
         Have a project in  mind or need a quote?
       </h2>
       <p className="text-muted-foreground mb-4 text-black">
-        Let us know what your project involves  in Calgary, and we'll respond
-        to your inquiry as soon as we can.
+        {`Let us know what your project involves  in Calgary, and we'll respond
+        to your inquiry as soon as we can.`}
       </p>
     </div>
 

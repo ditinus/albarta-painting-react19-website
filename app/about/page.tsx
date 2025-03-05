@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Check, Dot } from "lucide-react";
+import {  Dot } from "lucide-react";
 import service1 from "@/public/service1.png";
 import service2 from "@/public/service2.png";
 import service3 from "@/public/service3.png";
@@ -107,7 +107,7 @@ export default function page() {
 
             <div className="pt-4">
               <p className="text-sm text-black">
-                By choosing Alberta Colour Painting, you're making an
+                By choosing Alberta Colour Painting, you making an
                 eco-friendly choice that benefits your home and the planet.
               </p>
             </div>

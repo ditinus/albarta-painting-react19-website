@@ -1,53 +1,52 @@
 "use client";
-import React, { useEffect } from "react";
-import Swiper from "swiper";
+
 import "./style.css";
 import "swiper/css";
 import Image from "next/image";
 import slider1 from "@/public/slider-image-1.png";
 import slider2 from "@/public/slider-image-2.png";
 const SpecialOffer = () => {
-  useEffect(() => {
-    const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        320: {
-          // Small screens (mobile)
-          slidesPerView: 1,
-          spaceBetween: 22,
-        },
-        768: {
-          // Medium screens (tablets)
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          // Large screens (desktops)
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1199: {
-          // Larger screens (desktops)
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        1367: {
-          // Larger screens (desktops)
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-      },
-    });
-  }, []); // Empty dependency array ensures this runs only once on mount
+  // useEffect(() => {
+  //   const swiper = new Swiper(".mySwiper", {
+  //     slidesPerView: 2,
+  //     spaceBetween: 30,
+  //     navigation: {
+  //       nextEl: ".swiper-button-next",
+  //       prevEl: ".swiper-button-prev",
+  //     },
+  //     pagination: {
+  //       el: ".swiper-pagination",
+  //       clickable: true,
+  //     },
+  //     breakpoints: {
+  //       320: {
+  //         // Small screens (mobile)
+  //         slidesPerView: 1,
+  //         spaceBetween: 22,
+  //       },
+  //       768: {
+  //         // Medium screens (tablets)
+  //         slidesPerView: 2,
+  //         spaceBetween: 20,
+  //       },
+  //       1024: {
+  //         // Large screens (desktops)
+  //         slidesPerView: 2,
+  //         spaceBetween: 30,
+  //       },
+  //       1199: {
+  //         // Larger screens (desktops)
+  //         slidesPerView: 3,
+  //         spaceBetween: 30,
+  //       },
+  //       1367: {
+  //         // Larger screens (desktops)
+  //         slidesPerView: 2,
+  //         spaceBetween: 30,
+  //       },
+  //     },
+  //   });
+  // }, []); // Empty dependency array ensures this runs only once on mount
 
   return (
     <section>

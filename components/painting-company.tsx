@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Star, Award, Users, Target } from "lucide-react";
+import { ArrowRight, } from "lucide-react";
 import AboutUs from "@/public/AboutUs.png";
 export default function PaintingCompany() {
   return (
@@ -30,14 +30,14 @@ export default function PaintingCompany() {
             YOUR WORLD
           </h1>
           <p className="text-gray-700 mb-6">
-            Welcome to Atlantic Colour Painting, your trusted partner for
+           {`  Welcome to Atlantic Colour Painting, your trusted partner for
             professional interior and exterior painting services in Calgary. Our
             team, featuring the finest Calgary painters, ensures every project
             we undertake is completed to the highest standards with precision
             and quality. Whether you're looking for expert Calgary interior
             painters or need comprehensive service from a top Calgary painting
             company, we've got you covered. Our interior painting services are
-            tailored to transform your living spaces with elegance and style.
+            tailored to transform your living spaces with elegance and style.`}
           </p>
           <Button className="bg-blue-900 hover:bg-blue-800 text-white rounded-full w-fit px-6 py-2 flex items-center gap-2">
             LEARN MORE
