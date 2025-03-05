@@ -83,7 +83,7 @@ export default function page() {
         </div>
         <HomeBanner/>
         {/* Eco-Friendly Section */}
-        <div className="grid md:grid-cols-2 gap-8 items-center relative">
+        <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10">
           <div className="space-y-6 order-2 md:order-1">
             <div className="space-y-2">
               <p className="text-sm font-medium text-black">
