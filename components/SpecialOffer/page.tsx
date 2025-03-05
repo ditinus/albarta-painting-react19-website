@@ -51,14 +51,14 @@ const Index = () => {
 
   return (
     <section className="py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-7xl">
         <h6 className="text-center text-black text-xl font-semibold mb-2">Special Offer</h6>
         <h2 className="text-center text-3xl  font-semibold text-[#0D378D] uppercase mb-8">
           Top Calgary House Painting Offers and Discounts
         </h2>
         <div className="offer_bg">
           {/* Grid layout for content */}
-          <div className="max-w-6xl mx-auto p-4 md:p-6 flex flex-col md:flex-row gap-6 md:gap-10">
+          <div className="  flex flex-col md:flex-row gap-6 md:gap-10">
             {/* Swiper slider section */}
             <div className="lg:w-[60%] w-full">
               <div className="swiper mySwiper offer_slider">
@@ -130,13 +130,30 @@ const Index = () => {
               </div>
             </div>
             {/* Text content section */}
-            <div className="w-full md:w-1/2 flex flex-col justify-center">
-              <h5 className=" lg:text-xl  text-[20px]  font-semibold mb-5">
+            <div className="w-full pr-5 flex flex-col justify-center ">
+              <h5 className=" lg:text-xl  text-[20px]   mb-5">
                 For a limited time, Alberta Colour Painting is offering exclusive discounts to help you refresh your space at an unbeatable price!
               </h5>
-              <p className="text-[14px] lg:text-[16px]">
+              <p className="text-[14px] lg:text-[16px] font-light">
                 Discover a variety of discounts and special deals at Alberta Colour Painting, tailored to help you save on your Calgary house painting projects throughout the year. Explore ongoing promotions for both standard and specialty wall painting services, and ensure you get the best value by visiting our offers page.
               </p>
+
+              <button className="flex items-center w-40 mt-3.5 gap-2 border-2 border-white rounded-full pl-5 pr-1.5  py-1 text-sm md:text-base font-medium bg-[#0D378D]  cursor-pointer transition-colors">
+                  Learn More
+                  <svg
+                    width="32"
+                    height="30"
+                    viewBox="0 0 32 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect x="0.5" width="31" height="30" rx="15" fill="white" />
+                    <path
+                      d="M23 9C23 8.44771 22.5523 8 22 8L13 8C12.4477 8 12 8.44771 12 9C12 9.55228 12.4477 10 13 10L21 10L21 18C21 18.5523 21.4477 19 22 19C22.5523 19 23 18.5523 23 18L23 9ZM10.7071 21.7071L22.7071 9.70711L21.2929 8.29289L9.29289 20.2929L10.7071 21.7071Z"
+                      fill="#0D378D"
+                    />
+                  </svg>
+                </button>
             </div>
           </div>
         </div>

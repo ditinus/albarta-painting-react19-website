@@ -71,7 +71,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto px-6 py-12">
+    <div className="container mx-auto px-6 py-12 ">
          <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-medium pt-[86px] pb-[86px] ">
   GET IN TOUCH
 </p>

@@ -5,7 +5,7 @@ import { Button } from '../ui/button'
 
  const ContactFormSection = () => {
   return (
-    <div className=' container mx-auto px-4 py-8 '>  <div className="grid md:grid-cols-2 gap-8 lg:my-20 my-10 ">
+    <div className=' container mx-auto px-4 py-8  max-w-7xl'>  <div className="grid md:grid-cols-2 gap-8 lg:my-20 my-10 ">
     <div className="flex flex-col justify-center w-full  lg:w-[70%] ">
       <h2 className="text-[26px] lg:text-[45px] font-bold text-[#0D378D] uppercase mb-2">
         Have a project in  mind or need a quote?
@@ -16,8 +16,8 @@ import { Button } from '../ui/button'
       </p>
     </div>
 
-    <div>
-      <form className="space-y-14 bg-yellow-50 shadow-2xl p-5 ">
+    <div className='w-xl mx-auto'>
+      <form className="space-y-14  shadow-2xl p-5 ">
         <div className="grid grid-cols-1 gap-8">
           <Input className=" border-0 bg-[#F3F3F3] text-black" placeholder="Name" />
           <Input  className=" border-0 bg-[#F3F3F3] text-black"  placeholder="Email address" type="email" />

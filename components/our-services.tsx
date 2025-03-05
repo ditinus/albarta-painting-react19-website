@@ -20,8 +20,8 @@ export default function OurServices() {
       />
 
       <div className="w-full bg-black text-white ">
-        <div className="container mx-auto  max-w-7xl  py-8 px-4 lg:py-30 lg:px-8 ">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32">
+        <div className="container mx-auto max-w-7xl py-8 px-4 lg:py-30  ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32 place-items-center">
             {/* Services Accordion */}
             <div className="space-y-1">
               <Accordion type="single" collapsible className="w-full">
@@ -29,7 +29,7 @@ export default function OurServices() {
                   value="interior"
                   className="border-b-[1px] border-white/10"
                 >
-                  <AccordionTrigger className="py-6 text-sm font-medium uppercase tracking-wider hover:no-underline">
+                  <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Interior Painting Calgary</span>
                   </AccordionTrigger>
                   <AccordionContent>
@@ -45,7 +45,7 @@ export default function OurServices() {
                   value="exterior"
                   className="border-b-[1px] border-white/10"
                 >
-                  <AccordionTrigger className="py-6 text-sm font-medium uppercase tracking-wider hover:no-underline">
+                  <AccordionTrigger className="py-6  lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Exterior Painting Calgary</span>
                   </AccordionTrigger>
                   <AccordionContent>
@@ -61,7 +61,7 @@ export default function OurServices() {
                   value="commercial"
                   className="  border-b-[1px] border-white/10"
                 >
-                  <AccordionTrigger className="py-6 text-sm font-medium uppercase tracking-wider hover:no-underline">
+                  <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Commercial Painting Calgary</span>
                   </AccordionTrigger>
                   <AccordionContent>
@@ -77,7 +77,7 @@ export default function OurServices() {
                   value="popcorn"
                   className="border-b-[1px] border-white/10"
                 >
-                  <AccordionTrigger className="py-6 text-sm font-medium uppercase tracking-wider hover:no-underline">
+                  <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Popcorn Ceiling Removal Calgary</span>
                   </AccordionTrigger>
                   <AccordionContent>
@@ -92,7 +92,7 @@ export default function OurServices() {
                   value="drywall"
                   className="border-b-[1px] border-white/10"
                 >
-                  <AccordionTrigger className="py-6 text-sm font-medium uppercase tracking-wider hover:no-underline">
+                  <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Drywall Mud & Tape Calgary</span>
                   </AccordionTrigger>
                   <AccordionContent>
@@ -107,11 +107,11 @@ export default function OurServices() {
                   value="texturing"
                   className="border-b-[1px] border-white/10"
                 >
-                  <AccordionTrigger className="py-6 text-sm font-medium uppercase tracking-wider hover:no-underline">
+                  <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Ceiling Texturing Calgary</span>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="pb-4 text-gray-400">
+                    <div className="pb-4 text-black ">
                       We offer various ceiling texturing options to add
                       character and style to your home interior.
                     </div>
@@ -122,7 +122,7 @@ export default function OurServices() {
 
             {/* Featured Content */}
             <div className="flex flex-col space-y-4 ">
-              <div className="relative w-full h-64 md:h-80 overflow-hidden  lg:w-[70%]">
+              <div className="relative w-full h-64 md:h-80 overflow-hidden  ">
                 <Image
                   src={ourServices}
                   alt="Modern kitchen interior with white cabinets"
@@ -131,11 +131,11 @@ export default function OurServices() {
                   sizes="(max-width: 200px) 100vw, 10vw"
                 />
               </div>
-              <div className="space-y-4 w-full lg:w-[70%]">
-                <h2 className="text-xl font-semibold">
+              <div className="space-y-4 w-full ">
+                <h2 className="lg:text-[20px]   font-semibold">
                   Quality Calgary Interior Painting for Your Needs
                 </h2>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-400 lg:text-[16px] text-[14px]">
                   Interior painting in Calgary can be a daunting task for many
                   homeowners. It requires a significant amount of time, effort,
                   and attention to detail to achieve a professional finish.

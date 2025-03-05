@@ -5,31 +5,31 @@ export default function PaintingCompany() {
   return (
     <div className="w-full my-24">
       {/* Hero Section */}
-      <div className="relative flex flex-col lg:flex-row">
+      <div className=" flex flex-col lg:flex-row">
         {/* Left side with image */}
         <div className="relative w-full lg:w-[50%]">
           <div className="absolute top-10 left-0 z-50 bg-blue-900 text-white py-3 px-4">
-            <p className="text-sm font-semibold">10 Years of Experience</p>
+            <p className="text-[16px] font-semibold">10 Years of Experience</p>
           </div>
           <Image
             src={AboutUs}
             alt="Elegant interior with staircase"
             width={600}
             height={600}
-            className="w-full h-[400px] lg:h-[500px] object-cover lg:absolute z-10"
+            className="w-full h-[400px] lg:h-[650px] object-cover lg:absolute z-10"
           />
         </div>
 
         {/* Right side with text */}
-        <div className="w-full lg:w-2/5 bg-white p-8 flex flex-col justify-center">
-          <p className="text-black  font-semibold mb-2">About Us</p>
-          <h1 className="text-3xl font-bold text-blue-900 mb-4">
+        <div className="w-full lg:w-2/6 bg-white p-8 flex flex-col justify-center">
+          <p className="text-black text-[22px]  font-semibold mb-2">About Us</p>
+          <h1 className="lg:text-[30px] text-[26px] font-bold text-[#0D378D] mb-4">
             EXPERTS IN COLOURING
             <br />
             YOUR WORLD
           </h1>
-          <p className="text-black mb-6">
-           {`  Welcome to Atlantic Colour Painting, your trusted partner for
+          <p className="text-black mb-6 text-[14px] lg:text-[16px]">
+            {`  Welcome to Atlantic Colour Painting, your trusted partner for
             professional interior and exterior painting services in Calgary. Our
             team, featuring the finest Calgary painters, ensures every project
             we undertake is completed to the highest standards with precision
@@ -40,26 +40,34 @@ export default function PaintingCompany() {
           </p>
           <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 ">
             Learn More
-            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="31" height="30" rx="15" fill="white"/>
-<path d="M22.5 9C22.5 8.44771 22.0523 8 21.5 8L12.5 8C11.9477 8 11.5 8.44771 11.5 9C11.5 9.55228 11.9477 10 12.5 10L20.5 10L20.5 18C20.5 18.5523 20.9477 19 21.5 19C22.0523 19 22.5 18.5523 22.5 18L22.5 9ZM10.2071 21.7071L22.2071 9.70711L20.7929 8.29289L8.79289 20.2929L10.2071 21.7071Z" fill="#0D378D"/>
-</svg>
-
+            <svg
+              width="31"
+              height="30"
+              viewBox="0 0 31 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="31" height="30" rx="15" fill="white" />
+              <path
+                d="M22.5 9C22.5 8.44771 22.0523 8 21.5 8L12.5 8C11.9477 8 11.5 8.44771 11.5 9C11.5 9.55228 11.9477 10 12.5 10L20.5 10L20.5 18C20.5 18.5523 20.9477 19 21.5 19C22.0523 19 22.5 18.5523 22.5 18L22.5 9ZM10.2071 21.7071L22.2071 9.70711L20.7929 8.29289L8.79289 20.2929L10.2071 21.7071Z"
+                fill="#0D378D"
+              />
+            </svg>
           </button>
         </div>
       </div>
 
       {/* Why Choose Us Section */}
-      <div className="bg-[#E2E7F1] py-12 px-4 relative top-20">
+      <div className="bg-[#E2E7F1] py-20 px-4  mt-30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-blue-900 text-center mb-12">
+          <h2 className="lg:text-[36px] font-bold text-[#0D378D] text-center mb-12">
             WHY CHOOSE US?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Quality Workmanship */}
             <div className="flex flex-col  text-start">
-              <div className="text-blue-900 mb-4">
+              <div className="text-[#0D378D] mb-4">
                 <div className="flex text-start">
                   <svg
                     width="63"
@@ -75,17 +83,17 @@ export default function PaintingCompany() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3 ">
+              <h3 className=" lg:text-[24px]  text-[20px] font-semibold text-[#0D378D] mb-3 ">
                 Quality Workmanship
               </h3>
-              <p className="text-sm text-gray-700">
+              <p className=" lg:text-[16px] text-[14px] text-black">
                 We use only premium materials and top-notch techniques.
               </p>
             </div>
 
             {/* Quality Materials */}
             <div className="flex flex-col ">
-              <div className="text-blue-900 mb-4">
+              <div className="text-[#0D378D] mb-4">
                 <svg
                   width="63"
                   height="61"
@@ -99,10 +107,10 @@ export default function PaintingCompany() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">
+              <h3 className="lg:text-[24px]  text-[20px]  font-semibold text-[#0D378D] mb-3">
                 Quality Materials
               </h3>
-              <p className="text-sm text-gray-700">
+              <p className="lg:text-[16px] text-[14px] text-black">
                 We work with trusted, high-quality materials that stand the test
                 of time.
               </p>
@@ -110,7 +118,7 @@ export default function PaintingCompany() {
 
             {/* Experienced Team */}
             <div className="flex flex-col ">
-              <div className="text-blue-900 mb-4">
+              <div className="text-[#0D378D] mb-4">
                 <svg
                   width="61"
                   height="61"
@@ -132,10 +140,10 @@ export default function PaintingCompany() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">
+              <h3 className="lg:text-[24px]  text-[20px]  font-semibold text-[#0D378D] mb-3">
                 Experienced Team
               </h3>
-              <p className="text-sm text-gray-700">
+              <p className="lg:text-[16px] text-[14px] text-black">
                 Our experts have over a decade of experience.
               </p>
             </div>
@@ -156,10 +164,10 @@ export default function PaintingCompany() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">
+              <h3 className="lg:text-[24px]  text-[20px]  font-semibold text-[#0D378D] mb-3">
                 Customer Satisfaction
               </h3>
-              <p className="text-sm text-gray-700">
+              <p className="lg:text-[16px] text-[14px] text-black">
                 Your satisfaction is our priority, and we ensure the job is done
                 right the first time.
               </p>
@@ -168,7 +176,6 @@ export default function PaintingCompany() {
         </div>
 
         {/* Background decorative element */}
-     
       </div>
     </div>
   );
