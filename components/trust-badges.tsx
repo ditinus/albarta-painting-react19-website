@@ -4,7 +4,7 @@ import logo2 from "@/public/logo2.svg";
 import logo3 from "@/public/logo3.svg";
 export default function TrustBadges() {
   return (
-    <div className="bg-white py-6 px-4 rounded-lg shadow-lg max-w-4xl mx-auto -mt-16 relative z-10">
+    <div className="bg-white py-4 px-9 rounded-2xl shadow-lg max-w-4xl mx-auto -mt-16 relative z-10">
       <div className="grid grid-cols-2 md:grid-cols-6 gap-6 items-center justify-items-center">
         <div className="flex flex-col items-center">
           <Image

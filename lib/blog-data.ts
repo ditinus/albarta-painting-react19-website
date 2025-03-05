@@ -7,6 +7,8 @@ export interface BlogPost {
   imageUrl: string
 }
 
+import blogs from "@/public/blogs.png"
+
 export function getBlogPosts(): BlogPost[] {
   return [
     {
@@ -16,7 +18,7 @@ export function getBlogPosts(): BlogPost[] {
       date: "MAR 28, 2022",
       excerpt:
         "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
-      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5waV6NfmLQTR5EXSs1xqqhidNoVC7y.png",
+      imageUrl: blogs,
     },
     {
       id: 2,
@@ -25,7 +27,7 @@ export function getBlogPosts(): BlogPost[] {
       date: "MAR 28, 2022",
       excerpt:
         "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
-      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5waV6NfmLQTR5EXSs1xqqhidNoVC7y.png",
+      imageUrl: blogs,
     },
     {
       id: 3,
@@ -34,7 +36,7 @@ export function getBlogPosts(): BlogPost[] {
       date: "MAR 28, 2022",
       excerpt:
         "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
-      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5waV6NfmLQTR5EXSs1xqqhidNoVC7y.png",
+      imageUrl: blogs,
     },
     {
       id: 4,
@@ -43,7 +45,7 @@ export function getBlogPosts(): BlogPost[] {
       date: "MAR 28, 2022",
       excerpt:
         "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
-      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5waV6NfmLQTR5EXSs1xqqhidNoVC7y.png",
+      imageUrl: blogs,
     },
     {
       id: 5,
@@ -52,7 +54,7 @@ export function getBlogPosts(): BlogPost[] {
       date: "MAR 28, 2022",
       excerpt:
         "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
-      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5waV6NfmLQTR5EXSs1xqqhidNoVC7y.png",
+      imageUrl: blogs,
     },
     {
       id: 6,
@@ -61,7 +63,7 @@ export function getBlogPosts(): BlogPost[] {
       date: "MAR 28, 2022",
       excerpt:
         "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
-      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5waV6NfmLQTR5EXSs1xqqhidNoVC7y.png",
+        imageUrl: blogs,
     },
     {
       id: 7,
@@ -70,7 +72,7 @@ export function getBlogPosts(): BlogPost[] {
       date: "MAR 28, 2022",
       excerpt:
         "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
-      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5waV6NfmLQTR5EXSs1xqqhidNoVC7y.png",
+        imageUrl: blogs,
     },
     {
       id: 8,
@@ -79,7 +81,7 @@ export function getBlogPosts(): BlogPost[] {
       date: "MAR 28, 2022",
       excerpt:
         "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
-      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5waV6NfmLQTR5EXSs1xqqhidNoVC7y.png",
+        imageUrl: blogs,
     },
     {
       id: 9,
@@ -88,7 +90,7 @@ export function getBlogPosts(): BlogPost[] {
       date: "MAR 28, 2022",
       excerpt:
         "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
-      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5waV6NfmLQTR5EXSs1xqqhidNoVC7y.png",
+        imageUrl: blogs,
     },
   ]
 }
