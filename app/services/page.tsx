@@ -17,6 +17,7 @@ import PaintingCompany from "@/components/painting-company";
 import  ContactFormSection  from "../../components/ContactFormSection";
 import Footer from "@/components/ui/footer";
 import HomeBanner from "@/components/HomeBanner/home-banner";
+import { Navbar } from "@/components/navbar";
 const services = [
   {
     title: "Commercial Painting Calgary",
@@ -55,7 +56,7 @@ const services = [
 export default function Services() {
   return (
     <> 
-    
+      <Navbar />
     
        <Hero />
 
@@ -122,7 +123,7 @@ export default function Services() {
       </div>
       <HomeBanner/>
       {/* CTA Banner */}
-      <div className="relative w-full  h-[300px] mb-10 rounded-lg overflow-hidden">
+      {/* <div className="relative w-full  h-[300px] mb-10 rounded-lg overflow-hidden">
         <div className="absolute inset-0 bg-black/70">
           <Image
             src={PaintingServices}
@@ -143,7 +144,7 @@ export default function Services() {
             Schedule a Consultation
           </Button>
         </div>
-      </div>
+      </div> */}
 
       {/* Contact Form Section */}
   

@@ -16,11 +16,13 @@ import BlogGrid from "@/components/blog-grid";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { getBlogPosts } from "@/lib/blog-data";
+import { Navbar } from "@/components/navbar";
 
 export default function page() {
   const posts = getBlogPosts();
   return (
     <>
+      <Navbar />
       <Hero />
 
       <PaintingCompany />
