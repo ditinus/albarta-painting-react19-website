@@ -15,9 +15,13 @@ import BlogGrid from "@/components/blog-grid";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
 import { Navbar } from "@/components/navbar";
+
+import ReviewsCarousel from "@/components/ReviewsCarousel";
+
 import PromotionalSlider from "@/components/promotional-slider";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 import SpecialOffer from "@/components/SpecialOffer/page";
+
 
 const posts = getBlogPosts();
 export default function Home() {
