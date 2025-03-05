@@ -35,7 +35,7 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState<Errors>({});
-  const [successMessage, setSuccessMessage] = useState<string>("");
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

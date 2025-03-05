@@ -1,17 +1,14 @@
 
 
-import { Navbar } from "@/components/navbar"
-import TrustBadges from "@/components/trust-badges"
-import { Highlight } from "@/components/ui/hero-highlight"
+
 import { getBlogPosts } from "@/lib/blog-data"
-import Image from "next/image"
+
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
 import React from "react";
 import homeHero from "@/public/blog-banner.png";
-import { motion } from "framer-motion";
-import Hero from "@/components/hero"
+
 import BlogHero from "@/components/blog-hero"
 
 
@@ -127,16 +124,16 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
             <h2 className="text-xl font-semibold mt-6 mb-3 text-black">Why Color Matters</h2>
             <p className="text-gray-700 mb-4">
-              The colors you choose for your home can significantly impact your mood, the perceived size of your rooms,
+              {`The colors you choose for your home can significantly impact your mood, the perceived size of your rooms,
               and even your energy levels. Selecting the right interior paint color is one of the most important
-              decisions you'll make during your home renovation project.
+              decisions you'll make during your home renovation project.`}
             </p>
 
             <h2 className="text-xl font-semibold mt-6 mb-3 text-black">Our 7 Tips for Choosing the Perfect Paint Color</h2>
 
             <ol className="list-decimal pl-5 space-y-4 mt-4">
               <li className="text-gray-700">
-                <strong>Consider the room's purpose:</strong> Different rooms serve different functions and may require
+                <strong>Consider the room purpose:</strong> Different rooms serve different functions and may require
                 different color schemes. Bedrooms often benefit from calming colors, while living areas might use more
                 vibrant tones.
               </li>
@@ -161,16 +158,16 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                 fixtures when selecting paint colors.
               </li>
               <li className="text-gray-700">
-                <strong>Don't rush the decision:</strong> Take your time with color selection. It's better to spend
-                extra time choosing the right color than to repaint later.
+                <strong>{`Don't rush the decision:`}</strong> {`Take your time with color selection. It's better to spend
+                extra time choosing the right color than to repaint later.`}
               </li>
             </ol>
 
             <h2 className="text-xl font-semibold mt-6 mb-3 text-black">Conclusion</h2>
             <p className="text-gray-700">
-              Choosing the right interior paint color doesn't have to be overwhelming. By following these seven tips and
+              {`Choosing the right interior paint color doesn't have to be overwhelming. By following these seven tips and
               taking your time with the decision, you can select colors that will make your home both beautiful and
-              comfortable for years to come.
+              comfortable for years to come.`}
             </p>
           </div>
         </div>

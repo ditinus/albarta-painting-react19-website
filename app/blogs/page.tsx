@@ -1,8 +1,8 @@
 "use client";
 import BlogGrid from "@/components/blog-grid";
 import { getBlogPosts } from "@/lib/blog-data";
-import BlogHeros from "@/components/blogs-hero"
-import blogsBanner from "@/public/blogs-banner.png"
+import BlogHeros from "@/components/blogs-hero";
+import blogsBanner from "@/public/blogs-banner.png";
 import { ContactFormSection } from "@/components/ContactFormSection";
 export default function blogs() {
   const posts = getBlogPosts();
@@ -23,6 +23,7 @@ export default function blogs() {
       <main className="container mx-auto px-4 py-8 lg:mt-20 mt-10">
         <BlogGrid posts={posts} />
 
+       
         <ContactFormSection />
       </main>
     </>

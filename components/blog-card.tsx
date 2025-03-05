@@ -40,7 +40,7 @@ export default function BlogCard({ post }: BlogCardProps) {
             viewBox="0 0 9 15"
             fill="none"
           >
-            <g clip-path="url(#clip0_125_268)">
+            <g clipPath="url(#clip0_125_268)">
               <path
                 d="M1.625 13.3428L7.625 7.34277L1.625 1.34277"
                 stroke="#0D378D"

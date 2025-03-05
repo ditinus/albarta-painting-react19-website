@@ -3,20 +3,17 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
+
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { ArrowRight } from "lucide-react";
 import PaintingServices from "@/public/painting-services.png";
 import Link from "next/link";
 import Hero from "@/components/hero";
 import PaintingCompany from "@/components/painting-company";
-import OurServices from "@/components/our-services";
+
 import { ContactFormSection } from "@/components/ContactFormSection";
 import Footer from "@/components/ui/footer";
 const services = [
@@ -138,8 +135,8 @@ export default function Services() {
             Ready to transform your space?
           </h2>
           <p className="mb-4 max-w-xl">
-            Whether you're looking to refresh your home or update your business
-            space, our team is ready to help you create the perfect environment.
+           {` Whether you're looking to refresh your home or update your business
+            space, our team is ready to help you create the perfect environment.`}
           </p>
           <Button className="bg-primary hover:bg-primary/90 text-white rounded-full">
             Schedule a Consultation
