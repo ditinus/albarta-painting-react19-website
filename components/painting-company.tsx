@@ -8,8 +8,8 @@ export default function PaintingCompany() {
       <div className="relative flex flex-col lg:flex-row">
         {/* Left side with image */}
         <div className="relative w-full lg:w-[50%]">
-          <div className="absolute top-0 left-0 z-50 bg-blue-900 text-white py-2 px-4">
-            <p className="text-sm font-bold">10 Years of Experience</p>
+          <div className="absolute top-10 left-0 z-50 bg-blue-900 text-white py-3 px-4">
+            <p className="text-sm font-semibold">10 Years of Experience</p>
           </div>
           <Image
             src={AboutUs}
