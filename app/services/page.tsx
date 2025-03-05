@@ -16,6 +16,7 @@ import PaintingCompany from "@/components/painting-company";
 
 import  ContactFormSection  from "../../components/ContactFormSection";
 import Footer from "@/components/ui/footer";
+import HomeBanner from "@/components/HomeBanner/home-banner";
 const services = [
   {
     title: "Commercial Painting Calgary",
@@ -119,7 +120,7 @@ export default function Services() {
           </Card>
         ))}
       </div>
-
+      <HomeBanner/>
       {/* CTA Banner */}
       <div className="relative w-full  h-[300px] mb-10 rounded-lg overflow-hidden">
         <div className="absolute inset-0 bg-black/70">
