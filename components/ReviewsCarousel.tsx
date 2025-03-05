@@ -212,16 +212,16 @@ const ReviewsCarousel = () => {
         >
           {reviews.map((review, index) => (
             <SwiperSlide key={index} className="flex flex-col justify-between ">
-              <div className="bg-[#E2E7F1] shadow-lg   relative rounded-xl p-4 flex flex-col justify-center ">
+              <div className="bg-[#E2E7F1] shadow-lg   relative rounded-xl lg:p-4  pl-10   p-0   flex flex-col justify-center ">
                 {/* Adjusted the images to be inside the flex container without absolute positioning */}
                 <div className="">
                   <Image src={Reviews1} alt="Review Image"  className="mx-auto  absolute top-4 left-[-20px] " />
-                  <Image src={Reviews2} alt="Review Image"  className="mx-auto absolute bottom-[20px] left-[28px] h-[230px]" />
+                  <Image src={Reviews2} alt="Review Image"  className="mx-auto absolute bottom-[20px] left-[28px] h-[150px]" />
                   <Image src={Reviews3} alt="Review Image"  className="mx-auto absolute bottom-[20px] right-[-10px]" />
                 </div>
                 <div className="p-[25px]">
-                  <p className="review-text  sm:text-lg font-medium text-black mb-4  p-[40px]  pb-0 pr-[-10px]">{review.review}</p>
-                  <span className=" font-bold text-sm sm:text-lg text-[#202020] p-[40px]">{review.name}</span>
+                  <p className="review-text text-base  font-normal text-black mb-4  pt-[40px] lg:pl-[30px] sm:pl-[20px] sm:pr-[-40px] pb-0 ">{review.review}</p>
+                  <span className=" font-bold text-sm sm:text-lg text-[#202020] lg:p-[25px] sm:p-[25px]">{review.name}</span>
                 </div>
               </div>
             </SwiperSlide>
