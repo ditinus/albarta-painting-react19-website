@@ -44,7 +44,7 @@ export default function TrustBadges() {
           <Image
             src={logo4}
             alt="Verified"
-            width={120}
+            width={80}
             height={50}
             className="h-auto"
           />
@@ -54,7 +54,7 @@ export default function TrustBadges() {
           <Image
             src={logo5}
             alt="Best of the Best"
-            width={120}
+            width={80}
             height={50}
             className="h-auto"
           />
@@ -63,8 +63,8 @@ export default function TrustBadges() {
           <Image
             src={logo6}
             alt="Best of the Best"
-            width={120}
-            height={50}
+            width={80}
+            height={40}
             className="h-auto"
           />
         </div>
