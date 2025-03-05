@@ -13,82 +13,14 @@ import Footer from "@/components/ui/footer";
 
 import ContactForm from "./ContactForm";
 import GoogleMap from "./GoogleMap";
+import { Navbar } from "@/components/navbar";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <ScrollingBanner />
+     
+  <Navbar />
 
-      <header className="bg-white py-4 px-4 md:px-8">
-        <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center">
-            <Link href="/">
-              <Image
-                src="/logo.svg"
-                alt="Alberta Color Painting"
-                width={100}
-                height={40}
-                className="h-auto"
-              />
-            </Link>
-          </div>
-
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              href="/"
-              className="text-gray-800 hover:text-blue-600 font-medium"
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="text-gray-800 hover:text-blue-600 font-medium"
-            >
-              About
-            </Link>
-            <Link
-              href="/services"
-              className="text-gray-800 hover:text-blue-600 font-medium"
-            >
-              Services
-            </Link>
-            <Link
-              href="/gallery"
-              className="text-gray-800 hover:text-blue-600 font-medium"
-            >
-              Gallery
-            </Link>
-            <Link
-              href="/blog"
-              className="text-gray-800 hover:text-blue-600 font-medium"
-            >
-              Blog
-            </Link>
-            <Link
-              href="/contact-us"
-              className="text-gray-800 hover:text-blue-600 font-medium"
-            >
-              Contact
-            </Link>
-          </nav>
-
-          <div className="hidden md:flex items-center space-x-4">
-            <div className="flex items-center">
-              <div className="bg-blue-100 rounded-full p-2 mr-2">
-                <PhoneCall className="h-4 w-4 text-blue-600" />
-              </div>
-              <span className="text-gray-800 font-medium">587-466-6647</span>
-            </div>
-            <Link
-              href="/book"
-              className="bg-blue-600 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-700 transition-colors"
-            >
-              Book Now
-            </Link>
-          </div>
-
-          <MobileMenu />
-        </div>
-      </header>
+  
 
       <section className="relative h-[500px] md:h-[600px]">
         <div className="absolute inset-0">

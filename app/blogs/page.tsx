@@ -6,11 +6,14 @@ import blogsBanner from "@/public/blogs-banner.png";
 
 import Footer from "@/components/ui/footer";
 import ContactFormSection  from "@/components/ContactFormSection";
+import { Navbar } from "@/components/navbar";
 export default function blogs() {
   const posts = getBlogPosts();
 
   return (
     <>
+
+      <Navbar />
       {" "}
       <BlogHeros
         title="Our "

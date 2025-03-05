@@ -14,13 +14,13 @@ import { getBlogPosts } from "@/lib/blog-data";
 import BlogGrid from "@/components/blog-grid";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
-import { Navbar } from "../components/navbar";
+import { Navbar } from "@/components/navbar";
 
 const posts = getBlogPosts();
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-         <Navbar />
+    <Navbar />
       {/* Hero Section */}
       <Hero />
 
