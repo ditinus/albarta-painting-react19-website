@@ -11,13 +11,20 @@ import { CalgaryPainting } from "@/components/calgary-painting";
 import OurGallery from "@/components/gallery/page";
 import ContactFormSection  from "../../components/ContactFormSection";
 import Footer from "@/components/ui/footer";
+import HomeBanner from "@/components/HomeBanner/home-banner";
+import BlogGrid from "@/components/blog-grid";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { getBlogPosts } from "@/lib/blog-data";
+
 export default function page() {
+  const posts = getBlogPosts();
   return (
     <>
       <Hero />
 
       <PaintingCompany />
-      <OurServices />
+ 
       <div className="container mx-auto max-w-7xl px-4 py-12">
         {/* Quality Section */}
         <div className="grid md:grid-cols-2 gap-8 mb-16 items-center">
@@ -72,7 +79,7 @@ export default function page() {
             </div>
           </div>
         </div>
-
+        <HomeBanner/>
         {/* Eco-Friendly Section */}
         <div className="grid md:grid-cols-2 gap-8 items-center relative">
           <div className="space-y-6 order-2 md:order-1">
@@ -180,6 +187,23 @@ export default function page() {
       <OurGallery />
       <CalgaryPainting />
       <ContactFormSection />
+      <main className="container mx-auto px-4 py-8 ">
+          <div className="text-center  mb-10">
+            <h4 className=" text-[22px] text-black font-semibold ont-medium">Our Blog</h4>
+            <h2 className="text-[#0D378D] lg:text-[36px]  text-[26px] font-medium">
+              Expert Advice, Trends & DIY Tips
+            </h2>
+          </div>
+
+          <BlogGrid posts={posts?.slice(0, 3)} />
+
+          <div className="flex justify-center my-7">
+            <Button className="bg-[#0D378D] px-4 py-5 w-30 rounded-3xl cursor-pointer">
+              {" "}
+              <Link href="/blogs">View All</Link>
+            </Button>
+          </div>
+        </main>
       <Footer />
     </>
   );

@@ -8,7 +8,7 @@ export default function PaintingCompany() {
       <div className="relative flex flex-col lg:flex-row">
         {/* Left side with image */}
         <div className="relative w-full lg:w-[50%]">
-          <div className="absolute top-7.5 left-0 z-10 bg-blue-900 text-white py-3 px-4">
+          <div className="absolute top-0 left-0 z-50 bg-blue-900 text-white py-2 px-4">
             <p className="text-sm font-bold">10 Years of Experience</p>
           </div>
           <Image
@@ -16,19 +16,19 @@ export default function PaintingCompany() {
             alt="Elegant interior with staircase"
             width={600}
             height={600}
-            className="w-full h-[400px] lg:h-[500px] object-cover lg:absolute z-50"
+            className="w-full h-[400px] lg:h-[500px] object-cover lg:absolute z-10"
           />
         </div>
 
         {/* Right side with text */}
         <div className="w-full lg:w-2/5 bg-white p-8 flex flex-col justify-center">
-          <p className="text-gray-700 mb-2">About Us</p>
+          <p className="text-black  font-semibold mb-2">About Us</p>
           <h1 className="text-3xl font-bold text-blue-900 mb-4">
             EXPERTS IN COLOURING
             <br />
             YOUR WORLD
           </h1>
-          <p className="text-gray-700 mb-6">
+          <p className="text-black mb-6">
            {`  Welcome to Atlantic Colour Painting, your trusted partner for
             professional interior and exterior painting services in Calgary. Our
             team, featuring the finest Calgary painters, ensures every project
@@ -38,7 +38,7 @@ export default function PaintingCompany() {
             company, we've got you covered. Our interior painting services are
             tailored to transform your living spaces with elegance and style.`}
           </p>
-          <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-2 flex items-center gap-2 ">
+          <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 ">
             Learn More
             <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="31" height="30" rx="15" fill="white"/>

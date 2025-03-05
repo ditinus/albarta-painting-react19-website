@@ -19,8 +19,8 @@ const OurGallery: React.FC = () => {
   return (
     <div className="gallery-carousel my-10">
       <ServiceSection
-        title="What Our Clients Say"
-        description="Real Reviews from Satisfied <br />  Customers "
+        title="Our Gallery"
+        description="See the Magic of Transformation  <br />  with Our Painting Work "
         buttonText="Read More Reviews"
       />
 

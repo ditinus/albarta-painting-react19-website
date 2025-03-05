@@ -77,3 +77,16 @@
     transition: transform 0.3s ease; 
   }
   
+  @media (max-width: 751px) {
+    .gallery-slide:hover {
+      flex: 1;
+    }
+  
+    .gallery-slide-start {
+      flex-direction: column;
+    }
+  
+    .gallery-slide img {
+      height: 300px;
+    }
+  }
