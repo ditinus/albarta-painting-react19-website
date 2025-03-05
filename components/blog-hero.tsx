@@ -10,8 +10,8 @@ import { Navbar } from "../components/navbar";
 
 interface HeroProps {
   title: string;
-  subtitle: string;
-  imageSrc: string;
+  subtitle?: string;
+  imageSrc: any;
   quoteLink: string;
   bookLink: string;
   quoteText: string;

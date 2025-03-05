@@ -2,9 +2,10 @@
 import BlogGrid from "@/components/blog-grid";
 import { getBlogPosts } from "@/lib/blog-data";
 import BlogHeros from "@/components/blogs-hero";
-import blogsBanner from "../../../public/blogs-banner.png";
-import { ContactFormSection } from "../../components/ContactFormSection";
+import blogsBanner from "@/public/blogs-banner.png";
+
 import Footer from "@/components/ui/footer";
+import ContactFormSection  from "@/components/ContactFormSection";
 export default function blogs() {
   const posts = getBlogPosts();
 
