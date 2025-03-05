@@ -9,9 +9,7 @@ import PaintingCompany from "@/components/painting-company";
 import OurGallery from "@/components/gallery/page";
 import Hero from "@/components/hero";
 import { CalgaryPainting } from "@/components/calgary-painting";
-
-import ReviewsCarousel from "@/components/ReviewsCarousel";
-import { ContactFormSection } from "@/components/ContactFormSection";
+import ContactFormSection  from "@/components/ContactFormSection";
 
 import { getBlogPosts } from "@/lib/blog-data";
 import BlogGrid from "@/components/blog-grid";

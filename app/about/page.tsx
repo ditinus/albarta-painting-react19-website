@@ -9,7 +9,7 @@ import PaintingCompany from "@/components/painting-company";
 import Hero from "@/components/hero";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import OurGallery from "@/components/gallery/page";
-import { ContactFormSection } from "@/components/ContactFormSection";
+import ContactFormSection  from "../../components/ContactFormSection";
 import Footer from "@/components/ui/footer";
 export default function page() {
   return (

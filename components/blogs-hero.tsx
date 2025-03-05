@@ -12,7 +12,7 @@ interface HeroProps {
   title: string;
   title2:string;
   subtitle: string;
-  imageSrc: string;
+  imageSrc: any;
   quoteLink: string;
   bookLink: string;
   quoteText: string;
