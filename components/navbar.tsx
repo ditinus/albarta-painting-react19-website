@@ -140,7 +140,7 @@ export function Navbar() {
             </Link>
           </div>
 
-          <nav className="hidden md:flex items-center lg:space-x-20 space-x-6  bg-[#0D378D1F] rounded-4xl px-6.5 py-3.5">
+          <nav className="hidden lg:flex items-center lg:space-x-20 space-x-6  bg-[#0D378D1F] rounded-4xl px-6.5 py-3.5">
             <Link
               href="/"
               className="text-gray-800 hover:text-blue-600 font-medium"
@@ -179,7 +179,7 @@ export function Navbar() {
             </Link>
           </nav>
 
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden lg:flex items-center space-x-10">
             <div className="flex items-center">
               <div className="bg-blue-100 rounded-full p-2 mr-2 border-2 shadow-2xl">
                 <svg
