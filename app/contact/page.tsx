@@ -23,19 +23,6 @@ export default function Home() {
   bookLink="/book"
   quoteText="Get a Free Quote"
 />
-
-{/* 
-  <BlogHeros
-        title=" "
-        title2="CONTACT US"
-        subtitle="Let’s Bring Colour to Your Home Get in Touch Today!"
-        imageSrc={blogsBanner}
-        quoteLink="/quote"
-        bookLink="/book"
-        quoteText="Get a Free Quote"
-        bookText="Read More"
-      />  */}
-
     
       <ContactForm/>
       <GoogleMap/>

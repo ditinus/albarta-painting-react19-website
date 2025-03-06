@@ -17,13 +17,24 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { getBlogPosts } from "@/lib/blog-data";
 import { Navbar } from "@/components/navbar";
+import BlogHeros from "@/components/blogs-hero";
+import blogsBanner from "@/public/blogs-banner.png";
 
 export default function page() {
   const posts = getBlogPosts();
   return (
     <>
       <Navbar />
-      <Hero />
+      <BlogHeros
+        title="About  "
+        title2="Alberta Colour Painting"
+        subtitle="Your Trusted, Skilled, and Eco-Friendly Painting Experts"
+        imageSrc={blogsBanner}
+        quoteLink="/quote"
+        bookLink="/book"
+        quoteText="Get a Free Quote"
+        bookText="Read More"
+      />
 
       <PaintingCompany />
  

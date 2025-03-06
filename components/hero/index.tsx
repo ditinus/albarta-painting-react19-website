@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div>
 
-      <section className="relative h-[500px] md:h-[800px]">
+      <section className="relative h-[600px] md:h-[850px]">
         <div className="absolute inset-0">
           <Image
             src={homeHero}
