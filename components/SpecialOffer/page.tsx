@@ -5,12 +5,13 @@ import "./style.css";
 import 'swiper/css';
 import Image from "next/image";
 import slider1 from "@/public/slider-image-1.png";
-
+import { Navigation, Pagination } from "swiper/modules"
 const Index = () => {
   useEffect(() => {
     const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 30,
+      modules: [Navigation, Pagination],
+      slidesPerView: 1,
+      spaceBetween: 20,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -20,47 +21,52 @@ const Index = () => {
         clickable: true,
       },
       breakpoints: {
-        320: { // Small screens (mobile)
-          slidesPerView: 1,
-          spaceBetween: 22,
-        },
-        768: { // Medium screens (tablets)
+        640: {
+          // Small tablets
           slidesPerView: 1,
           spaceBetween: 20,
         },
-        810:{
+        768: {
+          // Medium tablets
           slidesPerView: 1,
           spaceBetween: 20,
-
         },
-        1024: { // Large screens (desktops)
+        1024: {
+          // Small desktops
           slidesPerView: 2,
           spaceBetween: 30,
         },
-        1199: { // Larger screens (desktops)
-          slidesPerView: 3,
+        1280: {
+          // Medium desktops
+          slidesPerView: 2,
           spaceBetween: 30,
         },
-        1367: { // Larger screens (desktops)
+        1536: {
+          // Large desktops
           slidesPerView: 2,
           spaceBetween: 30,
         },
       },
-    });
-  }, []); // Empty dependency array ensures this runs only once on mount
+    })
+
+    return () => {
+      // Cleanup swiper instance when component unmounts
+      if (swiper) swiper.destroy()
+    }
+  }, [])// Empty dependency array ensures this runs only once on mount
 
   return (
-    <section className="py-12">
+    <section className="lg:pt-30 pt-10">
       <div className="container mx-auto px-4 max-w-7xl">
-        <h6 className="text-center text-black text-xl font-semibold mb-2">Special Offer</h6>
-        <h2 className="text-center text-3xl  font-semibold text-[#0D378D] uppercase mb-8">
+        <h6 className="text-center text-black lg:text-[22px] text-[18px] font-semibold mb-2">Special Offer</h6>
+        <h2 className="text-center lg:text-[36px] text-[26px]  font-semibold text-[#0D378D] uppercase mb-8">
           Top Calgary House Painting Offers and Discounts
         </h2>
         <div className="offer_bg">
           {/* Grid layout for content */}
-          <div className="  flex flex-col md:flex-row gap-6 md:gap-10">
+          <div className=" flex flex-col lg:flex-row gap-6 lg:gap-10">
             {/* Swiper slider section */}
-            <div className="lg:w-[60%] w-full">
+            <div className="w-full lg:w-3/5">
               <div className="swiper mySwiper offer_slider">
                 <div className="swiper-wrapper">
                   {/* Slide 1 */}
@@ -125,8 +131,8 @@ const Index = () => {
                   </div>
                 </div>
                 {/* Navigation Buttons */}
-                <div className="swiper-button-prev image3 offer_slider_prev"></div>
-                <div className="swiper-button-next image4 offer_slider_next"></div>
+                <div className="swiper-button-prev image3  custom-prev-button offer_slider_prev"></div>
+                <div className="swiper-button-next image4 custom-prev-button  offer_slider_next"></div>
               </div>
             </div>
             {/* Text content section */}

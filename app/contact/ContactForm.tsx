@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import React, { useState } from "react";
 // import "tailwindcss/tailwind.css";
 import Image from "next/image";
@@ -10,21 +9,19 @@ import email from "../../public/email.svg";
 import location from "../../public/location.svg";
 import ContactFormFields from "./ContactFormFields";
 
-
 export interface FormData {
-    name: string;
-    email: string;
-    phone: string;
-    message: string;
-  }
-  
-  export interface Errors {
-    name?: string;
-    email?: string;
-    phone?: string;
-    message?: string;
-  }
-  
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
+export interface Errors {
+  name?: string;
+  email?: string;
+  phone?: string;
+  message?: string;
+}
 
 const ContactForm = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -71,39 +68,59 @@ const ContactForm = () => {
   };
 
   return (
-
-    <div className="container mx-auto px-6">
-         <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-medium pt-[40px] pb-[46px] ">
-
-  GET IN TOUCH
-</p>
-      <div className="grid md:grid-cols-2 gap-12 text-center" style={{
-        textAlign:"left",
-        
-      }}>
-       
+    <div className="container mx-auto lg:px-0 px-4 ">
+      <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-medium pt-[40px] pb-[46px] ">
+        GET IN TOUCH
+      </p>
+      <div
+        className="grid md:grid-cols-2 gap-12 text-center"
+        style={{
+          textAlign: "left",
+        }}
+      >
         {/* Contact Info Section */}
         <div className=" w-full  md:w-full lg:w-[60%] lg:ml-[5em]">
-          <h2 className=" text-[#0D378D] text-[30px] lg-text-[45px]  tracking-normal " style={{fontWeight:"400",fontSize:"45px"}}>HAVE A PROJECT IN MIND OR NEED A QUOTE?</h2>
-          <h3 className="text-lg mt-8 mb-6 text-[#000000]   " style={{fontWeight:"500"}}>
-            Get in touch with our expert painters in Calgary. We’d be happy to help bring your vision to life!
+          <h2
+            className=" text-[#0D378D] text-[30px] lg-text-[45px]  tracking-normal "
+            style={{ fontWeight: "400", fontSize: "45px" }}
+          >
+            HAVE A PROJECT IN MIND OR NEED A QUOTE?
+          </h2>
+          <h3
+            className="text-lg mt-8 mb-6 text-[#000000]   "
+            style={{ fontWeight: "500" }}
+          >
+            Get in touch with our expert painters in Calgary. We’d be happy to
+            help bring your vision to life!
           </h3>
-          <p className="text-[16px] mb-6  text-[#000000] flex flex-row items-center" style={{fontWeight:"500"}}>
+          <p
+            className="text-[16px] mb-6  text-[#000000] flex flex-row items-center"
+            style={{ fontWeight: "500" }}
+          >
             <span className="mr-2">
-  <Link href="tel:+587-466-6647"><Image src={phone} alt="phone" /></Link>
-  
+              <Link href="tel:+587-466-6647">
+                <Image src={phone} alt="phone" />
+              </Link>
             </span>
-  <Link href="tel:+587-466-6647">587-466-6647</Link>
-            
-
+            <Link href="tel:+587-466-6647">587-466-6647</Link>
           </p>
-          <p className="text-base mb-6 text-black  flex flex-row items-center" style={{fontWeight:"500"}}>
+          <p
+            className="text-base mb-6 text-black  flex flex-row items-center"
+            style={{ fontWeight: "500" }}
+          >
             <span className="mr-2">
-            <Link href="mailto:example@example.com"><Image src={email} alt="email" /></Link>
+              <Link href="mailto:example@example.com">
+                <Image src={email} alt="email" />
+              </Link>
             </span>
-            <Link href="mailto:example@example.com">info@albertacolourpainting.com</Link>
+            <Link href="mailto:example@example.com">
+              info@albertacolourpainting.com
+            </Link>
           </p>
-          <p className="text-base mb-6 text-black  flex flex-row items-center" style={{fontWeight:"500"}}>
+          <p
+            className="text-base mb-6 text-black  flex flex-row items-center"
+            style={{ fontWeight: "500" }}
+          >
             <span className="mr-2">
               <Image src={location} alt="location" />
             </span>
@@ -112,10 +129,13 @@ const ContactForm = () => {
         </div>
 
         {/* Contact Form Section */}
-        <div className="contact-form lg:w-[80%] md:w-full sm:w-full" style={{
-            boxShadow:" rgba(0, 0, 0, 0.11) 5px 17px 56.7px 0px",
+        <div
+          className="contact-form lg:w-[80%] md:w-full sm:w-full"
+          style={{
+            boxShadow: " rgba(0, 0, 0, 0.11) 5px 17px 56.7px 0px",
             // backgroundColor:"beige"
-      }}>
+          }}
+        >
           <form onSubmit={handleSubmit} noValidate className="mt-5">
             {/* <ContactFormFields
               formData={formData}
@@ -123,9 +143,9 @@ const ContactForm = () => {
               errors={errors}
             /> */}
             <ContactFormFields
-            formData={formData}
-            handleChange={handleChange}
-            errors={errors}
+              formData={formData}
+              handleChange={handleChange}
+              errors={errors}
             />
             <button
               type="submit"
