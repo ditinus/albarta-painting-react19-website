@@ -1,8 +1,12 @@
 "use client";
 
 
-import offer1 from "@/public/banner.png";
-
+import offer1 from "@/public/galleryHome-5.png";
+import offer2 from '@/public/galleryHome-3.png'
+import offer3 from '@/public/galleryHome-4.png'
+import offer4 from '@/public/galleryHome-3.png'
+import offer5 from '@/public/galleryHome-4.png'
+import offer6 from '@/public/galleryHome-5.png'
 import Image from "next/image";
 import "./style.css";
 import ServiceSection from "../service-section";
@@ -33,19 +37,19 @@ const OurGallery: React.FC = () => {
             <Image src={offer1} className="img-fluid" alt={""} />
           </div>
           <div className="gallery-slide">
-            <Image src={offer1} className="img-fluid" alt={""} />
+            <Image src={offer2} className="img-fluid" alt={""} />
           </div>
           <div className="gallery-slide">
-            <Image src={offer1} className="img-fluid" alt={""} />
+            <Image src={offer3} className="img-fluid" alt={""} />
           </div>
           <div className="gallery-slide">
-            <Image src={offer1} className="img-fluid" alt={""} />
+            <Image src={offer4} className="img-fluid" alt={""} />
           </div>
           <div className="gallery-slide">
-            <Image src={offer1} className="img-fluid" alt={""} />
+            <Image src={offer5} className="img-fluid" alt={""} />
           </div>
           <div className="gallery-slide">
-            <Image src={offer1} className="img-fluid" alt={""} />
+            <Image src={offer6} className="img-fluid" alt={""} />
           </div>
         </div>
       </div>

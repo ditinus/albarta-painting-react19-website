@@ -7,7 +7,7 @@ const ContactFormSection = () => {
   return (
     <div className=" container mx-auto px-4 py-8  max-w-7xl">
       {" "}
-      <div className="grid md:grid-cols-2 gap-8 lg:my-20 my-10 ">
+      <div className="grid md:grid-cols-2 gap-8 lg:my-10 my-10 ">
         <div className="flex flex-col justify-center w-full  ">
           <h2 className="text-[26px] lg:text-[45px] font-bold text-[#0D378D] uppercase mb-2">
             Have a project in mind or need a quote?

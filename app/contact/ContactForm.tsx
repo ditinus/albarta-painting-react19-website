@@ -82,14 +82,14 @@ const ContactForm = () => {
         {/* Contact Info Section */}
         <div className=" w-full  md:w-full lg:w-[60%] lg:ml-[5em]">
           <h2
-            className=" text-[#0D378D] text-[30px] lg-text-[45px]  tracking-normal "
-            style={{ fontWeight: "400", fontSize: "45px" }}
+            className=" text-[#0D378D] lg:text-5xl text-2xl font-semibold  tracking-normal "
+           
           >
             HAVE A PROJECT IN MIND OR NEED A QUOTE?
           </h2>
           <h3
-            className="text-lg mt-8 mb-6 text-[#000000]   "
-            style={{ fontWeight: "500" }}
+            className="text-lg mt-8 font-medium mb-6 text-[#000000]   "
+            
           >
             Get in touch with our expert painters in Calgary. We’d be happy to
             help bring your vision to life!
