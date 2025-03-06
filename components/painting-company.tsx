@@ -3,7 +3,7 @@ import Image from "next/image";
 import AboutUs from "@/public/AboutUs.png";
 export default function PaintingCompany() {
   return (
-    <div className="w-full my-24">
+    <div className="w-full lg:my-24 my-10">
       {/* Hero Section */}
       <div className=" flex flex-col lg:flex-row  lg:h-[38rem]">
         {/* Left side with image */}

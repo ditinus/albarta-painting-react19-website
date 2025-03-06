@@ -72,10 +72,11 @@ export default function Services() {
         bookText="Read More"
       />
 
-    <PaintingCompany />
+    {/* <PaintingCompany /> */}
  
-    <div className="container mx-auto max-w-7xl px-4 py-8">
+    <div className="lg:mt-20 mt-10">
       {/* Services Grid */}
+      <div className="container mx-auto max-w-7xl px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
         {services.map((service, index) => (
           <Card
@@ -108,7 +109,7 @@ export default function Services() {
 
               <Link
               href="/quote"
-              className="bg-[#0D378D] text-white pl-5 pr-2 py-1.5   border-2 border-white rounded-full font-medium hover:bg-blue-700  flex items-center justify-center"
+              className="bg-[#0D378D] text-white pl-5 pr-2 py-1.5   border-2 border-white rounded-full font-medium  flex items-center justify-center"
             >
               {service.buttonText} 
               <span className="ml-2 bg-white rounded-full p-2">
@@ -133,7 +134,10 @@ export default function Services() {
           </Card>
         ))}
       </div>
+      </div>
+      <div className="lg:mt-10 mt-5">
       <HomeBanner/>
+      </div>
       {/* CTA Banner */}
       {/* <div className="relative w-full  h-[300px] mb-10 rounded-lg overflow-hidden">
         <div className="absolute inset-0 bg-black/70">

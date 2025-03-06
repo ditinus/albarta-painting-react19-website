@@ -38,9 +38,9 @@ export default function page() {
 
       <PaintingCompany />
  
-      <div className="container mx-auto max-w-7xl px-4 ">
+      <div className=" ">
         {/* Quality Section */}
-
+<div className="container mx-auto max-w-7xl px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10 my-3.5">
           <div className="space-y-6 order-2 md:order-1">
             <div className="space-y-2">
@@ -89,9 +89,11 @@ export default function page() {
             />
           </div>
         </div>
-     
+        </div>
+        <div className="max-sm:my-10">
         <HomeBanner/>
-
+        </div>
+        <div className="container mx-auto max-w-7xl px-4">
         <div className="grid md:grid-cols-2 gap-8 mb-16 items-center my-3.5 lg:mt-20" >
           <div className="relative w-full  lg:w-[80%] mr-auto aspect-square md:aspect-auto md:h-[600px] overflow-hidden">
             <Image
@@ -193,7 +195,7 @@ export default function page() {
             />
           </div>
         </div>
-
+</div>
        
       </div>
 

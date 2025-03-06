@@ -19,8 +19,8 @@ export default function OurServices() {
         buttonText="Explore Our Services"
       />
 
-      <div className="w-full bg-black text-white ">
-        <div className="container mx-auto max-w-7xl py-8 px-4 lg:py-30  ">
+      <div className="w-full bg-black text-white  mb-10 ">
+        <div className="container mx-auto max-w-7xl py-8 px-4 lg:py-30 ">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32 place-items-center">
             {/* Services Accordion */}
             <div className="space-y-1">
