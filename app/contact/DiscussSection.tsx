@@ -25,6 +25,8 @@ const DiscussSection = () => {
           <h3 className="text-[#000000] md:text-4xl sm:text-[20px] font-medium ">CALL US</h3>
         </div>
 
+        
+
         <div className="text-center sm:mb-4 mb-6"> {/* Margin for small screens */}
           <div className="icon mb-4">
             <Image
