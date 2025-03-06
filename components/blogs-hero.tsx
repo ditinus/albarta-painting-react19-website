@@ -88,7 +88,7 @@ const Hero: React.FC<HeroProps> = ({
             </Link>
             <Link
               href={bookLink}
-              className="bg-transparent border-2 border-white text-white px-10 py-2 rounded-full font-medium hover:bg-white hover:text-gray-800 transition-colors"
+              className="bg-transparent border-2 flex justify-center items-center border-white text-white px-10 py-2 rounded-full font-medium hover:bg-white hover:text-gray-800 transition-colors"
             >
               {bookText}
             </Link>

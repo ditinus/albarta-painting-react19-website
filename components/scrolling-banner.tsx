@@ -23,7 +23,7 @@ export default function ScrollingBanner() {
         }}
       >
   
-        <div className="inline-block pl-20">{repeatedText}</div>
+        <div className="inline-block">{repeatedText}</div>
         <div className="inline-block">{repeatedText}</div>
       </motion.div>
     </div>

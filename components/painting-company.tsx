@@ -3,7 +3,7 @@ import Image from "next/image";
 import AboutUs from "@/public/AboutUs.png";
 export default function PaintingCompany() {
   return (
-    <div className="w-full my-24">
+    <div className="w-full lg:my-24 my-10">
       {/* Hero Section */}
       <div className=" flex flex-col lg:flex-row  lg:h-[38rem]">
         {/* Left side with image */}
@@ -22,7 +22,7 @@ export default function PaintingCompany() {
         </div>
 
         {/* Right side with text */}
-        <div className="w-full lg:w-2/6  md:w-/6 bg-white px-16 py-8 flex flex-col justify-center ">
+        <div className="w-full xl:max-w-2xl   bg-white lg:px-16 px-4 py-8 flex flex-col justify-center ">
           <p className="text-black text-[22px]  font-semibold mb-2">About Us</p>
           <h1 className="lg:text-[30px] text-[26px] font-bold text-[#0D378D] mb-4">
             EXPERTS IN COLOURING
@@ -59,9 +59,9 @@ export default function PaintingCompany() {
       </div>
 
       {/* Why Choose Us Section */}
-      <div className="bg-[#E2E7F1] py-20 px-4 ">
+      <div className="bg-[#E2E7F1] py-20 lg:px-4 px-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="lg:text-[36px] font-bold text-[#0D378D] text-center mb-12">
+          <h2 className="text-[36px] font-bold text-[#0D378D] text-center mb-12">
             WHY CHOOSE US?
           </h2>
 

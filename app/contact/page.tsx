@@ -8,12 +8,13 @@ import GoogleMap from "./GoogleMap";
 import DiscussSection from "./DiscussSection";
 import blogsBanner from "@/public/blogs-banner.png";
 import ContactGalleryHero from "@/components/ContactGalleryHero";
+import { Navbar } from "@/components/navbar";
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
-
+    <main className="flex  flex-col">
+ <Navbar />
 <ContactGalleryHero
   title=" "
   title2="CONTACT US"
@@ -188,7 +189,7 @@ export default function Home() {
   </div>
       <div className="bg-[#E2E7F1] py-12 px-4 relative ">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-[#0D378D] text-center mb-12">
+          <h2 className="text-[36px] font-bold text-[#0D378D] text-center mb-12">
             WHY CHOOSE US?
           </h2>
 

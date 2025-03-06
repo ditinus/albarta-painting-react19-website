@@ -13,6 +13,7 @@ import BlogHero from "@/components/blog-hero"
 import BlogGrid from "@/components/blog-grid";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/ui/footer";
+import { Navbar } from "@/components/navbar";
 
 
 export function generateStaticParams() {
@@ -99,6 +100,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         </div>
       </section>
       <TrustBadges /> */}
+       <Navbar />
   <BlogHero
         title={post.title}
       

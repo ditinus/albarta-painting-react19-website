@@ -22,11 +22,14 @@ const OurGallery: React.FC = () => {
 
   return (
     <div className="gallery-carousel ">
+
+      <div className="mt-3">
       <ServiceSection
         title="Our Gallery"
         description="See the Magic of Transformation  <br />  with Our Painting Work "
         buttonText="View All"
       />
+      </div>
 
       <div className="container-fluid lg:mt-20 mt-10">
         <div className="gallery-slide-start">

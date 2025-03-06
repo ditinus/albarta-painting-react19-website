@@ -18,15 +18,17 @@ export default function BlogCard({ post }: BlogCardProps) {
         />
       </div>
 
-      <div className="">
-        <div className="">
-          <p className="text-sm text-[#0D378D] font-semibold uppercase  mt-3 bg-[#CEE4E1] w-[30%] flex justify-center p-1.5  ">
+      <div >
+       
+        <p className="text-[16px] text-[#0D378D] font-bold uppercase  mt-3 bg-[#CEE4E1]  lg:w-30 w-30 text-center   p-1.5  ">
             {post.date}
           </p>
-        </div>
-        <h2 className="text-xl font-bold text-[#0D378D] mt-2">{post.title}</h2>
+        
 
-        <p className="text-gray-600 mt-3 line-clamp-3">{post.excerpt}</p>
+        
+        <h2 className="text-[28px] font-bold text-[#0D378D] mt-2">{post.title}</h2>
+
+        <p className="text-black mt-3 font-medium line-clamp-3 text-[18px]">{post.excerpt}</p>
 
         <Link
           href={`/blog/${post.slug}`}
