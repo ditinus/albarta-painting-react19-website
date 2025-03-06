@@ -27,11 +27,12 @@ export default function blogs() {
         bookText="Read More"
       />
       <main className="container mx-auto px-4 py-8 lg:mt-20 mt-10">
-        <div className=""></div>
+ 
 
         <BlogGrid posts={posts} />
-
+<div className=" lg:mt-30 mt-10">
         <HomeBanner/>
+        </div>
 
 
         <ContactFormSection />
