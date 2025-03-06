@@ -18,6 +18,7 @@ import { Navbar } from "@/components/navbar";
 
 
 import SpecialOffer from "@/components/SpecialOffer/page";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 
 
 const posts = getBlogPosts();
