@@ -207,7 +207,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-0.5 ">
           {/* Logo and Description */}
           <div className="space-y-6 my-5">
-            <div className="p-2 w-48 h-16 flex items-center justify-center rounded">
+
+            <div className=" p-2 w-48 h-16 flex items-center justify-center rounded">
+
+              <Link href="/">
+
               <Image
                 src={logo}
                 alt="Alberta Global Painting Logo"
@@ -215,6 +219,7 @@ export default function Footer() {
                 height={60}
                 className="object-contain"
               />
+              </Link>
             </div>
             <p className="text-sm text-white leading-relaxed">
               {`The Alberta Global Painting logo represents the essence of quality

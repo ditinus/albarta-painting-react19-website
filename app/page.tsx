@@ -24,14 +24,14 @@ import ReviewsCarousel from "@/components/ReviewsCarousel";
 const posts = getBlogPosts();
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex  flex-col">
     <Navbar />
       {/* Hero Section */}
       <Hero />
 
       <PaintingCompany />
       <OurServices />
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col ">
         <HomeBanner />
 
         <SpecialOffer />

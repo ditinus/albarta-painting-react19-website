@@ -23,12 +23,17 @@ const Index = () => {
       breakpoints: {
         640: {
           // Small tablets
-          slidesPerView: 1,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         768: {
           // Medium tablets
-          slidesPerView: 1,
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        842:{
+
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         1024: {
