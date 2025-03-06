@@ -59,9 +59,9 @@ export default function PaintingCompany() {
       </div>
 
       {/* Why Choose Us Section */}
-      <div className="bg-[#E2E7F1] py-20 px-4 ">
+      <div className="bg-[#E2E7F1] py-20 lg:px-4 px-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="lg:text-[36px] font-bold text-[#0D378D] text-center mb-12">
+          <h2 className="text-[36px] font-bold text-[#0D378D] text-center mb-12">
             WHY CHOOSE US?
           </h2>
 
