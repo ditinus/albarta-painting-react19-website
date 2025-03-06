@@ -221,7 +221,7 @@ export default function Footer() {
               />
               </Link>
             </div>
-            <p className="text-sm text-white leading-relaxed">
+            <p className="text-sm text-white leading-relaxed mt-10">
               {`The Alberta Global Painting logo represents the essence of quality
               work and exceptional service. Our brand features a clean, modern
               brushstroke aesthetic, showcasing the company's commitment to
@@ -233,7 +233,7 @@ export default function Footer() {
           <div className="md:place-self-center">
             <h3 className="font-medium mb-4">Quick Links</h3>
             <nav>
-              <ul className="space-y-2">
+              <ul className="space-y-5">
                 {["Home", "About", "Services", "Gallery", "Blog", "Contact"].map((item) => (
                   <li key={item}>
                     <Link
@@ -257,7 +257,7 @@ export default function Footer() {
           {/* Contact Information */}
           <div className="place-self-start">
             <h3 className="font-medium mb-4">Contact</h3>
-            <div className="space-y-3">
+            <div className="space-y-5">
               <div className="flex items-center gap-2 text-white cursor-pointer">
               <Link href="tel:+587-466-6647">
                 <svg
@@ -322,7 +322,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-500">
-          <p className="text-white">© 2024 Alberta Global Painting. All rights reserved.</p>
+          <p className="text-white">© 2025 Alberta Global Painting. Powered by Cyber Ace.</p>
         </div>
       </div>
     </div>

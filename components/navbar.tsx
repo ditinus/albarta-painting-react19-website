@@ -6,8 +6,23 @@ import { Button } from "@/components/ui/button";
 import MobileMenu from "./mobile-menu";
 import Image from "next/image";
 import ScrollingBanner from "./scrolling-banner";
+import { usePathname } from "next/navigation";
+
+
+
 
 export function Navbar() {
+
+  const [currentPath, setCurrentPath] = React.useState('')
+
+
+  const path = usePathname()
+
+  React.useEffect(() => {
+    if(path){
+      setCurrentPath(path)
+    }
+  },[path])
 
 
   return (
@@ -30,37 +45,37 @@ export function Navbar() {
           <nav className="hidden lg:flex items-center space-x-16  bg-[#0D378D1F] rounded-4xl px-5.5 py-3.5">
             <Link
               href="/"
-              className="text-black hover:text-[#0D378D] font-medium"
+              className={` ${currentPath == '/' ? 'text-[#0D378D]' : 'text-black' } hover:text-[#0D378D]  font-medium`}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="text-black hover:text-[#0D378D] font-medium"
+              className={` ${currentPath == '/about' ? 'text-[#0D378D]' : 'text-black' } hover:text-[#0D378D]  font-medium`}
             >
               About
             </Link>
             <Link
               href="/services"
-              className="text-black hover:text-[#0D378D] font-medium"
+              className={` ${currentPath == '/services' ? 'text-[#0D378D]' : 'text-black' } hover:text-[#0D378D]  font-medium`}
             >
               Services
             </Link>
             <Link
               href="/gallery"
-              className="text-black hover:text-[#0D378D] font-medium"
+              className={` ${currentPath == '/gallery' ? 'text-[#0D378D]' : 'text-black' } hover:text-[#0D378D]  font-medium`}
             >
               Gallery
             </Link>
             <Link
               href="/blogs"
-              className="text-black hover:text-[#0D378D] font-medium"
+              className={` ${currentPath == '/blogs' ? 'text-[#0D378D]' : 'text-black' } hover:text-[#0D378D]  font-medium`}
             >
               Blog
             </Link>
             <Link
               href="/contact"
-              className="text-black hover:text-[#0D378D] font-medium"
+              className={` ${currentPath == '/contact' ? 'text-[#0D378D]' : 'text-black' } hover:text-[#0D378D]  font-medium`}
             >
               Contact
             </Link>
