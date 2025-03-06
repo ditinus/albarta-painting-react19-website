@@ -35,9 +35,10 @@ export default function Home() {
         <HomeBanner />
 
         <SpecialOffer />
+        <OurGallery />
         <CalgaryPainting />
 
-        <OurGallery />
+      
         {/* Google Reviews Section */}
         <ReviewsCarousel />
         <ContactFormSection />

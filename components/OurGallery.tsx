@@ -11,7 +11,7 @@ import gallery5 from "../public/gallery5.png";
 const OurGallery = () => {
   return (
     <div className="album">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-20 py-12 responsive-container-block bg">
+      <div className="container max-w-7xl mx-auto px-4 lg:px-0 sm:px-6 py-12 responsive-container-block bg">
         
         {/* Image Container Block 1 (Standard Grid) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

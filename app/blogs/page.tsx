@@ -30,7 +30,10 @@ export default function blogs() {
         <div className=""></div>
 
         <BlogGrid posts={posts} />
+
         <HomeBanner/>
+
+
         <ContactFormSection />
       </main>
       <Footer />
