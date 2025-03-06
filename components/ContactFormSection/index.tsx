@@ -27,12 +27,12 @@ const ContactFormSection = () => {
               />
               <Input
                 className=" border-0 bg-[#F3F3F3] text-black"
-                placeholder="Email address"
+                placeholder="Email Address"
                 type="email"
               />
               <Input
                 className=" border-0 bg-[#F3F3F3] text-black"
-                placeholder="Phone number"
+                placeholder="Phone Number"
                 type="tel"
               />
               <Textarea

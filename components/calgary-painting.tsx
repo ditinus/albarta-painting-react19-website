@@ -148,7 +148,7 @@ export const CalgaryPainting = () => {
   <main className="">
       <div className="flex flex-col md:flex-row">
         {/* Left Section */}
-        <div className="bg-[#0D378D] text-white p-8 md:p-12 py-30 lg:p-16 flex flex-col justify-center md:w-1/2">
+        <div className="bg-[#0D378D] text-white p-8 md:p-12 py-30 max-sm:py-10 lg:p-16 flex flex-col justify-center md:w-1/2">
           <div className="max-w-6xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-bold mb-6 uppercase">We are your Calgary painting company</h1>
 

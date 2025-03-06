@@ -13,6 +13,7 @@ import blogsBanner from "@/public/blogs-banner.png";
 export default function gallery() {
   return (
     <main className="flex  flex-col ">
+         <Navbar />
       <ContactGalleryHero
         title="OUR "
         title2="GALLERY"

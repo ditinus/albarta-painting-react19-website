@@ -31,7 +31,7 @@ const ContactGalleryHero: React.FC<HeroProps> = ({
 }) => {
   return (
     <div>
-      <Navbar />
+   
       <section className="relative h-[500px] md:h-[600px]">
         <div className="absolute inset-0">
           <Image
