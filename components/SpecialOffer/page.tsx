@@ -5,11 +5,11 @@ import "./style.css";
 import 'swiper/css';
 import Image from "next/image";
 import slider1 from "@/public/slider-image-1.png";
-import { Navigation, Pagination } from "swiper/modules"
+import { Navigation  } from "swiper/modules"
 const Index = () => {
   useEffect(() => {
     const swiper = new Swiper(".mySwiper", {
-      modules: [Navigation, Pagination],
+      modules: [Navigation],
       slidesPerView: 1,
       spaceBetween: 20,
       navigation: {
@@ -136,8 +136,8 @@ const Index = () => {
                   </div>
                 </div>
                 {/* Navigation Buttons */}
-                <div className="swiper-button-prev image3  custom-prev-button offer_slider_prev"></div>
-                <div className="swiper-button-next image4 custom-prev-button  offer_slider_next"></div>
+                <div className="swiper-button-prev image3  custom-prev-button offer_slider_prev" />
+                <div className="swiper-button-next image4 custom-prev-button  offer_slider_next" />
               </div>
             </div>
             {/* Text content section */}

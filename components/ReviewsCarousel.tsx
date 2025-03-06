@@ -54,7 +54,7 @@ const ReviewsCarousel = () => {
       <div className="flex lg:justify-center  sm:justify-start   mb-20 mt-10 ">
         <Image src={GoogleLogo} className=" lg:w-64  w-40 " alt="google-logo" />
       </div>
-      <div className="relative  px-10 mx-auto ml-">
+      <div className="relative  px-10 mx-auto  rounded-0">
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
@@ -78,7 +78,7 @@ const ReviewsCarousel = () => {
         >
           {reviews.map((review, index) => (
             <SwiperSlide key={index} className="flex flex-col justify-between  ml-5 mr-5">
-              <div className="bg-[#E2E7F1] shadow-lg   relative rounded-xl lg:p-4  pl-10   p-0   flex flex-col justify-center ">
+              <div className="bg-[#E2E7F1] shadow-lg   relative rounded-xl lg:p-4  pl-10   p-0   flex flex-col justify-center review_card">
                 {/* Adjusted the images to be inside the flex container without absolute positioning */}
                 <div className="">
                   <Image src={Reviews1} alt="Review Image"  className="mx-auto  absolute top-4 left-[-20px] " />

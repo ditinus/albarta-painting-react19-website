@@ -98,7 +98,7 @@ const ContactForm = () => {
             className="text-[16px] mb-6  text-[#000000] flex flex-row items-center"
             style={{ fontWeight: "500" }}
           >
-            <span className="mr-2">
+            <span className="mr-5">
               <Link href="tel:+587-466-6647">
                 <Image src={phone} alt="phone" />
               </Link>
