@@ -18,15 +18,15 @@ import ourServices6 from "@/public/ourServices6.png";
 import ServiceSection from "./service-section";
 
 export default function OurServices() {
-  // State to track the active accordion section
+
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
-  // Function to handle section change
+
   const handleAccordionChange = (value: string) => {
     setActiveSection(value);
   };
 
-  // Function to get image based on active accordion section
+
   const getImageForSection = () => {
     switch (activeSection) {
       case "interior":           
