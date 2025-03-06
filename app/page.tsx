@@ -17,9 +17,8 @@ import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 
 
-import PromotionalSlider from "@/components/promotional-slider";
-import ReviewsCarousel from "@/components/ReviewsCarousel";
 import SpecialOffer from "@/components/SpecialOffer/page";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 
 
 const posts = getBlogPosts();
@@ -34,13 +33,15 @@ export default function Home() {
       <OurServices />
       <div className="flex flex-col min-h-screen">
         <HomeBanner />
+
+        <SpecialOffer />
         <CalgaryPainting />
 
         <OurGallery />
         {/* Google Reviews Section */}
         <ReviewsCarousel />
         <ContactFormSection />
-        <SpecialOffer />
+    
     
         {/* <SpecialOffer /> */}
         <main className="container mx-auto px-4 py-8 ">

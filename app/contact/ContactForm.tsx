@@ -71,8 +71,10 @@ const ContactForm = () => {
   };
 
   return (
+
     <div className="container mx-auto px-6">
          <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-medium pt-[40px] pb-[46px] ">
+
   GET IN TOUCH
 </p>
       <div className="grid md:grid-cols-2 gap-12 text-center" style={{

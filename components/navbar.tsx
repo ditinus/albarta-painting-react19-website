@@ -124,14 +124,16 @@ export function Navbar() {
   return (
     <>
       <ScrollingBanner />
+
       <header className="bg-white py-4 sticky top-0 z-[99999] shadow-lg">
         <div className="px-5 flex items-center justify-between">
           <div className="flex items-center ">
+
             <Link href="/">
               <Image
                 src="/logo.svg"
                 alt="Alberta Color Painting"
-                width={100}
+                width={150}
                 height={40}
                 className="h-auto"
               />

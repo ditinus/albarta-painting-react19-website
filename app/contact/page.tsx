@@ -188,14 +188,14 @@ export default function Home() {
   </div>
       <div className="bg-[#E2E7F1] py-12 px-4 relative ">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-blue-900 text-center mb-12">
+          <h2 className="text-2xl font-bold text-[#0D378D] text-center mb-12">
             WHY CHOOSE US?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Quality Workmanship */}
             <div className="flex flex-col  text-start">
-              <div className="text-blue-900 mb-4">
+              <div className="text-[#0D378D] mb-4">
                 <div className="flex text-start">
                   <svg
                     width="63"
@@ -211,17 +211,17 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3 ">
+              <h3 className=" lg:text-[24px]  text-[20px] font-semibold text-[#0D378D] mb-3 ">
                 Quality Workmanship
               </h3>
-              <p className="text-sm text-gray-700">
-                We use only premium materials and top-notch techniques.
+              <p className="text-sm text-black">
+              We use only premium materials and top-notch techniques.
               </p>
             </div>
 
             {/* Quality Materials */}
             <div className="flex flex-col ">
-              <div className="text-blue-900 mb-4">
+              <div className="text-[#0D378D] mb-4">
                 <svg
                   width="63"
                   height="61"
@@ -235,7 +235,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">
+              <h3 className="text-lg font-semibold text-[#0D378D] mb-3">
                 Quality Materials
               </h3>
               <p className="text-sm text-gray-700">
@@ -246,7 +246,7 @@ export default function Home() {
 
             {/* Experienced Team */}
             <div className="flex flex-col ">
-              <div className="text-blue-900 mb-4">
+              <div className="text-[#0D378D] mb-4">
                 <svg
                   width="61"
                   height="61"
@@ -268,7 +268,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">
+              <h3 className="text-lg font-semibold text-[#0D378D] mb-3">
                 Experienced Team
               </h3>
               <p className="text-sm text-gray-700">
@@ -292,7 +292,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">
+              <h3 className="text-lg font-semibold text-[#0D378D] mb-3">
                 Customer Satisfaction
               </h3>
               <p className="text-sm text-gray-700">
