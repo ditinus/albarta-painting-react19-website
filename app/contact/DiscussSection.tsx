@@ -4,6 +4,7 @@ import EmailLogo from '../../public/Email-Logo.png';
 import PhoneLogo from '../../public/Call-Phone.png';
 import DirectionLogo from '../../public/Direction-logo.png';
 import Image from 'next/image';
+import Link from "next/link";
 
 const DiscussSection = () => {
   return (
