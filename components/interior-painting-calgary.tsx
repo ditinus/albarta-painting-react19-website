@@ -8,7 +8,7 @@ export default function InteriorPaintingCalgary() {
         <h1 className="text-lg font-medium text-blue-800">INTERIOR PAINTING CALGARY</h1>
       </header>
 
-      <div className="space-y-6">
+      <div className="space-y-6 ">
         <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden rounded-md">
           <Image
             src="/placeholder.svg?height=450&width=800"

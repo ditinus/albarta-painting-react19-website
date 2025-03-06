@@ -13,13 +13,13 @@ const OurGallery = () => {
         
         {/* Image Container Block 1 (Standard Grid) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="w-full">
+          <div className="w-full col-6 col-md-4">
             <Image src={gallery1} className="w-full h-auto object-cover" alt="gallery" />
           </div>
-          <div className="w-full">
+          <div className="w-full col-6 col-md-4">
             <Image src={gallery3} className="w-full h-auto object-cover" alt="gallery" />
           </div>
-          <div className="w-full">
+          <div className="w-full col-12 col-md-4">
             <Image src={gallery3} className="w-full h-auto object-cover" alt="gallery" />
           </div>
         </div>
