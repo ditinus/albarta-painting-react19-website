@@ -51,7 +51,7 @@ export default function Footer() {
                 className="object-contain"
               />
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <p className="text-sm text-white leading-relaxed">
               {`The Alberta Global Painting logo represents the essence of quality
               work and exceptional service. Our brand features a clean, modern
               brushstroke aesthetic, showcasing the company's commitment to
@@ -75,7 +75,7 @@ export default function Footer() {
                   <li key={item}>
                     <Link
                       href={`/${item.toLowerCase()}`}
-                      className="text-gray-400 hover:text-white transition-colors"
+                      className="text-white hover:text-white transition-colors"
                     >
                       {item}
                     </Link>
@@ -89,7 +89,7 @@ export default function Footer() {
           <div className="place-self-start">
             <h3 className="font-medium mb-4">Contact</h3>
             <div className="space-y-3">
-              <div className="flex items-center gap-2 text-gray-400">
+              <div className="flex items-center gap-2 text-white">
                 <svg
                   width="19"
                   height="20"
@@ -113,7 +113,7 @@ export default function Footer() {
 
                 <span>+1 (587) 998-9547</span>
               </div>
-              <div className="flex items-center gap-2 text-gray-400">
+              <div className="flex items-center gap-2 text-white">
                 <svg
                   width="21"
                   height="17"
@@ -129,7 +129,7 @@ export default function Footer() {
 
                 <span>info@albertaglobalpainting.com</span>
               </div>
-              <div className="flex items-start gap-2 text-gray-400">
+              <div className="flex items-start gap-2 text-white ">
                 <svg
                   width="18"
                   height="25"

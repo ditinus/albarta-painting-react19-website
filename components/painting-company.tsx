@@ -5,12 +5,13 @@ export default function PaintingCompany() {
   return (
     <div className="w-full my-24">
       {/* Hero Section */}
-      <div className=" flex flex-col lg:flex-row">
+      <div className=" flex flex-col lg:flex-row  lg:h-[38rem]">
         {/* Left side with image */}
         <div className="relative w-full lg:w-[50%]">
           <div className="absolute top-10 left-0 z-50 bg-blue-900 text-white py-3 px-4">
             <p className="text-[16px] font-semibold">10 Years of Experience</p>
           </div>
+          <div></div>
           <Image
             src={AboutUs}
             alt="Elegant interior with staircase"
@@ -21,7 +22,7 @@ export default function PaintingCompany() {
         </div>
 
         {/* Right side with text */}
-        <div className="w-full lg:w-2/6 bg-white p-8 flex flex-col justify-center">
+        <div className="w-full lg:w-2/6  md:w-/6 bg-white px-16 py-8 flex flex-col justify-center ">
           <p className="text-black text-[22px]  font-semibold mb-2">About Us</p>
           <h1 className="lg:text-[30px] text-[26px] font-bold text-[#0D378D] mb-4">
             EXPERTS IN COLOURING
@@ -58,7 +59,7 @@ export default function PaintingCompany() {
       </div>
 
       {/* Why Choose Us Section */}
-      <div className="bg-[#E2E7F1] py-20 px-4  mt-30">
+      <div className="bg-[#E2E7F1] py-20 px-4 ">
         <div className="max-w-6xl mx-auto">
           <h2 className="lg:text-[36px] font-bold text-[#0D378D] text-center mb-12">
             WHY CHOOSE US?

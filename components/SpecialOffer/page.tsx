@@ -70,8 +70,8 @@ const Index = () => {
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
                         <p>10% Off on Interior</p>
                       </div>
-                      <div className="offer-card-content absolute bottom-0 left-0 right-0 bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
-                        <h6 className="text-white">
+                      <div className="offer-card-content absolute bottom-0 left-0 right-0 ">
+                        <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
                           Offer starts Oct 27, 2024 and ends Feb 28, 2025. You must call for this offer.
                         </h6>
                         <p className="text-white">10% OFF - Interior Painting</p>
@@ -85,8 +85,8 @@ const Index = () => {
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
                         <p>2 for 1 Deal</p>
                       </div>
-                      <div className="offer-card-content absolute bottom-0 left-0 right-0  bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
-                        <h6 className="text-white">
+                      <div className="offer-card-content absolute bottom-0 left-0 right-0  ">
+                        <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
                           Offer starts Oct 27, 2024 and ends Feb 28, 2025. You must call for this offer.
                         </h6>
                         <p className="text-white">Pay for one bedroom, get the second one half price!</p>
@@ -100,8 +100,8 @@ const Index = () => {
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
                         <p>2 for 1 Deal</p>
                       </div>
-                      <div className="offer-card-content absolute bottom-0 left-0 right-0 bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
-                        <h6 className="text-white">
+                      <div className="offer-card-content absolute bottom-0 left-0 right-0 ">
+                        <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
                           Offer starts Oct 27, 2024 and ends Feb 28, 2025. You must call for this offer.
                         </h6>
                         <p className="text-white">Pay for one bedroom, get the second one half price!</p>
@@ -115,8 +115,8 @@ const Index = () => {
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
                         <p>2 for 1 Deal</p>
                       </div>
-                      <div className="offer-card-content absolute bottom-0 left-0 right-0 bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
-                        <h6 className="text-white">
+                      <div className="offer-card-content absolute bottom-0 left-0 right-0 ">
+                        <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
                           Offer starts Oct 27, 2024 and ends Feb 28, 2025. You must call for this offer.
                         </h6>
                         <p className="text-white">Pay for one bedroom, get the second one half price!</p>
@@ -125,13 +125,13 @@ const Index = () => {
                   </div>
                 </div>
                 {/* Navigation Buttons */}
-                <div className="swiper-button-prev offer_slider_prev"></div>
-                <div className="swiper-button-next offer_slider_next"></div>
+                <div className="swiper-button-prev image3 offer_slider_prev"></div>
+                <div className="swiper-button-next image4 offer_slider_next"></div>
               </div>
             </div>
             {/* Text content section */}
             <div className="w-full pr-5 flex flex-col justify-center ">
-              <h5 className=" lg:text-xl  text-[20px]   mb-5">
+              <h5 className=" lg:text-xl  text-[20px]  mb-5">
                 For a limited time, Alberta Colour Painting is offering exclusive discounts to help you refresh your space at an unbeatable price!
               </h5>
               <p className="text-[14px] lg:text-[16px] font-light">
