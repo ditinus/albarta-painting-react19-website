@@ -22,7 +22,7 @@ export default function PaintingCompany() {
         </div>
 
         {/* Right side with text */}
-        <div className="w-full lg:w-2/6  md:w-/6 bg-white px-16 py-8 flex flex-col justify-center ">
+        <div className="w-full xl:max-w-2xl   bg-white lg:px-16 px-4 py-8 flex flex-col justify-center ">
           <p className="text-black text-[22px]  font-semibold mb-2">About Us</p>
           <h1 className="lg:text-[30px] text-[26px] font-bold text-[#0D378D] mb-4">
             EXPERTS IN COLOURING
