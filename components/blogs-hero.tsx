@@ -17,6 +17,7 @@ interface HeroProps {
   bookLink: string;
   quoteText: string;
   bookText: string;
+  
 }
 
 const Hero: React.FC<HeroProps> = ({
