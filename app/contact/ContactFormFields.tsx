@@ -27,7 +27,7 @@ const ContactFormFields: React.FC<ContactFormFieldsProps> = ({
 }) => {
   return (
     <>
-      <div className="mb-4 ">
+      <div className="mb-5 ">
       <input
   type="text"
   name="name"
@@ -40,7 +40,7 @@ const ContactFormFields: React.FC<ContactFormFieldsProps> = ({
         {errors.name && <div className="text-red-500 text-sm mt-1">{errors.name}</div>}
       </div>
 
-      <div className="mb-4">
+      <div className="mb-5">
         <input
           type="email"
           name="email"
@@ -53,7 +53,7 @@ const ContactFormFields: React.FC<ContactFormFieldsProps> = ({
         {errors.email && <div className="text-red-500 text-sm mt-1">{errors.email}</div>}
       </div>
 
-      <div className="mb-4">
+      <div className="mb-5">
         <input
           type="text"
           name="phone"
@@ -66,7 +66,7 @@ const ContactFormFields: React.FC<ContactFormFieldsProps> = ({
         {errors.phone && <div className="text-red-500 text-sm mt-1">{errors.phone}</div>}
       </div>
 
-      <div className="mb-4">
+      <div className="mb-5">
         <textarea
           name="message"
           value={formData.message}

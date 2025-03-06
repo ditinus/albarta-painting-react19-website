@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 // import "tailwindcss/tailwind.css";
 import Image from "next/image";
-
+import Link from "next/link";
 // import type { FormData, Errors } from "../../lib/types";
 import phone from "../../public/phone.svg";
 import email from "../../public/email.svg";
@@ -71,8 +71,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto px-6 py-12 ">
-         <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-medium pt-[86px] pb-[86px] ">
+
+    <div className="container mx-auto px-6">
+         <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-medium pt-[40px] pb-[46px] ">
+
   GET IN TOUCH
 </p>
       <div className="grid md:grid-cols-2 gap-12 text-center" style={{
@@ -88,15 +90,18 @@ const ContactForm = () => {
           </h3>
           <p className="text-[16px] mb-6  text-[#000000] flex flex-row items-center" style={{fontWeight:"500"}}>
             <span className="mr-2">
-              <Image src={phone} alt="phone" />
+  <Link href="tel:+587-466-6647"><Image src={phone} alt="phone" /></Link>
+  
             </span>
-            +1 587-966-6547
+  <Link href="tel:+587-466-6647">587-466-6647</Link>
+            
+
           </p>
           <p className="text-base mb-6 text-black  flex flex-row items-center" style={{fontWeight:"500"}}>
             <span className="mr-2">
-              <Image src={email} alt="email" />
+            <Link href="mailto:example@example.com"><Image src={email} alt="email" /></Link>
             </span>
-            info@albertacolourpainting.com
+            <Link href="mailto:example@example.com">info@albertacolourpainting.com</Link>
           </p>
           <p className="text-base mb-6 text-black  flex flex-row items-center" style={{fontWeight:"500"}}>
             <span className="mr-2">
@@ -111,7 +116,7 @@ const ContactForm = () => {
             boxShadow:" rgba(0, 0, 0, 0.11) 5px 17px 56.7px 0px",
             // backgroundColor:"beige"
       }}>
-          <form onSubmit={handleSubmit} noValidate className="">
+          <form onSubmit={handleSubmit} noValidate className="mt-5">
             {/* <ContactFormFields
               formData={formData}
               handleChange={handleChange}
@@ -124,7 +129,7 @@ const ContactForm = () => {
             />
             <button
               type="submit"
-              className="w-[90%] ml-[2em] py-2 mt-3 mb-4 bg-blue-800 text-white font-semibold rounded-md hover:bg-blue-700"
+              className="w-[90%] ml-[2em] py-2 mt-5  bg-blue-800 text-white font-semibold rounded-md hover:bg-blue-700"
             >
               Get a Quote
             </button>

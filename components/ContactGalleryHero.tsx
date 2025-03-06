@@ -67,10 +67,10 @@ const ContactGalleryHero: React.FC<HeroProps> = ({
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href={quoteLink}
-              className="bg-[#0D378D] text-white pl-5 pr-2 border-2 border-white rounded-full font-medium hover:bg-blue-700 flex items-center justify-center"
+              className="bg-[#0D378D] text-white px-5 py-2 border-2 border-white rounded-full font-medium hover:bg-blue-700 flex items-center justify-center"
             >
               {quoteText}{" "}
-              <span className="ml-2 bg-white rounded-full p-2">
+              <span className="ml-5 bg-white rounded-full p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="15"
