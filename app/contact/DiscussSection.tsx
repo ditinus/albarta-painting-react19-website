@@ -4,6 +4,7 @@ import EmailLogo from '../../public/Email-Logo.png';
 import PhoneLogo from '../../public/Call-Phone.png';
 import DirectionLogo from '../../public/Direction-logo.png';
 import Image from 'next/image';
+import Link from "next/link";
 
 const DiscussSection = () => {
   return (
@@ -23,6 +24,8 @@ const DiscussSection = () => {
           </div>
           <h3 className="text-[#000000] md:text-4xl sm:text-[20px] font-medium ">CALL US</h3>
         </div>
+
+        
 
         <div className="text-center sm:mb-4 mb-6"> {/* Margin for small screens */}
           <div className="icon mb-4">
