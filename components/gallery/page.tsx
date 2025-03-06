@@ -17,14 +17,14 @@ const OurGallery: React.FC = () => {
   // ];
 
   return (
-    <div className="gallery-carousel my-10">
+    <div className="gallery-carousel ">
       <ServiceSection
         title="Our Gallery"
         description="See the Magic of Transformation  <br />  with Our Painting Work "
-        buttonText="Read More Reviews"
+        buttonText="View All"
       />
 
-      <div className="container-fluid mt-5">
+      <div className="container-fluid lg:mt-20 mt-10">
         <div className="gallery-slide-start">
           <div className="gallery-slide">
             <Image src={offer1} className="img-fluid" alt={""} />

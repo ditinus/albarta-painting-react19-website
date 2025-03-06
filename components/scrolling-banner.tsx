@@ -3,27 +3,27 @@
 import { motion } from "framer-motion"
 
 export default function ScrollingBanner() {
-  const bannerText = "Special Discount 20% >>>>>>> "
+  const bannerText = ` Special Discount 20% >>>>>>>> ${ " "} `
   const repeatedText = bannerText.repeat(10)
 
   return (
     <div
-      className="bg-blue-800 text-white py-1 overflow-hidden whitespace-nowrap"
+      className="bg-[#0D378D] text-white py-1 overflow-hidden whitespace-nowrap"
       style={{ scrollBehavior: "smooth" }}
     >
-      {/* Using Framer Motion to animate the horizontal scrolling */}
+    
       <motion.div
-        className="flex"
-        animate={{ x: ["0%", "-100%"] }} // Scroll from left to right (resetting after reaching end)
+        className="flex gap-1"
+        animate={{ x: ["0%", "-100%"] }} 
         transition={{
           repeat: Infinity,
           repeatType: "loop",
-          duration: 20, // Adjust the duration for the speed of the scroll
-          ease: "linear", // Use linear easing for a smooth scroll effect
+          duration: 20, 
+          ease: "linear", 
         }}
       >
-        {/* Wrapping the repeated text into two sections for seamless scrolling */}
-        <div className="inline-block">{repeatedText}</div>
+  
+        <div className="inline-block pl-20">{repeatedText}</div>
         <div className="inline-block">{repeatedText}</div>
       </motion.div>
     </div>

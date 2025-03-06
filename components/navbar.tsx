@@ -8,63 +8,65 @@ import Image from "next/image";
 import ScrollingBanner from "./scrolling-banner";
 
 export function Navbar() {
+
+
   return (
     <>
       <ScrollingBanner />
-      <header className="bg-white py-4 px-4 md:px-8 sticky top-0 z-[99999] shadow-lg">
-        <div className="container mx-auto flex items-center justify-between">
+      <header className="bg-white py-2 px-4 md:px-8 sticky top-0 z-[99999] shadow-lg">
+        <div className=" mx-auto flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/">
               <Image
                 src="/logo.svg"
                 alt="Alberta Color Painting"
-                width={100}
+                width={150}
                 height={40}
                 className="h-auto"
               />
             </Link>
           </div>
 
-          <nav className="hidden md:flex items-center space-x-8 bg-[#0D378D1F] rounded-4xl px-5.5 py-3.5">
+          <nav className="hidden lg:flex items-center space-x-16  bg-[#0D378D1F] rounded-4xl px-5.5 py-3.5">
             <Link
               href="/"
-              className="text-gray-800 hover:text-blue-600 font-medium"
+              className="text-black hover:text-[#0D378D] font-medium"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="text-gray-800 hover:text-blue-600 font-medium"
+              className="text-black hover:text-[#0D378D] font-medium"
             >
               About
             </Link>
             <Link
               href="/services"
-              className="text-gray-800 hover:text-blue-600 font-medium"
+              className="text-black hover:text-[#0D378D] font-medium"
             >
               Services
             </Link>
             <Link
               href="/gallery"
-              className="text-gray-800 hover:text-blue-600 font-medium"
+              className="text-black hover:text-[#0D378D] font-medium"
             >
               Gallery
             </Link>
             <Link
               href="/blogs"
-              className="text-gray-800 hover:text-blue-600 font-medium"
+              className="text-black hover:text-[#0D378D] font-medium"
             >
               Blog
             </Link>
             <Link
               href="/contact"
-              className="text-gray-800 hover:text-blue-600 font-medium"
+              className="text-black hover:text-[#0D378D] font-medium"
             >
               Contact
             </Link>
           </nav>
 
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center">
               <div className="bg-blue-100 rounded-full p-2 mr-2 border-2 shadow-2xl">
                 <svg
@@ -88,7 +90,7 @@ export function Navbar() {
                   />
                 </svg>
               </div>
-              <span className="text-gray-800 font-medium">587-466-6647</span>
+              <span className="text-black font-medium">587-466-6647</span>
             </div>
 
             <Link

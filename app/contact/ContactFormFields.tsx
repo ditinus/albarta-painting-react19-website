@@ -27,7 +27,7 @@ const ContactFormFields: React.FC<ContactFormFieldsProps> = ({
 }) => {
   return (
     <>
-      <div className="mb-4 ">
+      <div className="mb-5 ">
       <input
   type="text"
   name="name"
@@ -37,10 +37,10 @@ const ContactFormFields: React.FC<ContactFormFieldsProps> = ({
   style={{ color: "#747474", backgroundColor: "#F3F3F3" }}
   className={`w-[90%] ml-[2.1em] p-3 border-2 ${errors.name ? "border-red-500" : "border-transparent"} rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500`}
 />
-        {errors.name && <div className="text-red-500 text-sm mt-1">{errors.name}</div>}
+        {errors.name && <div className="text-red-500 text-sm mt-1 ml-[33px]">{errors.name}</div>}
       </div>
 
-      <div className="mb-4">
+      <div className="mb-5">
         <input
           type="email"
           name="email"
@@ -50,10 +50,10 @@ const ContactFormFields: React.FC<ContactFormFieldsProps> = ({
           style={{color:"#747474",backgroundColor:" #F3F3F3"}}
           className={`w-[90%] ml-[2.1em] p-3 border-2 ${errors.name ? "border-red-500" : "border-transparent"} rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500`}
         />
-        {errors.email && <div className="text-red-500 text-sm mt-1">{errors.email}</div>}
+        {errors.email && <div className="text-red-500 text-sm mt-1 ml-[33px]">{errors.email}</div>}
       </div>
 
-      <div className="mb-4">
+      <div className="mb-5">
         <input
           type="text"
           name="phone"
@@ -63,10 +63,10 @@ const ContactFormFields: React.FC<ContactFormFieldsProps> = ({
           style={{color:"#747474",backgroundColor:" #F3F3F3"}}
           className={`w-[90%] ml-[2.1em] p-3 border-2 ${errors.name ? "border-red-500" : "border-transparent"} rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500`}
         />
-        {errors.phone && <div className="text-red-500 text-sm mt-1">{errors.phone}</div>}
+        {errors.phone && <div className="text-red-500 text-sm mt-1 ml-[33px]">{errors.phone}</div>}
       </div>
 
-      <div className="mb-4">
+      <div className="mb-5">
         <textarea
           name="message"
           value={formData.message}
@@ -76,7 +76,7 @@ const ContactFormFields: React.FC<ContactFormFieldsProps> = ({
           style={{color:"#747474",backgroundColor:" #F3F3F3"}}
           className={`w-[90%] ml-[2.1em] p-3 border-2 ${errors.name ? "border-red-500" : "border-transparent"} rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500`}
         />
-        {errors.message && <div className="text-red-500 text-sm mt-1">{errors.message}</div>}
+        {errors.message && <div className="text-red-500 text-sm mt-1 ml-[33px]">{errors.message}</div>}
       </div>
       
     </>

@@ -18,6 +18,9 @@ import  ContactFormSection  from "../../components/ContactFormSection";
 import Footer from "@/components/ui/footer";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import { Navbar } from "@/components/navbar";
+import blogsBanner from "@/public/blogs-banner.png";
+import BlogHeros from "@/components/blogs-hero";
+
 const services = [
   {
     title: "Commercial Painting Calgary",
@@ -58,7 +61,16 @@ export default function Services() {
     <> 
       <Navbar />
     
-       <Hero />
+      <BlogHeros
+        title="Our"
+        title2="Painting Services"
+        subtitle="Transforming Homes & Businesses with Quality Painting"
+        imageSrc={blogsBanner}
+        quoteLink="/quote"
+        bookLink="/book"
+        quoteText="Get a Free Quote"
+        bookText="Read More"
+      />
 
     <PaintingCompany />
  
@@ -83,7 +95,7 @@ export default function Services() {
               />
             </div>
             <CardHeader className=" p-0">
-              <CardTitle className="uppercase text-lg font-bold text-black">
+              <CardTitle className="uppercase text-lg font-bold text-black mt-[-23]">
                 {service.title}
               </CardTitle>
               <CardDescription className=" text-black">

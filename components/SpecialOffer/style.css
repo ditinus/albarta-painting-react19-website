@@ -20,7 +20,7 @@
 }
 
 .offer_bg {
-    background-color: #111111;
+    background-color: black;
     padding: 20px;
     margin-top: 50px;
 }
@@ -62,7 +62,7 @@
 }
 
 /* Style Previous Arrow */
-.swiper-button-prev {
+.swiper-button-prev.image3 {
   background-image: url('../../public/left-arrow.svg'); /* Change to your image path */
   background-size: contain;
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@
 }
 
 /* Style Next Arrow */
-.swiper-button-next {
+.swiper-button-next.image4 {
     background-image: url(../../public/right-arrow.svg);
     background-size: contain;
     background-repeat: no-repeat;

@@ -7,6 +7,7 @@ import blogsBanner from "@/public/blogs-banner.png";
 import Footer from "@/components/ui/footer";
 import ContactFormSection  from "@/components/ContactFormSection";
 import { Navbar } from "@/components/navbar";
+import HomeBanner from "@/components/HomeBanner/home-banner";
 export default function blogs() {
   const posts = getBlogPosts();
 
@@ -29,6 +30,9 @@ export default function blogs() {
         <div className=""></div>
 
         <BlogGrid posts={posts} />
+
+        <HomeBanner/>
+
 
         <ContactFormSection />
       </main>

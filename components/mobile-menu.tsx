@@ -1,43 +1,114 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Menu, X, PhoneCall } from "lucide-react"
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X, PhoneCall } from "lucide-react";
 
 export default function MobileMenu() {
-  const [isOpen, setIsOpen] = useState(false)
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
-      <button onClick={() => setIsOpen(true)} className="text-gray-800" aria-label="Open menu">
-        <Menu className="h-6 w-6" />
+    <div className="lg:hidden">
+      <button
+        onClick={() => setIsOpen(true)}
+        className="text-gray-800"
+        aria-label="Open menu"
+      >
+        <svg
+          width="61"
+          height="48"
+          viewBox="0 0 61 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="1" y="1" width="59" height="46" rx="23" fill="#0D378D" />
+          <rect
+            x="1"
+            y="1"
+            width="59"
+            height="46"
+            rx="23"
+            stroke="#CADBFF"
+            stroke-width="2"
+          />
+          <path
+            d="M19.5 17H41.5"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M19.5 24H41.5"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M30.5 31L41.5 31"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </svg>
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-white z-50 flex flex-col">
+        <div
+          className="fixed inset-0 bg-white z-50 flex flex-col transition-all duration-300 ease-in-out transform translate-x-0"
+          style={{ transform: isOpen ? 'translateX(0)' : 'translateX(100%)' }}
+        >
           <div className="flex justify-end p-4">
-            <button onClick={() => setIsOpen(false)} className="text-gray-800" aria-label="Close menu">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-gray-800"
+              aria-label="Close menu"
+            >
               <X className="h-6 w-6" />
             </button>
           </div>
 
           <nav className="flex flex-col items-center space-y-6 mt-8">
-            <Link href="/" className="text-gray-800 text-xl font-medium" onClick={() => setIsOpen(false)}>
+            <Link
+              href="/"
+              className="text-gray-800 text-xl font-medium"
+              onClick={() => setIsOpen(false)}
+            >
               Home
             </Link>
-            <Link href="/about" className="text-gray-800 text-xl font-medium" onClick={() => setIsOpen(false)}>
+            <Link
+              href="/about"
+              className="text-gray-800 text-xl font-medium"
+              onClick={() => setIsOpen(false)}
+            >
               About
             </Link>
-            <Link href="/services" className="text-gray-800 text-xl font-medium" onClick={() => setIsOpen(false)}>
+            <Link
+              href="/services"
+              className="text-gray-800 text-xl font-medium"
+              onClick={() => setIsOpen(false)}
+            >
               Services
             </Link>
-            <Link href="/gallery" className="text-gray-800 text-xl font-medium" onClick={() => setIsOpen(false)}>
+            <Link
+              href="/gallery"
+              className="text-gray-800 text-xl font-medium"
+              onClick={() => setIsOpen(false)}
+            >
               Gallery
             </Link>
-            <Link href="/blog" className="text-gray-800 text-xl font-medium" onClick={() => setIsOpen(false)}>
+            <Link
+              href="/blogs"
+              className="text-gray-800 text-xl font-medium"
+              onClick={() => setIsOpen(false)}
+            >
               Blog
             </Link>
-            <Link href="/contact" className="text-gray-800 text-xl font-medium" onClick={() => setIsOpen(false)}>
+            <Link
+              href="/contact"
+              className="text-gray-800 text-xl font-medium"
+              onClick={() => setIsOpen(false)}
+            >
               Contact
             </Link>
           </nav>
@@ -60,6 +131,5 @@ export default function MobileMenu() {
         </div>
       )}
     </div>
-  )
+  );
 }
-

@@ -16,7 +16,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
   const descriptionLines = description.split("<br />");
 
   return (
-    <section className="py-12 bg-white">
+    <section className="pt-12 bg-white">
       <div className="container mx-auto px-4 max-w-7xl">
         <p className="text-black font-medium text-[18px] lg:text-[22px]">{title}</p>
         <div className="flex flex-col md:flex-row justify-between  mb-8">

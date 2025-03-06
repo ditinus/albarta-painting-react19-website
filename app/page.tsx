@@ -16,24 +16,34 @@ import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 
+
+import SpecialOffer from "@/components/SpecialOffer/page";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
+
+
 const posts = getBlogPosts();
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex  flex-col">
     <Navbar />
       {/* Hero Section */}
       <Hero />
 
       <PaintingCompany />
       <OurServices />
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col ">
         <HomeBanner />
+
+        <SpecialOffer />
+        <OurGallery />
         <CalgaryPainting />
 
-        <OurGallery />
+      
         {/* Google Reviews Section */}
-        {/* <ReviewsCarousel /> */}
+        <ReviewsCarousel />
         <ContactFormSection />
+    
+    
         {/* <SpecialOffer /> */}
         <main className="container mx-auto px-4 py-8 ">
           <div className="text-center  mb-10">
