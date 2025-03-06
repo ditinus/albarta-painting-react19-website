@@ -1,5 +1,3 @@
-
-
 "use client";
 import Image from 'next/image';
 import gallery1 from "../public/gallery1.png";
@@ -30,7 +28,7 @@ const OurGallery = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 lg:grid-cols-[320px_580px_1fr] md:grid-cols-[1fr_1fr_1fr]">
           
           {/* Left Image (Cell 1) */}
-          <div className="col-span-1 w-[340px] max-sm:w-[310px] h-[400px] md:w-[310px]">
+          <div className="col-span-1 w-[340px] max-sm:w-[100%] h-[400px] md:w-[310px]">
             <Image src={gallery4} className="h-full object-cover" alt="gallery" />
           </div>
 
@@ -68,4 +66,3 @@ const OurGallery = () => {
 };
 
 export default OurGallery;
-
