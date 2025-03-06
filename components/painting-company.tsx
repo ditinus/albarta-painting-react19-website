@@ -7,7 +7,7 @@ export default function PaintingCompany() {
       {/* Hero Section */}
       <div className=" flex flex-col lg:flex-row  lg:h-[38rem]">
         {/* Left side with image */}
-        <div className="relative w-full lg:w-[50%]">
+        <div className="relative w-full lg:w-[50%]" >
           <div className="absolute top-10 left-0 z-50 bg-blue-900 text-white py-3 px-4">
             <p className="text-[16px] font-semibold">10 Years of Experience</p>
           </div>
@@ -17,7 +17,7 @@ export default function PaintingCompany() {
             alt="Elegant interior with staircase"
             width={600}
             height={600}
-            className="w-full h-[400px] lg:h-[650px] object-cover lg:absolute z-10"
+            className="w-full h-[400px] lg:h-[650px] max-sm:pr-[20px] object-cover lg:absolute z-10"
           />
         </div>
 
@@ -39,7 +39,7 @@ export default function PaintingCompany() {
             company, we've got you covered. Our interior painting services are
             tailored to transform your living spaces with elegance and style.`}
           </p>
-          <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 ">
+          {/* <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 ">
             Learn More
             <svg
               width="31"
@@ -54,14 +54,14 @@ export default function PaintingCompany() {
                 fill="#0D378D"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
       </div>
 
       {/* Why Choose Us Section */}
       <div className="bg-[#E2E7F1] py-20 lg:px-4 px-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-[36px] font-bold text-[#0D378D] text-center mb-12">
+          <h2 className="lg:text-[36px] text-[25px] font-bold text-[#0D378D] text-center mb-12">
             WHY CHOOSE US?
           </h2>
 

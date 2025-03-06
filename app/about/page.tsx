@@ -41,7 +41,7 @@ export default function page() {
       <div className=" ">
         {/* Quality Section */}
 <div className="container mx-auto max-w-7xl px-4">
-        <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10 my-3.5">
+        <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10 my-3.5 pb-[40px]">
           <div className="space-y-6 order-2 md:order-1">
             <div className="space-y-2">
               <p className="text-[22px]  font-medium text-black">

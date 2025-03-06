@@ -26,7 +26,7 @@ export default function BlogCard({ post }: BlogCardProps) {
         
 
         
-        <h2 className="text-[28px] font-bold text-[#0D378D] mt-2">{post.title}</h2>
+        <h2 className="lg:text-[28px] text-[18px] font-bold text-[#0D378D] mt-2">{post.title}</h2>
 
         <p className="text-black mt-3 font-medium line-clamp-3 text-[18px]">{post.excerpt}</p>
 
