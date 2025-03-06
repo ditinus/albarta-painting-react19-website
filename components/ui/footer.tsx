@@ -316,8 +316,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t text-white mt-8 pt-4 text-center text-xs text-gray-500">
-          © 2024 Alberta Global Painting. All rights reserved.
+        <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-500">
+          <p className="text-white">© 2024 Alberta Global Painting. All rights reserved.</p>
         </div>
       </div>
     </div>
