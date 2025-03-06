@@ -68,6 +68,7 @@ const ContactForm = () => {
   };
 
   return (
+
     <div className="container mx-auto lg:px-0 px-4 ">
       <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-medium pt-[40px] pb-[46px] ">
         GET IN TOUCH
@@ -149,7 +150,7 @@ const ContactForm = () => {
             />
             <button
               type="submit"
-              className="w-[90%] ml-[2em] py-2 mt-5  bg-blue-800 text-white font-semibold rounded-md hover:bg-blue-700"
+              className="w-[90%] ml-[2em] py-2 mt-5 bg-blue-800 text-white font-semibold rounded-md hover:bg-primary/90 cursor-pointer"
             >
               Get a Quote
             </button>

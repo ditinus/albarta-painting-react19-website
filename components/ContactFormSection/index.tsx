@@ -23,7 +23,7 @@ import { Button } from '../ui/button'
           <Input  className=" border-0 bg-[#F3F3F3] text-black"  placeholder="Email address" type="email" />
           <Input   className=" border-0 bg-[#F3F3F3] text-black"  placeholder="Phone number" type="tel" />
           <Textarea  className=" border-0 bg-[#F3F3F3] text-black"  placeholder="Message" rows={4} />
-          <Button className="w-full bg-[#0D378D] hover:bg-primary/90 text-white">
+          <Button className="w-full bg-[#0D378D] hover:bg-primary/90 text-white cursor-pointer">
             Get a Quote
           </Button>
         </div>

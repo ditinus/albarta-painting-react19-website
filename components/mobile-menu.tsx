@@ -5,10 +5,11 @@ import Link from "next/link";
 import { Menu, X, PhoneCall } from "lucide-react";
 
 export default function MobileMenu() {
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <button
         onClick={() => setIsOpen(true)}
         className="text-gray-800"
@@ -97,7 +98,7 @@ export default function MobileMenu() {
               Gallery
             </Link>
             <Link
-              href="/blog"
+              href="/blogs"
               className="text-gray-800 text-xl font-medium"
               onClick={() => setIsOpen(false)}
             >
