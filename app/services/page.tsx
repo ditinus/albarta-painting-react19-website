@@ -83,7 +83,7 @@ export default function Services() {
               />
             </div>
             <CardHeader className=" p-0">
-              <CardTitle className="uppercase text-lg font-bold text-black">
+              <CardTitle className="uppercase text-lg font-bold text-black mt-[-23]">
                 {service.title}
               </CardTitle>
               <CardDescription className=" text-black">

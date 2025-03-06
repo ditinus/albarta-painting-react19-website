@@ -83,7 +83,7 @@ export default function page() {
         </div>
         <HomeBanner/>
         {/* Eco-Friendly Section */}
-        <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10">
+        <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10 my-3.5">
           <div className="space-y-6 order-2 md:order-1">
             <div className="space-y-2">
               <p className="text-sm font-medium text-black">
@@ -132,7 +132,7 @@ export default function page() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16 items-center">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 items-center my-3.5">
           <div className="relative w-full  lg:w-[80%] aspect-square md:aspect-auto md:h-[600px] overflow-hidden">
             <Image
               src={service3}
