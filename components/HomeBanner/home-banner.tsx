@@ -5,7 +5,8 @@ import "./homebanner.css";
 const HomeBanner = () => {
   return (
     <div className=" container  mx-auto ">
-      <div className=" back-img container max-w-7xl mx-auto py-20 relative">
+      <div className=" back-img lg:mt-[40px] container max-w-7xl mx-auto py-20  max-sm:py-6
+        relative">
         <div className=" grid grid-cols-1 sm:grid-cols-3 gap-6 px-6 sm:px-12 z-20 relative">
           <div className="text-white col-span-2">
             <h1 className="text-3xl lg:text-[36px] sm:text-[16px] font-medium mb-4 uppercase">
