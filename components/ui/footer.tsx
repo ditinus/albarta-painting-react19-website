@@ -175,8 +175,8 @@ export default function Footer() {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between  mb-6">
           <div className=" md:text-left mb-6 md:mb-0">
-            <h2 className="text-[44px] font-light uppercase tracking-wider">
-              {`LET'S`}
+            <h2 className="text-[44px] font-semibold uppercase tracking-wider">
+              LET'S
             </h2>
             <h1 className="text-3xl md:text-[77px] font-bold">GET IN TOUCH</h1>
           </div>
@@ -315,13 +315,13 @@ export default function Footer() {
                 </svg>
 
                 <span>
-                  219 Brightmotive Green SE, Calgary, AB T2Z 0H1, Canada
+                  370 Brightmotive Green SE, Calgary, AB T2Z 0H1, Canada
                 </span>
               </div>
             </div>
           </div>
         </div>
-        <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-500">
+        <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-700">
           <p className="text-white">© 2025 Alberta Global Painting. Powered by Cyber Ace.</p>
         </div>
       </div>
