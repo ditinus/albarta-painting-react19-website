@@ -9,12 +9,11 @@ const ContactFormSection = () => {
       {" "}
       <div className="grid md:grid-cols-2 gap-8 lg:my-10 my-10 ">
         <div className="flex flex-col justify-center w-full  ">
-          <h2 className="text-[26px] lg:text-[45px] font-bold text-[#0D378D] uppercase mb-2">
-            Have a project in mind or need a quote?
+          <h2 className="text-[26px] lg:text-[45px] font-medium lg:leading-15 text-[#0D378D] uppercase mb-2">
+            Have a project in <br/> mind or need a <br /> quote?
           </h2>
           <p className="text-muted-foreground mb-4 text-black">
-            {`Let us know what your project involves  in Calgary, and we'll respond
-        to your inquiry as soon as we can.`}
+            Get in touch with our expert painters in Calgary. We’d be <br /> happy to help bring your vision to life!
           </p>
         </div>
 

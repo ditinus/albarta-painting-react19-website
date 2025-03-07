@@ -16,7 +16,7 @@ const OurGallery: React.FC = () => {
   return (
     <div className="gallery-carousel ">
 
-      <div className="mt-3">
+      <div className=" lg:mt-20 lg:mb-16 my-10 ">
       <ServiceSection
         title="Our Gallery"
         description="See the Magic of Transformation  <br />  with Our Painting Work "

@@ -48,11 +48,14 @@ export default function OurServices() {
 
   return (
     <>
+
+    <div className="lg:mb-15 mb-10 ">
       <ServiceSection
         title="Our Services"
         description="Bringing Colour to Every Corner <br /> of Your Home and Business"
         buttonText="Explore Our Services"
       />
+      </div>
 
       <div className="w-full bg-black text-white mb-10">
         <div className="container mx-auto max-w-7xl py-8 px-4 lg:py-30">
