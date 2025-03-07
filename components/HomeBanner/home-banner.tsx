@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import "./homebanner.css";
 
 const HomeBanner = () => {
@@ -20,8 +21,9 @@ const HomeBanner = () => {
           </div>
 
           <div className="flex items-center lg:justify-end justify-start">
-            <a
-              href="#"
+            
+            <Link
+              href="/contact"
               className="flex items-center bg-[#0D378D] text-white pl-6 pr-2 py-2 rounded-full text-base font-medium border-2 border-[#cadbff]"
             >
               <span className="mr-2">Schedule a Consultation</span>
@@ -38,7 +40,7 @@ const HomeBanner = () => {
                   fill="#0D378D"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

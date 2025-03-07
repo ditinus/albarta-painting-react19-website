@@ -48,10 +48,10 @@ const Hero = () => {
             for Interior and Exterior House Painting Services
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col justify-center justify-items-center sm:flex-row gap-4">
             <Link
-              href="/quote"
-              className="bg-[#0D378D] text-white px-4 py-2 border-2 border-white rounded-full font-medium hover:bg-blue-700 flex items-center justify-center"
+              href="/contact"
+              className="bg-[#0D378D] hover:bg-primary/90 text-white px-4 py-2 border-2 border-white rounded-full font-medium  flex items-center justify-center"
             >
               Get a Free Quote{" "}
               <span className="ml-2 bg-white rounded-full p-2">
@@ -70,8 +70,8 @@ const Hero = () => {
               </span>
             </Link>
             <Link
-              href="/book"
-              className="bg-transparent border-2 border-white text-white px-10 py-2 rounded-full font-medium hover:bg-white hover:text-gray-800 transition-colors"
+              href="/contact"
+              className="bg-transparent border-2 border-white text-white px-10 py-3 rounded-full font-medium hover:bg-white hover:text-gray-800 transition-colors cursor-poniter"
             >
               Book Now
             </Link>
