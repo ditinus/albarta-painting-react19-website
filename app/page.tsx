@@ -21,6 +21,7 @@ import SpecialOffer from "@/components/SpecialOffer/page";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 
 
+
 const posts = getBlogPosts();
 export default function Home() {
   return (
