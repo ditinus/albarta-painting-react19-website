@@ -75,13 +75,7 @@ export default function OurServices() {
                   <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Interior Painting Calgary</span>
                   </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="pb-4 text-gray-400">
-                      Our interior painting services include walls, ceilings,
-                      trim, doors, and more. We use premium paints and materials
-                      to ensure a flawless finish.
-                    </div>
-                  </AccordionContent>
+             
                 </AccordionItem>
 
                 <AccordionItem
@@ -91,13 +85,7 @@ export default function OurServices() {
                   <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Exterior Painting Calgary</span>
                   </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="pb-4 text-gray-400">
-                      Our exterior painting services protect and beautify your
-                      home outside surfaces, including siding, trim, doors, and
-                      decks.
-                    </div>
-                  </AccordionContent>
+                 
                 </AccordionItem>
 
                 <AccordionItem
@@ -107,13 +95,7 @@ export default function OurServices() {
                   <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Commercial Painting Calgary</span>
                   </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="pb-4 text-gray-400">
-                      We provide professional painting services for offices,
-                      retail spaces, restaurants, and other commercial
-                      properties.
-                    </div>
-                  </AccordionContent>
+                 
                 </AccordionItem>
 
                 <AccordionItem
@@ -123,12 +105,7 @@ export default function OurServices() {
                   <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Popcorn Ceiling Removal Calgary</span>
                   </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="pb-4 text-gray-400">
-                      We safely and efficiently remove outdated popcorn ceilings
-                      to give your home a modern, updated look.
-                    </div>
-                  </AccordionContent>
+                
                 </AccordionItem>
 
                 <AccordionItem
@@ -138,12 +115,7 @@ export default function OurServices() {
                   <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Drywall Mud & Tape Calgary</span>
                   </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="pb-4 text-gray-400">
-                      Our drywall services include installation, taping,
-                      mudding, and finishing for a seamless wall surface.
-                    </div>
-                  </AccordionContent>
+                
                 </AccordionItem>
 
                 <AccordionItem
@@ -153,12 +125,7 @@ export default function OurServices() {
                   <AccordionTrigger className="py-6 lg:text-[22px] text-[16px] font-medium uppercase tracking-wider hover:no-underline">
                     <span>Ceiling Texturing Calgary</span>
                   </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="pb-4 text-black ">
-                      We offer various ceiling texturing options to add
-                      character and style to your home interior.
-                    </div>
-                  </AccordionContent>
+            
                 </AccordionItem>
               </Accordion>
             </div>
