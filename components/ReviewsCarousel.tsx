@@ -78,7 +78,7 @@ const ReviewsCarousel = () => {
         >
           {reviews.map((review, index) => (
             <SwiperSlide key={index} className="flex flex-col justify-between  ml-5 mr-5">
-              <div className="bg-[#E2E7F1] shadow-lg   relative rounded-xl lg:p-4  pl-10   p-0   flex flex-col justify-center review_card">
+              <div className="bg-[#E2E7F1] shadow-lg   relative  lg:p-4  pl-10   p-0   flex flex-col justify-center review_card">
                 {/* Adjusted the images to be inside the flex container without absolute positioning */}
                 <div className="">
                   <Image src={Reviews1} alt="Review Image"  className="mx-auto  absolute top-4 left-[-20px] " />

@@ -26,7 +26,7 @@ const HomeBanner = () => {
               href="/contact"
               className="flex items-center bg-[#0D378D] text-white pl-6 pr-2 py-2 rounded-full text-base font-medium border-2 border-[#cadbff]"
             >
-              <span className="mr-2">Schedule a Consultation</span>
+              <span className="mr-2 sm:text-[10px]">Schedule a Consultation</span>
               <svg
                 width="31"
                 height="31"

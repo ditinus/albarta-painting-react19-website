@@ -5,7 +5,9 @@ import "./style.css";
 import 'swiper/css';
 import Image from "next/image";
 import slider1 from "@/public/slider-image-1.png";
+import slider2 from "@/public/special-Offer-2.png";
 import { Navigation  } from "swiper/modules"
+
 const Index = () => {
   useEffect(() => {
     const swiper = new Swiper(".mySwiper", {
@@ -92,7 +94,7 @@ const Index = () => {
                   {/* Slide 2 */}
                   <div className="swiper-slide">
                     <div className="offer-card relative">
-                      <Image src={slider1} className="w-full h-auto" alt="Offer 2" />
+                      <Image src={slider2} className="w-full h-auto" alt="Offer 2" />
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
                         <p>2 for 1 Deal</p>
                       </div>
@@ -109,7 +111,7 @@ const Index = () => {
                     <div className="offer-card relative">
                       <Image src={slider1} className="w-full h-auto" alt="Offer 3" />
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
-                        <p>2 for 1 Deal</p>
+                        <p>10% Off on Interior</p>
                       </div>
                       <div className="offer-card-content absolute bottom-0 left-0 right-0 ">
                         <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
@@ -122,7 +124,7 @@ const Index = () => {
                   {/* Slide 4 */}
                   <div className="swiper-slide">
                     <div className="offer-card relative">
-                      <Image src={slider1} className="w-full h-auto" alt="Offer 4" />
+                      <Image src={slider2} className="w-full h-auto" alt="Offer 4" />
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
                         <p>2 for 1 Deal</p>
                       </div>

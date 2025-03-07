@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 const ContactFormSection = () => {
   return (
-    <div className=" container mx-auto px-4 py-8  max-w-7xl">
+    <div className=" container mx-auto px-4 py-1  max-w-7xl">
       {" "}
       <div className="grid md:grid-cols-2 gap-8 lg:my-10 my-10 ">
         <div className="flex flex-col justify-center w-full  ">

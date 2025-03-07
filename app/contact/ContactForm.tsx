@@ -69,8 +69,8 @@ const ContactForm = () => {
 
   return (
 
-    <div className="container mx-auto lg:px-0 px-4 ">
-      <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-medium pt-[40px] pb-[46px] ">
+    <div className="container mx-auto mx-w-6x1  px-4 ">
+      <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-semibold pt-[40px] pb-[46px] ">
         GET IN TOUCH
       </p>
       <div
@@ -131,13 +131,13 @@ const ContactForm = () => {
 
         {/* Contact Form Section */}
         <div
-          className="contact-form lg:w-[80%] md:w-full sm:w-full"
+          className="    "
           style={{
             boxShadow: " rgba(0, 0, 0, 0.11) 5px 17px 56.7px 0px",
             // backgroundColor:"beige"
           }}
         >
-          <form onSubmit={handleSubmit} noValidate className="mt-5">
+          <form onSubmit={handleSubmit} noValidate className="px-10 py-10">
             {/* <ContactFormFields
               formData={formData}
               handleChange={handleChange}
@@ -150,7 +150,7 @@ const ContactForm = () => {
             />
             <button
               type="submit"
-              className="w-[90%] ml-[2em] py-2 mt-5 bg-blue-800 text-white font-semibold rounded-md hover:bg-primary/90 cursor-pointer"
+              className=" w-full  py-2 mt-5 bg-blue-800 text-white font-semibold rounded-md hover:bg-primary/90 cursor-pointer"
             >
               Get a Quote
             </button>
