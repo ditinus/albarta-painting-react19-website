@@ -84,6 +84,7 @@ export function Navbar() {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center">
               <div className="bg-blue-100 rounded-full p-2 mr-2 border-2 shadow-2xl">
+              <Link href="tel:+1 587-466-6647">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="19"
@@ -104,15 +105,15 @@ export function Navbar() {
                     fill="#0D378D"
                   />
                 </svg>
+                </Link>
               </div>
-              <span className="text-black font-medium">587-466-6647</span>
+              <Link href="tel:+1 587-466-6647"><span className="text-black font-medium">587-466-6647</span></Link>
             </div>
-
             <Link
-              href="/book"
-              className="bg-[#0D378D] text-white border-4 border-[#CADBFF] px-8 py-1 rounded-4xl font-medium hover:bg-[#0D378D] transition-colors"
+              href="/contact"
+              className="bg-[#0D378D] text-white border-4 border-[#CADBFF] px-8 py-1 rounded-4xl font-medium hover:bg-[#0D378D] transition-colors cursor-pointer"
             >
-              <Button>Book Now</Button>
+              <Button className="cursor-pointer">Book Now</Button>
             </Link>
           </div>
 

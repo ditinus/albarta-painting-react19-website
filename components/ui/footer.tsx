@@ -315,13 +315,13 @@ export default function Footer() {
                 </svg>
 
                 <span>
-                  219 Brightmotive Green SE, Calgary, AB T2Z 0H1, Canada
+                  370 Brightmotive Green SE, Calgary, AB T2Z 0H1, Canada
                 </span>
               </div>
             </div>
           </div>
         </div>
-        <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-500">
+        <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-700">
           <p className="text-white">© 2025 Alberta Global Painting. Powered by Cyber Ace.</p>
         </div>
       </div>

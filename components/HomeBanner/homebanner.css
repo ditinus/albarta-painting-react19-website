@@ -1,6 +1,6 @@
 .back-img {
     /* margin-top: 3rem; */
-      background: url('../../public/blogs-banner.png') no-repeat center center/cover;  
+      background: url('../../public/HomeBannerBG.png') no-repeat center center/cover;  
     }
     
     .back-img::before {
