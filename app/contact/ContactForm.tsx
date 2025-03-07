@@ -6,7 +6,7 @@ import phone from "../../public/phone.svg";
 import email from "../../public/email.svg";
 import location from "../../public/location.svg";
 import { toast } from "sonner";
-import { RotatingLines } from "react-loader-spinner";
+
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
