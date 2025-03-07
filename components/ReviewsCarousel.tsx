@@ -44,15 +44,15 @@ const reviews = [
 
 const ReviewsCarousel = () => {
   return (
-    <div className=" mb-20  ">
+    <div className=" lg:mb-20 mb-10 lg:mt-20  ">
       <ServiceSection
         title="What Our Clients Say"
         description="Real Reviews from Satisfied <br /> Customers"
         buttonText="Read More Reviews"
       />
 
-      <div className="flex lg:justify-center  sm:justify-start   mb-20 mt-10 ">
-        <Image src={GoogleLogo} className=" lg:w-64  w-40 " alt="google-logo" />
+      <div className="flex lg:justify-center lg:mx-auto  container px-4 sm:justify-start lg:mb-20 mb-10 mt-10 ">
+        <Image src={GoogleLogo} className=" lg:w-64 w-40 " alt="google-logo" />
       </div>
       <div className="relative  px-10 mx-auto  rounded-0">
         <Swiper
@@ -77,7 +77,7 @@ const ReviewsCarousel = () => {
           }}
         >
           {reviews.map((review, index) => (
-            <SwiperSlide key={index} className="flex flex-col justify-between  ml-5 mr-5">
+            <SwiperSlide key={index} className="flex flex-col justify-between  ml-5 ">
               <div className="bg-[#E2E7F1] shadow-lg   relative rounded-xl lg:p-4  pl-10   p-0   flex flex-col justify-center review_card">
                 {/* Adjusted the images to be inside the flex container without absolute positioning */}
                 <div className="">
@@ -85,8 +85,8 @@ const ReviewsCarousel = () => {
                   <Image src={Reviews2} alt="Review Image"  className="mx-auto absolute bottom-[20px] left-[28px] h-[150px]" />
                   <Image src={Reviews3} alt="Review Image"  className="mx-auto absolute bottom-[20px] right-[-10px]" />
                 </div>
-                <div className="p-[25px]">
-                  <p className="review-text text-base  font-normal text-black mb-4  pt-[40px] lg:pl-[30px] sm:pl-[20px] sm:pr-[-40px] pb-0 ">{review.review}</p>
+                <div className="p-[25px] ">
+                  <p className="review-text text-base  font-normal text-black mb-4  lg:text-[15px] text-[11px]  pt-[40px] lg:pl-[30px] sm:pl-[20px] sm:pr-[-40px] pb-0 ">{review.review}</p>
                   <span className=" font-bold text-sm sm:text-lg text-[#202020] lg:pl-[22px]  md:pl-[12px] sm:pl-[-20px]">{review.name}</span>
                 </div>
               </div>
