@@ -3,7 +3,7 @@ import React from "react";
 const GoogleMap: React.FC = () => {
   return (
     <div className=" container mx-auto py-12 ">
-      <h2 className="text-center text-[#0D378D] text-[36px] leading-[46.34px] font-bold tracking-normal">
+      <h2 className="text-center text-[#0D378D] text-[36px] leading-[46.34px] font-semibold tracking-normal">
         FIND US
       </h2>
       <div className="flex justify-center mt-8">

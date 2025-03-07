@@ -141,7 +141,7 @@ export const CalgaryPainting = () => {
                 </div>
               </div>
 
-              <div className="flex  mt-20">
+              <div className="flex lg:mt-10 mt-5">
               <Link href="/contact">
                 <button className="flex items-center gap-2 border-2 border-white rounded-full pl-3 pr-1.5 py-2  text-sm md:text-base font-medium hover:bg-blue-800 transition-colors cursor-pointer">
                   Book Your Estimate Today
