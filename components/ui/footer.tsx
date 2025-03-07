@@ -322,7 +322,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-700">
-          <p className="text-white">© 2025 Alberta Global Painting. Powered by Cyber Ace.</p>
+        <p className="text-white">© 2025 Alberta Global Painting. Powered by <Link href="https://services.cyberace.ca/" className="text-[#0D378D] text-[14px]">Cyber Ace.</Link></p>
         </div>
       </div>
     </div>
