@@ -151,8 +151,8 @@ const Index = () => {
                 Discover a variety of discounts and special deals at Alberta Colour Painting, tailored to help you save on your Calgary house painting projects throughout the year. Explore ongoing promotions for both standard and specialty wall painting services, and ensure you get the best value by visiting our offers page.
               </p>
 
-              <button className="flex items-center w-40 mt-3.5 gap-2 border-2 border-white rounded-full pl-5 pr-1.5  py-1 text-sm md:text-base font-medium bg-[#0D378D]  cursor-pointer transition-colors">
-                  Learn More
+              <button className="flex items-center w-55 mt-3.5 gap-4 border-2 border-white rounded-full pl-5 pr-1.5  py-2 text-sm md:text-base font-medium bg-[#0D378D]  cursor-pointer transition-colors">
+                  Explore Discounts
                   <svg
                     width="32"
                     height="30"

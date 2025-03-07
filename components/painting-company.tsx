@@ -39,7 +39,7 @@ export default function PaintingCompany() {
             company, we've got you covered. Our interior painting services are
             tailored to transform your living spaces with elegance and style.`}
           </p>
-          {/* <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 ">
+          <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 ">
             Learn More
             <svg
               width="31"
@@ -54,7 +54,7 @@ export default function PaintingCompany() {
                 fill="#0D378D"
               />
             </svg>
-          </button> */}
+          </button>
         </div>
       </div>
 
