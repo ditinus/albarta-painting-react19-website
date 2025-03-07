@@ -153,15 +153,7 @@ const ContactFormSection = () => {
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
-                      <RotatingLines
-                        visible={true}
-                        height="100"
-                        width="100"
-                        color="grey"
-                        strokeWidth="5"
-                        animationDuration="0.75"
-                        ariaLabel="rotating-lines-loading"
-                      />
+                     "Sending..."
                     ) : (
                       "Get a Quote"
                     )}

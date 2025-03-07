@@ -158,18 +158,7 @@ const ContactForm = () => {
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
-                    <div className="flex justify-center">
-                    <RotatingLines
-                      visible={true}
-                      height="30"
-                      width="30"
-                      color="white"
-                      strokeWidth="5"
-                      
-                      animationDuration="0.75"
-                      ariaLabel="rotating-lines-loading"
-                    />
-                    </div>
+                   "Sending..."
                   ) : (
                     "Get a Quote"
                   )}
