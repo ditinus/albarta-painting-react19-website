@@ -59,7 +59,7 @@ const ContactForm = () => {
 
   return (
     <div className="container mx-auto lg:px-0 px-4">
-      <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-medium pt-[40px] pb-[46px]">
+      <p className="text-center text-[36px] leading-[46.34px] text-[#0D378D] font-medium lg:pt-[70px] md:pt-[40px] pt-[30px] pb-[46px]">
         GET IN TOUCH
       </p>
       <div className="grid md:grid-cols-2 gap-12 text-center" style={{ textAlign: "left" }}>
@@ -68,7 +68,7 @@ const ContactForm = () => {
           <h2 className="text-[#0D378D] lg:text-5xl text-2xl font-semibold tracking-normal">
             HAVE A PROJECT IN MIND OR NEED A QUOTE?
           </h2>
-          <h3 className="text-lg mt-8 font-medium mb-6 text-[#000000]">
+          <h3 className="text-lg mt-12 mb-12 font-medium mb-6 text-[#000000]">
             Get in touch with our expert painters in Calgary. We’d be happy to help bring your vision to life!
           </h3>
           <p className="text-[16px] mb-6 text-[#000000] flex flex-row items-center" style={{ fontWeight: "500" }}>

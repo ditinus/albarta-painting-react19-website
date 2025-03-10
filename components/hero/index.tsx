@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div>
       <section className="relative h-[600px] md:h-[850px]">
-        <div className="md:hidden absolute top-4  right-[-70] transform -translate-x-1/2 z-10">
+        <div className="lg:hidden absolute top-4  right-[-70] transform -translate-x-1/2 z-10">
           <a
             href="tel:587-966-6547"
             className="flex items-center   text-white rounded-full p-2"

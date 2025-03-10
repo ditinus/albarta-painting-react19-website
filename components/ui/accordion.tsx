@@ -35,25 +35,17 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-[22px] font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-270",
+          "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-[22px] font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-90",
           className
         )}
         {...props}
       >
         {children}
         {/* <ChevronDownIcon className="text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" /> */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-        >
-          <path
-            d="M22 23.5C22.8284 23.5 23.5 22.8284 23.5 22L23.5 8.5C23.5 7.67157 22.8284 7 22 7C21.1716 7 20.5 7.67157 20.5 8.5V20.5H8.5C7.67157 20.5 7 21.1716 7 22C7 22.8284 7.67157 23.5 8.5 23.5L22 23.5ZM0.93934 3.06066L20.9393 23.0607L23.0607 20.9393L3.06066 0.93934L0.93934 3.06066Z"
-            fill="white"
-          />
-        </svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.5 2.19995C23.5 1.37152 22.8284 0.69995 22 0.699951L8.5 0.69995C7.67157 0.69995 7 1.37152 7 2.19995C7 3.02838 7.67157 3.69995 8.5 3.69995H20.5V15.6999C20.5 16.5284 21.1716 17.1999 22 17.1999C22.8284 17.1999 23.5 16.5284 23.5 15.6999L23.5 2.19995ZM3.06066 23.2606L23.0607 3.26061L20.9393 1.13929L0.93934 21.1393L3.06066 23.2606Z" fill="white" fill-opacity="0.5"/>
+</svg>
+
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

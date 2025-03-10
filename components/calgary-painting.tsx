@@ -13,7 +13,7 @@ export const CalgaryPainting = () => {
           {/* Left Section */}
           <div className="bg-[#0D378D] text-white p-8 md:p-12 py-30 max-sm:py-10 lg:p-16 flex flex-col justify-center md:w-1/2">
             <div className="max-w-6xl mx-auto">
-              <h1 className="text-2xl md:text-4xl font-bold mb-6 uppercase">
+              <h1 className="text-2xl md:text-4xl  font-bold mb-6 uppercase">
                 We are your Calgary painting company
               </h1>
 
@@ -27,7 +27,7 @@ export const CalgaryPainting = () => {
               <h2 className="text-xl md:text-2xl font-bold mb-10 uppercase">
                 Our touch of paint makes a difference!
               </h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 pt-4  col-span-2">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-1 pt-4  col-span-2">
                 <div className="text-center">
                   <div className=" p-3 rounded-full  mx-auto mb-2 flex items-center justify-center">
                     <svg

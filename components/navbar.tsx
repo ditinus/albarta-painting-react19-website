@@ -42,7 +42,7 @@ export function Navbar() {
             </Link>
           </div>
 
-          <nav className="hidden lg:flex items-center space-x-16  bg-[#0D378D1F] rounded-4xl px-5.5 py-3.5">
+          <nav className="hidden lg:flex items-center space-x-14  bg-[#0D378D1F] rounded-4xl px-5.5 py-3.5 ">
             <Link
               href="/"
               className={` ${currentPath == '/' ? 'text-[#0D378D]' : 'text-black' } hover:text-[#0D378D]  font-medium`}
