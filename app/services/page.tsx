@@ -10,18 +10,33 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import PaintingServices from "@/public/painting-services.png";
+import PaintingServices2 from "@/public/service-painting-2.png";
 import Link from "next/link";
-import Hero from "@/components/hero";
-import PaintingCompany from "@/components/painting-company";
-
 import  ContactFormSection  from "../../components/ContactFormSection";
 import Footer from "@/components/ui/footer";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import { Navbar } from "@/components/navbar";
 import blogsBanner from "@/public/blogs-banner.png";
 import BlogHeros from "@/components/blogs-hero";
+import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 
 const services = [
+  {
+    title: "Interior Painting Calgary",
+    description:
+      "Interior painting in Calgary can be a daunting task for many homeowners. It requires a significant amount of time, effort, and attention to detail to achieve a professional finish.",
+    imageSrc: PaintingServices,
+    altText: "Quality Calgary Interior Painting for Your Needs",
+    buttonText: "Learn More",
+  },
+  {
+    title: "Exterior Painting Calgary",
+    description:
+      "Exterior painting is a crucial step in maintaining and enhancing the appearance of your property. In Calgary, the harsh weather conditions can take a toll on your exteriors, making it essential to choose a durable and high-quality paint.",
+    imageSrc: PaintingServices2,
+    altText: "Commercial Painting",
+    buttonText: "Learn More",
+  },
   {
     title: "Commercial Painting Calgary",
     description:
@@ -75,15 +90,18 @@ export default function Services() {
     {/* <PaintingCompany /> */}
  
     <div className="lg:mt-20 mt-10">
+    <div className="absolute ">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
       {/* Services Grid */}
-      <div className="container mx-auto max-w-7xl px-4 py-8">
+      <div className="container mx-auto max-w-7xl py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
         {services.map((service, index) => (
           <Card
             key={index}
             className="overflow-hidden p-0 border-0 shadow-none space-y-3"
           >
-            <CardTitle className="uppercase text-lg p-0 font-bold text-[#0D378D] mb-[-10]">
+            <CardTitle className="uppercase lg:text-[26px] text-[18px] p-0 font-bold text-[#0D378D] mb-[-10]">
               {service.title}
             </CardTitle>
             <div className="relative h-[300px] w-full">
@@ -96,10 +114,10 @@ export default function Services() {
               />
             </div>
             <CardHeader className=" p-0">
-              <CardTitle className="uppercase text-lg font-bold text-black mt-[-23]">
+              <CardTitle className="uppercase text-[20px] font-bold text-black mt-[-23]">
                 {service.title}
               </CardTitle>
-              <CardDescription className=" text-black">
+              <CardDescription className=" text-black text-[16px]">
                 {service.description.split("\n")[0]}
               </CardDescription>
             </CardHeader>
@@ -135,6 +153,9 @@ export default function Services() {
         ))}
       </div>
       </div>
+      <div className="absolute top-[2000px] z-[-9]">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
       <div className="lg:mt-10 mt-5">
       <HomeBanner/>
       </div>
@@ -164,8 +185,12 @@ export default function Services() {
 
       {/* Contact Form Section */}
   
-
+      <div className="relative">
+      <div className="absolute z-[-200]">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
       <ContactFormSection />
+      </div>
 
      
     </div>

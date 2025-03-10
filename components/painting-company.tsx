@@ -1,9 +1,20 @@
+"use client"
 import Image from "next/image";
-
+import { usePathname } from 'next/navigation';
 import AboutUs from "@/public/AboutUs.png";
+import BgBackground from '@/public/about-background-vector-line.svg'
+
 export default function PaintingCompany() {
+
+  const pathname = usePathname();
+
+  const showLearnMoreButton = pathname === '/';
+
   return (
-    <div className="w-full lg:my-24 my-10">
+    <div className="w-full lg:my-24 my-10 relative">
+      <div className="absolute top-[-390px] z-[-1]">
+        <Image src={BgBackground} alt="bg-Image"/>
+      </div>
       {/* Hero Section */}
       <div className=" flex flex-col lg:flex-row  lg:h-[38rem]">
         {/* Left side with image */}
@@ -39,6 +50,7 @@ export default function PaintingCompany() {
             company, we've got you covered. Our interior painting services are
             tailored to transform your living spaces with elegance and style.`}
           </p>
+          {showLearnMoreButton && (
           <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 ">
             Learn More
             <svg
@@ -55,11 +67,17 @@ export default function PaintingCompany() {
               />
             </svg>
           </button>
+          )}
+        {/* <button className="learn-more-button">Learn More</button> */}
+      
         </div>
       </div>
 
       {/* Why Choose Us Section */}
-      <div className="bg-[#E2E7F1] py-20 lg:px-4 px-10">
+      <div className="bg-[#E2E7F1] py-20 lg:px-4 px-10 relative">
+      <div className="absolute top-[-490px]">
+        <Image src={BgBackground} alt="bg-Image"/>
+      </div>
         <div className="max-w-6xl mx-auto">
           <h2 className="lg:text-[36px] text-[25px] font-bold text-[#0D378D] text-center mb-12">
             WHY CHOOSE US?

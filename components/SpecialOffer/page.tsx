@@ -7,6 +7,7 @@ import Image from "next/image";
 import slider1 from "@/public/slider-image-1.png";
 import slider2 from "@/public/special-Offer-2.png";
 import { Navigation  } from "swiper/modules"
+import BgBackground from '@/public/about-background-vector-line.svg'
 
 const Index = () => {
   useEffect(() => {
@@ -63,7 +64,7 @@ const Index = () => {
   }, [])// Empty dependency array ensures this runs only once on mount
 
   return (
-    <section className="lg:pt-30 pt-10">
+    <section className="lg:pt-30 pt-10 relative">
       <div className="container mx-auto px-4 max-w-7xl">
         <h6 className="text-center text-black lg:text-[22px] text-[18px] font-semibold mb-2">Special Offer</h6>
         <h2 className="text-center lg:text-[36px] text-[26px]  font-semibold text-[#0D378D] uppercase mb-8">
@@ -170,6 +171,9 @@ const Index = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="absolute top-[300px] left-[-1px]">
+        <Image src={BgBackground} alt="bg-Image"/>
       </div>
     </section>
   );
