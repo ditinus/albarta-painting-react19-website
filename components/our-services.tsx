@@ -49,7 +49,7 @@ export default function OurServices() {
   return (
     <>
 
-    <div className="lg:mb-15 mb-10 ">
+    <div className="lg:mb-15 mb-5 ">
       <ServiceSection
         title="Our Services"
         description="Bringing Colour to Every Corner <br /> of Your Home and Business"

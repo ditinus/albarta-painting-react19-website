@@ -20,7 +20,7 @@ export default function Home() {
   title2="CONTACT US"
   subtitle="Let’s Bring Colour to Your Home Get in Touch Today!"
   imageSrc={blogsBanner}
-  quoteLink="/quote"
+  quoteLink="/"
   bookLink="/book"
   quoteText="Get a Free Quote"
 />
@@ -31,12 +31,12 @@ export default function Home() {
     </section>
   
   
-  <main className="">
+  {/* <main className=""> */}
       <div className="flex flex-col md:flex-row">
         {/* Left Section */}
-        <div className="bg-[#0D378D] text-white p-8 md:p-12 py-30 lg:p-16 flex flex-col justify-center md:w-1/2">
+        <div className="bg-[#0D378D] text-white p-8 md:p-12 lg:py-30 md:py-20 lg:p-16 flex flex-col justify-center md:w-1/2">
           <div className="max-w-6xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 uppercase">We are your Calgary painting company</h1>
+            <h1 className="lg:text-3xl md:text-2xl text-xl font-bold mb-6 uppercase">We are your Calgary painting company</h1>
 
             <p className="mb-8 text-sm md:text-base">
               Alberta Colour Painting is your trusted partner in Calgary, offering detailed estimates and unparalleled
@@ -183,7 +183,7 @@ export default function Home() {
         />
         </div>
       </div>
-    </main>
+    {/* </main> */}
   
   
   </div>

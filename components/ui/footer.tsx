@@ -208,7 +208,7 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="space-y-6 my-5">
 
-            <div className=" p-2 w-48 h-16 flex items-center justify-center rounded">
+            {/* <div className=" w-48 h-16 flex items-center justify-center rounded"> */}
 
               <Link href="/">
 
@@ -220,7 +220,7 @@ export default function Footer() {
                 className="object-contain"
               />
               </Link>
-            </div>
+            {/* </div> */}
             <p className="text-sm text-white leading-relaxed mt-10">
               {`The Alberta Global Painting logo represents the essence of quality
               work and exceptional service. Our brand features a clean, modern
@@ -257,7 +257,7 @@ export default function Footer() {
           {/* Contact Information */}
           <div className="place-self-start">
             <h3 className="font-medium mb-4">Contact</h3>
-            <div className="space-y-5">
+            <div className="space-y-5 ">
               <div className="flex items-center gap-2 text-white cursor-pointer">
               <Link href="tel:+587-466-6647">
                 <svg
@@ -283,7 +283,7 @@ export default function Footer() {
                 </Link>
                 <Link href="tel:+1 (587) 998-9547"><span>+1 (587) 998-9547</span></Link>
               </div>
-              <div className="flex items-center gap-2 text-white cursor-pointer">
+              <div className="flex items-center gap-2 text-wrap break-all text-white  cursor-pointer ">
               <Link href="mailto:info@albertaglobalpainting.com">
                 <svg
                   width="21"
@@ -300,7 +300,7 @@ export default function Footer() {
                 </Link>
                 <Link href="mailto:info@albertaglobalpainting.com"><span>info@albertaglobalpainting.com</span></Link>
               </div>
-              <div className="flex items-start gap-2 text-white cursor-pointer">
+              <div className="flex items-start text-wrap break-all gap-2 text-white cursor-pointer">
                 <svg
                   width="18"
                   height="25"
@@ -322,7 +322,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-700">
-        <p className="text-white">© 2025 Alberta Global Painting. Powered by <Link href="https://services.cyberace.ca/" className="text-[#0D378D] text-[14px]">Cyber Ace.</Link></p>
+        <p className="text-white">© 2025 Alberta Global Painting. Powered by <Link href="https://cyberace.ca/" className="text-[#0D378D] text-[14px]">Cyber Ace.</Link></p>
         </div>
       </div>
     </div>

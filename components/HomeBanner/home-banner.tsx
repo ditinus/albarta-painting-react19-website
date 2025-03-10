@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import "./homebanner.css";
+import BgBackground from '@/public/about-background-vector-line.svg'
 
 const HomeBanner = () => {
   return (
-    <div className="    ">
+    <div className="   ">
+      
       <div className=" back-img lg:mt-[40px] container max-w-7xl mx-auto py-20  max-sm:py-6
         relative">
         <div className=" grid grid-cols-1 sm:grid-cols-3 gap-6 px-6 sm:px-12 z-20 relative">
@@ -24,9 +27,9 @@ const HomeBanner = () => {
             
             <Link
               href="/contact"
-              className="flex items-center bg-[#0D378D] text-white pl-6 pr-2 py-2 rounded-full text-base font-medium border-2 border-[#cadbff]"
+              className="flex items-center bg-[#0D378D] text-white pl-4 pr-2 py-3 rounded-full text-base font-medium border-2 border-[#cadbff]"
             >
-              <span className="mr-2 sm:text-[10px]">Schedule a Consultation</span>
+              <span className="mr-2 lg:text-[16px] text-[14px] md:text-[10px]">Schedule a Consultation</span>
               <svg
                 width="31"
                 height="31"

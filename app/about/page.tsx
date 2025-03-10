@@ -17,6 +17,9 @@ import { getBlogPosts } from "@/lib/blog-data";
 import { Navbar } from "@/components/navbar";
 import BlogHeros from "@/components/blogs-hero";
 import blogsBanner from "@/public/blogs-banner.png";
+import BgBackground from '@/public/about-background-vector-line.svg'
+import BgBackground2 from '@/public/above-gallery-bg-line.svg'
+
 
 export default function page() {
   const posts = getBlogPosts();
@@ -35,17 +38,22 @@ export default function page() {
       />
 
       <PaintingCompany />
- 
+      <div className="relative">
+      <div className="absolute">
+        <Image src={BgBackground} alt="bg-Image"/>
+      </div>
+      </div>
       <div className=" ">
         {/* Quality Section */}
 <div className="container mx-auto max-w-7xl px-4">
+  
         <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10 my-3.5 pb-[40px]">
           <div className="space-y-6 ">
             <div className="space-y-2">
               <p className="text-[22px]  font-medium text-black">
               Our Skilled Painters
               </p>
-              <h2 className="lg:text-[36px] text-[26px] font-bold text-[#0D378D] uppercase">
+              <h2 className="lg:text-[36px] text-[22px] font-bold text-[#0D378D] uppercase">
               Trained & Skilled House<br />
               Painters
               </h2>
@@ -87,6 +95,8 @@ export default function page() {
             />
           </div>
         </div>
+   
+
         </div>
         <div className="max-sm:my-10">
         <HomeBanner/>
@@ -144,8 +154,13 @@ export default function page() {
             </div>
           </div>
         </div>
+
+
         {/* Eco-Friendly Section */}
         <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10 my-3.5">
+        <div className="absolute top-[400px]">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
           <div className="space-y-6 ">
             <div className="space-y-2">
               <p className="text-[22px]  font-medium text-black">

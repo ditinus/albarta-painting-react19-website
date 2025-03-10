@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
+import { useRouter } from 'next/navigation';
 
 interface ServiceSectionProps {
   title: string;
@@ -15,6 +16,17 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
   // Split the description by line breaks
   const descriptionLines = description.split("<br />");
 
+  const router = useRouter();
+
+  // Handle button click based on buttonText
+  const handleButtonClick = () => {
+    if (buttonText === "View All") {
+      router.push("/gallery"); // Navigate to /gallery page
+    } else if (buttonText === "Explore Our Services") {
+      router.push("/service"); // Navigate to /service page
+    } 
+  };
+
   return (
     <section className=" bg-white">
       <div className="container mx-auto px-4 max-w-7xl">
@@ -28,13 +40,15 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
               </React.Fragment>
             ))}
           </h2>
-          <div className="flex  mt-4 md:mt-0">
+          <div className="flex  mt-4 md:mt-0 ">
             <Button
               variant="default"
-              className=" bg-[#0D378D] px-10  cursor-pointer  py-5 rounded-3xl "
+              className=" bg-[#0D378D] px-10  cursor-pointer  py-5  rounded-3xl "
+              onClick={handleButtonClick}
             >
               {buttonText}
             </Button>
+
           </div>
         </div>
       </div>

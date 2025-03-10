@@ -1,7 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
+import BgBackground from '@/public/about-background-vector-line.svg'
 import Footer from "@/components/ui/footer";
 import OurServices from "@/components/our-services";
 import PaintingCompany from "@/components/painting-company";
@@ -33,7 +34,12 @@ export default function Home() {
       <PaintingCompany />
       <OurServices />
       <div className="flex flex-col ">
+        <div className="relative">
+      <div className="absolute top-[-30px]">
+        <Image src={BgBackground} alt="bg-Image"/>
+      </div>
         <HomeBanner />
+        </div>
 
         <SpecialOffer />
         <OurGallery />
