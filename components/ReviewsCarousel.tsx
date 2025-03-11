@@ -2,6 +2,7 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay} from 'swiper/modules';
 import "swiper/css";
 import Reviews1 from "@/public/Reviews1.png";
 import Reviews2 from "@/public/Reviews2.png";
@@ -57,8 +58,13 @@ const ReviewsCarousel = () => {
       <div className="relative  px-10 mx-auto  rounded-0">
         <Swiper
           spaceBetween={30}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           slidesPerView={1}
           loop={true}
+          modules={[Autoplay ]}
           pagination={{ clickable: true }}
           navigation={true}
           breakpoints={{
@@ -85,7 +91,7 @@ const ReviewsCarousel = () => {
                   <Image src={Reviews2} alt="Review Image"  className="mx-auto absolute bottom-[20px] left-[28px] h-[150px]" />
                   <Image src={Reviews3} alt="Review Image"  className="mx-auto absolute bottom-[20px] right-[-10px]" />
                 </div>
-                <div className="p-[25px] ">
+                <div className="p-[20px] ">
                   <p className="review-text text-base  font-normal text-black mb-4  lg:text-[15px] text-[11px]  pt-[40px] lg:pl-[30px] sm:pl-[20px] sm:pr-[-40px] pb-0 ">{review.review}</p>
                   <span className=" font-bold text-sm sm:text-lg text-[#202020] lg:pl-[22px]  md:pl-[12px] sm:pl-[-20px]">{review.name}</span>
                 </div>

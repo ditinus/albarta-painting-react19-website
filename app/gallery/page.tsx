@@ -6,6 +6,7 @@ import Hero from "@/components/hero";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import { Navbar } from "@/components/navbar";
 import OurGallery from "@/components/OurGallery";
+import OurGalleryMobile from "@/components/OurGalleryMobile";
 import TrustBadges from "@/components/trust-badges";
 import Footer from "@/components/ui/footer";
 import blogsBanner from "@/public/blogs-banner.png";
@@ -25,6 +26,7 @@ export default function gallery() {
       />
       {/* <TrustBadges/> */}
       <OurGallery />
+      <OurGalleryMobile/>
       <HomeBanner />
       <ContactFormSection />
       <Footer />

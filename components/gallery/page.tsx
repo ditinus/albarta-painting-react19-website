@@ -6,10 +6,11 @@ import offer2 from '@/public/galleryHome-4.png'
 import offer3 from '@/public/galleryNew-2.png'
 import offer4 from '@/public/galleryNew-3.png'
 import offer5 from '@/public/galleryHome-3.png'
-// import offer6 from '@/public/galleryHome-5.png'
+
 import Image from "next/image";
 import "./style.css";
 import ServiceSection from "../service-section";
+import SmallGallerySection from "./SmallGallerySection";
 
 const OurGallery: React.FC = () => {
 
@@ -24,8 +25,8 @@ const OurGallery: React.FC = () => {
       />
       </div>
 
-      <div className="container-fluid lg:mt-20 mt-10 mx-8">
-        <div className="gallery-slide-start">
+      <div className="container-fluid  lg:mt-20 mt-10 mx-8">
+        <div className="gallery-slide-start lg:visible md:visible">
           <div className="gallery-slide">
             <Image src={offer1} className="img-fluid" alt={""} />
           </div>
@@ -41,11 +42,12 @@ const OurGallery: React.FC = () => {
           <div className="gallery-slide">
             <Image src={offer5} className="img-fluid" alt={""} />
           </div>
-          {/* <div className="gallery-slide">
-            <Image src={offer6} className="img-fluid" alt={""} />
-          </div> */}
+        
         </div>
       </div>
+     <div className="lg:hidden md:hidden">
+     <SmallGallerySection/>
+     </div>
     </div>
   );
 };

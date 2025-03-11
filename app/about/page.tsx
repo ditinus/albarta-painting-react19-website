@@ -117,7 +117,7 @@ export default function page() {
               <p className="text-[22px] font-medium text-black">
                 Commitment to Quality
               </p>
-              <h2 className="text-3xl font-bold text-[#0D378D]">
+              <h2 className="text-2xl lg:text-3xl font-bold text-[#0D378D]">
                 PREMIUM MATERIALS & <br />
                 EXCEPTIONAL WORKMANSHIP
               </h2>
@@ -171,6 +171,7 @@ export default function page() {
                 HEALTHIER FUTURE
               </h2>
             </div>
+          
 
             <ul className="space-y-4 text-black list-disc lg:text-[16px] text-[14px]">
               <li className="flex items-start gap-2 list-disc">
@@ -210,6 +211,11 @@ export default function page() {
         </div>
 </div>
        
+      </div>
+      <div className="relative">
+      <div className="absolute top-[-450px]">
+        <Image src={BgBackground} alt="bg-Image"/>
+      </div>
       </div>
 
       <OurGallery />

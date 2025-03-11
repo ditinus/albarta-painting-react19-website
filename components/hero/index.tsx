@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Highlight } from "../ui/hero-highlight";
 import TrustBadges from "../trust-badges";
 import { Navbar } from "../navbar";
+import HomeSliderLine from "@/public/Home-Slider.png";
 
 const Hero = () => {
   return (
@@ -162,6 +163,11 @@ const Hero = () => {
             >
               Book Now
             </Link>
+          </div>
+          <div className="relative top-[200px]">
+            <div className="">
+            <Image src={HomeSliderLine} alt="Home Slider Line "  />
+            </div>
           </div>
         </div>
       </section>

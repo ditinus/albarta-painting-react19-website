@@ -9,7 +9,7 @@ import DiscussSection from "./DiscussSection";
 import blogsBanner from "@/public/blogs-banner.png";
 import ContactGalleryHero from "@/components/ContactGalleryHero";
 import { Navbar } from "@/components/navbar";
-
+import BgBackground2 from '@/public/above-gallery-bg-line.svg'
 
 export default function Home() {
   return (
@@ -24,8 +24,19 @@ export default function Home() {
   bookLink="/book"
   quoteText="Get a Free Quote"
 />
-    
+<div className="relative">
+      <div className="absolute  z-[-2]">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
+      </div>
+
+      <div className="relative">
+      <div className="absolute top-[800px] z-[-2]">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
       <ContactForm/>
+      </div>
+
       <GoogleMap/>
       <div className=''> <section className="relative bg-[#0D378D] text-white">
     </section>
@@ -187,6 +198,11 @@ export default function Home() {
   
   
   </div>
+  <div className="relative">
+      <div className="absolute top-[100px] z-[-2]">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
+      </div>
       <div className="bg-[#E2E7F1] py-12 px-4 relative ">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-[36px] font-bold text-[#0D378D] text-center mb-12">
