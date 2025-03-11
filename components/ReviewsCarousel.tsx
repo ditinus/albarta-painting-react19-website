@@ -55,7 +55,7 @@ const ReviewsCarousel = () => {
       <div className="flex lg:justify-center lg:mx-auto  container px-4 sm:justify-start lg:mb-20 mb-10 mt-10 ">
         <Image src={GoogleLogo} className=" lg:w-64 w-40 " alt="google-logo" />
       </div>
-      <div className="relative  mx-auto  rounded-0">
+      <div className="relative  lg:px-10 md:px-9 px-1 mx-auto  rounded-0">
         <Swiper
           spaceBetween={30}
           autoplay={{
@@ -91,7 +91,7 @@ const ReviewsCarousel = () => {
                   <Image src={Reviews2} alt="Review Image"  className="mx-auto absolute bottom-[20px] left-[28px] h-[150px]" />
                   <Image src={Reviews3} alt="Review Image"  className="mx-auto absolute bottom-[20px] right-[-10px]" />
                 </div>
-                <div className="p-[20px] ">
+                <div className="lg:p-[25px] md:p-[21px] p-[20px]">
                   <p className="review-text text-base  font-normal text-black mb-4  lg:text-[15px] text-[11px]  pt-[40px] lg:pl-[30px] sm:pl-[20px] sm:pr-[-40px] pb-0 ">{review.review}</p>
                   <span className=" font-bold text-sm sm:text-lg text-[#202020] lg:pl-[22px]  md:pl-[12px] sm:pl-[-20px]">{review.name}</span>
                 </div>
