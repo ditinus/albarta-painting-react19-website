@@ -102,7 +102,6 @@ export default function SmallGallerySection() {
         }}
         scrollbar={true}
       
-       
         modules={[ Scrollbar,]}
         className="swiper1"
         style={{height:"250px"}}
