@@ -110,19 +110,19 @@ export default function SmallGallerySection() {
         style={{height:"250px"}}
       >
         <div className='swiper-wrapper1' >
-        <SwiperSlide className='swiper-slide1 swiper-backface-hidden' style={{height:"230px",padding:"40px 20px"}} >
+        <SwiperSlide className='swiper-slide1 swiper-backface-hidden' style={{height:"230px",padding:"0px 20px"}} >
           <Image src={offer1} alt="Image 1"  />
         </SwiperSlide >
-        <SwiperSlide className='swiper-slide1 swiper-backface-hidden' style={{height:"230px",padding:"40px 20px"}}>
+        <SwiperSlide className='swiper-slide1 swiper-backface-hidden' style={{height:"230px",padding:"0px 20px"}}>
         <Image src={offer2} alt="Image 1"  />
         </SwiperSlide>
-        <SwiperSlide className='swiper-slide1 swiper-backface-hidden' style={{height:"230px",padding:"40px 20px"}}>
+        <SwiperSlide className='swiper-slide1 swiper-backface-hidden' style={{height:"230px",padding:"0px 20px"}}>
         <Image src={offer3} alt="Image 1"  />
         </SwiperSlide>
-        <SwiperSlide className='swiper-slide1 swiper-backface-hidden' style={{height:"230px",padding:"40px 20px"}}>
+        <SwiperSlide className='swiper-slide1 swiper-backface-hidden' style={{height:"230px",padding:"0px 20px"}}>
         <Image src={offer4} alt="Image 1"  />
         </SwiperSlide>
-        <SwiperSlide className='swiper-slide1 swiper-backface-hidden' style={{height:"230px",padding:"40px 20px"}}>
+        <SwiperSlide className='swiper-slide1 swiper-backface-hidden' style={{height:"230px",padding:"0px 20px"}}>
         <Image src={offer5} alt="Image 1"  />
         </SwiperSlide>
         </div>
