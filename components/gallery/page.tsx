@@ -13,19 +13,15 @@ import SmallGallerySection from "./SmallGallerySection";
 import { useEffect, useState } from "react";
 
 const OurGallery: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768);
-  };
+  const [isMobile, setIsMobile] = useState(window.innerWidth >= 768);
 
   useEffect(() => {
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth >= 768);
     };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -40,10 +36,7 @@ const OurGallery: React.FC = () => {
 
       {isMobile ? (
         <div>
-          <SmallGallerySection />
-        </div>
-      ) : (
-        <div className="container-fluid lg:mt-20 mt-10 mx-8">
+           <div className="container-fluid lg:mt-20 mt-10 mx-8">
           <div className="gallery-slide-start flex overflow-x-auto space-x-4">
             <div className="gallery-slide">
               <Image src={offer1} className="img-fluid" alt="Gallery image 1" />
@@ -62,6 +55,10 @@ const OurGallery: React.FC = () => {
             </div>
           </div>
         </div>
+
+        </div>
+      ) : (
+        <SmallGallerySection />
       )}
     </div>
   );
