@@ -29,6 +29,9 @@ const OurGallery: React.FC = () => {
       };
     }
   }, []);
+
+
+  
   return (
     <div className="gallery-carousel">
       <div className="lg:mt-20 lg:mb-16 my-10">
