@@ -63,8 +63,8 @@ const Hero: React.FC<HeroProps> = ({
                   height="40.8498"
                   rx="20.4249"
                   fill="#0D378D"
-                  fill-opacity="0.24"
-                  shape-rendering="crispEdges"
+                  fillOpacity="0.24"
+                  shapeRendering="crispEdges"
                 />
                 <rect
                   x="6.4642"
@@ -73,8 +73,8 @@ const Hero: React.FC<HeroProps> = ({
                   height="39.9214"
                   rx="19.9607"
                   stroke="white"
-                  stroke-width="0.928405"
-                  shape-rendering="crispEdges"
+                  strokeWidth="0.928405"
+                  shapeRendering="crispEdges"
                 />
                 <path
                   d="M28.0197 18.9306C28.0197 18.5559 28.3234 18.2521 28.6981 18.2521C30.5575 18.2521 32.3406 18.9908 33.6554 20.3055C34.9701 21.6202 35.7087 23.4034 35.7087 25.2627C35.7087 25.6374 35.405 25.9412 35.0303 25.9412C34.6556 25.9412 34.3518 25.6374 34.3518 25.2627C34.3518 23.7633 33.7562 22.3252 32.6959 21.265C31.6356 20.2047 30.1976 19.609 28.6981 19.609C28.3234 19.609 28.0197 19.3053 28.0197 18.9306Z"
@@ -97,9 +97,9 @@ const Hero: React.FC<HeroProps> = ({
                   width="53.1049"
                   height="52.1763"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"

@@ -24,9 +24,9 @@ const validationSchema = Yup.object({
 });
 
 const ContactForm = () => {
-  const handleSubmit = async (values: any, { setSubmitting }: any) => {
+  const handleSubmit = async (values: any, { setSubmitting, resetForm }: any) => {
     const { name, email, phone, message } = values;
-
+  
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -35,19 +35,21 @@ const ContactForm = () => {
         },
         body: JSON.stringify({ name, email, phone, message }),
       });
-
+  
       if (!response.ok) {
         throw new Error("Something went wrong!");
       }
-
+  
       const result = await response.text();
-
+  
       // Show success message
       toast.success("Your message has been sent successfully!", {
         description: "We will get back to you shortly.",
       });
-
+  
       // Reset form after success
+      resetForm(); // This will clear the form fields
+  
       setSubmitting(false);
     } catch (error: any) {
       toast.error("There was an issue sending your message. Please try again.", {
