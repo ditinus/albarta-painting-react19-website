@@ -13,25 +13,22 @@ import SmallGallerySection from "./SmallGallerySection";
 import { useEffect, useState } from "react";
 
 const OurGallery: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth >= 768);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const handleResize = () => {
         setIsMobile(window.innerWidth < 768);
       };
 
-      window.addEventListener('resize', handleResize);
+      window.addEventListener("resize", handleResize);
       handleResize(); // Run once on mount to check window size
 
       return () => {
-        window.removeEventListener('resize', handleResize);
+        window.removeEventListener("resize", handleResize);
       };
     }
   }, []);
-
-
-  
   return (
     <div className="gallery-carousel">
       <div className="lg:mt-20 lg:mb-16 my-10">
@@ -44,7 +41,10 @@ const OurGallery: React.FC = () => {
 
       {isMobile ? (
         <div>
-           <div className="container-fluid lg:mt-20 mt-10 mx-8">
+          <SmallGallerySection />
+        </div>
+      ) : (
+        <div className="container-fluid lg:mt-20 mt-10 mx-8">
           <div className="gallery-slide-start flex overflow-x-auto space-x-4">
             <div className="gallery-slide">
               <Image src={offer1} className="img-fluid" alt="Gallery image 1" />
@@ -63,10 +63,6 @@ const OurGallery: React.FC = () => {
             </div>
           </div>
         </div>
-
-        </div>
-      ) : (
-        <SmallGallerySection />
       )}
     </div>
   );
