@@ -13,17 +13,22 @@ import SmallGallerySection from "./SmallGallerySection";
 import { useEffect, useState } from "react";
 
 const OurGallery: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth >= 768);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth >= 768);
-    };
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+      window.addEventListener('resize', handleResize);
+      handleResize(); // Run once on mount to check window size
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
-
   return (
     <div className="gallery-carousel">
       <div className="lg:mt-20 lg:mb-16 my-10">
