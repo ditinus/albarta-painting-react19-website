@@ -101,11 +101,9 @@ export default function SmallGallerySection() {
           },
         }}
         scrollbar={true}
-        navigation={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Keyboard, Scrollbar, Navigation, Pagination]}
+      
+       
+        modules={[ Scrollbar,]}
         className="swiper1"
         style={{height:"250px"}}
       >
