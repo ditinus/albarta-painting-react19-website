@@ -13,7 +13,7 @@ import blogsBanner from "@/public/blogs-banner.png";
 import { useEffect, useState } from "react";
 
 export default function gallery() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth >= 768);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -44,9 +44,10 @@ export default function gallery() {
       />
       {/* <TrustBadges/> */}
       {isMobile ? (
-      <OurGallery />
+             <OurGalleryMobile/>
+     
       ) : (
-        <OurGalleryMobile/>
+        <OurGallery />
             )}
       
       <HomeBanner />
