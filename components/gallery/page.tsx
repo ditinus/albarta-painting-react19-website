@@ -13,7 +13,7 @@ import SmallGallerySection from "./SmallGallerySection";
 import { useEffect, useState } from "react";
 
 const OurGallery: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth >= 768);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
