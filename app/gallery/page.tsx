@@ -16,23 +16,23 @@ export default function gallery() {
   const [isMobile, setIsMobile] = useState(window.innerWidth >= 768);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const handleResize = () => {
         setIsMobile(window.innerWidth < 768);
       };
 
-      window.addEventListener('resize', handleResize);
+      window.addEventListener("resize", handleResize);
       handleResize(); // Run once on mount to check window size
 
       return () => {
-        window.removeEventListener('resize', handleResize);
+        window.removeEventListener("resize", handleResize);
       };
     }
   }, []);
-  
+
   return (
     <main className="flex  flex-col ">
-         <Navbar />
+      <Navbar />
       <ContactGalleryHero
         title="OUR "
         title2="GALLERY"
@@ -43,13 +43,8 @@ export default function gallery() {
         quoteText="Get a Free Quote"
       />
       {/* <TrustBadges/> */}
-      {isMobile ? (
-             <OurGalleryMobile/>
-     
-      ) : (
-        <OurGallery />
-            )}
-      
+      {isMobile ? <OurGalleryMobile /> : <OurGallery />}
+
       <HomeBanner />
       <ContactFormSection />
       <Footer />
