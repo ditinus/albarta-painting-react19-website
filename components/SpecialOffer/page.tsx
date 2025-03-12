@@ -57,10 +57,10 @@ const Index = () => {
       },
     })
 
-    return () => {
-      // Cleanup swiper instance when component unmounts
-      if (swiper) swiper.destroy()
-    }
+    // return () => {
+    //   // Cleanup swiper instance when component unmounts
+    //   if (swiper) swiper.destroy()
+    // }
   }, [])// Empty dependency array ensures this runs only once on mount
 
   return (

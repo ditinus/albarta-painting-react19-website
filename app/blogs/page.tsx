@@ -9,6 +9,7 @@ import ContactFormSection from "@/components/ContactFormSection";
 import { Navbar } from "@/components/navbar";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
+
 export default function blogs() {
   const posts = getBlogPosts();
 
@@ -26,18 +27,37 @@ export default function blogs() {
         bookText="Read More"
       />
       <main className="container mx-auto px-4 py-8 lg:mt-20 mt-10">
-
-      <div className="absolute top-[1200px] z-[-2]">
-        <Image src={BgBackground2} alt="bg-Image"/>
-      </div>
         <BlogGrid posts={posts} />
-
         <div className=" lg:mt-30 mt-10">
           <HomeBanner />
         </div>
 
         <ContactFormSection />
       </main>
+
+      <div className="relative">
+      <div className="absolute top-[-2800px] z-[-2]">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
+      </div>
+
+      <div className="relative">
+      <div className="absolute top-[-2000px] z-[-2]">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
+      </div>
+
+      <div className="relative">
+      <div className="absolute top-[-1600px] z-[-2]">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
+      </div>
+
+      <div className="relative">
+      <div className="absolute top-[-800px] z-[-2]">
+        <Image src={BgBackground2} alt="bg-Image"/>
+      </div>
+      </div>
       <Footer />
     </>
   );
