@@ -13,24 +13,22 @@ import blogsBanner from "@/public/blogs-banner.png";
 import { useEffect, useState } from "react";
 
 export default function gallery() {
+  const [isMobile, setIsMobile] = useState(false);
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth >= 768);
-  
-    useEffect(() => {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
 
-      if (typeof window !== 'undefined') {
-        const handleResize = () => {
-          setIsMobile(window.innerWidth >= 768);
-        };
-  
-        window.addEventListener('resize', handleResize);
-        handleResize();
-  
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }
-    }, []);
+      window.addEventListener('resize', handleResize);
+      handleResize(); // Run once on mount to check window size
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
   
   return (
     <main className="flex  flex-col ">
