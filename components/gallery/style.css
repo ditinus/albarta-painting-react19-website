@@ -90,3 +90,18 @@
       height: 300px;
     }
   }
+
+
+  @media (max-width: 300px) {
+    .gallery-slide:hover {
+      flex: 1;
+    }
+  
+    .gallery-slide-start {
+      flex-direction: column;
+    }
+  
+    .gallery-slide img {
+      height: 300px;
+    }
+  }

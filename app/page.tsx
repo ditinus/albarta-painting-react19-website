@@ -68,6 +68,7 @@ export default function Home() {
               <Link href="/blogs">View All</Link>
             </Button>
           </div>
+          
         </main>
       </div>
 
