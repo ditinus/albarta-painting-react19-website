@@ -92,7 +92,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <p className="text-sm">
+            <p className="text-sm sm:text-[10px]">
               Free Detailed <br /> Estimate
             </p>
           </div>
@@ -123,7 +123,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <p className="text-sm">
+            <p className="text-sm sm:text-[10px]">
               Skilled Professional <br /> Painters
             </p>
           </div>
@@ -144,7 +144,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <p className="text-sm">
+            <p className="text-sm sm:text-[10px]">
               Licensed Insured <br />
               Eco-Friendly
             </p>
@@ -164,7 +164,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <p className="text-sm">
+            <p className="text-sm sm:text-[10px]">
               Reputation For High <br /> Quality
             </p>
           </div>

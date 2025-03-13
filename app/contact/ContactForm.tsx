@@ -88,8 +88,8 @@ const ContactForm = () => {
                 <Image src={email} alt="email" />
               </Link>
             </span>
-            <Link href="mailto:example@example.com">
-              info@albertacolourpainting.com
+            <Link href="mailto:info@albertacolourpainting.com">
+            info@albertacolourpainting.com
             </Link>
           </p>
           <p className="text-base mb-6 text-black flex flex-row items-center" style={{ fontWeight: "500" }}>
@@ -101,7 +101,7 @@ const ContactForm = () => {
         </div>
 
         {/* Contact Form Section */}
-        <div className="contact-form lg:w-[80%] md:w-full sm:w-full" style={{ boxShadow: "rgba(0, 0, 0, 0.11) 5px 17px 56.7px 0px" }}>
+        <div className="contact-form lg:w-[80%] md:w-full sm:w-full" style={{ boxShadow: "rgba(0, 0, 0, 0.11) 5px 17px 56.7px 0px",marginBottom:"45px" }} >
           <Formik
             initialValues={{
               name: "",
@@ -114,12 +114,12 @@ const ContactForm = () => {
           >
             {({ isSubmitting }) => (
               <Form className="mt-5">
-                <div className="mb-5">
+                <div className="mb-5 " >
                   <Field
                     type="text"
                     name="name"
                     placeholder="Name"
-                    className="w-[90%] ml-[2.1em] p-2  text-black bg-[#F3F3F3]    "
+                    className="w-[90%] ml-[30px] p-2  text-black bg-[#F3F3F3]    "
                   />
                   <ErrorMessage name="name" component="div" className="text-red-500 text-sm mt-2 ml-[33px]" />
                 </div>
@@ -129,7 +129,7 @@ const ContactForm = () => {
                     type="email"
                     name="email"
                     placeholder="Email Address"
-                    className="w-[90%] ml-[2.1em] p-2  text-black bg-[#F3F3F3]     "
+                    className="w-[90%] ml-[30px] p-2  text-black bg-[#F3F3F3]     "
                   />
                   <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-2 ml-[33px]" />
                 </div>
@@ -139,7 +139,7 @@ const ContactForm = () => {
                     type="text"
                     name="phone"
                     placeholder="Phone Number"
-                    className="w-[90%] ml-[2.1em] p-2  text-black bg-[#F3F3F3]     "
+                    className="w-[90%] ml-[30px] p-2  text-black bg-[#F3F3F3]     "
                   />
                   <ErrorMessage name="phone" component="div" className="text-red-500 text-sm mt-2 ml-[33px]" />
                 </div>
@@ -150,14 +150,14 @@ const ContactForm = () => {
                     name="message"
                     placeholder="Message"
                     rows={4}
-                    className="w-[90%] ml-[2.1em] p-2  text-black bg-[#F3F3F3]    "
+                    className="w-[90%] ml-[30px] p-2  text-black bg-[#F3F3F3]    "
                   />
                   <ErrorMessage name="message" component="div" className="text-red-500 text-sm mt-2 ml-[33px]" />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-[90%] ml-[2em] py-2 mt-2 mb-2 bg-[#0D378D] text-white font-semibold rounded-md hover:bg-primary/90 cursor-pointer"
+                  className="w-[90%] ml-[30px] py-2 mt-2 mb-2 bg-[#0D378D] text-white font-semibold rounded-md hover:bg-primary/90 cursor-pointer"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
