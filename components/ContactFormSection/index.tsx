@@ -20,41 +20,44 @@ const validationSchema = Yup.object({
 });
 
 const ContactFormSection = () => {
-  const handleSubmit = async (values: any, { setSubmitting }: any) => {
-    const { name, email, phone, message } = values;
-    
-    try {
-      const response = await fetch("/api/sendEmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, phone, message }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Something went wrong!");
-      }
-
-      const result = await response.text();
-
-      toast.success("Your message has been sent successfully!", {
-        description: "We will get back to you shortly.",
-      });
-
-      // Reset form after success
-      setSubmitting(false);
-    } catch (error: any) {
-      toast.error("There was an issue sending your message. Please try again.", {
-        description: "Please check your information and try again.",
-      });
-      setSubmitting(false);
-    }
-  };
+   const handleSubmit = async (values: any, { setSubmitting, resetForm }: any) => {
+     const { name, email, phone, message } = values;
+   
+     try {
+       const response = await fetch("/api/sendEmail", {
+         method: "POST",
+         headers: {
+           "Content-Type": "application/json",
+         },
+         body: JSON.stringify({ name, email, phone, message }),
+       });
+   
+       if (!response.ok) {
+         throw new Error("Something went wrong!");
+       }
+   
+       const result = await response.text();
+   
+       // Show success message
+       toast.success("Your message has been sent successfully!", {
+         description: "We will get back to you shortly.",
+       });
+   
+       // Reset form after success
+       resetForm(); // This will clear the form fields
+   
+       setSubmitting(false);
+     } catch (error: any) {
+       toast.error("There was an issue sending your message. Please try again.", {
+         description: "Please check your information and try again.",
+       });
+       setSubmitting(false);
+     }
+   };
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-7xl">
-      <div className="grid md:grid-cols-2 gap-8 lg:my-10 my-10">
+    <div className="container mx-auto px-4 py-8  max-w-7xl">
+      <div className="grid md:grid-cols-2 gap-8 lg:my-10 my-0">
         <div className="flex flex-col justify-center w-full">
           <h2 className="text-[26px] lg:text-[45px] font-medium lg:leading-15 text-[#0D378D] uppercase mb-2">
             Have a project in <br /> mind or need a <br /> quote?
