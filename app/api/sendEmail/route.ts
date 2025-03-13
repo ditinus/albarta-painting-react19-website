@@ -26,7 +26,7 @@ export async function POST(req: any) {
 
     
     const mailOptions = {
-      from: 'albarta124@yopmail.com',
+      from: 'testing@cyberace.site',
       to: 'albarta123@yopmail.com', 
       subject: `New message from ${name}`,
       text: `You have received a new message from ${name} (${email}).\n\nMessage: ${message}`,
