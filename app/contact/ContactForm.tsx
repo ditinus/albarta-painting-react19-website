@@ -23,6 +23,7 @@ const validationSchema = Yup.object({
   message: Yup.string().required("Message is required"),
 });
 
+
 const ContactForm = () => {
   const handleSubmit = async (values: any, { setSubmitting, resetForm }: any) => {
     const { name, email, phone, message } = values;
@@ -74,12 +75,12 @@ const ContactForm = () => {
             Get in touch with our expert painters in Calgary. We’d be happy to help bring your vision to life!
           </h3>
           <p className="text-[16px] mb-6 text-[#000000] flex flex-row items-center" style={{ fontWeight: "500" }}>
-            <span className="mr-5">
-              <Link href="tel:+587-466-6647">
+            <span className="mr-2">
+              <Link href="tel:+1 587-966-6547">
                 <Image src={phone} alt="phone" />
               </Link>
             </span>
-            <Link href="tel:+587-466-6647">587-466-6647</Link>
+            <Link href="tel:+1 587-966-6547">+1 587-966-6547</Link>
           </p>
           <p className="text-base mb-6 text-black flex flex-row items-center" style={{ fontWeight: "500" }}>
             <span className="mr-2">

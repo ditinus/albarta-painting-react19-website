@@ -50,18 +50,19 @@ const ReviewsCarousel = () => {
         title="What Our Clients Say"
         description="Real Reviews from Satisfied <br /> Customers"
         buttonText="Read More Reviews"
+        isButton={false}
       />
 
       <div className="flex lg:justify-center lg:mx-auto  container px-4 sm:justify-start lg:mb-20 mb-10 mt-10 ">
         <Image src={GoogleLogo} className=" lg:w-64 w-40 " alt="google-logo" />
       </div>
-      <div className="relative  lg:px-10 md:px-9 px-1 mx-auto  rounded-0">
+      <div className="relative  lg:px-10 md:px-9 px-2 mx-auto  rounded-0">
         <Swiper
           spaceBetween={30}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3500,
+          //   disableOnInteraction: false,
+          // }}
           slidesPerView={1}
           loop={true}
           modules={[Autoplay ]}
@@ -74,7 +75,7 @@ const ReviewsCarousel = () => {
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 30,
+              spaceBetween: 10,
             },
             1024: {
               slidesPerView: 3,
@@ -83,17 +84,17 @@ const ReviewsCarousel = () => {
           }}
         >
           {reviews.map((review, index) => (
-            <SwiperSlide key={index} className="flex flex-col justify-between  lg:ml-5 md:ml-5 ml-1 mr-5">
-              <div className="bg-[#E2E7F1] shadow-lg   relative  lg:p-4  pl-10   p-0   flex flex-col justify-center review_card">
+            <SwiperSlide key={index} className="flex flex-col justify-between  lg:ml-5 md:ml-2 ml-5 mr-5">
+              <div className="bg-[#E2E7F1] shadow-lg   relative  lg:p-4  pl-10   p-0   flex flex-col justify-center  review_card ">
                 {/* Adjusted the images to be inside the flex container without absolute positioning */}
                 <div className="">
                   <Image src={Reviews1} alt="Review Image"  className="mx-auto  absolute top-4 left-[-20px] " />
                   <Image src={Reviews2} alt="Review Image"  className="mx-auto absolute bottom-[20px] left-[28px] h-[150px]" />
-                  <Image src={Reviews3} alt="Review Image"  className="mx-auto absolute bottom-[20px] right-[-10px]" />
+                  <Image src={Reviews3} alt="Review Image"  className="mx-auto absolute bottom-[20px] right-[-28px]" />
                 </div>
-                <div className="lg:p-[25px] md:p-[21px] p-[20px]">
-                  <p className="review-text text-base  font-normal text-black mb-4  lg:text-[15px] text-[11px]  pt-[40px] lg:pl-[30px] sm:pl-[20px] sm:pr-[-40px] pb-0 ">{review.review}</p>
-                  <span className=" font-bold text-sm sm:text-lg text-[#202020] lg:pl-[22px]  md:pl-[12px] sm:pl-[-20px]">{review.name}</span>
+                <div className="lg:p-[25px] md:p-[10px] p-[20px]">
+                  <p className="review-text text-base  font-normal text-black mb-4  lg:text-[15px] text-[11px]  pt-[40px] lg:pl-[30px]  sm:pl-[20px]  sm:pr-[-40px] pb-0 ">{review.review}</p>
+                  <span className=" font-bold text-sm sm:text-lg text-[#202020] lg:pl-[22px]  md:pl-[12px] sm:pl-[-20px] ">{review.name}</span>
                 </div>
               </div>
             </SwiperSlide>

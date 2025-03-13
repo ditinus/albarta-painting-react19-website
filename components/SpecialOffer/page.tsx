@@ -84,11 +84,11 @@ const Index = () => {
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
                         <p>10% Off on Interior</p>
                       </div>
-                      <div className="offer-card-content absolute bottom-0 left-0 right-0 ">
+                      <div className=" absolute bottom-6 left-0 right-0 ">
                         <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
                           Offer starts Oct 27, 2024 and ends Feb 28, 2025. You must call for this offer.
                         </h6>
-                        <p className="text-white">10% OFF - Interior Painting</p>
+                        <p className="text-white p-4">10% OFF - Interior Painting</p>
                       </div>
                     </div>
                   </div>
@@ -110,15 +110,15 @@ const Index = () => {
                   {/* Slide 3 */}
                   <div className="swiper-slide">
                     <div className="offer-card relative">
-                      <Image src={slider1} className="w-full h-auto" alt="Offer 3" />
+                      <Image src={slider1} className="w-full h-auto" alt="Offer 1" />
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
                         <p>10% Off on Interior</p>
                       </div>
-                      <div className="offer-card-content absolute bottom-0 left-0 right-0 ">
+                      <div className=" absolute bottom-6 left-0 right-0 ">
                         <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
                           Offer starts Oct 27, 2024 and ends Feb 28, 2025. You must call for this offer.
                         </h6>
-                        <p className="text-white">Pay for one bedroom, get the second one half price!</p>
+                        <p className="text-white p-4">10% OFF - Interior Painting</p>
                       </div>
                     </div>
                   </div>
