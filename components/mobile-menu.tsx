@@ -257,7 +257,7 @@ export default function MobileMenu() {
   }, []);
 
   return (
-    <div className="lg:hidden">
+    <div className="xl:hidden">
       <button
         onClick={() => setIsOpen(true)}
         className="text-gray-800"
