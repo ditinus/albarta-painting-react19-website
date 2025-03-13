@@ -153,7 +153,7 @@ const ContactGalleryHero: React.FC<HeroProps> = ({
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href={quoteLink}
+              href='/contact'
               className="bg-[#0D378D] text-white px-3 py-2 border-2 border-white rounded-full font-medium hover:bg-primary/90 flex items-center justify-center"
             >
               {quoteText}{" "}

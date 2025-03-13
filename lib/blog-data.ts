@@ -84,14 +84,16 @@ export function getBlogPosts(): BlogPost[] {
         imageUrl: blogs,
     },
     {
-      id: 9,
-      slug: "7-tips-for-choosing-the-right-interior-paint-colour-9",
-      title: "7 Tips For Choosing The Right Interior Paint Colour!",
-      date: "MAR 28, 2022",
-      excerpt:
-        "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
-        imageUrl: blogs,
-    },
+        id: 9,
+        slug: "7-tips-for-choosing-the-right-interior-paint-colour-9",
+        title: "7 Tips For Choosing The Right Interior Paint Colour!",
+        date: "MAR 28, 2022",
+        excerpt:
+          "Picking the colors for the interior of your home can be stressful overwhelming. Flicking through magazines and looking at Pinterest for hours can make you feel inspired, but just as anxious about choosing the wrong colour.",
+          imageUrl: blogs,
+      },
+
+      
   ]
 }
 

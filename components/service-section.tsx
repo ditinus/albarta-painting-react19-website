@@ -6,12 +6,14 @@ interface ServiceSectionProps {
   title: string;
   description: string;
   buttonText: string;
+  isButton?: boolean
 }
 
 const ServiceSection: React.FC<ServiceSectionProps> = ({
   title,
   description,
   buttonText,
+  isButton = true
 }) => {
   // Split the description by line breaks
   const descriptionLines = description.split("<br />");
@@ -23,7 +25,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
     if (buttonText === "View All") {
       router.push("/gallery"); // Navigate to /gallery page
     } else if (buttonText === "Explore Our Services") {
-      router.push("/service"); // Navigate to /service page
+      router.push("/services"); // Navigate to /service page
     } 
   };
 
@@ -40,6 +42,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
               </React.Fragment>
             ))}
           </h2>
+          {isButton &&
           <div className="flex  mt-4 md:mt-0 ">
             <Button
               variant="default"
@@ -50,6 +53,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
             </Button>
 
           </div>
+}
         </div>
       </div>
     </section>
