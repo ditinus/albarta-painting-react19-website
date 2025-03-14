@@ -36,6 +36,7 @@ const ContactForm = () => {
   const handleSubmit = async (values: ContactFormValues, { setSubmitting, resetForm }: any) => {
     const { name, email, phone, message } = values;
 
+
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -109,7 +110,7 @@ const ContactForm = () => {
         </div>
 
         {/* Contact Form Section */}
-        <div className="contact-form w-full md:w-full lg:w-[90%] shadow-lg rounded-lg p-6 lg:mt-[-30px] md:mt-[-30px] mt-[-70px]">
+        <div className="contact-form w-full md:w-full lg:w-[90%] shadow-lg rounded-lg p-6 lg:mt-[-30px] md:mt-[-30px] mt-[-70px] bg-white">
           <Formik<ContactFormValues>
             initialValues={{
               name: "",

@@ -2,8 +2,6 @@
 
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { ChevronDownIcon } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 
 function Accordion({
@@ -41,11 +39,19 @@ function AccordionTrigger({
         {...props}
       >
         {children}
-        {/* <ChevronDownIcon className="text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" /> */}
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23.5 2.19995C23.5 1.37152 22.8284 0.69995 22 0.699951L8.5 0.69995C7.67157 0.69995 7 1.37152 7 2.19995C7 3.02838 7.67157 3.69995 8.5 3.69995H20.5V15.6999C20.5 16.5284 21.1716 17.1999 22 17.1999C22.8284 17.1999 23.5 16.5284 23.5 15.6999L23.5 2.19995ZM3.06066 23.2606L23.0607 3.26061L20.9393 1.13929L0.93934 21.1393L3.06066 23.2606Z" fill="white" fillOpacity="0.5"/>
-</svg>
-
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="transition-transform"
+        >
+          <path
+            d="M23.5 2.19995C23.5 1.37152 22.8284 0.69995 22 0.699951L8.5 0.69995C7.67157 0.69995 7 1.37152 7 2.19995C7 3.02838 7.67157 3.69995 8.5 3.69995H20.5V15.6999C20.5 16.5284 21.1716 17.1999 22 17.1999C22.8284 17.1999 23.5 16.5284 23.5 15.6999L23.5 2.19995ZM3.06066 23.2606L23.0607 3.26058C23.4512 2.87006 23.4512 2.24009 23.0607 1.84957C22.6702 1.45905 22.0402 1.45905 21.6497 1.84957L1.64975 21.8496C1.25924 22.2401 1.25924 22.8701 1.64975 23.2606C2.04026 23.6511 2.67023 23.6511 3.06066 23.2606Z"
+            fill="currentColor"
+          />
+        </svg>
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );
@@ -59,10 +65,10 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"
-      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden w-90 text-[15px]"
+      className={cn("overflow-hidden text-base text-gray-400", className)}
       {...props}
     >
-      <div className={cn("pt-0 pb-4", className)}>{children}</div>
+      {children}
     </AccordionPrimitive.Content>
   );
 }

@@ -8,6 +8,7 @@ import slider1 from "@/public/slider-image-1.png";
 import slider2 from "@/public/special-Offer-2.png";
 import { Navigation  } from "swiper/modules"
 import BgBackground from '@/public/about-background-vector-line.svg'
+import Link from "next/link";
 
 const Index = () => {
   useEffect(() => {
@@ -61,7 +62,7 @@ const Index = () => {
     //   // Cleanup swiper instance when component unmounts
     //   if (swiper) swiper.destroy()
     // }
-  }, [])// Empty dependency array ensures this runs only once on mount
+  }, [])
 
   return (
     <section className="lg:pt-30 pt-10 relative">
@@ -152,8 +153,9 @@ const Index = () => {
                 Discover a variety of discounts and special deals at Alberta Colour Painting, tailored to help you save on your Calgary house painting projects throughout the year. Explore ongoing promotions for both standard and specialty wall painting services, and ensure you get the best value by visiting our offers page.
               </p>
 
-              <button className="flex items-center w-55 mt-3.5 gap-4 border-2 border-white rounded-full pl-5 pr-1.5  py-2 text-sm md:text-base font-medium bg-[#0D378D]  cursor-pointer transition-colors">
-                  Explore Discounts
+              <Link href="/contact" className="cursor-pointer z-30">
+              <button className="flex items-center w-45 mt-3.5 gap-4 border-2 border-white rounded-full pl-5 pr-1.5  py-2 text-sm md:text-base font-medium bg-[#0D378D]  cursor-pointer transition-colors">
+                  contact US
                   <svg
                     width="32"
                     height="30"
@@ -168,6 +170,7 @@ const Index = () => {
                     />
                   </svg>
                 </button>
+              </Link>
             </div>
           </div>
         </div>
