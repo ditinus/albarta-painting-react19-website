@@ -135,7 +135,7 @@ export default function Footer() {
                   />
                 </svg>
                 </Link>
-                <Link href="mailto:info@albertaglobalpainting.com"><span className="font-[500]">info@albertaglobalpainting.com</span></Link>
+                <Link href="mailto:info@albertacolourpainting.com"><span className="font-[500]">info@albertacolourpainting.com</span></Link>
               </div>
               <div className="flex items-start text-wrap break-all gap-2 text-white cursor-pointer">
              <div>
