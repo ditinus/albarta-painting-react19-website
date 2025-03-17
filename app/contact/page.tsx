@@ -18,7 +18,8 @@ export default function Home() {
 <ContactGalleryHero
   title=" "
   title2="CONTACT US"
-  subtitle="Let’s Bring Colour to Your Home Get in Touch Today!"
+  subtitle="Let’s Bring Colour to Your Home"
+  subtitle2="Get in Touch Today!"
   imageSrc={blogsBanner}
   quoteLink="/"
   bookLink="/book"
@@ -31,7 +32,7 @@ export default function Home() {
       </div>
 
       <div className="relative">
-      <div className="absolute top-[800px] z-[-2]">
+      <div className="absolute top-[800px] z-[-2] ">
         <Image src={BgBackground2} alt="bg-Image"/>
       </div>
       <ContactForm/>
@@ -170,7 +171,7 @@ export default function Home() {
           </div>
         </div>
 
-            <div className="flex  mt-20">
+            {/* <div className="flex  mt-20">
               <button className="flex items-center gap-2 border-2 border-white rounded-full pl-3 pr-1.5 py-2  text-sm md:text-base font-medium hover:bg-blue-800 transition-colors">
                 Book Your Estimate Today
                 <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,7 +180,7 @@ export default function Home() {
 </svg>
 
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -198,14 +199,14 @@ export default function Home() {
   
   
   </div>
-  <div className="relative">
+  <div className="relative" >
       <div className="absolute top-[100px] z-[-2]">
         <Image src={BgBackground2} alt="bg-Image"/>
       </div>
       </div>
       <div className="bg-[#E2E7F1] py-12 px-4 relative ">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-[36px] font-bold text-[#0D378D] text-center mb-12">
+          <h2 className="lg:text-[36px] text-[30px] font-bold text-[#0D378D] text-center mb-12">
             WHY CHOOSE US?
           </h2>
 

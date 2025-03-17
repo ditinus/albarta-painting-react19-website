@@ -6,6 +6,15 @@ import { toast } from "sonner";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
+
+interface ContactFormValues {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
+
 // Yup validation schema
 const validationSchema = Yup.object({
   name: Yup.string().required("Name is required"),
@@ -14,12 +23,13 @@ const validationSchema = Yup.object({
     .required("Email is required"),
   phone: Yup.string()
   .required( " Phone No is required")
-    .matches(/^[0-9]{10}$/, "Phone number must be 10 digits")
+  .matches(/^\+1\s?[0-9]{10,15}$/, "Phone number must be 15 digits")
     .nullable(),
   message: Yup.string().required("Message is required"),
 });
 
 const ContactFormSection = () => {
+  
    const handleSubmit = async (values: any, { setSubmitting, resetForm }: any) => {
      const { name, email, phone, message } = values;
    
@@ -70,16 +80,16 @@ const ContactFormSection = () => {
 
         <div className="w-full mx-auto">
           <Formik
-            initialValues={{
-              name: "",
-              email: "",
-              phone: "",
-              message: "",
-            }}
+             initialValues={{
+                         name: "",
+                         email: "",
+                         phone: "+1", // Default value with country code
+                         message: "",
+                       }}
             validationSchema={validationSchema}
             onSubmit={handleSubmit}
           >
-            {({ isSubmitting, values, handleChange, handleBlur}) => (
+            {({ isSubmitting, values, handleChange, handleBlur,setFieldValue}) => (
               <Form className="space-y-14 shadow-2xl p-5">
                 <div className="grid grid-cols-1 gap-8">
                   <div className="flex flex-col ">
@@ -117,12 +127,17 @@ const ContactFormSection = () => {
                   <div className="flex flex-col">
                     <Field
                       name="phone"
-                      type="tel"
-                      value={values.phone}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      className="border-0 bg-[#F3F3F3] text-black p-2"
+                      type="text"
                       placeholder="Phone Number"
+                      className="border-0 bg-[#F3F3F3] text-black p-2"
+                      value={values.phone}
+                      onChange={(e:React.ChangeEvent<HTMLInputElement>) =>{
+                        const value = e.target.value;
+                        if (/^\+1\s?[0-9]{0,15}$/.test(value)) {
+                          setFieldValue("phone", value);
+                        }
+                      }}
+                      // onBlur={handleBlur}
                     />
                     <ErrorMessage
                       name="phone"
