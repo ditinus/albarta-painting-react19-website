@@ -84,7 +84,7 @@ export default function Services() {
         quoteLink="/quote"
         bookLink="/book"
         quoteText="Get a Free Quote"
-        bookText="Read More"
+        bookText="Book Now"
       />
 
     {/* <PaintingCompany /> */}

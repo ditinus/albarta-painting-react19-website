@@ -68,7 +68,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="md:place-self-center">
-            <h3 className="font-medium mb-4">Quick Links</h3>
+            <h3 className="font-medium mb-4 text-[20px]">Quick Links</h3>
             <nav>
               <ul className="space-y-5">
                 {["Home", "About", "Services", "Gallery", "Blog", "Contact"].map((item) => (
@@ -93,7 +93,7 @@ export default function Footer() {
 
           {/* Contact Information */}
           <div className="place-self-start">
-            <h3 className="font-medium mb-4">Contact</h3>
+            <h3 className="font-medium mb-4 text-[20px]">Contact</h3>
             <div className="space-y-5 ">
               <div className="flex items-center gap-2 text-white cursor-pointer">
               <Link href="tel:+587-466-6647">
@@ -135,7 +135,7 @@ export default function Footer() {
                   />
                 </svg>
                 </Link>
-                <Link href="mailto:info@albertaglobalpainting.com"><span className="font-[500]">info@albertaglobalpainting.com</span></Link>
+                <Link href="mailto:info@albertacolourpainting.com"><span className="font-[500]">info@albertacolourpainting.com</span></Link>
               </div>
               <div className="flex items-start text-wrap break-all gap-2 text-white cursor-pointer">
              <div>

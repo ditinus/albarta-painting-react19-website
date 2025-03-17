@@ -31,7 +31,7 @@ const DiscussSection = () => {
 
         <div className="text-center sm:mb-4 mb-6"> {/* Margin for small screens */}
           <div className="icon mb-4">
-          <Link href="mailto:info@albertaglobalpainting.com">
+          <Link href="mailto:info@albertacolourpainting.com">
             <Image
               src={EmailLogo}
               alt="Email Us"

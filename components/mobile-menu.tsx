@@ -307,6 +307,8 @@ export default function MobileMenu() {
           className="fixed inset-0 h-[600px] sm:h-[600px] bg-white z-50 flex flex-col transition-all duration-300 ease-in-out transform translate-x-0"
           style={{ transform: isOpen ? "translateX(0)" : "translateX(100%)" }}
         >
+       
+          <div className="flex justify-between m-[28px]">
           <Link href="/">
             <Image
               src="/logo.svg"
@@ -316,7 +318,6 @@ export default function MobileMenu() {
               className="h-auto"
             />
           </Link>
-          <div className="flex justify-end pr-5">
             <button
               onClick={() => setIsOpen(false)}
               className="text-gray-800"
