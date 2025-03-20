@@ -3,12 +3,13 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation';
 import AboutUs from "@/public/AboutUs.png";
 import BgBackground from '@/public/about-background-vector-line.svg'
+import Link from "next/link";
 
 export default function PaintingCompany() {
 
   const pathname = usePathname();
 
-  const showLearnMoreButton = pathname === '/';
+  let showLearnMoreButton = pathname === '/';
 
   return (
     <div className="w-full lg:my-24 my-10 relative">
@@ -51,7 +52,9 @@ export default function PaintingCompany() {
             tailored to transform your living spaces with elegance and style.`}
           </p>
           {showLearnMoreButton && (
-          <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 ">
+
+          <Link href="/about" className="cursor-pointer z-30">
+          <button className="bg-blue-900  cursor-pointer text-white rounded-full w-fit pl-4 pr-1.5 py-1 flex items-center gap-2 cursor-pointer">
             Learn More
             <svg
               width="31"
@@ -67,6 +70,7 @@ export default function PaintingCompany() {
               />
             </svg>
           </button>
+          </Link>
           )}
         {/* <button className="learn-more-button">Learn More</button> */}
       

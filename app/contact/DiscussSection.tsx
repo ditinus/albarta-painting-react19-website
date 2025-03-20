@@ -15,7 +15,7 @@ const DiscussSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 justify-center items-center">
         <div className="text-center sm:mb-4 mb-6"> {/* Margin for small screens */}
           <div className="icon mb-4">
-          <Link href="tel:+1 587-466-6647">
+          <Link href="tel:+1 587-966-6547">
             <Image
               src={PhoneLogo}
               alt="Call Us"
@@ -31,7 +31,7 @@ const DiscussSection = () => {
 
         <div className="text-center sm:mb-4 mb-6"> {/* Margin for small screens */}
           <div className="icon mb-4">
-          <Link href="mailto:info@albertaglobalpainting.com">
+          <Link href="mailto:info@albertacolourpainting.com">
             <Image
               src={EmailLogo}
               alt="Email Us"

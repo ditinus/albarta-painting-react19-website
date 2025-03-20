@@ -84,12 +84,12 @@ export default function Services() {
         quoteLink="/quote"
         bookLink="/book"
         quoteText="Get a Free Quote"
-        bookText="Read More"
+        bookText="Book Now"
       />
 
     {/* <PaintingCompany /> */}
  
-    <div className="lg:mt-20 mt-10">
+    <div className="lg:mt-20 mx-4 mt-10">
     <div className="absolute ">
         <Image src={BgBackground2} alt="bg-Image"/>
       </div>

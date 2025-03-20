@@ -7,28 +7,34 @@ import Link from "next/link";
 import { Highlight } from "../components/ui/hero-highlight";
 import TrustBadges from "./trust-badges";
 import { Navbar } from "./navbar";
+import { usePathname } from "next/navigation";
 
 interface HeroProps {
   title: string;
-  title2:string;
+  title2: string;
   subtitle?: string;
+  subtitle2?: string; // Add subtitle2 for contact page
   imageSrc: any;
   quoteLink: string;
   bookLink: string;
   quoteText: string;
-  // bookText: string;
 }
 
 const ContactGalleryHero: React.FC<HeroProps> = ({
   title,
   title2,
   subtitle,
+  subtitle2,
   imageSrc,
   quoteLink,
   bookLink,
   quoteText,
   // bookText,
 }) => {
+
+  const router = usePathname();
+
+  const isContactPage = router ==='/contact'
   return (
     <div>
    
@@ -149,11 +155,18 @@ const ContactGalleryHero: React.FC<HeroProps> = ({
             {title} <Highlight className="text-white">{title2}</Highlight>
           </motion.h1>
 
-          <p className="text-xl md:text-2xl text-white mb-8">{subtitle}</p>
+          {isContactPage ? (
+            <div>
+              <p className="lg:text-[36px] text-[15px] md:text-[30px] text-white mt-2 mb-1">{subtitle}</p>
+              <p className="lg:text-[36px] text-[15px] md:text-[30px] text-white mb-8">{subtitle2}</p>
+            </div>
+          ) : (
+            <p className="text-xl md:text-2xl text-white mb-8">{subtitle}</p>
+          )}
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href={quoteLink}
+              href='/contact'
               className="bg-[#0D378D] text-white px-3 py-2 border-2 border-white rounded-full font-medium hover:bg-primary/90 flex items-center justify-center"
             >
               {quoteText}{" "}
@@ -172,12 +185,7 @@ const ContactGalleryHero: React.FC<HeroProps> = ({
                 </svg>
               </span>
             </Link>
-            {/* <Link
-              href={bookLink}
-              className="bg-transparent border-2 border-white text-white px-10 py-2 rounded-full font-medium hover:bg-white hover:text-gray-800 transition-colors"
-            >
-              {bookText}
-            </Link> */}
+    
           </div>
         </div>
       </section>

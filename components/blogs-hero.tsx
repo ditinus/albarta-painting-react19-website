@@ -154,7 +154,7 @@ const Hero: React.FC<HeroProps> = ({
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href={quoteLink}
+              href='/'
               className="bg-[#0D378D]  text-white px-4 py-2 border-2 border-white rounded-full font-medium hover:bg-primary/90 flex items-center justify-center"
             >
               {quoteText}{" "}
@@ -174,7 +174,7 @@ const Hero: React.FC<HeroProps> = ({
               </span>
             </Link>
             <Link
-              href={bookLink}
+              href='/contact'
               className="bg-transparent border-2 flex justify-center items-center border-white text-white px-10 py-2 rounded-full font-medium hover:bg-white hover:text-gray-800 transition-colors"
             >
               {bookText}

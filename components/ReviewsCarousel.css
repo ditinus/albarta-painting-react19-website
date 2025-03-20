@@ -12,5 +12,10 @@
 }
 
 .review_card {
-    width: 97%;
+    width: 85%;
+}
+
+.review_card-m {
+    width: 95%;
+    height: 60%;
 }

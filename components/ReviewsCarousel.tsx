@@ -57,6 +57,7 @@ const ReviewsCarousel = () => {
         title="What Our Clients Say"
         description="Real Reviews from Satisfied <br /> Customers"
         buttonText="Read More Reviews"
+        isButton={false}
       />
 
       <div className="w-full max-w-3xl mx-auto px-4">
@@ -160,10 +161,10 @@ const ReviewsCarousel = () => {
       <div className="rounded-0 lg:px-10 md:px-9 mx-auto px-1 relative">
         <Swiper
           spaceBetween={30}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3500,
+          //   disableOnInteraction: false,
+          // }}
           slidesPerView={1}
           loop={true}
           modules={[Autoplay]}
@@ -176,7 +177,7 @@ const ReviewsCarousel = () => {
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 30,
+              spaceBetween: 10,
             },
             1024: {
               slidesPerView: 3,

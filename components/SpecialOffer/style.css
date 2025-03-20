@@ -47,6 +47,8 @@
     height: 100%;
     object-fit: cover;
   }
+
+  
   .titleH5{
     color: #FFF;
 
@@ -111,6 +113,7 @@ backdrop-filter: blur(7.849999904632568px);
     padding: 10px;
     margin: 1px;
 }
+
 
 .ribbon {
     width: 180px;

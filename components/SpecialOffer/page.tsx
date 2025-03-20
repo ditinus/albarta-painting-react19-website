@@ -8,6 +8,7 @@ import slider1 from "@/public/slider-image-1.png";
 import slider2 from "@/public/special-Offer-2.png";
 import { Navigation  } from "swiper/modules"
 import BgBackground from '@/public/about-background-vector-line.svg'
+import Link from "next/link";
 
 const Index = () => {
   useEffect(() => {
@@ -61,7 +62,7 @@ const Index = () => {
     //   // Cleanup swiper instance when component unmounts
     //   if (swiper) swiper.destroy()
     // }
-  }, [])// Empty dependency array ensures this runs only once on mount
+  }, [])
 
   return (
     <section className="lg:pt-30 pt-10 relative">
@@ -84,11 +85,11 @@ const Index = () => {
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
                         <p>10% Off on Interior</p>
                       </div>
-                      <div className="offer-card-content absolute bottom-0 left-0 right-0 ">
+                      <div className=" absolute bottom-6 left-0 right-0 ">
                         <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
                           Offer starts Oct 27, 2024 and ends Feb 28, 2025. You must call for this offer.
                         </h6>
-                        <p className="text-white">10% OFF - Interior Painting</p>
+                        <p className="text-white p-4">10% OFF - Interior Painting</p>
                       </div>
                     </div>
                   </div>
@@ -110,15 +111,15 @@ const Index = () => {
                   {/* Slide 3 */}
                   <div className="swiper-slide">
                     <div className="offer-card relative">
-                      <Image src={slider1} className="w-full h-auto" alt="Offer 3" />
+                      <Image src={slider1} className="w-full h-auto" alt="Offer 1" />
                       <div className="ribbon absolute  bg-red-500 text-white p-2">
                         <p>10% Off on Interior</p>
                       </div>
-                      <div className="offer-card-content absolute bottom-0 left-0 right-0 ">
+                      <div className=" absolute bottom-6 left-0 right-0 ">
                         <h6 className="text-white bg-[rgba(13,55,141,0.24)] backdrop-blur-[7.85px] p-4">
                           Offer starts Oct 27, 2024 and ends Feb 28, 2025. You must call for this offer.
                         </h6>
-                        <p className="text-white">Pay for one bedroom, get the second one half price!</p>
+                        <p className="text-white p-4">10% OFF - Interior Painting</p>
                       </div>
                     </div>
                   </div>
@@ -152,8 +153,9 @@ const Index = () => {
                 Discover a variety of discounts and special deals at Alberta Colour Painting, tailored to help you save on your Calgary house painting projects throughout the year. Explore ongoing promotions for both standard and specialty wall painting services, and ensure you get the best value by visiting our offers page.
               </p>
 
-              <button className="flex items-center w-55 mt-3.5 gap-4 border-2 border-white rounded-full pl-5 pr-1.5  py-2 text-sm md:text-base font-medium bg-[#0D378D]  cursor-pointer transition-colors">
-                  Explore Discounts
+              <Link href="/contact" className="cursor-pointer z-30">
+              <button className="flex items-center w-45 mt-3.5 gap-4 border-2 border-white rounded-full pl-5 pr-1.5  py-2 text-sm md:text-base font-medium bg-[#0D378D]  cursor-pointer transition-colors">
+                  contact US
                   <svg
                     width="32"
                     height="30"
@@ -168,6 +170,7 @@ const Index = () => {
                     />
                   </svg>
                 </button>
+              </Link>
             </div>
           </div>
         </div>
