@@ -288,8 +288,8 @@ setPlaceDetails(reviews)
           }}
         >
           {reviews?.map((review :any, index : any) => (
-            <SwiperSlide key={index} className="  ">
-              <div className="  ">
+            <SwiperSlide key={index} >
+              <div >
                 <div className="flex flex-col bg-[#E2E7F1] justify-center p-0 shadow-lg lg:p-4 pl-10 relative review_card lg:min-h-80 h-auto mx-auto">
                   {/* Adjusted the images to be inside the flex container without absolute positioning */}
                   <div className="">
