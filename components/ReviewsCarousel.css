@@ -19,3 +19,15 @@
     width: 95%;
     height: 60%;
 }
+
+@media screen and (max-width: 602px) {
+    .review_card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .review_card {
+        width: 95%;
+    }
+}

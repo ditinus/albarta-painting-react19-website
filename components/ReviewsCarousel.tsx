@@ -74,7 +74,7 @@ const ReviewsCarousel = () => {
             <div className="h-10 w-10 relative">
               <Image src={GoogleLogo2} alt="gooleLogo" />
             </div>
-            <span className="text-[10px] text-left font-medium lg:text-[19px]">
+            <span className="text-[15px] text-left font-medium lg:text-[19px]">
               Google Reviews
             </span>
           </button>
@@ -91,7 +91,7 @@ const ReviewsCarousel = () => {
             <div className="flex justify-center items-center relative">
               <Image src={homeStars} alt="gooleLogo" />
             </div>
-            <span className="text-[10px] text-left font-medium lg:text-[19px]">
+            <span className="text-[15px] text-left font-medium lg:text-[19px]">
               HomeStars Reviews
             </span>
           </button>
@@ -128,7 +128,7 @@ const ReviewsCarousel = () => {
 
                 <div className="flex justify-center items-center">
                   <div className="relative">
-                    <Image src={IconVerified} alt="homeStars" />
+                    <Image className="w-40 lg:w-50" src={IconVerified} alt="homeStars" />
                   </div>
                 </div>
 
@@ -176,6 +176,14 @@ const ReviewsCarousel = () => {
               slidesPerView: 2,
               spaceBetween: 10,
             },
+            657: {
+              slidesPerView: 2,
+              spaceBetween: 2,
+            },
+            601: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
             1024: {
               slidesPerView: 3,
               spaceBetween: 20,
@@ -184,7 +192,7 @@ const ReviewsCarousel = () => {
         >
           {reviews.map((review, index) => (
             <SwiperSlide key={index} className="lg:ml-6 ml-0">
-              <div className="">
+              <div className=" ">
                 <div className="flex flex-col bg-[#E2E7F1] justify-center p-0 shadow-lg lg:p-4 pl-10 relative review_card">
                   {/* Adjusted the images to be inside the flex container without absolute positioning */}
                   <div className="">

@@ -227,14 +227,13 @@ const page = () => {
         </div>
         <div className="container w-full lg:w-5xl mb-24 mx-auto px-4">
           <div className="grid gap-10 lg:gap-20 md:grid-cols-2 mt-8">
-            {reviews.map((review, index) => (
-              <div key={index} className="bg-[#E2E7F1] p-0 shadow-lg relative">
-      
+            {reviews?.map((review, index) => (
+              <div key={index} className="bg-[#E2E7F1] p-0 shadow-lg relative">      
                 <div>
                   <Image
                     src={Reviews1}
                     alt="Review Image"
-                    className="w-15 absolute left-1 lg:left-[-20px] lg:mt-0 lg:top-[-30px] lg:w-20 mt-6 mx-auto top-[-20px]"
+                    className="w-15 absolute left-1 lg:left-[-20px] lg:mt-0 lg:top-[-30px] lg:w-20  mx-auto top-[-20px]"
                   />
                   <Image
                     src={Reviews2}
