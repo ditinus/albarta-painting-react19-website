@@ -204,11 +204,18 @@ export function Navbar() {
                 Blog
               </Link>
               <Link
+                href="/reviews "
+                className={` ${currentPath == '/reviews ' ? 'text-[#0D378D]' : 'text-black' } hover:text-[#0D378D]  font-medium`}
+              >
+                Reviews 
+              </Link>
+              <Link
                 href="/contact"
                 className={` ${currentPath == '/contact' ? 'text-[#0D378D]' : 'text-black' } hover:text-[#0D378D]  font-medium`}
               >
                 Contact
               </Link>
+              
             </nav>
           </div>
 
