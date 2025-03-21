@@ -19,36 +19,38 @@ import Awards2025 from "@/public/Awards2025.svg";
 import IconVerified from "@/public/icon-verified.svg";
 
 import axios from "axios";
-const reviews = [
-  {
-    name: "John Doe",
-    review:
-      "We were looking for local Calgary painters to paint our interior in our new house upon possession. Frank and his team worked tirelessly to get the job done in time for us to move in. They did excellent work and even put up with my last minute changes. I highly recommend Alberta Colour Painting to anyone who needs their interior painted.",
-    rating: 5,
-    date: "January 2025",
-  },
-  {
-    name: "Jane Smith",
-    review:
-      "We were looking for local Calgary painters to paint our interior in our new house upon possession. Frank and his team worked tirelessly to get the job done in time for us to move in. They did excellent work and even put up with my last minute changes. I highly recommend Alberta Colour Painting to anyone who needs their interior painted.",
-    rating: 4,
-    date: "December 2024",
-  },
-  {
-    name: "Alex Brown",
-    review:
-      "We were looking for local Calgary painters to paint our interior in our new house upon possession. Frank and his team worked tirelessly to get the job done in time for us to move in. They did excellent work and even put up with my last minute changes. I highly recommend Alberta Colour Painting to anyone who needs their interior painted.",
-    rating: 3,
-    date: "November 2024",
-  },
-  {
-    name: "Emily Davis",
-    review:
-      "We were looking for local Calgary painters to paint our interior in our new house upon possession. Frank and his team worked tirelessly to get the job done in time for us to move in. They did excellent work and even put up with my last minute changes. I highly recommend Alberta Colour Painting to anyone who needs their interior painted.",
-    rating: 5,
-    date: "October 2024",
-  },
-];
+// const reviews = [
+//   {
+//     name: "John Doe",
+//     review:
+//       "We were looking for local Calgary painters to paint our interior in our new house upon possession. Frank and his team worked tirelessly to get the job done in time for us to move in. They did excellent work and even put up with my last minute changes. I highly recommend Alberta Colour Painting to anyone who needs their interior painted.",
+//     rating: 5,
+//     date: "January 2025",
+//   },
+//   {
+//     name: "Jane Smith",
+//     review:
+//       "We were looking for local Calgary painters to paint our interior in our new house upon possession. Frank and his team worked tirelessly to get the job done in time for us to move in. They did excellent work and even put up with my last minute changes. I highly recommend Alberta Colour Painting to anyone who needs their interior painted.",
+//     rating: 4,
+//     date: "December 2024",
+//   },
+//   {
+//     name: "Alex Brown",
+//     review:
+//       "We were looking for local Calgary painters to paint our interior in our new house upon possession. Frank and his team worked tirelessly to get the job done in time for us to move in. They did excellent work and even put up with my last minute changes. I highly recommend Alberta Colour Painting to anyone who needs their interior painted.",
+//     rating: 3,
+//     date: "November 2024",
+//   },
+//   {
+//     name: "Emily Davis",
+//     review:
+//       "We were looking for local Calgary painters to paint our interior in our new house upon possession. Frank and his team worked tirelessly to get the job done in time for us to move in. They did excellent work and even put up with my last minute changes. I highly recommend Alberta Colour Painting to anyone who needs their interior painted.",
+//     rating: 5,
+//     date: "October 2024",
+//   },
+// ];
+
+
 
 const ReviewsCarousel = () => {
   const [activeTab, setActiveTab] = useState<"google" | "homestars">("google");
@@ -58,19 +60,27 @@ const ReviewsCarousel = () => {
   console.log(placeDetails , 'placeDetails');
   
 
-  // const handleReviewsRequest = async () => {
-  //   try {
-  //     await axios.get('/api/getReviews').then((response: any) => {
-  //      if(response?.data){
-  //       setPlaceDetails(response?.data)
-  //      }
-  //     }).catch((error: any) => {
-  //       console.log("Erro: ", error)
-  //     })
-  //   } catch (error) {
-  //     console.log("Error: ", error)
-  //   }
-  // }
+  const handleReviewsRequest = async () => {
+    try {
+      await axios.get('/api/getReviews').then((response: any) => {
+       if(response?.data){
+        const placeDetail = response?.data?.result;
+
+        setPlaceDetails(placeDetail?.reviews)
+       }
+      }).catch((error: any) => {
+        console.log("Erro: ", error)
+      })
+    } catch (error) {
+      console.log("Error: ", error)
+    }
+  }
+  
+  useEffect(() => {
+    handleReviewsRequest()
+  },[])
+
+
 
   const reviews: any = [
     {
@@ -136,10 +146,10 @@ const ReviewsCarousel = () => {
 ]
   
   useEffect(() => {
-    // handleReviewsRequest()
+    handleReviewsRequest()
 
 
-setPlaceDetails(reviews)
+// setPlaceDetails(reviews)
   },[])
 
 
@@ -311,10 +321,10 @@ setPlaceDetails(reviews)
                   </div>
                   <div className="p-[20px] lg:p-[25px] md:p-[10px]">
                     <p className="text-[11px] text-base text-black font-normal lg:pl-[30px] lg:text-[15px] mb-4 pb-0 pt-[40px] review-text sm:pl-[20px] sm:pr-[-40px]">
-                    {review.text.length > 200 ? review.text.slice(0, 300) + '...' : review.text}
+                    {review?.text?.length > 200 ? review?.text.slice(0, 300) + '...' : review.text}
                     </p>
                     <span className="text-[#202020] text-sm font-bold lg:pl-[22px] md:pl-[12px] sm:pl-[-20px] sm:text-lg">
-                      {review.author_name}
+                      {review?.author_name}
                     </span>
                   </div>
                 </div>
