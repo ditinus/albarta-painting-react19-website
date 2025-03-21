@@ -17,7 +17,6 @@ import homeStars from "@/public/home-stars.svg";
 import Best2025 from "@/public//Best2025.svg";
 import Awards2025 from "@/public/Awards2025.svg";
 import IconVerified from "@/public/icon-verified.svg";
-
 const reviews = [
   {
     name: "John Doe",
@@ -57,10 +56,10 @@ const ReviewsCarousel = () => {
         title="What Our Clients Say"
         description="Real Reviews from Satisfied <br /> Customers"
         buttonText="Read More Reviews"
-        isButton={false}
+        isButton={true}
       />
 
-<div className="w-full max-w-3xl mx-auto px-4">
+      <div className="w-full max-w-3xl mx-auto px-4">
         {/* Tab Navigation */}
         <div className="flex gap-4 mb-8">
           <button
@@ -75,7 +74,9 @@ const ReviewsCarousel = () => {
             <div className="h-10 w-10 relative">
               <Image src={GoogleLogo2} alt="gooleLogo" />
             </div>
-            <span className="text-[10px] text-left font-medium lg:text-[19px]">Google Reviews</span>
+            <span className="text-[10px] text-left font-medium lg:text-[19px]">
+              Google Reviews
+            </span>
           </button>
 
           <button
@@ -162,8 +163,6 @@ const ReviewsCarousel = () => {
       <div className="rounded-0 lg:px-10 mx-auto px-2 relative">
         <Swiper
           spaceBetween={20}
-      
-      
           breakpoints={{
             640: {
               slidesPerView: 1,
@@ -184,20 +183,36 @@ const ReviewsCarousel = () => {
           }}
         >
           {reviews.map((review, index) => (
-            <SwiperSlide key={index} className="lg:ml-6 ml-0" > 
-            <div className="">
-              <div className="flex flex-col bg-[#E2E7F1] justify-center p-0 shadow-lg lg:p-4 pl-10 relative review_card">
-                {/* Adjusted the images to be inside the flex container without absolute positioning */}
-                <div className="">
-                  <Image src={Reviews1}  alt="Review Image"  className="w-15 absolute left-1 lg:left-[-20px] lg:mt-0 lg:top-4 lg:w-20 mt-6 mx-auto top-[-20px]" />
-                  <Image src={Reviews2} alt="Review Image"  className="h-[150px] absolute bottom-[20px] left-[28px] mx-auto" />
-                  <Image src={Reviews3} alt="Review Image"  className="absolute bottom-[20px] lg:right-[-28px] mx-auto right-[-20]" />
+            <SwiperSlide key={index} className="lg:ml-6 ml-0">
+              <div className="">
+                <div className="flex flex-col bg-[#E2E7F1] justify-center p-0 shadow-lg lg:p-4 pl-10 relative review_card">
+                  {/* Adjusted the images to be inside the flex container without absolute positioning */}
+                  <div className="">
+                    <Image
+                      src={Reviews1}
+                      alt="Review Image"
+                      className="w-15 absolute left-1 lg:left-[-20px] lg:mt-0 lg:top-4 lg:w-20 mt-6 mx-auto top-[-20px]"
+                    />
+                    <Image
+                      src={Reviews2}
+                      alt="Review Image"
+                      className="h-[150px] absolute bottom-[20px] left-[28px] mx-auto"
+                    />
+                    <Image
+                      src={Reviews3}
+                      alt="Review Image"
+                      className="absolute bottom-[20px] lg:right-[-28px] mx-auto right-[-20]"
+                    />
+                  </div>
+                  <div className="p-[20px] lg:p-[25px] md:p-[10px]">
+                    <p className="text-[11px] text-base text-black font-normal lg:pl-[30px] lg:text-[15px] mb-4 pb-0 pt-[40px] review-text sm:pl-[20px] sm:pr-[-40px]">
+                      {review.review}
+                    </p>
+                    <span className="text-[#202020] text-sm font-bold lg:pl-[22px] md:pl-[12px] sm:pl-[-20px] sm:text-lg">
+                      {review.name}
+                    </span>
+                  </div>
                 </div>
-                <div className="p-[20px] lg:p-[25px] md:p-[10px]">
-                  <p className="text-[11px] text-base text-black font-normal lg:pl-[30px] lg:text-[15px] mb-4 pb-0 pt-[40px] review-text sm:pl-[20px] sm:pr-[-40px]">{review.review}</p>
-                  <span className="text-[#202020] text-sm font-bold lg:pl-[22px] md:pl-[12px] sm:pl-[-20px] sm:text-lg">{review.name}</span>
-                </div>
-              </div>
               </div>
             </SwiperSlide>
           ))}
@@ -206,5 +221,5 @@ const ReviewsCarousel = () => {
     </div>
   );
 };
- 
+
 export default ReviewsCarousel;

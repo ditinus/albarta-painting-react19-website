@@ -25,16 +25,17 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
     if (buttonText === "View All") {
       router.push("/gallery"); // Navigate to /gallery page
     } else if (buttonText === "Explore Our Services") {
-      router.push("/services"); // Navigate to /service page
-    } 
+      router.push("/services"); // Navigate to /services page
+    } else if (buttonText === "Read More Reviews") {
+      router.push("/reviews"); // Navigate to /reviews page
+    }
   };
-
   return (
-    <section className=" bg-white">
-      <div className="container mx-auto px-4 max-w-7xl">
-        <p className="text-black font-medium text-[18px] lg:text-[22px]">{title}</p>
-        <div className="flex flex-col md:flex-row justify-between  mb-8">
-          <h2 className="text-[26px] lg:text-[36px] font-semibold text-[#0D378D] uppercase">
+    <section className="bg-white">
+      <div className="container max-w-7xl mx-auto px-4">
+        <p className="text-[18px] text-black font-medium lg:text-[22px]">{title}</p>
+        <div className="flex flex-col justify-between mb-8 md:flex-row">
+          <h2 className="text-[#0D378D] text-[26px] font-semibold lg:text-[36px] uppercase">
             {descriptionLines.map((line, index) => (
               <React.Fragment key={index}>
                 {line}
@@ -43,10 +44,10 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
             ))}
           </h2>
           {isButton &&
-          <div className="flex  mt-4 md:mt-0 ">
+          <div className="flex md:mt-0 mt-4">
             <Button
               variant="default"
-              className=" bg-[#0D378D] px-10  cursor-pointer  py-5  rounded-3xl "
+              className="bg-[#0D378D] rounded-3xl cursor-pointer px-10 py-5"
               onClick={handleButtonClick}
             >
               {buttonText}
